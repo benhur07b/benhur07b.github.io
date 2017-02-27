@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+/*FONTS*/
+.bnhr {
+  font-family: 'Geo', sans-serif;
+  font-size: 120px;
+  color: #000000;
+}
+
+.nav-text {
+  font-family: 'Muli', sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+
+/*BG*/
+.full-bg-img {
+  background: url("../img/bg-wt.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
