@@ -10,10 +10,24 @@ body {
   color: #000000;
 }
 
+/*NAV BAR*/
 .nav-text {
   font-family: 'Muli', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+nav a {
   color: #000000;
+}
+
+nav a:active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+nav a:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /*BG*/
@@ -23,4 +37,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav-text {
+    font-size: 14px;
+  }
 }
