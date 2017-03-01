@@ -16,9 +16,9 @@ body {
 }
 
 .cv-header {
-  font-family: 'Geo', sans-serif;
+  /*font-family: 'Geo', sans-serif;*/
   /*font-family: 'Muli', sans-serif;*/
-  font-size: 36px;
+  font-size: 28px;
   color: #000000;
 }
 
@@ -28,7 +28,7 @@ p {
 
 .cv-text {
   font-family: 'Muli', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   /*text-align: justify;*/
 }
 
@@ -67,7 +67,7 @@ nav a:hover {
   }
 
   .cv-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
