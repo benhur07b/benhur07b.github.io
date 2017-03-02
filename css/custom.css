@@ -4,6 +4,10 @@ body {
 }
 
 /*FONTS*/
+p {
+  font-family: 'Muli', sans-serif;
+}
+
 .bnhr {
   font-family: 'Geo', sans-serif;
   font-size: 128px;
@@ -22,19 +26,20 @@ body {
   color: #000000;
 }
 
-p {
-  font-family: 'Muli', sans-serif;
-}
-
 .cv-text {
   font-family: 'Muli', sans-serif;
   font-size: 14px;
   /*text-align: justify;*/
 }
 
-.cv-li {
-  font-family: 'Muli', sans-serif;
-  font-size: 14px;
+.cv-summ {
+  font-family: 'Geo', sans-serif;
+  font-size: 32px;
+  color: #000000;
+}
+
+.contact-text {
+  font-size: 18px;
 }
 
 /*NAV BAR*/
@@ -66,8 +71,20 @@ nav a:hover {
     font-size: 18px;
   }
 
+  .cv-header {
+    font-size: 24px;
+  }
+
   .cv-text {
     font-size: 14px;
+  }
+
+  .cv-summ {
+    font-size: 28px;
+  }
+
+  .contact-text {
+    font-size: 16px;
   }
 }
 
@@ -76,11 +93,20 @@ nav a:hover {
     font-size: 14px;
   }
 
+  .cv-header {
+    font-size: 20px;
+  }
+
   .cv-text {
+    font-size: 12px;
+  }
+
+  .cv-summ {
+    font-size: 24px;
+  }
+
+  .contact-text {
     font-size: 14px;
   }
 
-  .cv-li {
-    font-size: 12px;
-  }
 }
