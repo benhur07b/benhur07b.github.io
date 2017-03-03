@@ -3,49 +3,94 @@ body {
   height: 100%;
 }
 
-/*FONTS*/
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url('../fonts/Muli/Muli-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Muli/Muli-Regular.woff') format('woff'), url('../fonts/Muli/Muli-Regular.ttf')  format('truetype'), url('../fonts/Muli/Muli-Regular.svg#Muli-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geo-Regular';
+  src: url('../fonts/Geo/Geo-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Geo/Geo-Regular.woff') format('woff'), url('../fonts/Geo/Geo-Regular.ttf')  format('truetype'), url('../fonts/Geo/Geo-Regular.svg#Geo-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PontanoSans-Regular';
+  src: url('../fonts/PontanoSans/PontanoSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/PontanoSans/PontanoSans-Regular.woff') format('woff'), url('../fonts/PontanoSans/PontanoSans-Regular.ttf')  format('truetype'), url('../fonts/PontanoSans/PontanoSans-Regular.svg#Geo-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreFranklin-Light';
+  src: url('../fonts/LibreFranklin/LibreFranklin-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/LibreFranklin/LibreFranklin-Light.woff') format('woff'), url('../fonts/LibreFranklin/LibreFranklin-Light.ttf')  format('truetype'), url('../fonts/LibreFranklin/LibreFranklin-Light.svg#Geo-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*TEXTS*/
 p {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli-Regular', sans-serif;
+  font-size: 15px;
 }
 
 .bnhr {
-  font-family: 'Geo', sans-serif;
+  font-family: 'Geo-Regular', sans-serif;
   font-size: 128px;
   color: #000000;
 }
 
 .nav-text {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli-Regular', sans-serif;
   font-size: 22px;
 }
 
-.cv-header {
-  /*font-family: 'Geo', sans-serif;*/
-  /*font-family: 'Muli', sans-serif;*/
+.cv-header, .post-title {
+  /*font-family: 'Geo-Regular', sans-serif;*/
+  font-family: 'LibreFranklin-Light', sans-serif;
+  /*font-family: 'PontanoSans-Regular', sans-serif;*/
   font-size: 28px;
   color: #000000;
 }
 
-.cv-text {
-  font-family: 'Muli', sans-serif;
-  font-size: 14px;
+.post-archive-title {
+  font-family: 'LibreFranklin-Light', sans-serif;
+  font-size: 28px;
+}
+
+.cv-text, .post-text, .contact-text {
+  font-family: 'Muli-Regular', sans-serif;
+  font-size: 15px;
   /*text-align: justify;*/
 }
 
 .cv-summ {
-  font-family: 'Geo', sans-serif;
+  font-family: 'Geo-Regular', sans-serif;
   font-size: 32px;
   color: #000000;
 }
 
-.contact-text {
-  font-size: 16px;
+.contact-icons {
+  color: #000000;
+  margin: 0 10px 0 10px;
+}
+
+.contact-icons:hover{
+  color: #4099ff;
+}
+
+.footer-text {
+  font-family: 'Muli-Regular', sans-serif;
+  font-size: 12px;
 }
 
 /*NAV BAR*/
 nav a {
   color: #000000;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 8px 0px 8px;
 }
 
 nav a:active {
@@ -58,47 +103,65 @@ nav a:hover {
   color: #ffffff;
 }
 
-/*BG*/
-.full-bg-img {
-  background: url("../img/bg-wt.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/*BLOG*/
+.post-archive {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.post-archive li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.post-archive li:last-child {
+  border-bottom: 0;
+}
+
+.post-archive li:after {
+  content: "";
+  display table;
+  clear: both;
 }
 
 @media screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+
   .nav-text {
     font-size: 18px;
   }
 
-  .cv-header {
+  .cv-header, .post-title .post-archive-title {
     font-size: 24px;
   }
 
-  .cv-text {
+  .cv-text, .post-text, .contact-text{
     font-size: 14px;
   }
 
   .cv-summ {
     font-size: 28px;
   }
-
-  .contact-text {
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 360px) {
+  p {
+    font-size: 12px;
+  }
+
   .nav-text {
     font-size: 14px;
   }
 
-  .cv-header {
+  .cv-header, .post-title .post-archive-title {
     font-size: 20px;
   }
 
-  .cv-text {
+  .cv-text, .post-text, .contact-text {
     font-size: 12px;
   }
 
@@ -106,8 +169,9 @@ nav a:hover {
     font-size: 24px;
   }
 
-  .contact-text {
-    font-size: 12px;
+  nav a {
+    color: #000000;
+    padding: 0px 4px 0px 4px;
   }
 
 }

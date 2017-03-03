@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="container">
+  <hr>
+  <section id="bnhr">
+   <h3 class="cv-header">About</h3>
+   <p>I'm a geomatics specialist and developer from Quezon City, PHL with a strong background in Free and Open Source Software (FOSS), RS/GIS applications, and geospatial programming.</p>
+   <p>I automate the boring stuff and join hackathons whenever I am able.</p>
+   <p>I have a passion for sports analytics.</p>
+   <p>I believe in the <a href="https://www.gnu.org/philosophy/free-sw.en.html">Four Essential Freedoms</a>.</p>
+   <p>Still working on becoming a polymath.</p>
+  </section>
+</div>
+
+<div class="container">
+  <section id="projects">
+    <h3 class="cv-header">Projects</h3>
+    <ul>
+      {% for repository in site.github.public_repositories %}
+        <li><p>[{{ repository.name }}]({{ repository.html_url }})</p></li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+
+<div class="container">
+  <section id="contact">
+    <h3 class="cv-header">Questions? Collaborations? Opportunities?</h3>
+    <p class="contact-text"><i class="fa fa-envelope" aria-hidden="true"></i> bhs.pintor@mail.com</p>
+    <p class="contact-text"><i class="fa fa-github" aria-hidden="true"></i> github.com/bnhr07b</p>
+    <p class="contact-text"><i class="fa fa-facebook-square" aria-hidden="true"></i> facebook.com/benhur07b</p>
+    <p class="contact-text"><i class="fa fa-twitter-square" aria-hidden="true"></i> twitter.com/benhur07b</p>
+  </section>
+</div>
