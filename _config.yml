@@ -5,8 +5,9 @@ baseurl: ""
 email: bhs.pintor@gmail.com
 facebook_username: benhur07b
 twitter_username: benhur07b
-github_username: bnhr07b
-site.github: github.com/bnhr07b
+github_username: benhur07b
+site.github: github.com/benhur07b
+repo_address: benhur07b/benhur07b.github.io
 # repository: bnhr07b/bnhr07b.github.io
 
 # Build Settings
