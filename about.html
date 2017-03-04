@@ -5,23 +5,36 @@ layout: default
 <div class="container">
   <hr>
   <section id="bnhr">
-   <h3 class="cv-header">About</h3>
-   <p>I'm a geomatics specialist and developer from Quezon City, PHL with a strong background in Free and Open Source Software (FOSS), RS/GIS applications, and geospatial programming.</p>
-   <p>I automate the boring stuff and join hackathons whenever I am able.</p>
+   <h3 class="cv-header">About the Author</h3>
+   <p>I'm Ben, a geomatics specialist and developer from Quezon City, PHL with a strong background in Free and Open Source Software (FOSS), RS/GIS applications, and geospatial programming.</p>
+   <p>I automate the boring stuff and join hackathons whenever I can.</p>
    <p>I have a passion for sports analytics.</p>
    <p>I believe in the <a href="https://www.gnu.org/philosophy/free-sw.en.html">Four Essential Freedoms</a>.</p>
    <p>Still working on becoming a polymath.</p>
+
+   <h3 class="cv-header">About the Site</h3>
+   <p>A programming blog / thought repository.</p>
+   <p>A journal of my (mis)adventures in FOSS and Programming with some random stuff thrown in every now and then.</p>
+   <p>Hopefully, this helps you learn more about Free and Open-Source Software (FOSS), Remote Sensing, Geographic Information Systems, and Programming (<em>especially geospatial programming with Python</em>).</p>
   </section>
 </div>
 
 <div class="container">
   <section id="projects">
-    <h3 class="cv-header">Projects</h3>
+    <h3 class="cv-header">Projects and Repos</h3>
     <ul>
-      {% for repository in site.github.public_repositories %}
-        <!-- <li><p>[{{ repository.name }}]({{ repository.html_url }})</p></li> -->
+      {% assign sorted_repos = site.github.public_repositories  | sort: 'updated_at' | reverse %}
+      {% for repository in sorted_repos limit: 10 %}
+        <li><p><span class="project-name"><a href="{{ repository.html_url }}">{{ repository.name }}</a></span> <span class="footer-text">(last updated {{ repository.updated_at | date_to_string }})</span>
+        <br>{{ repository.description }}
+        {% if repository.fork == true %}
+          <em>(forked)</em>
+        {% endif %}
+        </p></li>
       {% endfor %}
     </ul>
+    <br>
+    <p><a href="https://github.com/bnhr07b?tab=repositories"><u>See more...</u></a></p>
   </section>
 </div>
 

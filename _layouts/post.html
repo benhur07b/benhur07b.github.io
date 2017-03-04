@@ -5,6 +5,12 @@ layout: default
 <div class="container">
   <hr>
   <span class="post-title">{{ page.title }}</span>
-  <p class="post-text">{{ page.date | date_to_string}}</p>
+  <p class="post-text">{{ site.author }}<br>{{ page.date | date_to_string}}</p>
   {{ content }}
 </div>
+
+{% if page.comments %}
+  <div class="disqus-comments">
+    {% include disqus-comments.html %}
+  </div>
+{% endif %}

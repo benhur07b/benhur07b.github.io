@@ -7,6 +7,13 @@ facebook_username: benhur07b
 twitter_username: benhur07b
 github_username: bnhr07b
 site.github: github.com/bnhr07b
+# repository: bnhr07b/bnhr07b.github.io
 
 # Build Settings
 markdown: kramdown
+
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock

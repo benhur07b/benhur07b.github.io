@@ -48,6 +48,26 @@ p {
   font-size: 22px;
 }
 
+.cv-name {
+  /*font-family: 'LibreFranklin-Light', sans-serif;*/
+  font-family: 'Muli-Regular', sans-serif;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.cv-summ {
+  font-family: 'Geo-Regular', sans-serif;
+  font-size: 32px;
+  color: #000000;
+}
+
+.cv-desc {
+  font-family: 'LibreFranklin-Light', sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
 .cv-header, .post-title {
   /*font-family: 'Geo-Regular', sans-serif;*/
   font-family: 'LibreFranklin-Light', sans-serif;
@@ -56,21 +76,15 @@ p {
   color: #000000;
 }
 
-.post-archive-title {
-  font-family: 'LibreFranklin-Light', sans-serif;
-  font-size: 28px;
+.cv-title {
+  font-family: 'Muli-Regular', sans-serif;
+  font-size: 16px;
 }
 
 .cv-text, .post-text, .contact-text {
   font-family: 'Muli-Regular', sans-serif;
   font-size: 15px;
   /*text-align: justify;*/
-}
-
-.cv-summ {
-  font-family: 'Geo-Regular', sans-serif;
-  font-size: 32px;
-  color: #000000;
 }
 
 .contact-icons {
@@ -85,6 +99,11 @@ p {
 .footer-text {
   font-family: 'Muli-Regular', sans-serif;
   font-size: 12px;
+}
+
+.project-name {
+  font-family: 'Muli-Regular', sans-serif;
+  font-size: 18px;
 }
 
 /*NAV BAR*/
@@ -126,7 +145,13 @@ nav a:hover {
   clear: both;
 }
 
+.post-archive-title {
+  font-family: 'LibreFranklin-Light', sans-serif;
+  font-size: 28px;
+}
+
 @media screen and (max-width: 600px) {
+
   p {
     font-size: 14px;
   }
@@ -135,20 +160,42 @@ nav a:hover {
     font-size: 18px;
   }
 
+  .cv-name {
+    font-size: 32px;
+  }
+
+  .cv-summ {
+    font-size: 28px;
+  }
+
+  .cv-desc {
+    font-size: 14px;
+  }
+
   .cv-header, .post-title .post-archive-title {
     font-size: 24px;
+  }
+
+  .cv-title {
+    font-size: 15px;
   }
 
   .cv-text, .post-text, .contact-text{
     font-size: 14px;
   }
 
-  .cv-summ {
-    font-size: 28px;
+  .footer-text {
+    font-size: 10px;
   }
+
+  .project-name {
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (max-width: 360px) {
+
   p {
     font-size: 12px;
   }
@@ -157,21 +204,41 @@ nav a:hover {
     font-size: 14px;
   }
 
-  .cv-header, .post-title .post-archive-title {
-    font-size: 20px;
-  }
-
-  .cv-text, .post-text, .contact-text {
-    font-size: 12px;
+  .cv-name {
+    font-size: 26px;
   }
 
   .cv-summ {
     font-size: 24px;
   }
 
+  .cv-desc {
+    font-size: 12px;
+  }
+
+  .cv-header, .post-title .post-archive-title {
+    font-size: 20px;
+  }
+
+  .cv-title {
+    font-size: 12px;
+  }
+
+  .cv-text, .post-text, .contact-text {
+    font-size: 12px;
+  }
+
   nav a {
     color: #000000;
     padding: 0px 4px 0px 4px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+  }
+
+  .project-name {
+    font-size: 14px;
   }
 
 }
