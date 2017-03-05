@@ -8,6 +8,7 @@ twitter_username: benhur07b
 github_username: benhur07b
 site.github: github.com/benhur07b
 repo_address: benhur07b/benhur07b.github.io
+paginate: 10
 # repository: bnhr07b/bnhr07b.github.io
 
 # Build Settings
@@ -18,3 +19,6 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+gems:
+  - jekyll-paginate
