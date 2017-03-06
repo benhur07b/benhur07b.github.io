@@ -4,33 +4,47 @@ layout: default
 
 <div class="container">
   <hr>
-  <div class="container">
-    <section id="projects">
-      <h3 class="cv-header">Projects and Repos</h3>
-      <ul>
-        {% assign sorted_repos = site.github.public_repositories  | sort: 'updated_at' | reverse %}
-        {% for repository in sorted_repos limit: 10 %}
-          <li><p><span class="project-name"><a href="{{ repository.html_url }}">{{ repository.name }}</a></span> <span class="footer-text">(last updated {{ repository.updated_at | date_to_string }})</span>
-          <br>{{ repository.description }}
-          {% if repository.fork == true %}
-            <em>(forked)</em>
-          {% endif %}
-          </p></li>
-        {% endfor %}
-      </ul>
-      <p><a href="https://github.com/bnhr07b?tab=repositories"><u>See more...</u></a></p>
-    </section>
+  <section id="projects">
+    <h3 class="cv-header">Projects and Repos</h3>
+    <ul>
+      {% assign sorted_repos = site.github.public_repositories  | sort: 'updated_at' | reverse %}
+      {% for repository in sorted_repos limit: 10 %}
+        <li><p><span class="project-name"><a href="{{ repository.html_url }}">{{ repository.name }}</a></span> <span class="footer-text">(last updated {{ repository.updated_at | date_to_string }})</span>
+        <br>{{ repository.description }}
+        {% if repository.fork == true %}
+          <em>(forked)</em>
+        {% endif %}
+        </p></li>
+      {% endfor %}
+    </ul>
+    <p><a href="https://github.com/bnhr07b?tab=repositories"><u>See more...</u></a></p>
+  </section>
 
-    <section id="webdevs">
-      <h3 class="cv-header">Websites developed</h3>
-      <br>
+  <section id="webdevs">
+    <h3 class="cv-header">Websites developed</h3>
+    <br>
+    <div class="col-xs-6 col-sm-4 center-block">
+      <div class="mask rgba-white-slight">
+        <div class="card hoverable">
+          <div class="card-image">
+          <a href="http://imus.gov.ph">
+            <div class="view overlay hm-white-slight">
+              <img class="img-responsive" src="http://128.199.188.155/wp-content/uploads/2016/11/seal_imus_sm.png" alt="City of Imus, Cavite">
+              <div class="mask waves-effect"></div>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <div class="col-xs-6 col-sm-4 center-block">
         <div class="mask rgba-white-slight">
           <div class="card hoverable">
             <div class="card-image">
-            <a href="http://imus.gov.ph">
+            <a href="http://hopeforlupus.org.ph">
               <div class="view overlay hm-white-slight">
-                <img class="img-responsive" src="http://128.199.188.155/wp-content/uploads/2016/11/seal_imus_sm.png" alt="City of Imus, Cavite">
+                <img class="img-responsive" src="http://hopeforlupus.org.ph/wp-content/uploads/2017/01/cropped-hopeforlupuslogo-with-tagline.png" alt="Hope For Lupus Foundation, Inc.">
                 <div class="mask waves-effect"></div>
               </div>
             </a>
@@ -39,36 +53,20 @@ layout: default
         </div>
       </div>
 
-        <div class="col-xs-6 col-sm-4 center-block">
-          <div class="mask rgba-white-slight">
-            <div class="card hoverable">
-              <div class="card-image">
-              <a href="http://hopeforlupus.org.ph">
-                <div class="view overlay hm-white-slight">
-                  <img class="img-responsive" src="http://hopeforlupus.org.ph/wp-content/uploads/2017/01/cropped-hopeforlupuslogo-with-tagline.png" alt="Hope For Lupus Foundation, Inc.">
-                  <div class="mask waves-effect"></div>
-                </div>
-              </a>
+      <div class="col-xs-6 col-sm-4 center-block">
+        <div class="mask rgba-white-slight">
+          <div class="card hoverable">
+            <div class="card-image">
+            <a href="http://bongabon.ph">
+              <div class="view overlay hm-white-slight">
+                <img class="img-responsive" src="http://bongabon.ph/wp-content/uploads/2016/09/cropped-bongabon-site-icon.png" alt="Municipality of Bongabon, Nueva Ecija">
+                <div class="mask waves-effect"></div>
               </div>
+            </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-xs-6 col-sm-4 center-block">
-          <div class="mask rgba-white-slight">
-            <div class="card hoverable">
-              <div class="card-image">
-              <a href="http://bongabon.ph">
-                <div class="view overlay hm-white-slight">
-                  <img class="img-responsive" src="http://bongabon.ph/wp-content/uploads/2016/09/cropped-bongabon-site-icon.png" alt="Municipality of Bongabon, Nueva Ecija">
-                  <div class="mask waves-effect"></div>
-                </div>
-              </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </section>
-  </div>
+  </section>
 </div>
