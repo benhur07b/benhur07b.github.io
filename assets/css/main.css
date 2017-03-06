@@ -3,6 +3,13 @@ body {
   height: 100%;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: 'Muli-Regular';
   src: url('../fonts/Muli/Muli-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Muli/Muli-Regular.woff') format('woff'), url('../fonts/Muli/Muli-Regular.ttf')  format('truetype'), url('../fonts/Muli/Muli-Regular.svg#Muli-Regular') format('svg');
@@ -30,6 +37,25 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+/*PROJECTS*/
+.container-projects {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.grid-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cell-projects {
+  width: 50%;
+  margin: 1rem;
+}
+
 
 /*TEXTS*/
 h1, h2, h3, h4, h5, h6 {
