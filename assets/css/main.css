@@ -45,6 +45,10 @@ html {
   padding: 0 1rem;
 }
 
+.img-projects {
+  width: 100%;
+}
+
 .grid-projects {
   display: flex;
   flex-wrap: wrap;
@@ -52,8 +56,12 @@ html {
 }
 
 .cell-projects {
-  width: 50%;
+  width: 33%;
   margin: 1rem;
+}
+
+.cell-projects img {
+  display: block;
 }
 
 
