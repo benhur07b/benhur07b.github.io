@@ -4,15 +4,15 @@
     <p class="cv-text">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
 
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}">Previous </a>
+      <a href="{{ paginator.previous_page_path }}">Previous |</a>
     {% else %}
-      <span class="cv-text">Previous </span>
+      <span class="cv-text">Previous |</span>
     {% endif %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="cv-text"> Next</a>
+      <a href="{{ paginator.next_page_path }}" class="cv-text">| Next</a>
     {% else %}
-      <span class="cv-text"> Next</span>
+      <span class="cv-text">| Next</span>
     {% endif %}
   </div>
 </div>
