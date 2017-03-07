@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Into FOSS
+title: The FOSS Life
 description: You don't need to be a programmer to get into Free and Open-Source Software (FOSS) and you don't need to give up a lot of functionalites when switching from Windows/macOS to GNU/Linux.
 categories:
   - foss
