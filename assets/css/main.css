@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Muli-Regular', sans-serif;
 }
 
 html {
@@ -8,6 +9,10 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+li {
+  font-size: 15px;
 }
 
 @font-face {
@@ -105,7 +110,7 @@ p {
   margin-bottom: 0;
 }
 
-.cv-header, .post-title {
+.cv-header {
   /*font-family: 'Geo-Regular', sans-serif;*/
   font-family: 'LibreFranklin-Light', sans-serif;
   /*font-family: 'PontanoSans-Regular', sans-serif;*/
@@ -182,14 +187,18 @@ nav a:hover {
   clear: both;
 }
 
-.post-archive-title {
+.post-title, .post-archive-title {
   font-family: 'LibreFranklin-Light', sans-serif;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 @media screen and (max-width: 600px) {
 
   p {
+    font-size: 14px;
+  }
+
+  li {
     font-size: 14px;
   }
 
@@ -209,8 +218,12 @@ nav a:hover {
     font-size: 14px;
   }
 
-  .cv-header, .post-title .post-archive-title {
+  .cv-header{
     font-size: 24px;
+  }
+
+  .post-title , .post-archive-title {
+    font-size: 28px;
   }
 
   .cv-title {
@@ -237,6 +250,10 @@ nav a:hover {
     font-size: 12px;
   }
 
+  li {
+    font-size: 12px;
+  }
+
   .nav-text {
     font-size: 14px;
   }
@@ -253,8 +270,12 @@ nav a:hover {
     font-size: 12px;
   }
 
-  .cv-header, .post-title .post-archive-title {
+  .cv-header {
     font-size: 20px;
+  }
+
+  .post-title, .post-archive-title {
+    font-size: 24px;
   }
 
   .cv-title {
