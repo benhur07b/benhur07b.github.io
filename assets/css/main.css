@@ -172,7 +172,7 @@ nav a:hover {
 }
 
 .post-archive li {
-  border-bottom: 1px solid #eee;
+  /*border-bottom: 1px solid #eee;*/
   margin-bottom: 12px;
   padding-bottom: 12px;
 }
