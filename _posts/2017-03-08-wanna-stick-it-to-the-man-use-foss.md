@@ -55,4 +55,6 @@ As to numbers 3 and 4 above, if you think that the software is too expensive, or
 
 ### PIRATED SOFTWARE PROPAGATE THE STATUS QUO, FOSS IS A REVOLUTION
 
-Here's the status quo: proprietary software holds an advantage over FOSS in terms of the number of users and acceptance. This is the reason why job openings require proficiency in "MS Office" applications or why reports are required to be submitted in ".doc or .docx" format as if Word is the only Word Processor in the world and its proprietary document format is the best in the world *(NO on both counts)*.
+Here's the status quo: proprietary software holds an advantage over FOSS in terms of the number of users and acceptance. This is the reason why job openings require proficiency in "MS Office" applications or why reports are required to be submitted in ".doc or .docx" format as if Word is the only Word Processor in the world and its proprietary document format is the best in the world *(NO on both counts)*. If you think this is a problem and want to change it, then don't pirate software.
+
+Our dependency on proprietary (and closed-source) software is ingrained our society. As kids, most of us get introduced to our first computer running Windows OS (or macOS if you're THAT priveleged).
