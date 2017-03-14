@@ -76,7 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: 'Muli-Regular', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .bnhr {
@@ -125,7 +126,7 @@ p {
 
 .cv-text, .post-text, .contact-text {
   font-family: 'Muli-Regular', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   /*text-align: justify;*/
 }
 
@@ -190,6 +191,7 @@ nav a:hover {
 .post-title, .post-archive-title {
   font-family: 'LibreFranklin-Light', sans-serif;
   font-size: 32px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
