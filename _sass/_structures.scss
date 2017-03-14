@@ -21,3 +21,26 @@
 .cell-projects img {
   display: block;
 }
+
+.main {
+  padding: 0;
+}
+
+.fixed-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav {
+  background-color: white;
+  padding-bottom: 8px;
+
+}
+
+.navbar-scrolled {
+  @extend .fixed-scroll;
+  padding-top: 8px;
+  z-index: 150;
+  box-shadow: 0 1px 1px #000000;
+}

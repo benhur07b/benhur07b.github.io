@@ -24,6 +24,7 @@ $text-header-size: $text-normal-size * 2;
   font-family: 'Geo-Regular', monospace;
   font-size: 120px;
   color: black;
+  margin-bottom: -0.25em;
 }
 
 // Nav Bar
@@ -50,18 +51,6 @@ nav a {
   color: black;
   @include text-size(24px, 20px, 16px)
 }
-
-// Contact Bar
-.contact-icons {
-  color: #000000;
-  margin: 0 10px 0 10px;
-
-  &:hover {
-    // color: #4099ff;
-    color: #a1a1a1;
-  }
-}
-
 
 // Blog
 h1, h2, h3, h4, h5, h6 {

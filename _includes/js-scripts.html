@@ -1,0 +1,12 @@
+<script>
+  var mn = $(".main-nav");
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 200) {
+      mn.addClass("navbar-scrolled");
+    }
+    else {
+      mn.removeClass("navbar-scrolled");
+    }
+  });
+</script>
