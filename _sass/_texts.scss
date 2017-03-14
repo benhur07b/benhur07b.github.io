@@ -1,0 +1,163 @@
+$text-normal-size: 18px;
+$text-header-size: $text-normal-size * 2;
+
+@mixin text_size($normal, $tablet, $phone) {
+  font-size: $normal;
+  @media screen and (max-width: 768px) {font-size: $tablet;}
+  @media screen and (max-width: 360px) {font-size: $phone;}
+}
+
+.text-normal {
+  @include text-size($text-normal-size, $text-normal-size - 2px, $text-normal-size - 4px);
+}
+
+.text-small {
+  @include text-size(12px, 10px, 10px);
+}
+
+.text-headers {
+  @include text-size($text-header-size, $text-header-size - 4px, $text-header-size - 8px);
+}
+
+// Logo
+.bnhr {
+  font-family: 'Geo-Regular', monospace;
+  font-size: 120px;
+  color: black;
+}
+
+// Nav Bar
+nav a {
+  color: #000000;
+  padding: 0px 8px 0px 8px;
+
+  @media screen and (max-width: 360px) {padding: 0px 6px 0px 6px;}
+
+  &:active {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+}
+
+.nav-text {
+  font-family: 'Muli-Regular', sans-serif;
+  color: black;
+  @include text-size(24px, 20px, 16px)
+}
+
+// Contact Bar
+.contact-icons {
+  color: #000000;
+  margin: 0 10px 0 10px;
+
+  &:hover {
+    // color: #4099ff;
+    color: #a1a1a1;
+  }
+}
+
+
+// Blog
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Average-Regular', serif;
+  color: black;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5em;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 1em;
+  }
+}
+
+p {
+  font-family: 'Muli-Regular', sans-serif;
+  line-height: 1.5;
+  @extend .text-normal
+}
+
+li {
+  font-family: 'Muli-Regular', sans-serif;
+  @extend .text-normal;
+}
+
+.post-archive-title {
+  font-family: 'Average-Regular', serif;
+  // font-weight: bold;
+  @extend .text-headers;
+}
+
+.post-archive {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  & li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.post-title {
+  color: black;
+  @extend .post-archive-title;
+}
+
+// About, Projects, Contacts
+.text-header {
+  font-family: 'Average-Regular', serif;
+  @extend .text-headers;
+}
+
+.project-name {
+  font-family: 'Muli-Regular', sans-serif;
+  line-height: 1.5;
+  @include text-size($text-normal-size + 4px, $text-normal-size + 2px, $text-normal-size);
+}
+
+// CV
+.cv-name {
+  font-family: 'Muli-Regular', sans-serif;
+  color: #000000;
+  margin-bottom: 0;
+  font-style: bold;
+  @include text-size(42px, 38px, 34px)
+}
+
+.cv-desc {
+  font-family: 'LibreFranklin-Light', sans-serif;
+  margin-bottom: 0;
+  @extend .text-normal;
+}
+
+.cv-header {
+  @extend .text-header;
+}
+
+.cv-text {
+  font-family: 'Muli-Regular', sans-serif;
+  @extend .text-normal;
+}
+
+// Footer
+.footer-text {
+  font-family: 'Muli-Regular', serif;
+  @extend .text-small;
+}

@@ -1,0 +1,23 @@
+.container-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-projects {
+  width: 90%;
+}
+
+.grid-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cell-projects {
+  width: 33%;
+}
+
+.cell-projects img {
+  display: block;
+}

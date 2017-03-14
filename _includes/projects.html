@@ -1,4 +1,4 @@
-<h3 class="cv-header">Projects and Repos</h3>
+<h3 class="text-header">Projects and Repos</h3>
 <ul>
   {% assign sorted_repos = site.github.public_repositories  | sort: 'updated_at' | reverse %}
   {% for repository in sorted_repos limit: 10 %}
@@ -15,7 +15,7 @@
 <br>
 
 <section id="webdevs">
-  <h3 class="cv-header">Websites developed</h3>
+  <h3 class="text-header">Websites developed</h3>
   <div class="container-projects">
     <div class="grid-projects">
       <div class="cell-projects">

@@ -1,0 +1,41 @@
+// Contact Bar
+.contact-icons {
+  color: #000000;
+  margin: 0 10px 0 10px;
+
+  &:hover {
+    // color: #4099ff;
+    color: #a1a1a1;
+  }
+}
+
+// Share
+.share-icons {
+  color: #333333;
+  margin: 0 10px 0 10px;
+}
+
+@mixin share-icon($hover-color) {
+  @extend .share-icons;
+  &:hover {color: $hover-color;}
+}
+
+.share-twitter {
+  @include share-icon(#4099ff);
+  }
+
+.share-fb {
+  @include share-icon(#3b5998);
+}
+
+.share-gplus {
+  @include share-icon(#d34836)
+}
+
+.share-reddit {
+  @include share-icon(#FF5700)
+}
+
+.share-email {
+  @include share-icon(#3e65cf)
+}

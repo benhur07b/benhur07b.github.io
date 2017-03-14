@@ -1,0 +1,13 @@
+// GENERAL
+html,
+body {
+  height: 100%;
+  font-family: 'Muli-Regular', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
