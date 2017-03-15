@@ -5,15 +5,24 @@ layout: default
   <h3 class="post-title">{{ page.title }}</h3>
   <p class="post-text">{{ page.date | date_to_string}}</p>
   {{ content }}
+</div>
 
 <br>
+
+<div class="container">
 {% include share-social.html %}
+</div>
 
 <br>
+
+<div class="container">
 {% if page.comments %}
   {% include disqus-comments.html %}
 {% endif %}
+</div>
 
 <br>
+
+<div class="container">
 {% include navigation-posts.html %}
 </div>
