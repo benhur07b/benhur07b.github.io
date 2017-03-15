@@ -1,3 +1,4 @@
+// Projects
 .container-projects {
   display: flex;
   align-items: center;
@@ -22,7 +23,7 @@
   display: block;
 }
 
-
+// NavBar
 .fixed-scroll {
   position: fixed;
   top: 0;
@@ -37,16 +38,18 @@
 
 .navbar-scrolled {
   @extend .fixed-scroll;
-  padding-top: 8px;
+  padding-top: 10px;
   z-index: 150;
   box-shadow: 0 2px 2px #000000;
   background-color: white;
 }
 
+// Body
 .main {
-  padding: 25px 0px;
+  padding: 30px 0px;
 
   @media screen and (max-width: 768px) {padding: 20px 0px;}
+  @media screen and (max-width: 480px) {padding: 15px 0px;}
   @media screen and (max-width: 360px) {padding: 10px 0px;}
 }
 
@@ -54,5 +57,6 @@
   max-width: 70%;
 
   @media screen and (max-width: 768px) {max-width: 80%;}
+  @media screen and (max-width: 480px) {max-width: 85%;}
   @media screen and (max-width: 360px) {max-width: 90%;}
 }

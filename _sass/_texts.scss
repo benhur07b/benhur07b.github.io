@@ -1,22 +1,23 @@
 $text-normal-size: 18px;
 $text-header-size: $text-normal-size * 2;
 
-@mixin text_size($normal, $tablet, $phone) {
-  font-size: $normal;
-  @media screen and (max-width: 768px) {font-size: $tablet;}
-  @media screen and (max-width: 360px) {font-size: $phone;}
+@mixin text_size($md, $sm, $xs, $xxs) {
+  font-size: $md;
+  @media screen and (max-width: 768px) {font-size: $sm;}
+  @media screen and (max-width: 480px) {font-size: $xs;}
+  @media screen and (max-width: 360px) {font-size: $xxs;}
 }
 
 .text-normal {
-  @include text-size($text-normal-size, $text-normal-size - 2px, $text-normal-size - 4px);
+  @include text-size($text-normal-size, $text-normal-size - 2px, $text-normal-size - 3px, $text-normal-size - 4px);
 }
 
 .text-small {
-  @include text-size(12px, 10px, 10px);
+  @include text-size(12px, 12px, 10px, 10px);
 }
 
 .text-headers {
-  @include text-size($text-header-size, $text-header-size - 4px, $text-header-size - 8px);
+  @include text-size($text-header-size, $text-header-size - 4px, $text-header-size - 6px, $text-header-size - 8px);
 }
 
 // Logo
@@ -24,15 +25,16 @@ $text-header-size: $text-normal-size * 2;
   font-family: 'Geo-Regular', monospace;
   font-size: 120px;
   color: black;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.2em;
 }
 
 // Nav Bar
-nav a {
+nav .site-link {
   color: #000000;
   padding: 0px 8px 0px 8px;
 
-  @media screen and (max-width: 360px) {padding: 0px 4px 0px 4px;}
+  @media screen and (max-width: 768px) {padding: 0px 6px 0px 6px;}
+  @media screen and (max-width: 480px) {padding: 0px 4px 0px 4px;}
 
   &:active {
     background-color: #000000;
@@ -49,7 +51,7 @@ nav a {
 .nav-text {
   font-family: 'Muli-Regular', sans-serif;
   color: black;
-  @include text-size(24px, 18px, 14px)
+  @include text-size(24px, 20px, 16px, 15px)
 }
 
 // Blog
@@ -61,7 +63,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: 360px) {
     font-size: 1em;
   }
 }
@@ -117,7 +123,7 @@ li {
 
 .project-name {
   font-family: 'Muli-Regular', sans-serif;
-  @include text-size($text-normal-size + 4px, $text-normal-size + 2px, $text-normal-size);
+  @include text-size($text-normal-size + 4px, $text-normal-size + 3px, $text-normal-size + 2px, $text-normal-size);
 }
 
 // CV
@@ -126,7 +132,7 @@ li {
   color: #000000;
   margin-bottom: 0;
   font-style: bold;
-  @include text-size(42px, 36px, 30px)
+  @include text-size(42px, 36px, 32px, 30px)
 }
 
 .cv-desc {
