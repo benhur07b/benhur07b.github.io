@@ -1,22 +1,19 @@
 ---
 layout: default
 ---
-
 <div class="container">
-  <br><br>
   <h3 class="post-title">{{ page.title }}</h3>
   <p class="post-text">{{ page.date | date_to_string}}</p>
   {{ content }}
-</div>
 
 <br>
-
 {% include share-social.html %}
 
 <br>
-
 {% if page.comments %}
-  <div class="disqus-comments">
-    {% include disqus-comments.html %}
-  </div>
+  {% include disqus-comments.html %}
 {% endif %}
+
+<br>
+{% include navigation-posts.html %}
+</div>

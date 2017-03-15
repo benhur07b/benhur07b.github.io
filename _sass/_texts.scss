@@ -32,7 +32,7 @@ nav a {
   color: #000000;
   padding: 0px 8px 0px 8px;
 
-  @media screen and (max-width: 360px) {padding: 0px 6px 0px 6px;}
+  @media screen and (max-width: 360px) {padding: 0px 4px 0px 4px;}
 
   &:active {
     background-color: #000000;
@@ -49,7 +49,7 @@ nav a {
 .nav-text {
   font-family: 'Muli-Regular', sans-serif;
   color: black;
-  @include text-size(24px, 20px, 16px)
+  @include text-size(24px, 18px, 14px)
 }
 
 // Blog
@@ -117,7 +117,6 @@ li {
 
 .project-name {
   font-family: 'Muli-Regular', sans-serif;
-  line-height: 1.5;
   @include text-size($text-normal-size + 4px, $text-normal-size + 2px, $text-normal-size);
 }
 
@@ -127,7 +126,7 @@ li {
   color: #000000;
   margin-bottom: 0;
   font-style: bold;
-  @include text-size(42px, 38px, 34px)
+  @include text-size(42px, 36px, 30px)
 }
 
 .cv-desc {
@@ -149,4 +148,22 @@ li {
 .footer-text {
   font-family: 'Muli-Regular', serif;
   @extend .text-small;
+}
+
+// NavPosts
+.navposts {
+    @extend .text-normal;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+    & .prev {
+      max-width: 50%;
+      align-items: flex-start;
+    }
+
+    & .next {
+      max-width: 50%;
+      align-items: flex-end;
+    }
 }

@@ -44,3 +44,10 @@
   z-index: 150;
   box-shadow: 0 1px 1px #000000;
 }
+
+.main {
+  padding: 20px 50px;
+
+  @media screen and (max-width: 768px) {padding: 15px 30px;}
+  @media screen and (max-width: 360px) {padding: 10px 5px;}
+}
