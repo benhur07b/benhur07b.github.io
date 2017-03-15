@@ -29,17 +29,12 @@ $text-header-size: $text-normal-size * 2;
 }
 
 // Nav Bar
-nav .site-link {
+nav a {
   color: #000000;
   padding: 0px 8px 0px 8px;
 
   @media screen and (max-width: 768px) {padding: 0px 6px 0px 6px;}
   @media screen and (max-width: 480px) {padding: 0px 4px 0px 4px;}
-
-  &:active {
-    background-color: #000000;
-    color: #ffffff;
-  }
 
   &:hover {
     background-color: #000000;
@@ -50,7 +45,7 @@ nav .site-link {
 
 .nav-text {
   font-family: 'Muli-Regular', sans-serif;
-  color: black;
+  color: #000000;
   @include text-size(24px, 20px, 16px, 15px)
 }
 
