@@ -4,15 +4,16 @@
     < Previous<br>
     <a href="{{page.previous.url}}">{{page.previous.title}}</a>
   {% else %}
-    <p>On the Most Recent Post</p>
+    <p>Reached First Post</p>
   {% endif %}
   </div>
+
   <div class="next">
   {% if page.next.url %}
     Next ><br>
     <a href="{{page.next.url}}">{{page.next.title}}</a>
   {% else %}
-    <p>Reached Last Post</p>
+    <p>Reached Most Recent Post</p>
   {% endif %}
   </div>
 </div>
