@@ -9,7 +9,7 @@ $text-header-size: $text-normal-size * 2;
 }
 
 .text-normal {
-  @include text-size($text-normal-size, $text-normal-size - 2px, $text-normal-size - 3px, $text-normal-size - 4px);
+  @include text-size($text-normal-size, $text-normal-size - 2px, $text-normal-size - 4px, $text-normal-size - 5px);
 }
 
 .text-small {
@@ -17,7 +17,7 @@ $text-header-size: $text-normal-size * 2;
 }
 
 .text-headers {
-  @include text-size($text-header-size, $text-header-size - 4px, $text-header-size - 6px, $text-header-size - 8px);
+  @include text-size($text-header-size, $text-header-size - 4px, $text-header-size - 8px, $text-header-size - 10px);
 }
 
 // Logo
@@ -31,10 +31,11 @@ $text-header-size: $text-normal-size * 2;
 // Nav Bar
 nav a {
   color: #000000;
-  padding: 0px 8px 0px 8px;
+  padding: 0px 8px;
 
-  @media screen and (max-width: 768px) {padding: 0px 6px 0px 6px;}
-  @media screen and (max-width: 480px) {padding: 0px 4px 0px 4px;}
+  @media screen and (max-width: 768px) {padding: 0px 6px;}
+  @media screen and (max-width: 480px) {padding: 0px 4px;}
+  @media screen and (max-width: 360px) {padding: 0px 3px;}
 
   &:hover {
     background-color: #000000;
@@ -46,7 +47,7 @@ nav a {
 .nav-text {
   font-family: 'Muli-Regular', sans-serif;
   color: #000000;
-  @include text-size(24px, 20px, 16px, 15px)
+  @include text-size(24px, 20px, 16px, 14px)
 }
 
 // Blog
