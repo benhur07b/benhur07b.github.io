@@ -54,9 +54,44 @@
 }
 
 .container {
+  position: relative;
   max-width: 70%;
 
   @media screen and (max-width: 768px) {max-width: 80%;}
   @media screen and (max-width: 480px) {max-width: 85%;}
   @media screen and (max-width: 360px) {max-width: 90%;}
+}
+
+// Sharebar
+.sharebar {
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  max-width: 5%;
+
+  @media screen and (max-width: 768px) {right: 5%;}
+  @media screen and (max-width: 480px) {right: 5%;}
+  @media screen and (max-width: 360px) {right: 5%;}
+
+
+  .share-col {
+    display: flex;
+    flex-direction: column;
+
+      .share-btn {
+        width: 100%;
+        padding: 6px 0px;
+      }
+
+  }
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+
+  .contact-item {
+    width: 100%;
+    padding: 4px;
+  }
 }

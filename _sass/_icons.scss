@@ -4,32 +4,57 @@
   &:hover {color: $hover-color}
 }
 
-.share-twitter {
+.contact-twitter {
   margin: 0 10px 0 10px;
   @include icon-color(#333333, #4099ff);
   }
 
-.share-fb {
+.contact-fb {
   margin: 0 10px 0 10px;
   @include icon-color(#333333, #3b5998);
 }
 
-.share-gplus {
+.contact-gplus {
   margin: 0 10px 0 10px;
   @include icon-color(#333333, #d34836)
 }
 
-.share-reddit {
-  margin: 0 10px 0 10px;
-  @include icon-color(#333333, #FF5700)
-}
-
-.share-email {
+.contact-email {
   margin: 0 10px 0 10px;
   @include icon-color(#333333, #3e65cf)
 }
 
-.share-gh {
+.contact-gh {
   margin: 0 10px 0 10px;
   @include icon-color(#333333, #6e5494)
+}
+
+.share-twitter {
+  margin: 0 10px 0 10px;
+  @include icon-color(#4099ff, #222222);
+  }
+
+.share-fb {
+  margin: 0 10px 0 10px;
+  @include icon-color(#3b5998, #222222);
+}
+
+.share-gplus {
+  margin: 0 10px 0 10px;
+  @include icon-color(#d34836, #222222)
+}
+
+.share-reddit {
+  margin: 0 10px 0 10px;
+  @include icon-color(#FF5700, #222222)
+}
+
+.share-email {
+  margin: 0 10px 0 10px;
+  @include icon-color(#3e65cf, #222222)
+}
+
+.share-gh {
+  margin: 0 10px 0 10px;
+  @include icon-color(#6e5494, #222222)
 }
