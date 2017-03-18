@@ -40,7 +40,7 @@
   @extend .fixed-scroll;
   padding-top: 10px;
   z-index: 150;
-  box-shadow: 0 2px 2px #000000;
+  box-shadow: 0 2px 2px #333333;
   background-color: white;
 }
 
@@ -94,4 +94,27 @@
     width: 100%;
     padding: 4px;
   }
+}
+
+// Footer
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .footer-contact-item {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 2px;
+
+    @media screen and (max-width: 960px) {width: 50%; padding: 2px 0px};
+    @media screen and (max-width: 480px) {width: 100%; padding: 2px 0px};
+  }
+}
+
+.footer-bnhr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

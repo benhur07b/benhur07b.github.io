@@ -25,7 +25,13 @@ $text-header-size: $text-normal-size * 2;
   font-family: 'Geo-Regular', monospace;
   font-size: 120px;
   color: black;
-  margin-bottom: -0.2em;
+  // margin-bottom: -0.2em;
+}
+
+.bnhr-small {
+  font-family: 'Geo-Regular', monospace;
+  color: black;
+  @extend .text-headers
 }
 
 // Nav Bar
@@ -38,7 +44,7 @@ nav a {
   @media screen and (max-width: 360px) {padding: 0px 3px;}
 
   &:hover {
-    background-color: #333333;
+    background-color: #222222;
     color: #ffffff;
   }
 
@@ -152,12 +158,30 @@ li {
   @extend .text-small;
 }
 
+.footer-container {
+    @extend .text-normal;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    & .footer-texts {
+      width: 80%;
+      padding-right: 5%;
+      // border-right: 1px solid #cccccc;
+    }
+
+    & .footer-contact-links {
+      width: 20%;
+    }
+}
+
+
 // NavPosts
 .navposts {
     @extend .text-normal;
     display: flex;
     // align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     & .prev {
       max-width: 50%;
@@ -186,12 +210,12 @@ li {
   @include text-size(16px, 14px, 12px, 10px);
   padding: 1px 4px;
   margin: 0 2px;
-  color: #333333;
+  color: #222222;
   background: #cccccc;
 
   &:hover {
     color: white;
-    background-color: #333333;
+    background-color: #222222;
   }
 }
 
