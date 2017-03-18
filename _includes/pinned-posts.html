@@ -4,10 +4,7 @@
   {% for post in site.posts %}
     {% if post.pinned %}
       <li>
-        <a href="{{ post.url }}"><span class="post-archive-title">{{ post.title }}</span></a>
-          <p class="post-text">{{ post.date | date_to_string }}</p>
-          <p class="post-text">{{ post.description | strip_html | truncatewords:50 }}</p>
-          <p class="post-text"><a href="{{ post.url }}">Read more...</a></p>
+        {% include meta-post-archive.html %}
       </li>
     {% endif %}
   {% endfor %}

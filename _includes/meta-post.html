@@ -1,0 +1,7 @@
+<h3 class="post-title">{{ page.title }}</h3>
+<p class="meta-page-date">{{ page.date | date_to_string}}</p>
+<p>
+  {% for tag in page.tags %}
+    <a href="{{ site.baseurl }}/blog/tags.html#{{ tag | slugify }}"><span class="meta-post-tag">{{ tag }}</span></a>
+  {% endfor %}
+</p>

@@ -2,8 +2,7 @@
 layout: post
 title: Wanna Stick it to the Man? Use FOSS.
 description: Stick it to the Man by adapting and using Free and Open Source Software (FOSS).
-categories:
-  - foss
+tags: [foss]
 comments: true
 pinned: true
 ---

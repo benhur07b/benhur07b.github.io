@@ -1,0 +1,52 @@
+---
+layout:   default
+title:    Tag
+---
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+{% assign posttags = post.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:posttags %}
+{% endfor %}
+
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% assign tags = "" %}
+
+{% for tag in rawtags %}
+{% if tag != "" %}
+
+{% if tags == "" %}
+{% assign tags = tag | split:'|' %}
+{% endif %}
+
+{% unless tags contains tag %}
+{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+
+<div class="container">
+<p>
+<h1>Tags</h1>
+{% for tag in tags %}
+  <a href="#{{ tag | slugify }}" class="meta-post-tag"> {{ tag }} </a>
+{% endfor %}
+
+{% for tag in tags %}
+<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+<ul>
+  {% for post in site.posts %}
+  {% if post.tags contains tag %}
+  <li>
+    <span class="meta-post-title">
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+    <span class="meta-post-date">{{ post.date | date_to_string}}</span>
+    <br>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
+
+</div>
