@@ -181,7 +181,7 @@ li {
     @extend .text-normal;
     display: flex;
     // align-items: center;
-    // justify-content: space-between;
+    justify-content: space-between;
 
     & .prev {
       max-width: 50%;
