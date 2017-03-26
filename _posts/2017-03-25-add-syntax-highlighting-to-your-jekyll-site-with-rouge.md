@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Syntax Highlighting to your Jekyll site with Rouge
-description: Add color and better readability to your posts with syntax highlighting via rouge
+description: Add color and better readability to your jekyll site with syntax highlighting using rouge
 tags:
   - jekyll
   - github-pages
