@@ -14,6 +14,10 @@ repository: benhur07b/benhur07b.github.io
 
 # Build Settings
 markdown: kramdown
+# highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Exclude
 exclude:
@@ -24,3 +28,4 @@ gems:
   - github-pages
   - jekyll-paginate
   - jekyll-github-metadata
+  # - rouge

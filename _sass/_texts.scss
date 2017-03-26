@@ -224,3 +224,9 @@ li {
   color: #555555;
   line-height: 0.8;
 }
+
+
+// Highlights
+.highlight {
+  @include text-size($text-normal-size - 5px, $text-normal-size - 6px, $text-normal-size - 7px, $text-normal-size - 8px);
+}
