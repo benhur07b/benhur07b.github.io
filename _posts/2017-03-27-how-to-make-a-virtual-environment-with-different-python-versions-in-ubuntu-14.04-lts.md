@@ -143,6 +143,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 From here you can start developing using the Python version of your virtual environment. Write code, download libraries, etc.
 
+<br>
 
 ### Additional Stuff:
 virtualenvwrapper has a lot of stuff that makes working with virtual environments easier. Some of these are:
