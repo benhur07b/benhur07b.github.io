@@ -222,3 +222,5 @@ which renders to:
 <br>
 
 And that's all you need to start having syntax highlighting on your Jekyll site using Rouge.
+
+<br>

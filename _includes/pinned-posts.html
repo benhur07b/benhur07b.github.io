@@ -1,7 +1,8 @@
 <!-- <hr> -->
 <h3 class="text-header">Pinned Posts</h3>
 <ul class="post-archive">
-  {% for post in site.posts %}
+  {% assign posts = site.posts | reverse %}
+  {% for post in posts %}
     {% if post.pinned %}
       <li>
         {% include meta-post-archive.html %}

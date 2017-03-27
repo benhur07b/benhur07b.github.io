@@ -117,3 +117,5 @@ Truth be told, Windows still has the edge on Linux when it comes to Gaming but t
 <br>
 
 That's it for now. There's a lot of other things that I might add here in the future. I'll probably make posts on how to install the software above on your Linux machine too.
+
+<br>
