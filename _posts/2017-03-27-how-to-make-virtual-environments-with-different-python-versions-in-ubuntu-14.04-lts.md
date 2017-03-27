@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to make a Virtual Environment with different Python versions in Ubuntu 14.04 LTS
+title: How to make Virtual Environments with different Python versions in Ubuntu 14.04 LTS
 description: You should avoid upgrading or modifying the Python version that came with your system. This post will show you how you can make different virtual environments with different Python versions.
 tags:
   - python
