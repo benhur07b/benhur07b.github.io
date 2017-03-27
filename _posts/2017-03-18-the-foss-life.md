@@ -48,7 +48,7 @@ Personally, I'm using [Backbox](https://www.backbox.org/) and [OSGEO-Live](https
 * [LibreOffice](https://www.libreoffice.org/)
 * [WPS Office](https://www.wps.com/)
 
-I've almost exclusively used LibreOffice and its predecessor OpenOffice for the past 8 years. It's dependable and does what you expect from a modern office suite. I don't have the same experience with WPS but I've heard good things about it and it boasts of being the "Most Compatible Free Office Suite".
+I've almost exclusively used LibreOffice and its predecessor OpenOffice for the past 8 years. It's dependable and does what you expect from a modern office suite. I don't have the same amount of experience with WPS but I've heard good things about it and it boasts of being the "Most Compatible Free Office Suite".
 
 ### Geographic Information System (GIS)
 **What you might be familiar with:**
@@ -99,8 +99,21 @@ You can edit pdfs (forms, letters, etc.) using LibreOffice (via Draw) if they we
 * [Skype for Linux](https://www.skype.com/en/download-skype/skype-for-linux/)
 * [Viber for Linux](https://www.viber.com/en/products/linux)
 
-There's a lot of other video conferencing and messaging softwares out there available for Linux but since most people (especially those not using Linux) already use Skype, Skype for Linux is a valid option. There's been some issues with Skype for Linux over the years but hopefully their last update solved most of them.
-
-The same can be said with Viber for Linux. There's a host of other messaging apps available for Linux but if most of your contacts are already using Viber, you won't need to change it if you swith to Linux.
+These, technically, are not FOSS alternatives. There's a lot of other video conferencing and messaging softwares out there available for Linux. However, since most people (especially those not using Linux) already use Skype and Viber, Skype for Linux and Viber for Linux are valid options especially if most of your contacts are already using them. There's been some issues with Skype for Linux over the years but hopefully their last update solved most of them.
 
 Both Skype and Viber for Linux are available as .rpm or .deb.
+
+### Games
+**What you might be familiar with:**
+* ALL THE GAMES MADE FOR WINDOWS AND PC
+
+**What you can use instead:**
+* [Steam on Linux](http://store.steampowered.com/linux)
+* [PlayDeb](http://www.playdeb.net/welcome/) (If you're using 'buntu)
+* [Wine](https://www.winehq.org/)
+
+Truth be told, Windows still has the edge on Linux when it comes to Gaming but that doesn't mean you can play on Linux. Steam has been a godsend and I've been able to play a lot more games natively on Linux (Dota2 for example) and not rely on Wine or a Windows VM. For Ubuntu users, PlayDeb is a good resource to start looking for Linux games.
+
+<br>
+
+That's it for now. There's a lot of other things that I might add here in the future. I'll probably make posts on how to install the software above on your Linux machine too.
