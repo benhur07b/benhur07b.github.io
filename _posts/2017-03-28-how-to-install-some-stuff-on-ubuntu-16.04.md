@@ -23,6 +23,34 @@ sudo dpkg --install atom-amd64.deb
 ```
 
 
+### Set Proxy for the Shell (bash)
+I usually set my proxy in the bash config file (.bashrc) if I need to access the web through the shell.
+```shell
+cd ~
+nano .bashrc
+```
+
+Add this line to .bashrc file.
+```shell
+#PROXY SETTINGS
+export {http,https,ftp}_proxy=<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>
+```
+
+Restart the shell.
+
+Another method is to create a ```95proxies``` file inside ```/etc/apt/apt.conf.d/```.
+```shell
+sudo nano /etc/apt/apt.conf.d/95proxies
+```
+
+Then add the following lines:
+```shell
+Acquire::http::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
+Acquire::https::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
+Acquire::ftp::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
+```
+
+
 ### LibreOffice
 LibreOffice is my go-to Office Suite. Xubuntu comes packaged with LibreOffice Writer, Calc, and Math but not the entire Suite. What I usually do is remove the built-in LibreOffice package and replace it with one from the [LibreOffice Fresh PPA](https://launchpad.net/~libreoffice/+archive/ubuntu/ppa).
 
@@ -40,4 +68,13 @@ sudo apt update
 Then install LibreOffice.
 ```shell
 sudo apt install libreoffice
+```
+
+If the above method doesn't work, we can try using snaps.
+```shell
+sudo apt install snapd
+```
+
+```shell
+sudo snap install libreoffice
 ```
