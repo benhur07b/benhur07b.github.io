@@ -14,15 +14,6 @@ I recently upgraded my machine to Xubuntu 16.04 after almost 3 years of using Xu
 This post will just detail how I install/reinstall on Xubuntu 16.04 the common software and tools I use everyday as well as the not-so-common ones that I keep for special ocassions so that I don't forget them in the future.
 
 
-### Atom
-The first thing I reinstalled was [Atom](https://atom.io) because every developer/programmer needs a good text-editor. A few years ago, this spot was reserved for Sublime Text (still one of the best text editors EVER) but recently I've found myself liking and using Atom more. Atom gets plus points for being open-sourc -- something that Sublime is not (probably one of the few bad points with Sublime for me).
-
-If you're using 'buntu, installing Atom is easy. Just download the [.deb](https://atom.io/download/deb) then install it using:
-```shell
-sudo dpkg --install atom-amd64.deb
-```
-
-
 ### Set Proxy for the Shell (bash)
 I usually set my proxy in the bash config file (.bashrc) if I need to access the web through the shell.
 ```shell
@@ -48,6 +39,15 @@ Then add the following lines:
 Acquire::http::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
 Acquire::https::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
 Acquire::ftp::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
+```
+
+
+### Atom
+The first thing I reinstalled was [Atom](https://atom.io) because every developer/programmer needs a good text-editor. A few years ago, this spot was reserved for Sublime Text (still one of the best text editors EVER) but recently I've found myself liking and using Atom more. Atom gets plus points for being open-sourc -- something that Sublime is not (probably one of the few bad points with Sublime for me).
+
+If you're using 'buntu, installing Atom is easy. Just download the [.deb](https://atom.io/download/deb) then install it using:
+```shell
+sudo dpkg --install atom-amd64.deb
 ```
 
 
@@ -77,4 +77,23 @@ sudo apt install snapd
 
 ```shell
 sudo snap install libreoffice
+```
+
+
+### pip
+```shell
+sudo apt install python-pip python3-pip
+```
+
+
+### virtualenvwrapper
+```shell
+sudo pip install virtualenvwrapper
+```
+
+Edit .bashrc by adding
+```shell
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/local/bin/virtualenvwrapper.sh
 ```
