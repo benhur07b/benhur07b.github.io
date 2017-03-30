@@ -9,7 +9,7 @@ comments: true
 pinned: false
 ---
 
-I recently upgraded my machine to Xubuntu 16.04 after almost 3 years of using Xubuntu 14.04. This is always an exciting (or frustrating) time for me as it allows me to reinstall most of my stuff and keep my machine updated.
+I recently upgraded my machine to Xubuntu 16.04 after almost 3 years of using Xubuntu 14.04. This is always an exciting (or frustrating) time as it allows me to reinstall most of my stuff and keep my machine updated.
 
 This post will just detail how I install/reinstall on Xubuntu 16.04 the common software and tools I use everyday as well as the not-so-common ones that I keep for special ocassions so that I don't forget them in the future.
 
@@ -120,6 +120,89 @@ Update your software sources and install GRASS.
 ```shell
 sudo apt update
 sudo apt install grass
+```
+
+### QGIS
+There are a lot of ways to install QGIS depending on the version that you want and if you want the repos to be based on the ubuntugis-unstable PPA.
+
+There are 3 main versions of QGIS that you can install on your machine:
+
+**QGIS LTR (Long Term Release)**
+
+A Long Term Release is a special QGIS release that receives updates and bug-fixes for up to 1 year. Afterwhich it undergoes a feature freeze where no new features are added. This is suitable for people who want a version of QGIS that does not vary often. The current LTR is 2.14 with the latest version being 2.14.12. There are talks of increasing the LTR support time to 2 years but it won't be implemented, if approved, until QGIS 3.0.
+
+To install the QGIS LTR, add the following lines to ```/etc/apt/sources.list```
+```shell
+deb http://qgis.org/debian-ltr xenial main
+deb-src http://qgis.org/debian-ltr xenial main
+```
+
+For ubuntugis-based dependencies, add:
+```shell
+deb http://qgis.org/ubuntugis-ltr xenial main
+deb-src http://qgis.org/ubuntugis-ltr xenial main
+```
+
+**QGIS Latest Release**
+
+QGIS releases a new version every 4 months. This is more bleeding edge than the LTR release and often contains newer features. However, this version also comes with the occasional bugs due to these new features. Get this release if you always want the latest version of QGIS on your machine.
+
+To install the Latest Release, add the following lines to ```/etc/apt/sources.list```
+```shell
+deb http://qgis.org/debian xenial main
+deb-src http://qgis.org/debian xenial main
+```
+
+For ubuntugis-based dependencies, add:
+```shell
+deb http://qgis.org/ubuntugis xenial main
+deb-src http://qgis.org/ubuntugis xenial main
+```
+
+**QGIS Development Version**
+
+This is more bloody than bleeding edge. Get this if you want to check/test the upcoming release and/or you want to get into QGIS development.
+
+To install the Development version, add the following lines to ```/etc/apt/sources.list```
+```shell
+deb http://qgis.org/debian-nightly xenial main
+deb-src http://qgis.org/debian-nightly xenial main
+```
+
+For ubuntugis-based dependencies, add:
+```shell
+deb http://qgis.org/ubuntugis-nightly xenial main
+deb-src http://qgis.org/ubuntugis-nightly xenial main
+```
+
+If you will use one of the ubuntugis-based repos, you have to add the following lines on your ```/etc/apt/sources.list``` if you haven't already.
+```shell
+deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu xenial main
+deb-src http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu xenial main
+```
+
+Make sure that you uninstall all previous versions of QGIS not coming from the repos above.
+
+Update your software sources and install:
+```shell
+sudo apt update
+sudo apt install qgis python-qgis qgis-plugin-grass
+```
+
+For more information, you can visit the [QGIS website](http://qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu).
+
+
+### libgdal-dev
+Installing GDAL in a virtual environment isn't as straightforward as we like.
+
+First make sure that you have the ubuntugis-unstable repo in your sources list then install libgdal-dev.
+```shell
+sudo apt install libgdal-dev
+```
+
+Now you can install GDAL in a virtual environment with:
+```shell
+pip install gdal==<gdal-version> --global-option=build_ext --global-option="-I/usr/include/gdal"
 ```
 
 ### rvm (Ruby Version Manager)

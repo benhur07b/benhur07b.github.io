@@ -8,7 +8,11 @@ tags:
 comments: true
 pinned: false
 ---
-[Github Pages](https://pages.github.com/) is one of the best and easiest ways to host static sites online. It can be used to host sites for your Github user/organization or your Github projects.
+[Github Pages](https://pages.github.com/) is one of the best and easiest ways to host static sites online. It can be used to host sites for your Github user/organization or your Github projects. Github pages sites are automatically rendered by Jekyll which makes it great for blogging. You can learn more about Jekyll [here](https://jekyllrb.com/docs/home/).
+
+The easiest way to create your own site is to fork an existing Jekyll site and see how it works. You can find sample sites [here](https://github.com/jekyll/jekyll/wiki/Sites).
+
+
 
 ### Jekyll directory structure
 ```
@@ -26,42 +30,42 @@ Here is a sample directory structure for a Github Pages site running on Jekyll.
  index.html
 ```
 
-#### front-matter
+**front-matter**
 
 
 
-#### \_includes
+**includes**
 This holds html snippets that you can reuse in your site by calling {% raw %} ```{% name-of-file.html %} {% endraw %}```.
 
 For example, you want to put a footer in specific parts of your site. You can create a _footer.html_ file and just call {% raw %} ```{% footer.html %} {% endraw %}``` in the parts of your site where you want to put the footer.
 
 
-#### \_layouts
+**layouts**
 This holds the layouts for different pages
 
 
-#### \_posts
+**posts**
 
 
-#### \_sass
+**sass**
 
 
-#### \_assets
+**assets**
 
 
-#### \_images
+**images**
 
 
-#### \_blog
+**blog**
 
 
-#### \_config.yml
+**config.yml**
 
 
-#### .gitignore
+**.gitignore**
 
 
-#### index.html
+**index.html**
 
 
 

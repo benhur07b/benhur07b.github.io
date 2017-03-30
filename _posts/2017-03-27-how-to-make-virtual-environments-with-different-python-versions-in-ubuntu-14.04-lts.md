@@ -24,6 +24,7 @@ Install the following dependencies if they aren't already.
 sudo apt-get install -y \
 autotools-dev      \
 blt-dev            \
+build-essential    \
 bzip2              \
 dpkg-dev           \
 g++-multilib       \
@@ -45,9 +46,13 @@ mime-support       \
 net-tools          \
 netbase            \
 python-crypto      \
+python-dev         \
 python-mox3        \
 python-pil         \
+python-pip         \
 python-ply         \
+python-setuptools  \
+python-smbus       \
 quilt              \
 tk-dev             \
 zlib1g-dev
