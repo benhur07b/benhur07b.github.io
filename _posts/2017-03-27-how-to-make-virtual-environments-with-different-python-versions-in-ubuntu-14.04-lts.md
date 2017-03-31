@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to make Virtual Environments with different Python versions in Ubuntu 14.04 LTS
+title: How to make Virtual Environments with different Python versions in Xubuntu
 description: You should avoid upgrading or modifying the Python version that came with your system. This post will show you how you can make different virtual environments with different Python versions.
 tags:
   - python
-  - '14.04'
+  - Xubuntu
 comments: true
 pinned: false
 ---
 
-If you're running Ubuntu, you should avoid upgrading or modifying the Python version that came with your system because doing so could lead to unwanted results, conflicts, and even system breakage. In the case of Ubuntu 14.04 (Trusty Tahr), the Python versions that come with it are 2.7.6 and 3.4.3.
+If you're running Ubuntu, you should avoid upgrading or modifying the Python version that came with your system because doing so could lead to unwanted results, conflicts, and even system breakage. In the case of Xubuntu 14.04 (Trusty Tahr), the Python versions that come with it are 2.7.6 and 3.4.3.
 
 Now, if you feel that these versions are outdated and you want to try the newer Python versions, the best course of action is to use virtual environments. Virtual environments allow you to sandbox multiple Python versions depending on your development needs so that you don't have to upgrade or downgrade your system's Python version. For python 2.7-3.4, [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) is probably your best option. From version 3.3 onwards, Python has included the [venv](https://docs.python.org/3/library/venv.html) module for creating virtual environments as part of its standard library.
 

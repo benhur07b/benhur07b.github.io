@@ -191,6 +191,14 @@ sudo apt install qgis python-qgis qgis-plugin-grass
 
 For more information, you can visit the [QGIS website](http://qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu).
 
+### PostGIS
+PostGIS is an extension of PostgresSQL database which adds support for geographic objects allowing for location queries to be run in SQL.
+
+The ubuntugis-unstable PPA maintains a version of postgis. You can install it by:
+```shell
+sudo apt update
+sudo apt install postgis
+```
 
 ### libgdal-dev
 Installing GDAL in a virtual environment isn't as straightforward as we like.
@@ -226,4 +234,12 @@ Update Steam and start playing.
 *If you're behind a firewall, you won't be able to play but you'll be able to update steam through the command line.*
 ```shell
 steam update
+```
+
+### mkusb
+Xubuntu 16.04 doesn't come with Startup Disk Creator. You can still install Startup Disk Creator but mkusb is a little bit better because it uses **dd** to create the live-usbs. You can install it in your machine by:
+```shell
+sudo add-apt-repository ppa:mkusb/ppa
+sudo apt update
+sudo apt install mkusb
 ```
