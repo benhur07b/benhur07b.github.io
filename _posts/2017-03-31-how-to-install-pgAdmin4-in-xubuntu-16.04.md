@@ -3,9 +3,9 @@ layout: post
 title: How to Install pgAdmin4 in Xubuntu 16.04
 description: Here's how you can install and access pgAdmin4 on Xubuntu 16.04
 tags:
+  - pgadmin
   - Xubuntu
   - '16.04'
-  - pgadmin
 comments: true
 pinned: false
 ---

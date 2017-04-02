@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Install some stuff on Xubuntu 16.04 (Xenial Xerus)
-description: I just recently upgraded (which I was holding off for a long time) my OS to Xubuntu 16.04 from 14.04. This is a post detailing how I install/reinstall most of the common stuff I use so that I won't forget them in the future.
+title: How to Install some stuff on Xubuntu 16.04
+description: I just recently upgraded (which I was holding off for a long time) my OS to Xubuntu 16.04 from 14.04. This post is so that I won't forget how to install/re-install some stuff in the future.
 tags:
   - Xubuntu
   - '16.04'
