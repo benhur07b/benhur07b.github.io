@@ -1,10 +1,10 @@
 ---
 layout: post
 title: How to make Virtual Environments with different Python versions in Xubuntu 14.04
-description: You should avoid upgrading or modifying the Python version that came with your system. This post will show you how you can make different virtual environments with different Python versions.
+description: You should avoid upgrading or modifying the Python version that came with your system. This post will show you how you can make virtual environments with different Python versions in Xubuntu 14.04.
 tags:
   - python
-  - Xubuntu
+  - xubuntu
   -  '14.04'
 comments: true
 pinned: false
