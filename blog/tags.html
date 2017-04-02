@@ -34,7 +34,9 @@ title:    Tag
 {% endfor %}
 
 {% for tag in tags %}
-<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+<div class="tag-padding" id="{{ tag | slugify }}">
+</div>
+<h2>{{ tag }}</h2>
 <ul>
   {% for post in site.posts %}
   {% if post.tags contains tag %}
