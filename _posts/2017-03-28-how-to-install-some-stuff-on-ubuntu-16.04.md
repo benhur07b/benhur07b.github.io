@@ -181,6 +181,16 @@ deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu xenial main
 deb-src http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu xenial main
 ```
 
+Add the public keys (without fingerprint verification).
+```shell
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 073D307A618E5811
+```
+
+When working behind a proxy, try:
+```shell
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 073D307A618E5811
+```
+
 Make sure that you uninstall all previous versions of QGIS not coming from the repos above.
 
 Update your software sources and install:
@@ -242,4 +252,19 @@ Xubuntu 16.04 doesn't come with Startup Disk Creator. You can still install Star
 sudo add-apt-repository ppa:mkusb/ppa
 sudo apt update
 sudo apt install mkusb
+```
+
+### Pinta
+Pinta is a drop-in replacement for Microsoft Paint. For simple graphics manipulation. It's 1.6 version is part of the Ubuntu Official Repository. The pinta-stable PPA has no release for 16.04 while the pinta-daily PPA has.
+
+If you're okay with version 1.6, just type:
+```shell
+sudo apt install pinta
+```
+
+If you want to use the pinta-daily PPA:
+```shell
+sudo add-apt-repository ppa:pinta-maintainers/pinta-daily
+sudo apt update
+sudo apt install pinta-daily
 ```
