@@ -174,5 +174,3 @@ mkvirtualenv <name-of-virtualenv>
 ```shell
 rmvirtualenv <name-of-virtualenv>
 ```
-
-<br>
