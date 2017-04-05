@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to make a Python 3.6 virtual environment in Xubuntu 16.04 using venv
+title: Make a Python 3.6 virtual environment in Xubuntu 16.04 using venv
 description: Python 3.6 is the latest version of Python. Ubuntu 16.04 comes packaged with an earlier version. Learn how to install Python 3.6 on Xubuntu 16.04 and make a virtual environment using venv.
 tags:
   - python
