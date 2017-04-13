@@ -1,5 +1,7 @@
 # Site Settings
-title: bnhr - FOSS, Geospatial, Python, Basketball, and Everything in Between
+title: bnhr
+description: FOSS, Geospatial, Python, Basketball, and Everything in Between 
+image: {{ site.baseurl }}/images/bnhr-600px-wt.png
 author: Ben Hur S. Pintor
 baseurl: ""
 email: bhs.pintor@gmail.com
