@@ -7,7 +7,7 @@
   <meta name="description" content="FOSS, Geospatial, Programming, Basketball, and Everything in Between.">
   -->
   <meta name="author" content="Ben Hur S. Pintor">
-  
+
   <!-- OG meta -->
   <!--
   <meta property="og:url" content="https://benhur07b.github.io/" />
@@ -15,16 +15,16 @@
   <meta property="og:image" content="{{ site.baseurl }}/images/bnhr-600px-wt.png" />
   <meta property="og:image:url" content="{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}" />
   -->
-  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}">
   <meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">  
+  <meta property="og:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="{% if page.image %}{{page.image}}{% else %}{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}{% endif %}"/>
   <meta property="og:image:url" content="{% if page.image %}{{page.image}}{% else %}{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}{% endif %}"/>
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/images/bnhr-48px.png">
   <!--
   <link rel="img_src" href="{{ site.baseurl }}/images/bnhr-600px-wt.png">
-  -->  
+  -->
 
   <!-- Google Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet"> -->

@@ -5,7 +5,7 @@ description: Windows not booting properly? Giving you that Blue Screen of Death?
 tags: [windows]
 pinned: false
 comments: true
-date: 2017-04-03T15:25:00+08:00
+og_type: article
 ---
 
 <img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg">

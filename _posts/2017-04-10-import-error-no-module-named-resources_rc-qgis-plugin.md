@@ -5,7 +5,7 @@ description: Here is the the simplest solution I've found for this annoying litt
 tags: [qgis, foss4g, python]
 pinned: false
 comments: true
-date: 2017-04-10T18:30:00+08:00
+og_type: article
 ---
 
 If you did not create your QGIS plugin using the latest version of *QGIS Plugin Builder*, you might find yourself encountering this error when running your plugin in QGIS specially if you have a resources file for images/logos that you included in your plugin.

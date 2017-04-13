@@ -5,7 +5,7 @@ description: But why? Hahaha.
 tags: [windows, xubuntu, '16.04']
 pinned: false
 comments: true
-date: 2017-04-03T12:25:00+08:00
+og_type: article
 ---
 
 ### Requirements

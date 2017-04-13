@@ -5,7 +5,7 @@ description: You don't need to be a programmer to get into Free and Open-Source 
 tags: [foss]
 comments: true
 pinned: true
-date: 2017-03-18T21:00:00+08:00
+og_type: article
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >

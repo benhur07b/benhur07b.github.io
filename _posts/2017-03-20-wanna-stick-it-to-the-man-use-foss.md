@@ -5,7 +5,7 @@ description: Stick it to the Man by adapting and using Free and Open Source Soft
 tags: [foss]
 pinned: true
 comments: true
-date: 2017-03-20T19:18:00+08:00
+og_type: article
 ---
 
 > "Why pay for software when you can pirate it?"

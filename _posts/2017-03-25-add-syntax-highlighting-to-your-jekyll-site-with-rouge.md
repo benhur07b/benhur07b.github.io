@@ -5,7 +5,7 @@ description: Add color and better readability to your jekyll site with syntax hi
 tags: [jekyll, github-pages]
 pinned: false
 comments: true
-date: 2017-03-25T18:15:00+08:00
+og_type: article
 ---
 Syntax highlighting is important (especially for programming blogs) because it improves the readability of posts. It allows readers to quickly locate the code-snippets (which are usually the reason why they visit your page) they need.
 

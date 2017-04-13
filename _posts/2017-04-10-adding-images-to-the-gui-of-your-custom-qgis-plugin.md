@@ -5,7 +5,7 @@ description: Who wouldn't want to put a logo or a cute kitten image on their QGI
 tags: [qgis, foss4g, python]
 pinned: false
 comments: true
-date: 2017-04-10T16:45:00+08:00
+og_type: article
 ---
 
 Sometimes we want or need to add images to our custom QGIS plugins, here's how you do it.
