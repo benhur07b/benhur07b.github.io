@@ -13,7 +13,7 @@
   <!-- <meta property="og:image:url" content="{% if page.image %}{{page.image}}{% else %}{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}{% endif %}"/> -->
 
   {% if page.og_type %}
-    <meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}">
+    <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
     <!-- <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}"> -->
   {% endif %}
@@ -47,5 +47,4 @@
 
   {% include google-analytics.html %}
 
-  <!-- {% seo %} -->
 </head>
