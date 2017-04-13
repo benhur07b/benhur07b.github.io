@@ -5,7 +5,7 @@ description: You don't need to be a programmer to get into Free and Open-Source 
 tags: [foss]
 comments: true
 pinned: true
-og_type: article
+og_type: "article"
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >
