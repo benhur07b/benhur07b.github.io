@@ -2,20 +2,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
   <title>{{ site.title }}</title>
-
   <meta name="description" content="FOSS, Geospatial, Programming, Basketball, and Everything in Between.">
+  -->
   <meta name="author" content="Ben Hur S. Pintor">
   
   <!-- OG meta -->
+  <!--
   <meta property="og:url" content="https://benhur07b.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="bnhr" />
   <meta property="og:description" content="FOSS, Geospatial, Programming, Basketball, and Everything in Between." />
   <meta property="og:image" content="{{ site.baseurl }}/images/bnhr-600px-wt.png" />
   <meta property="og:image:url" content="{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}" />
-  
-  
+  -->
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">  
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/images/bnhr-48px.png">
   <!--
