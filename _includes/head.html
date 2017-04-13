@@ -30,7 +30,8 @@
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}">
   <!-- <meta name="twitter:image" content="{% if page.image %}{{page.image}}{% else %}{{ site.url | replace:'https','http' }}/images/bnhr-600px-wt.png{% endif %}"/> -->
   <meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
-  <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.url | replace:'https','http' }}/images/bnhr-600px-wt.png{% endif %}"/>
+  <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
+
   <link rel="shortcut icon" href="{{ site.baseurl }}/images/bnhr-48px.png">
 
   <!-- Google Fonts -->
