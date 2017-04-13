@@ -11,7 +11,7 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}">
   <!-- <meta property="og:image" content="{% if page.image %}{{page.image}}{% else %}{{ site.url | replace:'https','http' }}/images/bnhr-600px-wt.png{% endif %}"/> -->
   <!-- <meta property="og:image:url" content="{% if page.image %}{{page.image}}{% else %}{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}{% endif %}"/> -->
-  <meta property="og:image" content="{% if page.image.facebook %}{{ page.image.facebook | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.url | replace:'https','http' }}{{ site.logo }}{% endif %}"/>
+  <meta property="og:image" content="{% if page.image.facebook %}{{ page.image.facebook | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
 
   <!-- Facebook OG -->
   {% if page.og_type %}
