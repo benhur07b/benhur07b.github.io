@@ -3,9 +3,9 @@ layout: post
 title: Wanna Stick it to the Man? Use FOSS.
 description: Stick it to the Man by adapting and using Free and Open Source Software (FOSS).
 tags: [foss]
-comments: true
 pinned: true
-date: 2017-03-20T18:00:00+08:00
+comments: true
+date: 2017-03-20T19:18:00+08:00
 ---
 
 > "Why pay for software when you can pirate it?"

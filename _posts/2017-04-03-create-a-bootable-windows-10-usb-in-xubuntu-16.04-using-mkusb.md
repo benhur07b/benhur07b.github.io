@@ -2,12 +2,10 @@
 layout: post
 title: Create a Bootable Windows 10 USB in Xubuntu 16.04 using mkusb
 description: But why? Hahaha.
-tags:
-  - windows
-  - xubuntu
-  - '16.04'
-comments: true
+tags: [windows, xubuntu, '16.04']
 pinned: false
+comments: true
+date: 2017-04-03T12:25:00+08:00
 ---
 
 ### Requirements

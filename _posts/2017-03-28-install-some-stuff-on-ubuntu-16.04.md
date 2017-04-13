@@ -2,11 +2,10 @@
 layout: post
 title: Install some stuff on Xubuntu 16.04
 description: I just recently upgraded (which I was holding off for a long time) my OS to Xubuntu 16.04 from 14.04. This post is so that I won't forget how to install/re-install some stuff in the future.
-tags:
-  - xubuntu
-  - '16.04'
+tags: [xubuntu, '16.04']
 comments: true
 pinned: false
+date: 2017-03-28T10:25:00+08:00
 ---
 
 I recently upgraded my machine to Xubuntu 16.04 after almost 3 years of using Xubuntu 14.04. This is always an exciting (or frustrating) time as it allows me to reinstall most of my stuff and keep my machine updated.

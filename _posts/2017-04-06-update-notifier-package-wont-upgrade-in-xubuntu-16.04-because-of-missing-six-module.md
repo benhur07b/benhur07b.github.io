@@ -2,11 +2,10 @@
 layout: post
 title: update-manager and update-notifier packages won't upgrade in Xubuntu 16.04 because of missing six module. [SOLVED]
 description: Sometimes the simplest solutions are the best ones.
-tags:
-  - python
-  - '16.04'
-comments: true
+tags: [python, '16.04']
 pinned: false
+comments: true
+date: 2017-04-06T19:30:00+08:00
 ---
 I was performing a routine update and upgrade of my system packages when I encountered this error.
 
