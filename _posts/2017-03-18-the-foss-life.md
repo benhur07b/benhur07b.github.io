@@ -6,6 +6,8 @@ tags: [foss]
 comments: true
 pinned: true
 og_type: article
+author:
+  facebook: benhur07b
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >

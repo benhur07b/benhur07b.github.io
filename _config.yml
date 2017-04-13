@@ -1,6 +1,8 @@
 # Site Settings
 title: bnhr
 description: FOSS, Geospatial, Python, Basketball, and Everything in Between
+author:
+  facebook: benhur07b
 baseurl: ""
 email: bhs.pintor@gmail.com
 facebook_username: benhur07b
