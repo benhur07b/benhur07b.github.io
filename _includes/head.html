@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <title>{% if page.og_type %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{site.description}}{% endif %}</title>
   <!-- OG meta -->
 
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
@@ -12,12 +12,23 @@
   <meta property="og:image" content="{% if page.image %}{{page.image}}{% else %}{{ site.url | replace:'https','http' }}/images/bnhr-600px-wt.png{% endif %}"/>
   <!-- <meta property="og:image:url" content="{% if page.image %}{{page.image}}{% else %}{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}{% endif %}"/> -->
 
+  <!-- Facebook OG -->
   {% if page.og_type %}
     <meta property="article:author" content="{% if page.author.facebook %}https://www.facebook.com/{{ page.author.facebook }}{% else %}https://www.facebook.com/{{ site.author.facebook }}{% endif %}">
     <!-- <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}"> -->
   {% endif %}
 
+  <!-- Twitter OG -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ site.username_twitter | replace:'@','' }}">
+  {% if page.og_type %}
+    <meta name="twitter:creator" content="@{{ site.author.twitter | replace:'@','' }}">
+  {% endif %}
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{page.image}}{% else %}{{ site.url | replace:'https','http' }}/images/bnhr-600px-wt.png{% endif %}"/>
+  <meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/images/bnhr-48px.png">
 
