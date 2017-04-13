@@ -1,7 +1,8 @@
 # Site Settings
 title: bnhr
 description: FOSS, Geospatial, Python, Basketball, and Everything in Between 
-image: {{ site.baseurl }}/images/bnhr-600px-wt.png
+image: "{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}"
+image_url: "{{ "/images/bnhr-600px-wt.png" | prepend: site.baseurl }}"
 author: Ben Hur S. Pintor
 baseurl: ""
 email: bhs.pintor@gmail.com
