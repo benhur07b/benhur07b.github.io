@@ -6,6 +6,7 @@ tags: [windows]
 pinned: false
 comments: true
 og_type: article
+image: /images/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg
 ---
 
 <img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg">
