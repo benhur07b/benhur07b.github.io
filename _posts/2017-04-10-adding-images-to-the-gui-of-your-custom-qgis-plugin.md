@@ -64,5 +64,4 @@ If you want to know why we compile it to resources_rc.py, check [here]({{ site.b
 sudo python /usr/lib/python2.7/dist-packages/qgis/PyQt/uic/pyuic.py name-of-file.ui -o name-of-file.py
 ```
 
-
 After this, you should be able to see the images you added in your GUI the next time you run your plugin in QGIS.
