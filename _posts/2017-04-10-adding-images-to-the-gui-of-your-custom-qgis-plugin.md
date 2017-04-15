@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding images to the GUI of your custom QGIS 2.X plugin with Qt Designer
-description: Who wouldn't want to put a logo or a cute kitten image on their QGIS plugin? creating QGIS Plugins.
+description: Who wouldn't want to put a logo or a cute kitten image on their QGIS plugin?
 tags: [qgis, foss4g, python]
 pinned: false
 comments: true
