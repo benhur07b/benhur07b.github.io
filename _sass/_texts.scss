@@ -58,7 +58,7 @@ nav a {
 
 // Blog
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Average-Regular', serif;
+  font-family: 'Lato-Regular', serif;
   color: black;
 
   @media screen and (max-width: 768px) {
@@ -86,7 +86,7 @@ li {
 }
 
 .post-archive-title {
-  font-family: 'Average-Regular', serif;
+  font-family: 'Lato-Regular', serif;
   // font-weight: bold;
   @extend .text-headers;
 }
@@ -119,7 +119,7 @@ li {
 
 // About, Projects, Contacts
 .text-header {
-  font-family: 'Average-Regular', serif;
+  font-family: 'Lato-Regular', serif;
   @extend .text-headers;
 }
 

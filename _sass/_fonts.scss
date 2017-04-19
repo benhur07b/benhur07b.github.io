@@ -30,6 +30,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Lato/Lato-Regular.woff') format('woff'), url('../fonts/Lato/Lato-Regular.ttf')  format('truetype'), url('../fonts/Lato/Lato-Regular.svg#Geo-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/Lato/Lato-Black.woff') format('woff'), url('../fonts/Lato/Lato-Black.ttf')  format('truetype'), url('../fonts/Lato/Lato-Black.svg#Geo-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Serifs
 @font-face {
   font-family: 'Alegreya-Regular';
