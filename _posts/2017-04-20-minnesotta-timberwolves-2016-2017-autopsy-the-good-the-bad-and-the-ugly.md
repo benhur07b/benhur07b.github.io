@@ -27,7 +27,7 @@ Still, not everything was bad for Minnesotta last season (*I tell myself this ev
 
 # The Good
 
-### KAT was as a MONSTER
+### KAT was a MONSTER
 There's now no doubt that KAT has emerged as the alpha of this pack of Wolves and he had himself a historic season to show for it. KAT followed up his ROY season with a sophomore campaign averaging 25.1pts, 12.3rebs, 2.7asts with a .582/.367/.832 shooting line. The last player to average [25 and 12](http://bkref.com/tiny/iRIzS) was Kevin Love in 2013-14. If you include 3pt shooting, KAT and Love are the only players in NBA history to average [25pts and 12rebs while shooting at least .360 from three](http://bkref.com/tiny/pvGwc).
 
 When you consider that KAT is just 21 years old and only in his second year, you appreciate his season more. The last [sophomore player to average 25pts-12rebs-2asts](http://bkref.com/tiny/c5mn7) was Shaq in 1993-1994. In fact, [KAT and Shaq are the only players 21-years or younger](http://bkref.com/tiny/OjDs7) to average 25-12-2.
