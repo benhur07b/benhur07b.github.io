@@ -7,7 +7,7 @@ pinned: true
 comments: true
 og_type: article
 image:
-  facebook: /images/posts/2017-04-20-minnesotta-timberwolves-2016-2017-autopsy-the-good-the-bad-and-the-ugly/MTimberwolves_Global-2017.png
+  facebook: /images/posts/2017-04-19-minnesotta-timberwolves-2016-2017-autopsy-the-good-the-bad-and-the-ugly/MTimberwolves_Global-2017.png
 ---
 
 At the start of the 2016-2017 season, I gave a best-case scenario for the Minnesotta Timberwolves if all things went according to plan.
@@ -145,6 +145,8 @@ If KAT is the Wolves' \#1, then Wiggins' role as the  team's \#2 should be made 
 In DeRozan's 4th-8th season in the league, he has upped his peripheral stats and last season he had per-36 averages of 27.8pts-5.3rebs-4.0asts. Together with DeRozan's increase in production came his success as a player (3x All-Star) and the success of his team (Raptors have made the Playoffs the last 4 years).
 
 Wiggins needs to do the same. Adding more assists or becoming a better facilitator will broaden his dimensions as a player and make him more dangerous. Right now, teams don't mind putting heavy pressure on him when he has the ball because he hasn't shown the ability to find the open man or make the best pass when pressured. Also, for someone as athletic as he is, he should be able to grab at least 5-6 rebounds per game. The Wolves don't need Wiggins to carry the scoring load too much since they already have KAT and Zach but they do need him to be a more consistent presence on offense and most especially on defense. Andrew's athlecticism and ability to create his own shot makes him the best option on broken possessions. He can be that guy you can rely on to create scoring opportunities when the shot-clock is winding down or during lose balls. His athleticism and length gives him the potential to be a better defender if he wants to be.
+
+Wiggins' lack of peripheral stats is concerning given the number of minutes he plays. Since the shot clock was introduced, only [6 players who played at least 35 minutes per game have averaged at least 23 points while getting 4.5 rebounds or less and 3 assists or less](http://bkref.com/tiny/NSrfj) -- Wiggins, Kevin Martin, Michael Redd, Glen Rice, Dale Ellis, and Kiki Vandeweghe. No offense to the five other guys but I don't think they were who the Wolves' front office had in mind for Wiggins when they agreed to trade for him.
 
 He may not be the Wolves' alpha but the team needs him to be its best two-way player. The Pip to KAT's MJ. The Kobe to KAT's Shaq (*2000-2002 Lakers*). Heck, even the Kobester averaged 6 rebounds, 5 assists, and more than 2 combined steals and blocks when he played with Shaq. That's the kind of production the Wolves need from Wiggs. 23p-7r-5a-1.5s-1b, if Wiggins comes close to averaging those numbers then the league better be ready for the Wolves.
 
