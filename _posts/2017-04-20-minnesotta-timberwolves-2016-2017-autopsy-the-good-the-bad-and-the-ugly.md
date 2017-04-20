@@ -7,7 +7,7 @@ pinned: true
 comments: true
 og_type: article
 image:
-  facebook: /images/posts/2017-04-19-minnesotta-timberwolves-2016-2017-autopsy-the-good-the-bad-and-the-ugly/MTimberwolves_Global-2017.png
+  facebook: /images/posts/2017-04-20-minnesotta-timberwolves-2016-2017-autopsy-the-good-the-bad-and-the-ugly/MTimberwolves_Global-2017.png
 ---
 
 At the start of the 2016-2017 season, I gave a best-case scenario for the Minnesotta Timberwolves if all things went according to plan.
