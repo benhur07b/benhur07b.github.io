@@ -20,6 +20,10 @@ $text-header-size: $text-normal-size * 2;
   @include text-size($text-header-size, $text-header-size - 4px, $text-header-size - 8px, $text-header-size - 10px);
 }
 
+.text-tables {
+  @include text-size(16px, 16px, 14px, 12px);
+}
+
 // Logo
 .bnhr {
   font-family: 'Geo-Regular', monospace;
@@ -58,7 +62,7 @@ nav a {
 
 // Blog
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato-Regular', serif;
+  font-family: 'Lato-Regular', sans serif;
   color: black;
 
   @media screen and (max-width: 768px) {
@@ -80,13 +84,26 @@ p {
   @extend .text-normal
 }
 
+td, th {
+  font-family: 'Muli-Regular', sans-serif;
+  line-height: 1.2;
+  @extend .text-tables;
+
+  border: solid 1px black;
+  padding: 2px 10px 2px 6px;
+}
+
+table {
+  margin-bottom: 16px;
+}
+
 li {
   font-family: 'Muli-Regular', sans-serif;
   @extend .text-normal;
 }
 
 .post-archive-title {
-  font-family: 'Lato-Regular', serif;
+  font-family: 'Lato-Regular', sans serif;
   // font-weight: bold;
   @extend .text-headers;
 }
@@ -119,7 +136,7 @@ li {
 
 // About, Projects, Contacts
 .text-header {
-  font-family: 'Lato-Regular', serif;
+  font-family: 'Lato-Regular', sans serif;
   @extend .text-headers;
 }
 
