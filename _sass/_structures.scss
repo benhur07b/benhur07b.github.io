@@ -99,6 +99,7 @@
 // Footer
 .footer-contact {
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 
@@ -106,7 +107,7 @@
     display: flex;
     justify-content: center;
     width: 25%;
-    padding: 2px;
+    padding: 2px 0px;
 
     @media screen and (max-width: 960px) {width: 50%; padding: 2px 0px};
     @media screen and (max-width: 480px) {width: 100%; padding: 2px 0px};
