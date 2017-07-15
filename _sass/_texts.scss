@@ -30,6 +30,10 @@ $text-header-size: $text-normal-size * 2;
   font-size: 120px;
   color: black;
   // margin-bottom: -0.2em;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .bnhr-small {
@@ -50,6 +54,7 @@ nav a {
   &:hover {
     background-color: #222222;
     color: #ffffff;
+    text-decoration: none;
   }
 
 }
