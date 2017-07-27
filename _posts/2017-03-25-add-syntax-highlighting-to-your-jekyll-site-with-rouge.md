@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 ---
-Syntax highlighting is important (especially for programming blogs) because it improves the readability of posts. It allows readers to quickly locate the code-snippets (which are usually the reason why they visit your page) they need.
+Syntax highlighting is important (especially for programming blogs) because it improves the readability of posts. It allows readers to quickly locate the code-snippets (which are usually why people visit your page in the first place) they need.
 
 [**Rouge**](https://github.com/jneen/rouge) is a pure-ruby syntax highlighter and has been the default highlighter for Jekyll since Jekyll 3 (replacing pygments). You can add syntax highlihting using rouge to your Jekyll site in just a few steps.
 
