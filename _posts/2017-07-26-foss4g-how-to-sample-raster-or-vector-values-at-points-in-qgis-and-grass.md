@@ -6,6 +6,9 @@ tags: [foss4g, how-to, foss4g-how-to, qgis, 2.18.10, grass, 7.2.1]
 pinned: false
 comments: true
 og_type: article
+image:
+  facebook: /media/foss4g-howto.png
+
 ---
 
 Let's say we want to know the values of rasters and vectors at specific points in a point layer (e.g. household locations). How would we go about doing this in QGIS or GRASS?
