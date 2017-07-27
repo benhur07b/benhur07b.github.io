@@ -27,13 +27,13 @@ Make sure that resources.qrc is located in the root folder of your plugin.
 ### **2. Add the resources.qrc file to your GUI**
 
 Go to the **Resource Browser** located at the bottom right part of Qt Designer and click Edit Resources.
-<img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-000.png">
+<img class="img-responsive" src="{{ site.baseurl }}/media/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-000.png">
 
 Click **Open Resource File** and select the resources.qrc file you created.
-<img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-002.png">
+<img class="img-responsive" src="{{ site.baseurl }}/media/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-002.png">
 
 If there are no errors, you should be able to see the resources(images) that you added in the resources.qrc file. Click **OK**.
-<img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-004.png">
+<img class="img-responsive" src="{{ site.baseurl }}/media/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-004.png">
 
 
 ### **3. Use Labels to hold the images in your GUI**
@@ -41,10 +41,10 @@ If there are no errors, you should be able to see the resources(images) that you
 Add a Label widget. Delete the text.
 
 On the **Property Editor**, go to **QLabel** -> **pixmap** and select **Select Resource**.
-<img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-004.png">
+<img class="img-responsive" src="{{ site.baseurl }}/media/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-004.png">
 
 Select the image you want to add and edit the size of the Label on your GUI.
-<img class="img-responsive" src="{{ site.baseurl }}/images/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-005.png">
+<img class="img-responsive" src="{{ site.baseurl }}/media/posts/2017-04-10-adding-images-to-the-gui-of-your-custom-qgis-plugin/img-005.png">
 
 
 ### **4. Compile your resources.qrc to resources_rc.py**

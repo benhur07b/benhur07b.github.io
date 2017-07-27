@@ -4,6 +4,11 @@
   &:hover {color: $hover-color}
 }
 
+@mixin bg-color($color, $hover-color){
+  background-color: $color;
+  &:hover {background-color: $hover-color}
+}
+
 .icon-padding {
   margin: 0 10px;
   @media screen and (max-width: 768px) {margin: 0 8px;}
@@ -65,4 +70,25 @@
 .share-gh {
   @extend .icon-padding;
   @include icon-color(#6e5494, #222222)
+}
+
+//buttons
+#toTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 5%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  @include bg-color(#222222, #000000);
+
+  @media screen and (max-width: 768px) {right: 4%; padding: 10px}
+  @media screen and (max-width: 480px) {right: 3%; padding: 7px}
+  @media screen and (max-width: 360px) {right: 2%; padding: 5px}
+
 }

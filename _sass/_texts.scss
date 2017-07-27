@@ -103,8 +103,7 @@ table {
 }
 
 li {
-  font-family: 'Muli-Regular', sans-serif;
-  @extend .text-normal;
+  @extend p;
 }
 
 .post-archive-title {

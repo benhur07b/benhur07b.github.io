@@ -1,1 +1,1 @@
-All contents of images and \_posts are (c) Ben Hur S. Pintor
+All contents of media and \_posts are (c) Ben Hur S. Pintor
