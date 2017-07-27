@@ -11,6 +11,11 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="{% if page.image.facebook %}{{ page.image.facebook | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
 
+  {% if page.image.twitter %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:image" content="{% if page.image.twitter %}{{ page.image.twitter | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
+  {% endif %}
+
   <!-- Facebook OG -->
   {% if page.og_type %}
     <meta property="article:author" content="{% if page.author.facebook %}https://www.facebook.com/{{ page.author.facebook }}{% else %}https://www.facebook.com/{{ site.author.facebook }}{% endif %}">

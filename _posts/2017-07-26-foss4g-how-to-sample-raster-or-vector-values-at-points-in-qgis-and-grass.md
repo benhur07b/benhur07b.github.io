@@ -8,6 +8,7 @@ comments: true
 og_type: article
 image:
   facebook: /media/foss4g-howto.png
+  twitter: /media/foss4g-howto.png
 
 ---
 
