@@ -8,13 +8,12 @@ comments: true
 og_type: article
 image:
   facebook: /media/foss4g-howto.png
-  twitter: /media/foss4g-howto.png
-
+  twitter: /media/foss4g-howto-400px.png
 ---
 
 Let's say we want to know the values of rasters and vectors at specific points in a point layer (e.g. household locations). How would we go about doing this in QGIS or GRASS?
 
-Well, it's actuallly pretty easy. You just need to know the right tools to use. QGIS has the **Point sampling tool** plugin for sampling rasters and vectors while GRASS has the **v.what.rast** module for sampling rasters and the **v.what.vect** module for sampling vectors.
+Well, it's actuallly pretty easy. You just need to know the right tools to use. QGIS has the **```Point sampling tool```** plugin for sampling rasters and vectors while GRASS has the **```v.what.rast```** or ```Sample raster maps at point locations``` module for sampling rasters and the **```v.what.vect```** or ```Update point attributes from areas``` module for sampling vectors.
 
 Now let's take a look at these tools.
 
