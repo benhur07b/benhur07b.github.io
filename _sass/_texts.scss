@@ -168,6 +168,10 @@ li {
   @extend .text-header;
 }
 
+.cv-header-2 {
+  @include text-size($text-normal-size + 4px, $text-normal-size + 3px, $text-normal-size + 2px, $text-normal-size);
+}
+
 .cv-text {
   font-family: 'Muli-Regular', sans-serif;
   @extend .text-normal;
