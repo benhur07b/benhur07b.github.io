@@ -32,4 +32,6 @@ gems:
   - github-pages
   - jekyll-paginate
   - jekyll-github-metadata
-  # - jekyll-seo-tag
+
+plugins:
+  - jekyll-seo-tag

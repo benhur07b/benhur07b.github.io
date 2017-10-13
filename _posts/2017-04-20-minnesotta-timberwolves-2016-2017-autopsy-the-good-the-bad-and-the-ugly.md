@@ -56,7 +56,7 @@ The drop in Rubio's steal numbers (he's still in the top 10 in the league) and d
 
 Also, for the 1st time in his career, Rubio finally shot more than 40% from the field for an entire season capping off the [best shooting season of his career](http://www.basketball-reference.com/players/r/rubiori01.html#shooting::none). It took six years but if this continues, things will really start looking up for Minny next season.
 
-### Flirting with the 8th seeed for Most of the Season
+### Flirting with the 8th seed for Most of the Season
 I'm not sure what happened to the Wolves for the last 16 games of the season where they went 3-13. Were they tanking? Were they really that bad? Hopefully it's the former because prior to those last 16 games, the Wolves were constantly within striking distance (2-3 games behind) of the 8th seed in the West and if the Wolves make the Playoffs next season then I'll really consider this season to not be a disappointment.
 
 ### Top-10 Offense
