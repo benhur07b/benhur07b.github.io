@@ -155,7 +155,8 @@ li {
   color: #000000;
   margin-bottom: 0;
   font-style: bold;
-  @include text-size(42px, 36px, 32px, 30px)
+  @include text-size(42px, 36px, 32px, 30px);
+  color: rgb(0, 69, 134);
 }
 
 .cv-desc {
@@ -166,10 +167,20 @@ li {
 
 .cv-header {
   @extend .text-header;
+  color: rgb(0, 69, 134);
 }
 
 .cv-header-2 {
   @include text-size($text-normal-size + 4px, $text-normal-size + 3px, $text-normal-size + 2px, $text-normal-size);
+  color: black;
+}
+
+.cv-title {
+    color: rgb(0, 69, 134);
+}
+
+.cv-title-black {
+    color: black;
 }
 
 .cv-text {

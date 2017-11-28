@@ -28,10 +28,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-gems:
+plugins:
   - github-pages
   - jekyll-paginate
   - jekyll-github-metadata
-
-plugins:
   - jekyll-seo-tag
