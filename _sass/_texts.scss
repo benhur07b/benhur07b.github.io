@@ -26,7 +26,7 @@ $text-header-size: $text-normal-size * 2;
 
 // Logo
 .bnhr {
-  font-family: 'Geo-Regular', monospace;
+  font-family: 'Geo', monospace;
   font-size: 120px;
   color: black;
   // margin-bottom: -0.2em;
@@ -37,7 +37,7 @@ $text-header-size: $text-normal-size * 2;
 }
 
 .bnhr-small {
-  font-family: 'Geo-Regular', monospace;
+  font-family: 'Geo', monospace;
   color: black;
   @extend .text-headers
 }
@@ -60,14 +60,15 @@ nav a {
 }
 
 .nav-text {
-  font-family: 'Muli-Regular', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #000000;
   @include text-size(24px, 20px, 16px, 14px)
 }
 
 // Blog
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato-Regular', sans serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: black;
 
   @media screen and (max-width: 768px) {
@@ -84,14 +85,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: 'Muli-Regular', sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
   line-height: 1.5;
-  @extend .text-normal
+  @extend .text-normal;
 }
 
 td, th {
-  font-family: 'Muli-Regular', sans-serif;
-  line-height: 1.2;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
   @extend .text-tables;
 
   border: solid 1px black;
@@ -107,7 +110,8 @@ li {
 }
 
 .post-archive-title {
-  font-family: 'Lato-Regular', sans serif;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.25;
   // font-weight: bold;
   @extend .text-headers;
 }
@@ -140,18 +144,18 @@ li {
 
 // About, Projects, Contacts
 .text-header {
-  font-family: 'Muli-Regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
   @extend .text-headers;
 }
 
 .project-name {
-  font-family: 'Muli-Regular', sans-serif;
+  font-family: 'Muli', sans-serif;
   @include text-size($text-normal-size + 4px, $text-normal-size + 3px, $text-normal-size + 2px, $text-normal-size);
 }
 
 // CV
 .cv-name {
-  font-family: 'Muli-Regular', sans-serif;
+  font-family: 'Muli', sans-serif;
   color: #000000;
   margin-bottom: 0;
   font-style: bold;
@@ -160,7 +164,8 @@ li {
 }
 
 .cv-desc {
-  font-family: 'LibreFranklin-Light', sans-serif;
+  font-family: 'LibreFranklin', sans-serif;
+  font-weight: 300;
   margin-bottom: 0;
   @extend .text-normal;
 }
@@ -184,13 +189,13 @@ li {
 }
 
 .cv-text {
-  font-family: 'Muli-Regular', sans-serif;
+  font-family: 'Muli', sans-serif;
   @extend .text-normal;
 }
 
 // Footer
 .footer-text {
-  font-family: 'Muli-Regular', serif;
+  font-family: 'Muli', sans-serif;
   @extend .text-small;
 }
 
@@ -243,7 +248,7 @@ li {
 }
 
 .meta-post-tag {
-  @include text-size(16px, 14px, 12px, 10px);
+  @include text-size(15px, 14px, 12px, 10px);
   padding: 1px 4px;
   margin: 0 2px;
   color: #222222;
@@ -256,7 +261,7 @@ li {
 }
 
 .meta-page-date {
-  @include text-size(16px, 14px, 12px, 12px);
+  @include text-size(15px, 14px, 12px, 12px);
   color: #555555;
   line-height: 0.8;
 }
