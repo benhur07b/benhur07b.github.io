@@ -28,7 +28,7 @@ But just like those old clothes that you think were cool when you were younger, 
 
 You see, if you disagree with the idea of closed-source software or feel disdain towards software companies that earn money while hiding their source code, the best way to show your disapproval, the best form of dissent, and the best way to liberate yourself is **NOT** by using and distributing pirated copies of their software -- **IT'S BY DISREGARDING THEIR PRODUCTS AND EMBRACING FREE AND OPEN SOURCE SOFTWARE (FOSS)**.
 
-If you want to stick it to the Man, be a rebel, and don't mind living a bit dangerously, then the FOSS life just might be for you.
+If you want to stick it to the Man; if you want to be a rebel; and if you don't mind living a bit dangerously, then the FOSS life just might be for you.
 
 Let's go through two reasons why you are better off using FOSS than pirated software.
 
