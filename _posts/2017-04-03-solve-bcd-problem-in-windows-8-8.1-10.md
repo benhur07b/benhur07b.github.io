@@ -25,7 +25,7 @@ If you don't have the installation disk with you, you can download ISOs [here](h
 
 **2. Change your BIOS/UEFI settings so that your OS has the same Boot Mode as your installation media**
 
-This is **very** important. If your OS uses UEFI, you should repair it with a EUFI installation media booted via UEFI BIOS. If your OS was installed using Legacy BIOS, you should use a non-UEFI installation media booted via Legacy BIOS.
+This is **very** important. If your OS uses UEFI, you should repair it with a UEFI installation media booted via UEFI BIOS. If your OS was installed using Legacy BIOS, you should use a non-UEFI installation media booted via Legacy BIOS.
 
 There are several ways to access your UEFI/BIOS settings depending on your computer maker and model. F2 and F8 are common ones. You can always check with your manufacturer if you're unsure or you can wait until you get a BSOD (like the first picture in this post) and press ESC.
 

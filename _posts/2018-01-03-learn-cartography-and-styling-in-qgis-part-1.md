@@ -2,7 +2,7 @@
 layout: post
 title: "Learn Cartography and Styling in QGIS through Basketball Visualization (Part 1): Creating Shot Charts using Rule-based Symbology"
 description: Part 1 of a series of posts focused on teaching cartography and styling in QGIS by creating visualizations for basketball. In this post, we'll look at Rule-based symbologies and it can be used for creating basketball shot charts.
-tags: [foss4g, qgis, how-to, cartography]
+tags: [foss4g, qgis, how-to, cartography, basketball, courtvisionph]
 pinned: false
 comments: true
 og_type: article
