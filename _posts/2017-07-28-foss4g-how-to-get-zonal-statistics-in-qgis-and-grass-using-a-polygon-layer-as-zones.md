@@ -29,7 +29,7 @@ The Zonal statistics plugin is a Core plugin in QGIS 2.18.XX that allows the use
 
 Check [this post](https://benhur07b.github.io/2017/07/14/qgis-plugins.html) if you need help with installing/activating plugins.
 
-Once activated, the plugin can be accessed via ```Raster -> Zonal statistics -Zonal statistics```.
+Once activated, the plugin can be accessed via ```Raster -> Zonal statistics -> Zonal statistics```.
 
 <div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/zonal-stats-cropped.png"></div>
 
