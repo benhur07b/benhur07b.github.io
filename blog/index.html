@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
+{% if paginator.previous_page == nil %}
 <div class="container">
   {% include pinned-posts.html %}
 </div>
+{% endif %}
 
 <div class="container">
     {% include paginated-posts.html %}

@@ -1,4 +1,5 @@
-<a href="{{ post.url }}"><p class="post-archive-title">{{ post.title }}</p></a>
+<a href="{{ post.url }}"><span class="post-archive-title">{{ post.title }}</span></a>
+<p></p>
 <p class="meta-page-date">{{ post.date | date_to_string}}  ᛫ {{ post.content | number_of_words | divided_by: 300 | plus: 1 }} min read</p>
 <p>
   {% for tag in post.tags %}
