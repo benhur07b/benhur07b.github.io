@@ -11,7 +11,7 @@ image:
   twitter: /media/bnhr-qgis-bball.png
 ---
 
-In the [previous post](https://benhur07b.github.io/2018/01/03/learn-cartography-and-styling-in-qgis-part-1.html), we created shot charts using Rule-based symbology in QGIS. In this post, we'll take a look at how we can turn those shot charts into printable maps liske this:
+In the [previous post](https://benhur07b.github.io/2018/01/03/learn-cartography-and-styling-in-qgis-part-1.html), we created shot charts using Rule-based symbology in QGIS. In this post, we'll take a look at how we can turn those shot charts into printable maps like this:
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/shotchart.png"></div>
 
