@@ -163,4 +163,4 @@ Congratulations! You should now have a ready-to-print PNG file like the one belo
 ### Final Thoughts
 Those are just the basics of map-making in QGIS using the Map Composer. With a bit of practice, creativity, and familiarity, greater and more beautiful maps can be created in QGIS. For some inspiration, you can check out [Map Examples from the QGIS site](https://www.qgis.org/en/site/about/screenshots.html).
 
-Stay tuned for the next part of this series where we'll look at adding Labels to Symbology. Cheers!
+Stay tuned for the next part of this series where we'll look at creating a Hot Spot map and adding Labels to Symbology. Cheers!
