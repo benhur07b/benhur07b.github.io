@@ -41,6 +41,11 @@
   @include icon-color(#333333, #6e5494)
 }
 
+.contact-in {
+  margin: 0 10px;
+  @include icon-color(#333333, #0077b5)
+}
+
 .share-twitter {
   @extend .icon-padding;
   @include icon-color(#4099ff, #222222);
