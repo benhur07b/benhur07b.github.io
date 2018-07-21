@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pagpapakilala sa QGIS: Unang Parte - Isang Marahang Pagpapakila sa GIS (Introduction to QGIS: Part 1 - A Gentle Introduction to GIS)"
-description: Unang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba.
+description: Unang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba. Sa parteng ito, tatalakayin at ipapakilala ang mas pangkalahatang paksa ng GIS.
 tags: [foss4g, qgis, filipino, gis, map-projections]
 pinned: true
 comments: true
