@@ -6,6 +6,9 @@ tags: [pgAdmin, xubuntu, '16.04']
 pinned: false
 comments: true
 og_type: article
+image:
+  facebook: /media/bnhr-600-bg.png
+  twitter: /media/bnhr-600-bg.png
 ---
 
 pgAdmin4 is a rewrite of pgAdmin3 built using Python, javascirpt, and jQuery. It allows for pgAdmin to be accessed locally or via webserver. Here's how you can install it in Xubuntu 16.04.

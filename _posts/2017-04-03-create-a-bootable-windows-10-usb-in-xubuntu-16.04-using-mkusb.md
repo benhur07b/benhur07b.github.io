@@ -6,6 +6,9 @@ tags: [windows, xubuntu, '16.04']
 pinned: false
 comments: true
 og_type: article
+image:
+  facebook: /media/bnhr-600-bg.png
+  twitter: /media/bnhr-600-bg.png
 ---
 
 ### Requirements

@@ -7,8 +7,8 @@ pinned: true
 comments: true
 og_type: article
 image:
-    facebook: /media/bnhr-600px-wt.png
-    twitter: /media/bnhr-600px-wt.png
+    facebook: /media/bnhr-600-bg.png
+    twitter: /media/bnhr-600-bg.png
 ---
 
 Ito ay ang unang parte sa isang serye kung saan kikilalanin natin ang QGIS at kung anu-anong mga bagay ang maari nating gawin dito. Hindi naman ito bago. Napakaraming mga lathala sa internet kung saan maari tayong matuto tungkol sa QGIS. Halimbawa ay ang dokumentasyon at mga materyales sa [website ng QGIS mismo](https://qgis.org/en/site/forusers/index.html).

@@ -6,6 +6,9 @@ tags: [qgis, foss4g, python]
 pinned: false
 comments: true
 og_type: article
+image:
+  facebook: /media/bnhr-600-bg.png
+  twitter: /media/bnhr-600-bg.png
 ---
 
 If you did not create your QGIS plugin using the latest version of *QGIS Plugin Builder*, you might find yourself encountering this error when running your plugin in QGIS specially if you have a resources file for images/logos that you included in your plugin.

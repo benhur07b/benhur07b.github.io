@@ -6,6 +6,9 @@ tags: [foss, windows]
 comments: true
 pinned: false
 og_type: article
+image:
+  facebook: /media/bnhr-600-bg.png
+  twitter: /media/bnhr-600-bg.png
 ---
 
 Working in an environment where a majority of the computers are running Windows when you're using Linux is exciting and a bit frustrating at times. Recently, one of our computers (running Windows 8) at work was used as a make-shift file server so that everyone can connect and check the files there.

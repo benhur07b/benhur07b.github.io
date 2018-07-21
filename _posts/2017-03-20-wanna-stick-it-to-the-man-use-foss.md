@@ -6,6 +6,9 @@ tags: [foss]
 pinned: true
 comments: true
 og_type: article
+image:
+  facebook: /media/bnhr-600-bg.png
+  twitter: /media/bnhr-600-bg.png
 ---
 
 > "Why pay for software when you can pirate it?"
