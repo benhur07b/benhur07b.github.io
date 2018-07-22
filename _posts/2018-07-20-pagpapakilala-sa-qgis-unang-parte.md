@@ -13,9 +13,9 @@ image:
 
 Ito ay ang unang parte sa isang serye kung saan kikilalanin natin ang QGIS at kung anu-anong mga bagay ang maari nating gawin dito. Hindi naman ito bago. Napakaraming mga lathala sa internet kung saan maari tayong matuto tungkol sa QGIS. Halimbawa ay ang dokumentasyon at mga materyales sa [website ng QGIS mismo](https://qgis.org/en/site/forusers/index.html).
 
-Siguro ang pinagkaiba nito ay isinulat ito sa wikang Filipino sa pagbabakasakali na mas madali itong maintindihan at mas maging kaaya-aya sa mga kapwa ko Pilipino at upang mas marami rin ang maenganyong magbasa at matuto tungkol sa QGIS at sa FOSS4G (Free and Open Source Software for Geospatial). Kayo ay malayang isalin ito sa inyong mga wika kung inyong nais. Paumanhin na din kung hindi ako ganun kagaling o katatas sa Filipino. Bikol (Ligao City represent!) ang pangunahing wika ko noong bata ako at mas nasanay na rin akong gumamit ng Ingles pagdating sa pagsusulat.
+Siguro ang pinagkaiba nito ay isinulat ito sa wikang Filipino sa pagbabakasakali na mas madali itong maintindihan at mas maging kaaya-aya sa mga kapwa ko Pilipino at upang mas marami rin ang ma-enganyong magbasa at matuto tungkol sa QGIS at sa FOSS4G (Free and Open Source Software for Geospatial). Kayo ay malayang isalin ito sa inyong mga wika kung inyong nais. Paumanhin na din kung hindi ako ganun kagaling o katatas sa Filipino. Bikol (Ligao City represent!) ang pangunahing wika ko noong bata ako at mas nasanay na rin akong gumamit ng Ingles pagdating sa pagsusulat.
 
-Ang unang parte na ito ay tatalakay sa mas pangkalahatang paksa ng Geographic Information Systems o GIS bago tayo tumungo sa QGIS sa mga susunod na parte. Ano nga ba ang mga pangunahing konsepta na kailangan nating matutunan tungkol sa GIS?
+Ang unang parte na ito ay tatalakay sa mas pangkalahatang paksa ng Geographic Information Systems o GIS bago tayo tumungo sa QGIS sa mga susunod na parte. Ano nga ba ang mga pangunahing konsepto na kailangan nating matutunan tungkol sa GIS?
 
 
 ## Ano ang Geographic Information System (GIS)?
@@ -33,7 +33,7 @@ Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang ga
 
 * **```Software```**: Ito ay ang mga programs at applications (sa kompyuter, cellphone, o sa internet) na ginagamit upang magampanan ang mga tungkulin ng GIS.
 
-* **```Method```**  Ito ay tumutukoy sa sining at siyensya sa likod ng GIS -- paano ginagawa ang mapa, mga pormyula sa pagsusuri, atbp.
+* **```Method```**: Ito ay tumutukoy sa sining at siyensya sa likod ng GIS -- paano ginagawa ang mapa, mga pormyula sa pagsusuri, atbp.
 
 * **```Data```**: Ito ay mga impormasyon na ginagamit sa GIS na maaring mayroon o walang kaakibat na lokasyon *(hal: pangalan ng tao, lokasyon ng bahay, lawak ng lupa, atbp)*.
 
@@ -41,7 +41,7 @@ Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang ga
 
 *```Sapagkat ang GIS ay isang sistema, hindi ito magiging matagumpay kung may kakulangan sa mga sangkap nito.```*
 
-**Halimbawa:** Kahit mayroon tayong ng pinakabagong software kung hindi naman ito kayang patakbuhin ng kompyuter natin, hindi rin natin ito magagamit. Pwede rin na bago ang software at kompyuter natin ngunit hindi naman kumpleto o maganda ang datos na mayroon tayo kaya hindi rin magiging maganda ang kalalabasan ng pagsusuri gamit ang GIS. O kaya naman ay kumpleto ang software, hardware, at datos natin subalit wala sa atin ang may kakayahang gumamit ng GIS, di pa rin magiging matagumpay ang ating proyekto o kung ano man ang nais nating makamit gamit ang GIS.
+**Halimbawa:** Kahit mayroon tayo ng pinakabagong software kung hindi naman ito kayang patakbuhin ng kompyuter natin, hindi rin natin ito magagamit. Pwede rin na bago ang software at kompyuter natin ngunit hindi naman kumpleto o maganda ang datos na mayroon tayo kaya hindi rin magiging maganda ang kalalabasan ng pagsusuri gamit ang GIS. O kaya naman ay kumpleto ang software, hardware, at datos natin subalit wala sa atin ang may kakayahang gumamit ng GIS, di pa rin magiging matagumpay ang ating proyekto o kung ano man ang nais nating makamit gamit ang GIS.
 
 Sa aking opinyon, ang tao na marahil ang pinaka-importanteng parte ng GIS. Kapag nagkaroon ng kakulangan sa ibang parte ng GIS, ang taong magaling at maalam sa GIS ay kayang punan ang kakulangan na ito gamit ang kanyang karunungan, karanasan, at pagkamalikhain.
 
