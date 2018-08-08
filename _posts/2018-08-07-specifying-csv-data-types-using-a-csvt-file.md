@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using a .csvt file to specify CSV column data type when loading them in QGIS"
+title: "Using a .csvt file to specify CSV column data type when loading a CSV in QGIS"
 description: Make sure that the data types of your CSVs are read correctly by QGIS when using Add Vector Layer or dragging the data into QGIS.
 tags: [foss4g, qgis, csv, csvt]
 pinned: false
