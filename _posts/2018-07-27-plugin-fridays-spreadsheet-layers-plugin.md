@@ -15,7 +15,7 @@ I've discussed about how powerful, and sometimes underutilized, QGIS plugins are
 
 If you don't know how to install plugins yet, you can check-out [this post](https://benhur07b.github.io/2017-07-14-qgis-plugins.html).
 
-This week, I'll take a look at a simple yet powerful (aren't all QGIS plugins like that?) QGIS plugin: the Spreadsheets Layers plugin.
+This week, I'll take a look at a simple yet powerful (aren't all QGIS plugins like that?) QGIS plugin: the **```Spreadsheets Layers```** plugin.
 
 ## The Plugin
 

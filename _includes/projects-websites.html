@@ -1,24 +1,3 @@
-<h3 class="text-header">Projects and Repos</h3>
-<ul>
-  {% assign sorted_repos = site.github.public_repositories  | sort: 'updated_at' | reverse %}
-  <!-- {% assign sorted_repos = site.github.public_repositories %} -->
-  {% for repository in sorted_repos limit: 10 %}
-    <li><p><span class="project-name"><a href="{{ repository.html_url }}">{{ repository.name }}</a></span>
-      <br>
-      <!-- <span class="footer-text">(last updated {{ repository.updated_at | date_to_string }})</span>
-      <br> -->
-      {{ repository.description }}
-      {% if repository.fork == true %}
-        <em>(forked)</em>
-      {% endif %}
-      </p>
-    </li>
-  {% endfor %}
-</ul>
-<p><a href="https://github.com/benhur07b?tab=repositories"><u>See more...</u></a></p>
-</section>
-<br>
-
 <section id="webdevs">
   <h3 class="text-header">Websites developed</h3>
   <div class="container-projects">
