@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Basemaps! in QGIS"
-description:
+description: Basemaps provide context, character, and personality to your maps plus they're now so easy to add in QGIS. :)
 tags: [foss4g, qgis, qgis3, gis, basemaps]
 pinned: false
 comments: true
