@@ -25,7 +25,7 @@ As the case was, things didn't go according to plan. Injuries and inconsistent p
 
 Still, not everything was bad for Minnesotta last season (*I tell myself this every year*). KAT had a historic season. Rubio's late-season play was inspiring. There are a lot of things there to work on for future success. Let's take a look at the specifics.
 
-# The Good
+## The Good
 
 ### KAT was a MONSTER
 There's now no doubt that KAT has emerged as the alpha of this pack of Wolves and he had himself a historic season to show for it. KAT followed up his ROY season with a sophomore campaign averaging 25.1pts, 12.3rebs, 2.7asts with a .582/.367/.832 shooting line. The last player to average [25 and 12](http://bkref.com/tiny/iRIzS) was Kevin Love in 2013-14. If you include 3pt shooting, KAT and Love are the only players in NBA history to average [25pts and 12rebs while shooting at least .360 from three](http://bkref.com/tiny/pvGwc).
@@ -64,7 +64,7 @@ Minnesotta had a [Top-10 Offense last season](http://www.basketball-reference.co
 
 Offense will not be a problem for Minnesotta as they have talented scorers (see KAT, Wiggins, Zach, Shabazz) and creative playmakers (see Rubio, Dunn) on the team. It's on the other side of the court that they really have to improve.
 
-# The Bad
+## The Bad
 
 ### Wiggins' lack of peripheral stats
 *I over-reached for Wiggins in my fantasy leagues in hopes that he'll average more peripheral stats this season. He didn't.*
@@ -163,7 +163,7 @@ Dead last at 3-pointers made per game (7.3), 3-pointers attempted per game (21.0
 
 Of course Houston has a very different system than the Wolves and unlike D'Antoni, Thibs has never been known to love the 3-point shot but in an era where so much focus and attention has been given to the 3-pointer as one of the most efficient shot in basketball (along with shots 0-3 ft from the basket), the Wolves should try to take advantage of it. They don't need to be like the Rockets or Warriors and attempt 30+ 3-pointers a game, they can try to follow the Spurs' formula and focus on accuracy and efficiency. San Antonio attempts just 25.1 3-pointers a game but they make up for it by shooting .391 from three. 26.9% of the Spurs' 3-point attempts are "Pop-special" corner 3-pointers which they make 43.2% of the time.
 
-# The Ugly
+## The Ugly
 
 ### Bottom-5 Defense
 Was this team really coached by Tom Thibodeau? The defensive-master Tom Thibodeau? The same one who helmed Chicago's Top-5 defense from 2010-2014? I'm not putting all the blame on Thibs as the carpenter is only as good as his tools and there were times last season that the players seemed lost on defense. If the team wants to succeed, the players and the front office has to come together to improve the team's defense by improving their individual and team defense (for the players) or bringing in players who can help (for the front-office).

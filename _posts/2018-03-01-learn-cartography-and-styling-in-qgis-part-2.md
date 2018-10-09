@@ -2,7 +2,7 @@
 layout: post
 title: "Learn Cartography and Styling in QGIS through Basketball Visualization (Part 2): The Print Composer/Layout"
 description: Part 2 of a series of posts focused on teaching cartography and styling in QGIS by creating visualizations for basketball. In this post, we'll dive into the heart of map-making in QGIS -- the QGIS Print Composer.
-tags: [foss4g, qgis, how-to, cartography, basketball, courtvisionph]
+tags: [foss4g, qgis, qgis3, how-to, cartography, basketball, courtvisionph]
 pinned: false
 comments: true
 og_type: article
@@ -27,7 +27,6 @@ Let's create a new layout/composer and name it ```basketball```.
 Creating or opening a print layout opens that Print Composer/Layout window.
 
 ## The Print Composer Window
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/print-composer-window.png"></div>
 
 The Print Composer/Layout window is composed of a canvas, a menu bar, toolbars, and a side pane.
@@ -64,7 +63,6 @@ The Print Composer/Layout window is composed of a canvas, a menu bar, toolbars, 
 
 </div>
 
-
 ## Creating a Map with the Print Composer
 Now let's create an actual map that we can print using the Map composer.
 
@@ -89,7 +87,6 @@ Now let's add our map to the canvas via  ```Add Item -> Add Map``` or by clickin
 After adding the map, we can place it anywhere on the canvas and change its size or zoom level by changing its scale property. Other aspects of the map can also be edited in the ```Item Properties``` tab.
 
 <div class="col-full img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/edit-map.gif"></div>
-
 
 ### Add Map title
 Every map needs a title. Let's add one to ours using ```Add Item -> Add Label``` or by clicking the Add Label button on the left toolbar. We can add a label for the title and another for the subtitle.
@@ -160,7 +157,7 @@ Once we are satisfied with the layout of our map, we can export it to an image, 
 Congratulations! You should now have a ready-to-print PNG file like the one below:
 <div class="col-full img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/shot-chart-up.png"></div>
 
-### Final Thoughts
+## Final Thoughts
 Those are just the basics of map-making in QGIS using the Map Composer. With a bit of practice, creativity, and familiarity, greater and more beautiful maps can be created in QGIS. For some inspiration, you can check out [Map Examples from the QGIS site](https://www.qgis.org/en/site/about/screenshots.html).
 
 Stay tuned for the next part of this series where we'll look at creating a Hot Zones map and adding Labels to Symbology. Cheers!

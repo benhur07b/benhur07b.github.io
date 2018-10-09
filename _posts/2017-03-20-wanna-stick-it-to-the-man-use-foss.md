@@ -35,8 +35,7 @@ If you want to stick it to the Man; if you want to be a rebel; and if you don't 
 
 Let's go through two reasons why you are better off using FOSS than pirated software.
 
-
-### PIRACY CAN/WILL GET YOU IN TROUBLE
+## PIRACY CAN/WILL GET YOU IN TROUBLE
 > "Piracy is stealing. Stealing is a against the law. Piracy is a crime."
 >
 > -- <cite>that anti-piracy ad</cite>
@@ -55,9 +54,7 @@ Sadly, these reasons will not allow you to escape liability from the law if you'
 
 As to numbers 3 and 4 above, if you think that the software is too expensive, or that proprietary software companies are charging too much, or that it's unfair for others to require you to use proprietary software for "compatability reasons" just because it's what they're using (even though they might not be using a legit copy), then let me tell you something: **USING PIRATED SOFTWARE IS NOT THE SOLUTION BECAUSE...**
 
-
-### PIRATED SOFTWARE PROPAGATE THE STATUS QUO, FOSS IS A REVOLUTION
-
+## PIRATED SOFTWARE PROPAGATE THE STATUS QUO, FOSS IS A REVOLUTION
 Here's the status quo: proprietary software holds an advantage over FOSS in terms of the number of users and acceptance. This is the reason why job openings require proficiency in "MS Office" applications or why reports are required to be submitted in ".doc or .docx" format as if Word is the only Word Processor in the world and its proprietary document format is the best in the world *(NO on both counts)*. If you think this is a problem and you want to change it, then don't pirate software. Use FOSS instead.
 
 Our dependency on proprietary (and closed-source) software is deeply ingrained our society. As kids, most of us get introduced to our first computer running Windows OS (or macOS if you were priveleged enough). At a young age, we are taught to use proprietary software almost exclusively. I remember that the computer literacy program for graduating elementary school students at our city taught us to use Windows XP and Microsoft Office XP but never mentioned anything about FOSS alternatives. I don't know if there is a primary or elementary school here in the Philippines that teaches its students about FOSS or one that primarily uses FOSS but I hope there is. By the time you get to high school, proprietary software is all that you know. This is also the time you start finding out about pirated software which is expected given the circumstances.

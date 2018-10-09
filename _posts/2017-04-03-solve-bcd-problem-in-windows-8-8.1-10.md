@@ -16,7 +16,7 @@ You've probably encountered the image above or one of its iterations while booti
 
 Going back to the BCD error, before you bring your computer to a service center and get charged for its repair, you can try this DIY fix first.
 
-### What you'll need
+## What you'll need
 **1. Windows installation media/recovery disk (e.g. DVD or USB)**
 
 If you don't have the installation disk with you, you can download ISOs [here](https://www.microsoft.com/en-us/software-download/) or use the Windows Media Creation Tool if you're using a Windows machine. If you're using a Linux machine, you can check our how to make a bootable Windows USB on Linux [here]({{ site.baseurl }}/2017/04/03/how-to-create-a-bootable-windows-10-usb-in-xubuntu-16.04-using-mkusb.html)
@@ -29,8 +29,7 @@ This is **very** important. If your OS uses UEFI, you should repair it with a UE
 
 There are several ways to access your UEFI/BIOS settings depending on your computer maker and model. F2 and F8 are common ones. You can always check with your manufacturer if you're unsure or you can wait until you get a BSOD (like the first picture in this post) and press ESC.
 
-### How to do the fix
-
+## How to do the fix
 **1. Insert the installation media (USB or DVD).**
 
 **2. Make sure you have the correct Boot Mode enabled.**
@@ -130,7 +129,6 @@ Add installation to boot list? Yes<Y>/No<N>/All<A>:
 **8. Enter Y or Yes in the command prompt**
 
 This should result in a ```The operation completed successfully``` message.
-
 
 **9. Reboot your computer.**
 

@@ -2,7 +2,7 @@
 layout: post
 title: "#PluginFridays: Spreadsheet Layers plugin"
 description: A look at some of the awesome plugins that make QGIS amazing. This week -- the Spreadsheet Layers plugin.
-tags: [foss4g, qgis, plugin, plugin-fridays]
+tags: [foss4g, qgis, qgis3, plugin, plugin-fridays]
 pinned: false
 comments: true
 og_type: article
@@ -13,12 +13,11 @@ image:
 
 I've discussed about how powerful, and sometimes underutilized, QGIS plugins are in a [previous post](https://benhur07b.github.io/2017-07-14-qgis-plugins.html). In this series, which I'm aptly calling **```#PluginFridays```**, I would like to highlight some of the plugins that I use in hopes that more people become aware of them and the power they bring to QGIS.
 
-If you don't know how to install plugins yet, you can check-out [this post](https://benhur07b.github.io/2017-07-14-qgis-plugins.html).
+If you don't know how to install plugins yet, you can check-out [this post for QGIS 2](https://benhur07b.github.io/2017-07-14-qgis-plugins.html) and [this post for QGIS 3](https://benhur07b.github.io/2018-10-08-qgis-plugins-3.0.html).
 
 This week, I'll take a look at a simple yet powerful (aren't all QGIS plugins like that?) QGIS plugin: the **```Spreadsheets Layers```** plugin.
 
 ## The Plugin
-
 You already probably know that you can load vector files, raster files, and even delimited text files like comma-separated value (CSV) files or tab-separated value (TSV) files in QGIS but did you know that you can also load spreadsheet files (like .xls and .xlsx from MS Excel and .ods from LibreOffice)? This is done through the **```Spreadsheet Layers```** plugin.
 
 You can install the **```Spreadsheet Layers```** plugin via **```Plugins -> Manage and Install Plugins```**.
@@ -32,7 +31,6 @@ You can install the **```Spreadsheet Layers```** plugin via **```Plugins -> Mana
 * **Code Repository:** [https://github.com/camptocamp/QGIS-SpreadSheetLayers](https://github.com/camptocamp/QGIS-SpreadSheetLayers)
 
 ## How to Use
-
 The **```Spreadsheet Layers```** plugin can load sheets with or without geometry attributes. The plugin also allows the user load a worksheet from a spreadsheet with multiple worksheets.
 
 For example, we have a spreadsheet file (```SAMPLE SPREADSHEET.ods```) with two sheets -- one (```Sample Spreadsheet NO GEOM```) is just a list of Names and Ages of individuals and has no geometry attribute while the other (```Sample Spreadsheet WITH GEOM```) is a list of households with their latitude and longitude.
@@ -65,7 +63,6 @@ Both sheets can be loaded in QGIS using the **```Spreadsheet Layers```** plugin.
 
     <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-27-pluginfridays-spreadsheet-layers-plugin/no-geom-attr.png" alt="Add Spreadsheet Layer"></div>
 
-
 ### Loading a Spreadsheet Layer With Geometry
 1. Go to **```Layer -> Add Layer -> Add spreadsheet layer```**.
 
@@ -90,9 +87,7 @@ Both sheets can be loaded in QGIS using the **```Spreadsheet Layers```** plugin.
 
     <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-27-pluginfridays-spreadsheet-layers-plugin/geom-attr.png" alt="Add Spreadsheet Layer"></div>
 
-
-# Other plugin options
-
+## Other plugin options
 When present, the plugin automatically detects headers in the sheet to use as headers for the attribute table. It also detects the data type to use (String, Real, Integer, etc). If needed, you can select the data type of the field directly in the plugin.
 
 **```Number of lines to ignore```** is useful when the header is not the first line of the sheet. This option will skip the number of lines indicated and use the first row it encounters after skipping lines as the headers. For example, you have metadata on the first 3 rows, a blank line on the 4th, and the header and data are found starting from the 5th row like the one below:

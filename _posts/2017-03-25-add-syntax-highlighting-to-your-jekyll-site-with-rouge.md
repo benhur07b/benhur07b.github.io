@@ -15,17 +15,14 @@ Syntax highlighting is important (especially for programming blogs) because it i
 [**Rouge**](https://github.com/jneen/rouge) is a pure-ruby syntax highlighter and has been the default highlighter for Jekyll since Jekyll 3 (replacing pygments). You can add syntax highlihting using rouge to your Jekyll site in just a few steps.
 
 
-### 1. Install the kramdown and rouge gems
-
+## 1. Install the kramdown and rouge gems
 Make sure that the **kramdown** and **rouge** (that's rouge *not* rogue) gems are installed.
 
 ```shell
 gem install kramdown rouge
 ```
 
-
-### 2. Edit your *_config.yml* settings.
-
+## 2. Edit your *_config.yml* settings.
 Add the following lines to your *_config.yml* file if they're not there already.
 
 ```
@@ -44,9 +41,7 @@ highlighter: rouge
 
 By experience, my build times when using the first option are usually faster.
 
-
-### 3. Create a css file for the highlighting style you want
-
+## 3. Create a css file for the highlighting style you want
 Rouge comes built-in with **rougify**, a command-line tool that converts a style theme to a css file.
 
 You can see the available themes by entering:
@@ -78,9 +73,7 @@ If you saved the syntax highlighter stylesheet as **assets/css/syntax.css** then
 <link href="{{site.baseurl}}/assets/css/syntax.css" rel="stylesheet" >
 ```
 
-
-### 4. Add syntax highlighting to your posts
-
+## 4. Add syntax highlighting to your posts
 Here's the fun part.
 
 If you're using markdown to create your posts, you can add syntax highlighting by enclosing the code-snippet using three backticks (```). Aditionally, you can set the language of the code snippet after the opening three backticks.
@@ -119,9 +112,7 @@ You can check what languages are supported by entering:
 rougify list
 ```
 
-
-### 5. What if I want to show (```) in my code-blocks?
-
+## 5. What if I want to show (```) in my code-blocks?
 Let's say you want to show ``` in your code-block like I did in #4 above.
 
 What you need to do is indent the ``` in your markdown file by at least **4** spaces.
@@ -142,9 +133,7 @@ It will then render to:
       print('Yes')
     ```
 
-
-### 6. How can I make code-blocks or code-snippets work inside GFM (Github Flavored Markdown) lists?
-
+## 6. How can I make code-blocks or code-snippets work inside GFM (Github Flavored Markdown) lists?
 Codeblocks can sometimes break ordered lists (i.e. the list always returns to 1). To prevent this, you can do the following.
 
 

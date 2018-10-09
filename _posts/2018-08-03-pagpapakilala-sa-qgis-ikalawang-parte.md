@@ -2,7 +2,7 @@
 layout: post
 title: "Pagpapakilala sa QGIS: Ikalawang Parte - Ang QGIS (Introduction to QGIS: Part 2 - QGIS)"
 description: Ikalawang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba. Sa parteng ito, tatalakayin kung ano ang QGIS.
-tags: [foss4g, qgis, filipino, gis]
+tags: [foss4g, qgis, qgis3, filipino, gis]
 pinned: false
 comments: true
 og_type: article
@@ -14,11 +14,9 @@ image:
 Sa [huling lathala](https://benhur07b.github.io/2018/07/20/pagpapakilala-sa-qgis-unang-parte.html), tinalakay ang mas pangkalahatang konsepto ng GIS. Ngayon, tutungo na tayo sa pagtalakay ng QGIS.
 
 ## Ano ang QGIS? (What is QGIS?)
-
 Ang [QGIS](https://qgis.org) ay isang **```malaya```** at **```bukas```** (free and open source) na software. Ito ay maaaring gamitin sa iba't ibang plataporma (Windows, Mac, Linux, Android), maasahan, at patuloy na nililinang ng mga developers at ng komunidad. Ito ay nasa ilalim ng _GNU GPL (General Public License) v2_ at isang opisyal na proyekto ng _Open Source Geospatial Foundation (OSGeo)_. Ito ay maaring i-download mula [dito](https://qgis.org/en/site/forusers/download.html).
 
 ### Malayang Software (Free Software)
-
 Ang ibig sabihin ng **```Free```** sa Free software ay mas malapit ang kahulugan sa salitang **```Malaya```** ng wikang Filipino kaysa sa salitang libre. Sabi nga: **```Free as in Freedom, not Free as in Free Beer.```** Sinasabing malaya ang Free software sapagkat pinagkakalooban ka nito ng mga kalayaan na inaasahang ipagkakaloob mo din sa ibang taong kapwa gumagamit ng nasabing software.
 
 Ayon sa [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html), ang Apat na Kinakailangan Kalayaan (Four Essential Freedoms) ng Malayang Software ay:
@@ -43,7 +41,6 @@ Walang nagsasabing bawal kang kumita gamit ang Free software. Sa katotohanan, ma
 Sinisimbolo ni Juan at ng kanyang recipe ang malayang software na nagbibigay sa atin ng kalayaang magpakilala ng pagbabago sa recipe ng adobo at ipamagagi ang recipe natin sa iba. Si Jose naman ay ang tipikal na proprietary software. Sa paglipas ng panahon, marahil ang adobo na nagmula sa recipe ni Juan ang maging mas masarap at dahil sa kakayahan niton magbago ayon sa panlasa ng mga tao. Ito din marahil ang mas tatangkilikin ng karamihan sapagkat kahit gaano natin kapaborito ang adobo, siguro'y hindi rin natin magugustuhan na lahat ng adobo sa mundo ay pare-pareho ang lasa.
 
 ### Bukas (Open Source)
-
 *```Ang malayang software ay bukas na software```*
 
 Sa isang **```bukas```** (open-source) na software, tayo ay malayang makita ang source code nito at malaman kung paano siya gumagana. Ang pagiging bukas ng software ay isang paraan upang matugunan ang Kalayaan 0 at Kalayaan 1 ng malayang software.
@@ -52,9 +49,7 @@ Sa isang **```bukas```** (open-source) na software, tayo ay malayang makita ang 
 
 Ang isang software na **```hindi bukas```** ay inihahalintulad ko sa binilo mong **```kotse na hindi mo pwedeng buksan ang hood kung saan nakalagay ang makina at iba pang parte nito```**. Kapag nagkaroon ng sira ang kotse, kailangan mo itong dalhin sa iba para lamang pabuksan ang hood upang makita nila ang kamalian at maayos ito. Kumpara dito, ang **```bukas```** na software ay **```isang kotse na malaya kang tingnan kung ano ang nangyayari sa makina at sa iba pang parte nito kapag nagkaroon ng sira```**. Maari mong ayusin sa sarili mo ang sira o dalhin sa iba upang ipatingin at ipaayos ito. Siguro naman ay mas gugustuhin natin ang ikalawang kotse kaysa sa una.
 
-
 ## Ang Interface ng QGIS
-
 Ang interface ang bahagi ng software na kumukunekta sa tao at sa makinarya. Ito ay kung saan nagaganap ang interaksyon sa pagitan ng tagagamit at ng software. Dito, maaring magbigay ng input ang taga-gamit at ang software naman ay maaring magpakita ng mga resulta.
 
 Ang interface ng QGIS ay may anim na pangunahing bahagi. Ito ay ang:
@@ -70,13 +65,11 @@ Ang interface ng QGIS ay may anim na pangunahing bahagi. Ito ay ang:
 Mas marami pang impormasyon ukol sa interface ng QGIS ay maaaring makita [dito](https://docs.qgis.org/testing/en/docs/user_manual/introduction/qgis_gui.html).
 
 ### Menu bar
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/menubar.png" alt="Menu bar"></div>
 
 Ang menu bar sa QGIS ay katulad ng mga menu bar sa ibang programa. Dito makikita ang mga utos (commands) at bagay na kayang gawin (functions) ng QGIS.
 
 ### Toolbars
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/toolbar1.png"></div>
 
 Ang mga toolbar ay nagbibigay ng shortcut upang patakbuhin ang mga commands at functions ng QGIS.
@@ -93,7 +86,6 @@ Ang mga karaniwang toolbar na ginagamit ay:
 Ang mga toolbar ay maaring galawin at ilagay kung saan man sa QGIS interface. Maari silang ipwesto sa taas, baba, o sa gilid ng Map Canvas.
 
 ### Panels
-
 <div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/panels1.png"></div>
 
 <div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/panels2.png"></div>
@@ -112,7 +104,6 @@ Ang mga karaniwang toolbar na ginagamit ay:
 Katulad sa toolbars, ang mga panels ay  maaring galawin at ilagay kung saan man sa QGIS interface. Maari silang ipwesto sa taas, baba, o sa gilid ng Map Canvas.
 
 ### Map View/Map Canvas
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/mapcanvas.png"></div>
 
 Ito ang lugar kung saan makikita ang mapa/imahe ng mga layers.
@@ -122,7 +113,6 @@ Maaring palakihin, paliitin, at galawin ang mga mapa/imahe na nakikita dito
 Gumagamit ng On-the-Fly Coordinate Reference System Transformation (OTF) upang ang mga layers na parehong lugar ang ipinapakita ay maglapat kahit na hindi pareho ang coordinate reference system na gamit nila (IMPORTANTE. Tingnan ang [huling lathala](https://benhur07b.github.io/2018/07/20/pagpapakilala-sa-qgis-unang-parte.html))
 
 ### Status bar
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/statusbar.png"></div>
 
 Ang status bar ay nagbibigay ng impormasyon ukol sa map view o map canvas:
@@ -135,13 +125,11 @@ Ang status bar ay nagbibigay ng impormasyon ukol sa map view o map canvas:
 6. Nagpapakita sa gumagamit ng mga mensahe at kalagayan ng mga prosesong pinapatakbo.
 
 ### Locator
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/locator.png"></div>
 
 Isang napakamakapangyarihang kagamitan sa QGIS. Maaring gamitin ang locator upang maghanap ng mga layers, mga aksyon na kayang gawin, at mga proseso ng QGIS. Mainam gamitin kapg hindi mo alam kung saan hahanapin o ano ang pipindutin para sa aksyon na gusto mong mangyari sa QGIS.
 
 ### Others - Python Console
-
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/python-c2.png"></div>
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/python-c.png"></div>
 
@@ -153,18 +141,14 @@ Ang **```pyqgis```** ay isang [Python library para sa QGIS](https://docs.qgis.or
 
 Isa sa mga magagandang lugar upang matuto ng pyqgis para sa mga hindi programmers ay ang [blog posts](https://anitagraser.com/pyqgis-101-introduction-to-qgis-python-programming-for-non-programmers/) ni Anita Graser/underdarkGIS tungkol dito.
 
-
 ## User Profiles
-
 Ang user profiles ay isa sa mga bagong bagay na idinagdag sa QGIS 3.X. Ang bawat user profile ay may sarling settings, plugins, shortcuts na naka-save sa sarili nitong folder. Mainam itong gamitin kung maraming mga gagamit ng QGIS at iba-iba ang kanilang pangagailangan or nakasanayang shortcuts. Pwede rin itong gamitin ng isang user upang gumawa ng profile para sa mga natatanging gamit ng QGIS (halimbawa: isang profile na nakatuon sa remote sensing, isa na nakatuon sa pag-digitize, atbp).
 
 Maaring pumili ng user profiles sa pamamagitan ng **```Settings -> User Profiles```**. Ang folder ng aktibong user profile ay maaring buksan gamit ang **```Settings -> User Profiles -> Open Active Profile Folder```**.
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/user-profiles.png"></div>
 
-
 ## Ang mga QGIS Plugins
-
 Isa sa mga pinaka-mahalagang bahagi ng QGIS ay ang mga plugins. Sila ay nagbibigay ng karagdagang mga kakayahan at abilidad sa QGIS at gingagawang mas kapaki-pakinabang ito. Karamihan sa mga bagay na madalas akalain na hindi kaya ng QGIS ay nasasagot ng mga plugins. Ang mga plugins na ito ay likha din ng mga users ng QGIS at ang mga source code nila ay bukas sa publiko upang pag-aralan. Maari tayong tumulong sa pag-papaganda ng mga plugins o kaya ay gumawa ng sarili nating plugins upang ipamahagi sa ibang users.
 
 May **```dalawang uri```** ng plugins:
@@ -181,7 +165,6 @@ Mayroon ding **```dalawang paraan```** upang mag-install ng plugins sa QGIS:
 Maraming mga lathala sa internet na tumatalakay sa mga QGIS plugins. Dito mismo ay tinatalakay ko ito sa serye kong [#PluginFridays](http://localhost:4000/blog/tags.html#plugin-fridays).
 
 ## Mga Expressions sa QGIS
-
 Ang mga expressions sa QGIS ay ginagamit para sa mga gawain tulad ng pagpili ng features (selection), pag-sala ng features (filtering), at iba pang mga kompyutasyon (computations). Ang syntax o paraan ng pagbuo ng mga expressions ay katulad sa Structured Query Language (SQL). Ang mga pangunahing batayan ay:
 1. Ang mga pangalan ng fields o attributes ay nasa double quotes (hal. "Pangalan")
 2. Ang mga strings o characters (mga salita o letra) ay nasa single quotes (hal. 'Jose')
@@ -198,18 +181,14 @@ Ilan sa mga lugar kung saan pwedeng gamitin ang expressions ay sa **```Expressio
 
 <div class="col-lg-4 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp3.png"></div>
 
-
 ## Mga Layers sa Memorya
-
 Ang mga layers sa memorya (layers in memory) ay katulad ng mga normal na layers ngunit sila ay hindi permanente at hindi pisikal na naka-save sa kompyuter subalit ay naka-save sa memorya ng computer lamang. Sila ay kapakipakinabang kapag kailangan ng pansamantalang layers o kaya mga layers na di naman kailangan i-save bilang files. Sa QGIS, ang mga output ng processing ay madalas na nakalagay lamang sa memorya kung hindi direktang sasabihing i-save sila bilang files. Maari ring gumawa ng mga pansamantalang layers gamit ang **```Layer -> Create Layer -> New temporary scratch layer```**.
 
 Ang mga layers sa memorya ay pansamantala lamang at "nakakalimutan" ng QGIS kapag pinatay na ang QGIS. Sa madaling salita, kapag gumawa ka ng pansamantalang layer at pinatay mo ang QGIS, sa susunod na pagbukas mo nito ay wala na ang pansamantalang layer na iyon. Ang solusyon para di ito mangyari ay ang pag-gamit ng **```Memory Layer Saver```** na plugin. Gamit ito, maaring "maalala" ang mga layers sa memory na kasabay ng isang QGIS project kahit pagkatapos patayin ang QGIS.
 
 ```Laging tandaan na i-save ang mga layers bilang aktwal na files (.gpkg, .geojson, .shp) kung kailangan mo ng pisikal na kopya nito.```
 
-
 ## Paglagay ng layers sa QGIS
-
 Isa pang bagong dagdag sa QGIS 3.X ay ang pagkakaroon ng isang komprehensibong paraan para maglagay ng layers sa QGIS sa pamamagitan ng **```Data Source Manager```** na maaring buksan gamit ang **```CTRL + L```** o **```Layer -> Data Source Manager```**.
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/datasource.png"></div>
@@ -288,7 +267,6 @@ Kapag matagumpay na nakakonekta sa Geonode ng World Food Programme, maari nang m
 
 
 ## Sa Susunod na Kabanata
-
 At iyan ang munting pagpapakilala natin sa QGIS. Sana ay nabigyan kayo nito ng simple bagama't pangkalahatang pananaw sa kung ano ang QGIS. Sa mga susunod na lathala, mas bibigyan tuon at pansin natin ang mga partikular na kayang gawin ng QGIS at kung paano ito gamitin sa iba't ibang larangan.
 
 Hangang sa muli! Tagay!

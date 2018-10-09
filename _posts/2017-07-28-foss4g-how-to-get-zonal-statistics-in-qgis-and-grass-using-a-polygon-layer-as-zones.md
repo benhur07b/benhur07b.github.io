@@ -23,7 +23,6 @@ The data layers for this how-to are:
 
 We'll try to get the minimum, maximum, and average solar radiation values for each zone provided in our sample-polygons layer.
 
-
 ## Zonal statistics
 The Zonal statistics plugin is a Core plugin in QGIS 2.18.XX that allows the user to calculate statistics on pixels of a raster band that are within polygons/zones in a vector layer. It creates additional fields in the vector layer using a user-defined prefix to hold the calculated statistics which include the minimum value, maximum value, mean value, count, and sum. You can read more about it [here](https://docs.qgis.org/2.18/en/docs/user_manual/plugins/plugins_zonal_statistics.html).
 
@@ -54,7 +53,6 @@ If you open the attribute table of the sample-polygons layer, it should contain 
 
 <div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/qgis-attr-tab-2.png"></div>
 
-
 ## v.rast.stats
 The ```v.rast.stats``` module calculates univariate statistics from a raster map based on a vector map and uploads statistics to new attribute columns. You can read more about it [here](https://grass.osgeo.org/grass72/manuals/v.rast.stats.html). It can be accessed by typing ```v.rast.stats``` in the Command console or via ```Vector -> Update attributes -> Update area attributes from raster [v.rast.stats]```.
 
@@ -81,7 +79,6 @@ Click ```Run```
 If you open the attribute table of the sample-polygons layer, it should contain three additional fields named GHI_minimum, GHI_maximum, and GHI_average.
 
 <div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/grass-attr-tab-2.png"></div>
-
 
 ## Final thoughts
 If you check their values, the results obtained using ```Zonal statistics``` in QGIS and ```v.rast.stats``` in GRASS are the same. Only the names of the additional attribute columns/fields created are different.

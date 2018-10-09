@@ -17,9 +17,7 @@ Now, if you feel that these versions are outdated and you want to try the newer 
 
 I personally use virtualenvwrapper so that's what I'm going to show you here. First of all, make sure the virtualenvwrapper is already installed in your machine then follow the steps below.
 
-
-### 1. Install dependencies
-
+## 1. Install dependencies
 Install the following dependencies if they aren't already.
 
 ```shell
@@ -60,8 +58,7 @@ tk-dev             \
 zlib1g-dev
 ```
 
-### 2. Download the Python version that you want
-
+## 2. Download the Python version that you want
 ```shell
 wget https://www.python.org/ftp/python/X.X.X/Python-X.X.X.tgz
 ```
@@ -72,8 +69,7 @@ If you want to get Python 2.7.13 (the latest Python 2 version)
 wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
 ```
 
-### 3. Unpack, Configure, and Compile
-
+## 3. Unpack, Configure, and Compile
 The line below will unpack the contents of the archive to a Python-2.7.13 directory.
 
 ```shell
@@ -97,8 +93,7 @@ make
 sudo make install
 ```
 
-### 4. Test if the Python version was compiled successfully
-
+## 4. Test if the Python version was compiled successfully
 Remember where we installed our new Python version? Let's check if the compiler will run.
 
 Enter the following in your command line.
@@ -116,8 +111,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-### 5. Make a Virtual Environment using the version of Python you just installed.
-
+## 5. Make a Virtual Environment using the version of Python you just installed.
 ```shell
 mkvirtualenv --python=/location/where/you/installed/python <name-of-virtualenv>
 ```
@@ -131,7 +125,7 @@ mkvirtualenv --python=/usr/local/lib/python2.7.13/bin/python python2.7.13
 Upon making the virtual environment, you will be able to immediately start working on it.
 
 
-### 6. Test if the Python version in your virtual environment is correct.
+## 6. Test if the Python version in your virtual environment is correct.
 
 ```shell
 python
@@ -152,7 +146,7 @@ From here you can start developing using the Python version of your virtual envi
 
 <br>
 
-### Additional Stuff:
+## Additional Stuff:
 virtualenvwrapper has a lot of stuff that makes working with virtual environments easier. Some of these are:
 
 **To list the virtual environments on your machine**

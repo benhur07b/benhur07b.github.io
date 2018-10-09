@@ -2,7 +2,7 @@
 layout: post
 title: "Pagpapakilala sa QGIS: Unang Parte - Isang Marahang Pagpapakila sa GIS (Introduction to QGIS: Part 1 - A Gentle Introduction to GIS)"
 description: Unang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba. Sa parteng ito, tatalakayin at ipapakilala ang mas pangkalahatang paksa ng GIS.
-tags: [foss4g, qgis, filipino, gis, map-projections]
+tags: [foss4g, qgis, qgis3, filipino, gis, map-projections]
 pinned: true
 comments: true
 og_type: article
@@ -19,16 +19,12 @@ Ang unang parte na ito ay tatalakay sa mas pangkalahatang paksa ng Geographic In
 
 
 ## Ano ang Geographic Information System (GIS)?
-
 Ang Geographic Information System (GIS) ay isang sistema ng impormasyon kung saan ang gumagamit nito ay may kakayahang **```kumuha```**, **```magimbak```**, **```magbago```**, **```magmanipula```**, **```magsuri```**, at **```magpakita```** ng mga datos na may kaaikbat na impormasyon tungkol sa lokasyon na tinatawag ding ```geographically-referenced``` o ```spatially-referenced``` data. Ang GIS ay isang kagamitan na maaring gamitin upang sagutin ang ating mga katanungan na may kinalaman sa lugar o kaya ay lokasyon. Halimbawa: *```Ano ang pinaka-malapit na Jollibee sa bahay namin?```*, *```Ilan ang mga karinderya sa bayan namin?```*, *```Gaano kalayo ang paaralan ko sa mga ospital at istasyon ng pulis?```*
 
-
 ## Mga Parte at Tungkulin (Parts and Functions)
-
 Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang gampanan ang mga sumusunod na tungkulin:
 
 ### Mga Parte o Sangkap ng GIS
-
 * **```Hardware```**: Ito ay ang mga makinarya, instrumento, at iba pang aspetong pisikal (kompyuter, cellphone, atbp) na ginagamit upang magampanan ang mga tungkulin ng GIS.
 
 * **```Software```**: Ito ay ang mga programs at applications (sa kompyuter, cellphone, o sa internet) na ginagamit upang magampanan ang mga tungkulin ng GIS.
@@ -46,7 +42,6 @@ Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang ga
 Sa aking opinyon, ang tao na marahil ang pinaka-importanteng parte ng GIS. Kapag nagkaroon ng kakulangan sa ibang parte ng GIS, ang taong magaling at maalam sa GIS ay kayang punan ang kakulangan na ito gamit ang kanyang karunungan, karanasan, at pagkamalikhain.
 
 ### Mga Tungkulin ng GIS
-
 Ang isang GIS ay dapat kayang:
 
 * **```Kumuha```** ng datos mula sa tunay na mundo.
@@ -75,7 +70,6 @@ Ang **```spatial data```** ay tumutukoy sa datos na may kaakibat na impormasyon 
 Ang spatial data ay ginagamit upang kumatawan ng mga bagay o pangyayari sa loob ng GIS. May **```dalawang uri```** ng spatial data na maaring gamitin sa pagmodelo ng mga bagay o pangyayari sa GIS: ang **```raster data```** at **```vector data```**.
 
 ### Raster Data Type
-
 Ang raster data ay isang **```cell-based o pixel-based```** na pagkatawan ng mga bagay o pangyayari sa mundo. Ito ay binubuo ng mga hanay at haligi ng mga cells o pixels kung saan ang bawat cell ay kumakatawan sa isang geograpikal na rehiyon (ang laki nito ay depende sa resolusyon ng raster) habang ang halaga naman sa cell ay kumakatawan sa kondisyon o katangian ng rehiyon na nasasakupan ng cell.
 
 <div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/raster.png" alt="Raster"></div>
@@ -95,7 +89,6 @@ Kapag ang isang kamera o sensor ay kumukuha ng larawan ng isang eksena o lugar, 
 Ang bilang ng bands na mayroon ang isang imahe ay tinatawag na **```resolusyong ispektral```** (spectral resolution). Mas madami ang bands, mas mataas ang resolusyons ispektral. Kapag mayroon lamang isang band ang isang imahe, ito ay tinatawag na **```panchromatic```** o **```grayscale```**. Kadalasan ay mas mataas ang resolusyong ispasyal ng isang panchromatic na imahe kaysa sa multi-spectral na imahe na nagmula sa parehong sensor. Para sa mga panchromatic o grayscale na imahe, gumagamit ng false coloring upang lagyan ito ng kulay imbis na gumamit ng kumbinasyon ng mga bands. Ang panchromatic at multi-spectral na mga imahe ay pwede ding pagsamahin gamit ang prosesong tinatawag na **```pansharpening```** upang makabuo ng isang imaheng may kulay na mataas ang resolusyong ispasyal.
 
 ### Vector Data Type
-
 Ang vector ay kumakatawan sa mga bagay o pangyayari hindi bilang mga pixels ngunit bilang mga **```punto, linya, o hugis```** (points, polylines, or polygons). Mayroon ding kaakibat na **```attribute table```** ang vector data. Ang **```attribute table```** na ito ay nagbibigay karagdagang impormasyon tungkol sa mga punto, linya, o hugis na mayroon sa vector data. Bawat hilera (row) sa attribute table ay kumakatawan sa isang hugis sa vector data habang ang mga hanay (column) sa attribute table ay ang mga **```fields o attributes```** na nagtataglay ng impormasyon tungkol sa punto, linya, o hugis.
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/vector.png" alt="Vector file ng mga probinsya sa Pilipinas"></div>
@@ -112,7 +105,6 @@ Minsan, kinakailangan din ng mga espesyal na alituntunin na dapat sundin ng mga 
 ## Map Projections at Coordinate Reference Systems
 
 ### Iskala (Scale)
-
 Kapag tayo ay gumagawa ng mapa, hindi natin maiiwasan na paliitin ng mga bagay upang magkasya sila sa loob ng mapa. Dahil dito, ang sukat ng mga bagay sa mapa ay hindi pareho sa aktwal na sukat nila. Upang matugunan ito, gumagamit tayo ng **```iskala```** (map scale) upang malaman kung ano ang proporsyon sa pagitan ng sukat sa mapa at ang katumbas na aktwal na sukat. May tatlong paraan na karaniwang upang ipakita ng iskala ng mapa: gamit ang isang **```panumbasan```** (ratio scale o representative fraction), gamit ang isang **```grapikong iskala```** (graphic scale), at gamit ang **```berbal na iskala```** (verbal scale).
 
 <div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/scale.png"></div>
@@ -130,7 +122,6 @@ Ang isang mapa ay masasabing mayroong malaki o maliit na iskala. Bilang pamantay
 Isang paraan upang ikumpara ang iskala ng dalawang mapa na pareho ang sukat ay sa pamamagitan ng panumbasan nito. **```Ang panumbasan na mas maliit ay yung mas malaki ang denominator (o yung pangalawang numero)```** kaya sa ating halimbawa ang 1:1,000,000 ay mas maliit na iskala kaysa sa 1:10,000.
 
 ### Map Projections
-
 Ang globo ang tradisyunal na paraan upang ilarawan ang hugis ng mundo. Subalit, kahit na kayang mapanatili ng globo ang karamihan ng mga katangian ng mundo, sila ay mahirap dalhin at magagamit lamang sa maliliit na iskala. Upang matugunan ito, ginawa ang mga **```map projections```** upang mailagay ang mga lugar sa globo sa isang mapa.
 
 Ang **```map projections```** ay ginagamit upang ilatag ang ibabaw ng **```bilog na mundo```** o kaya ang isang bahagi nito sa isang **```patag```** (flat) na lalagyan *(hal: papel, screen ng kompyuter, mapa)*. Sa ibang salita, binabago ng map projections ang hugis ng mundo mula sa isang tatlong-dimensyunal (three-dimensional) na hugis (spheroid) patungo sa isang dalawang-dimensyunal (two-dimensional) na hugis (patag). Isang paraan upang mas mailarawan ang pangyayaring ito ay kung ihahalintulad natin ang mundo sa isang dalandan. Kapag ang dalandan ay binalatan, ang balat nito ay maaring ilatag na patag.
@@ -201,7 +192,6 @@ Isa pang paraan ng pag-uuri sa mga map projections ay ayon sa **```aspeto```** (
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/aspects.png"></div>
 
 ### Coordinate Reference Systems
-
 Ang coordinate reference system (CRS) ay tumutukoy, sa pamamagitan ng mga coordinates, kung saan sa mundo matatagpuan ang isang bagay. Ito ay maaring hatiin sa dalawang uri: ang Geographic CRS at ang Projected CRS.
 
 Ang **```Geographic CRS```** ay gumagamit ng latitude at longitude upang tukuyin ang lokasyon ng isang bagay sa mundo. Ang mga latitude ay mga linyang pahiga na kahilera ng ekwador (na humahati sa mundo sa timog at hilagang bahagi) at hinahati ang mundo sa 180 na parte -- 90 sa hilaga at 90 sa timog. Ang longitude naman ay mga linyang patayo na perpendikular sa ekwador at nagsisimula sa mga poles. Hinahati nila ang mundo sa 360 na bahagi -- 180 sa silangan at 180 sa kanluran.
@@ -215,16 +205,13 @@ Isa sa mga pinaka-ginagamit na CRS ay ang WGS 84 Geographic Coordinates (EPSG: 4
 Ang **```EPSG (European Petroleum Survey Group)```** ay isa sa mga organisasyon na may koleksyon o rehistro ng iba't ibang Coordinate Reference System sa mundo. Ang EPSG Code ay ang ginagamit nila upang tukuyin ang isang Coordinate Reference System. Ang mga CRS sa rehistro ng EPSG ay may kanya-kanyang code na gamit tulad ng 4326 para sa WGS84 at 4995 para sa PRS 92 3D Geographic. Ang mga codes na ito ay madalas din makita at gamitin sa GIS. Maaring makita ang rehistro [dito](https://www.epsg-registry.org/).
 
 ### On-the-Fly Projection
-
 May mga pagkakataon na ang datos na mayroon tayo ay magkakaiba ang coordinate reference system.
 
 **Halimbawa:** maaring mayroon tayong mapa ng isang munisipyo na naka PRS92 (metro) habang ang mapa naman ng panganib ng baha sa parehong munisipyo ay nasa WGS84 (degrees). Kung ang dalawang bagay na ito ay imamapa ayon lamang sa kanilang coordinates, hindi sila maglalapat sapagkat magkaiba ang CRS nila. Upang solusyunan ito, karamihan ng GIS ay may tinatawag na **```On-The-Fly Projection/Coordinate Transformation```** kung saan ang mga mapa na ipapasok sa GIS ay ilalagay sa isang Coordinate Reference System na pinili ng user kahit na iba ang CRS na gamit ng mapa. Sa pamamagitan nito, sinisigurado ng GIS na ang mga mapa ng isang lugar ay maglalapat kahit na iba ang kanilang CRS.
 
 Ngunit dapat pa rin alalahanin na kahit nagmimistulang magkapatong ang mga mapa sa GIS dahil sa On-the-Fly Projection, sa katotohan ay hindi sila magkapatong dahil magkaiba ang CRS nila. Kaya kapag gumawa ng mga pagsusuri at gawaing ispasyal tulad ng pagkuha ng interseksyon ng dalawang mapa ay maaring hindi tama ang maging resulta.
 
-
 ## Mga Gamit at Aplikasyon ng GIS
-
 Ang kagandahan at galing ng GIS ay makikita sa dami ng mga disiplina kung saan maari itong gamitin.
 
 Hindi nakakahon ang GIS para sa mga geographikal at pang-kapaligiran na mga pag-aaral at gawain. Marami din itong gamit at maiiambag sa mga larangan tulad ng arkiyolohiya, militar, enerhiya, paggawa ng polisiya, pagpaplano ng wastong gamit ng lupa at iba pang natural na yaman, at marami pang iba.
@@ -233,9 +220,7 @@ Ako mismo ay ginamit ko ang GIS sa pagsusuri at pag-aaral ng basketball.
 
 Madalas ngang sinasabi na: **```80% ng mga datos ay may kasamang geographikal o ispasyal na sangkap```** at ang GIS ay isang kagamitan upang makuha at magamit ng wasto ang geograpikal at ispasyal na sangkap na ito mula sa data.
 
-
 ## Mga Aabangan
-
 Sana ay may ideya na kayo ngayon kung ano ang GIS at ang ibang mga konsepto na kaakibat ng GIS. Sa mga susunod na parte ng seryeng ito ay mas pagtutuunan na natin ng pansin ang QGIS -- ano ba ito, paano ito gamitin, atbp.
 
 

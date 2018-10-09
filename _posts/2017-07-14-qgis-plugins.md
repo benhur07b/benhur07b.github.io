@@ -12,12 +12,12 @@ image:
 
 <div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/qgis-has-plugins.png"></div>
 
-QGIS has an extensive plugin library but it's commonly underutilized by those unfamiliar or new to QGIS. I've had experiences where people told me that they don't use QGIS because it doesn't have ```function X``` and they always get surprised when I tell them that QGIS actually has the function they're looking for **as a plugin**.
+QGIS has an extensive plugin library but it's commonly underutilized by those unfamiliar or new to QGIS. I've had experiences where people told me that they don't use QGIS because it doesn't have **function X** and they always get surprised when I tell them that QGIS actually has the function they're looking for **as a plugin**.
 
 For the latest LTR (2.18.10), there are currently more than 700 plugins available on the QGIS Official Plugin repository that users can download (and improve upon) whose functions range from the simple to the complex to the mundane.
 
 
-### Manage and Install Plugins
+## Manage and Install Plugins
 There are two ways to install plugins in QGIS. The first is by putting the source code in your computer's QGIS plugin directory.
 
 For **WINDOWS**: this is usually found in ```C:\Users\<your username>\.qgis(2)\python\plugins\```
@@ -56,7 +56,8 @@ If you successfully installed the plugin, you should be able to access it via **
 
 <div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/statist-run.png"></div>
 
-### Making your own plugin
+
+## Making your own plugin
 Now what if there's no plugin that does what you want? Well, you can always make one yourself!
 
 The **Plugin Builder** is a plugin that creates a template that can serve as the starting point for QGIS plugin development so you won't have to create one from scratch. You can install it from the ```Manage and Install Plugins Dialog```.

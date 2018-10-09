@@ -25,7 +25,6 @@ For this how-to, we'll be using the following layers:
 
 We'll try to get the solar radiation and biomass potential values at the sample points.
 
-
 ## Point sampling tool in QGIS
 The point sampling tool collects polygon attributes and raster values from multiple layers at specified sampling points. It is a QGIS plugin that you can download from the QGIS Python Plugins Repository. You can check it out [here](https://plugins.qgis.org/plugins/pointsamplingtool/).
 
@@ -70,7 +69,6 @@ Some important things to note with the Point sampling tool.
 1. It does not copy the sample points but creates a new point shapefile. Thus, if you want to include the fields of the sample points, you need to select them.
 2. It does not overwrite an existing point layer. Doing so will result in an error. You need to create a new point shapefile as output for the tool.
 3. It is not compatible with multipoint sources except if each multipoint contains exactly one point.
-
 
 ## v.what.vect in GRASS
 The ```v.what.vect``` module transfers attributes from the query_map's map attribute table into the attribute table of points present in the map map. The script is based on v.distance. You can read more about it [here](https://grass.osgeo.org/grass72/manuals/v.what.vect.html).
@@ -134,7 +132,6 @@ Click ```Run```
 If you are successful, the GHI attribute column of sample-points should now have values. Open the attribute table to check.
 
 <div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/grass-attr-tab.png"></div>
-
 
 ## Final thoughts
 Unlike the ```Point sampling tool``` that creates a new point shapefile, the GRASS modules used for sampling just updates the attribute table of your sampling point layer.

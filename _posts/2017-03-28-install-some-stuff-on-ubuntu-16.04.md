@@ -15,8 +15,7 @@ I recently upgraded my machine to Xubuntu 16.04 after almost 3 years of using Xu
 
 This post will just detail how I install/reinstall on Xubuntu 16.04 the common software and tools I use everyday as well as the not-so-common ones that I keep for special ocassions so that I don't forget them in the future.
 
-
-### Set Proxy for the Shell (bash)
+## Set Proxy for the Shell (bash)
 I usually set my proxy in the bash config file (```.bashrc```) if I need to access the web through the shell.
 ```shell
 cd ~
@@ -43,7 +42,7 @@ Acquire::https::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-por
 Acquire::ftp::proxy "<proxy-username>:<proxy-password>@<proxy-host>:<proxy-port>";
 ```
 
-### Atom
+## Atom
 The first thing I reinstalled was [Atom](https://atom.io) because every developer/programmer needs a good text-editor. A few years ago, this spot was reserved for Sublime Text (still one of the best text editors EVER) but recently I've found myself liking and using Atom more. Atom gets plus points for being open-source -- something that Sublime is not (probably one of the few bad points with Sublime for me).
 
 If you're using 'buntu, installing Atom is easy. Just download the [.deb](https://atom.io/download/deb) then install it using:
@@ -51,7 +50,7 @@ If you're using 'buntu, installing Atom is easy. Just download the [.deb](https:
 sudo dpkg --install atom-amd64.deb
 ```
 
-### LibreOffice
+## LibreOffice
 LibreOffice is my go-to Office Suite. Xubuntu comes packaged with LibreOffice Writer, Calc, and Math but not the entire Suite. What I usually do is remove the built-in LibreOffice package and replace it with one from the [LibreOffice Fresh PPA](https://launchpad.net/~libreoffice/+archive/ubuntu/ppa).
 
 First, you remove all the built-in LibreOffice packages.
@@ -79,7 +78,7 @@ sudo apt install snapd
 sudo snap install libreoffice
 ```
 
-### PDF Chain
+## PDF Chain
 PDF Chain is a GUI for the PDF Toolkit (PDFtk). For those times I need to combine or split pdf files.
 ```shell
 sudo add-apt-repository ppa:pdfchain-team/ppa
@@ -87,13 +86,13 @@ sudo apt update
 sudo apt install pdfchain
 ```
 
-### pip
+## pip
 Because Python devs still need pip.
 ```shell
 sudo apt install python-pip python3-pip
 ```
 
-### virtualenvwrapper
+## virtualenvwrapper
 Same as above. virtualenvwrapper makes Python development easier.
 ```shell
 sudo pip install virtualenvwrapper
@@ -106,7 +105,7 @@ export PROJECT_HOME=$HOME/Projects
 source /usr/local/bin/virtualenvwrapper.sh
 ```
 
-### GRASS GIS
+## GRASS GIS
 Add the UbuntuGIS Unstable PPA to your software sources
 ```shell
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
@@ -124,7 +123,7 @@ sudo apt update
 sudo apt install grass
 ```
 
-### QGIS
+## QGIS
 There are a lot of ways to install QGIS depending on the version that you want and if you want the repos to be based on the ubuntugis-unstable PPA.
 
 There are 3 main versions of QGIS that you can install on your machine:
@@ -203,7 +202,7 @@ sudo apt install qgis python-qgis qgis-plugin-grass
 
 For more information, you can visit the [QGIS website](http://qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu).
 
-### PostGIS
+## PostGIS
 PostGIS is an extension of PostgresSQL database which adds support for geographic objects allowing for location queries to be run in SQL.
 
 The ubuntugis-unstable PPA maintains a version of postgis. You can install it by:
@@ -212,7 +211,7 @@ sudo apt update
 sudo apt install postgis
 ```
 
-### libgdal-dev
+## libgdal-dev
 Installing GDAL in a virtual environment isn't as straightforward as we like.
 
 First make sure that you have the ubuntugis-unstable repo in your sources list then install libgdal-dev.
@@ -225,7 +224,7 @@ Now you can install GDAL in a virtual environment with:
 pip install gdal==<gdal-version> --global-option=build_ext --global-option="-I/usr/include/gdal"
 ```
 
-### rvm (Ruby Version Manager)
+## rvm (Ruby Version Manager)
 ```shell
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 ```
@@ -236,7 +235,7 @@ source $HOME/.rvm/scripts/rvm
 ```
 *A Note with RVM: The PATH export lines of RVM should be the last line in your .profile or .bashrc files*
 
-### Steam
+## Steam
 Download the [Steam installer (.deb)](http://store.steampowered.com/about/) and run it.
 
 When you first run Steam, it will ask you to download certain packages. Install these packages.
@@ -248,7 +247,7 @@ Update Steam and start playing.
 steam update
 ```
 
-### mkusb
+## mkusb
 Xubuntu 16.04 doesn't come with Startup Disk Creator. You can still install Startup Disk Creator but mkusb is a little bit better because it uses **dd** to create the live-usbs. You can install it in your machine by:
 ```shell
 sudo add-apt-repository ppa:mkusb/ppa
@@ -256,7 +255,7 @@ sudo apt update
 sudo apt install mkusb
 ```
 
-### Pinta
+## Pinta
 Pinta is a drop-in replacement for Microsoft Paint. For simple graphics manipulation. It's 1.6 version is part of the Ubuntu Official Repository. The pinta-stable PPA has no release for 16.04 while the pinta-daily PPA has.
 
 If you're okay with version 1.6, just type:

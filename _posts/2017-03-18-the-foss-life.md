@@ -32,7 +32,7 @@ Linux and FOSS have a lot of advantages (and also disadvantages) over proprietar
 
 (*NOTA BENE: The list below is reflective of my preferences and what I personally use. It does not mean that what I list down is the best option. The beauty with FOSS is that you are not tied down to any single piece of software. You have the freedom to try and test different ones to find out which is best for you.*)
 
-### Operating System
+## Operating System
 **What you might be familiar with:**
 * Windows 8 or Windows 10
 * macOS
@@ -42,7 +42,7 @@ Linux and FOSS have a lot of advantages (and also disadvantages) over proprietar
 
 Personally, I'm using [Xubuntu](https://xubuntu.org/) and [OSGEO-Live](https://live.osgeo.org/).
 
-### Office Suite
+## Office Suite
 **What you might be familiar with:**
 * Microsoft Office
 * Office365
@@ -53,7 +53,7 @@ Personally, I'm using [Xubuntu](https://xubuntu.org/) and [OSGEO-Live](https://l
 
 I've almost exclusively used LibreOffice and its predecessor OpenOffice for the past 8 years. It's dependable and does what you expect from a modern office suite. I don't have the same amount of experience with WPS but I've heard good things about it and it boasts of being the "Most Compatible Free Office Suite".
 
-### Geographic Information System (GIS)
+## Geographic Information System (GIS)
 **What you might be familiar with:**
 * ArcGIS
 
@@ -64,7 +64,7 @@ I've almost exclusively used LibreOffice and its predecessor OpenOffice for the 
 
 These are also available in Windows and Mac but most of the development (especially for QGIS and GRASS) is made on Linux. Thus, the Linux versions are usually more updated and stable than their Windows or Mac counterparts.
 
-### Simple Drawing and Image Manipulation
+## Simple Drawing and Image Manipulation
 **What you might be familiar with:**
 * Paint
 
@@ -73,7 +73,7 @@ These are also available in Windows and Mac but most of the development (especia
 
 It actually came as a surprise when I found out that most of the distros I tried did not have a simple drawing application ala Microsoft Paint on Windows. Then I found Pinta. Pinta is probably the best drop-in replacement for Paint out there.
 
-### A bit more Complex Image Manipulation
+## A bit more Complex Image Manipulation
 **What you might be familiar with:**
 * Photoshop
 
@@ -82,7 +82,7 @@ It actually came as a surprise when I found out that most of the distros I tried
 
 Okay, vanilla GIMP is probably no match for Photoshop but the beauty with GIMP is that you can always write your own or use other people's scripts if you need something not in vanilla GIMP. I used GIMP during my [brief scanlation career](http://www.mangareader.net/hell-teacher-nube/38).
 
-### PDF Manipulation
+## PDF Manipulation
 **What you might be familiar with:**
 * Adobe Acrobat
 * Foxit Reader
@@ -93,7 +93,7 @@ Okay, vanilla GIMP is probably no match for Photoshop but the beauty with GIMP i
 
 You can edit pdfs (forms, letters, etc.) using LibreOffice (via Draw) if they were exported/saved directly from documents and not simply scanned. PDF-Chain, meanwhile, gives you the ability to combine or split pdfs among other things.
 
-### Video Conferencing and Messaging Apps
+## Video Conferencing and Messaging Apps
 **What you might be familiar with:**
 * Skype
 * Viber
@@ -106,7 +106,7 @@ These, technically, are not FOSS alternatives. There's a lot of other video conf
 
 Both Skype and Viber for Linux are available as .rpm or .deb.
 
-### Games
+## Games
 **What you might be familiar with:**
 * ALL THE GAMES MADE FOR WINDOWS AND PC
 

@@ -11,7 +11,7 @@ image:
   twitter: /media/bnhr-600-bg.png
 ---
 
-### Requirements
+## Requirements
 **1.** [**Windows 10 ISO**](https://www.microsoft.com/en-us/software-download/windows10ISO)
 
 **2. mkusb**
@@ -26,8 +26,7 @@ sudo apt install mkusb
 
 At least 8Gb USB/pendrive. Some USBs can't make bootable drives so invest on a good one if you can.
 
-
-### Instructions
+## Instructions
 
 **1. Run mkusb**.
 
