@@ -118,6 +118,20 @@ In fact, you can also add your own services to the plugin so that others can use
 Currently, you can select from over a hundred basemaps from the QuickMapServices plugin.
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-07-basemaps-in-qgis/qms-basemaps.png"></div>
 
+It should be noted that according to the maintainers of the plugin, the package for adding new services via the option above is planned to retire soon.
+
+It is recommended that new services be added at http://qms.nextgis.com. In fact, I recently added the basemap from the Philippine Geoportal to the QuickMapServices catalog. You can find it under the name **```Philippine Geoportal Basemap```**.
+
+The QuickMapServices catalog can be accessed in QGIS by via **```Web -> QuickMapServices -> Search QMS```** or the Search QMS plugin button.
+
+<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-07-basemaps-in-qgis/search-qms.png"></div>
+
+This will open a window/panel where you can search from over [1500 services currently in the QuickMapServices catalog](https://qms.nextgis.com/) to add to your map.
+
+<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-07-basemaps-in-qgis/search-qms-win.png"></div>
+
+<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-07-basemaps-in-qgis/search-qms-done.png"></div>
+
 That's how you add basemaps in QGIS so the next time you feel like your map is looking dull or that it needs something extra, why not try using a new basemap.
 
 I hope this post helped you learn something new and improve your #QGIS skills. Remember to keep honing your skills and #MakeBetterMaps. :)
