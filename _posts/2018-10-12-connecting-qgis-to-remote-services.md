@@ -208,7 +208,7 @@ Since we loaded a vector file, we should be able to change its symbology like so
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/ss-vector-1.png"></div>
 
-Now what else can we add to our hazard maps. How about some building footprint data from OpenStreetMaps?
+Now what else can we add to create our hazard maps? How about some building footprint data from OpenStreetMaps?
 
 ## Getting OSM data using the QuickOSM Plugin
 
