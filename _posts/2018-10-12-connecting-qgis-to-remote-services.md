@@ -212,7 +212,11 @@ Now what else can we add to create our hazard maps? How about some building foot
 
 ## Getting OSM data using the QuickOSM Plugin
 
-Let's get all the buildings in OpenStreetMaps within the area covered by our map canvas. This is easily done using the [QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/) plugin which allows you to execute overpass queries from QGIS to get OSM data. [Overpass](https://wiki.openstreetmap.org/wiki/Overpass_API) is a read-only API that serves up custom selected parts of the OSM map data. Basically, it allows you to get elements from OSM selected by search criteria like e.g. location, type of objects, tag properties, proximity, or combinations of them. This is very useful specially if you only need certain parts of OSM data (i.e. no need to download the entire OSM dataset for the Philippines) and need the most recent data in OSM (i.e. no need to download the entire OSM dataset everytime it is updated).
+Let's get all the buildings in OpenStreetMaps within the area covered by our map canvas.
+
+This is easily done using the [QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/) plugin which allows you to execute overpass queries from QGIS to get OSM data.
+
+[Overpass](https://wiki.openstreetmap.org/wiki/Overpass_API) is a read-only API that serves up custom selected parts of the OSM map data. Basically, it allows you to get elements from OSM selected by search criteria like e.g. location, type of objects, tag properties, proximity, or combinations of them. This is very useful specially if you only need certain parts of OSM data (i.e. no need to download the entire OSM dataset for the Philippines) and need the most recent data in OSM (i.e. no need to download the entire OSM dataset everytime it is updated).
 
 To run the plugin, find the QuickOSM Toolbar and click **```QuickOSM```**.
 
