@@ -19,7 +19,9 @@ This year, I made the decision and conscious effort to use shapefiles less and G
 Like most people I know, I had my first experience with geospatial data with shapefiles. In fact, in the Philippines, when I say "I need a vector file", some people won't know what I mean; but if I say "I need a shapefile", people instantly get it. Shapefile has become synonymous with geospatial data which isn't necessarily a bad thing. Personally, I don't use shapefile and geospatial data interchangeably -- I use vector when I mean vector files and shapefiles only when I mean shapefiles. Shapefiles have their uses but it has its limitations which other formats like GeoJSON and GeoPackage seek to address.
 
 ## Why Not Shapefiles?
-Shapefile is an old standard/specification. If you want to learn more about why shapefiles are bad, you can check out [switchfromshapefile.org](http://switchfromshapefile.org/). Some of these limitations that I'd like to highlight are:
+Shapefile is an old standard/specification. If you want to learn more about why shapefiles are bad, you can check out [switchfromshapefile.org](http://switchfromshapefile.org/).
+
+Some of these limitations that I'd like to highlight are:
 
 ### A Shapefile is not just 1 file
 Ever noticed that what we call a shapefile is actually a bunch of files? For a shapefile to be useful, we need 3 required components with the same names and in the same directory. These are the ```.shp```, ```.shx```, and ```.dbf``` files that store the ```feature geometry```, ```position of individual feature IDs```, and ```attribute information of the features``` respectively. When one of these files are missing, the shapefile becomes unusable. Imagine my surprise when one time I asked for a shapefile and was given the .shp file by itself.
@@ -61,13 +63,15 @@ Another beauty of GeoPackage is that it can contain multiple files -- vectors, r
 When providing GIS training and workshops, I've found that GeoPackage is a great format to use. Instead of giving students/trainees multiple files or a zipped file containing multiple shapefiles and rasters, I often opt to provide them with a GeoPackage containing the dataset that they need for our session.
 
 ### GeoPackage and GIS
-GeoPackage is now supported in a lot of GIS software and mapping applications. In fact,``` QGIS 3.X and GRASS GIS 7.4.X now has GeoPackage as the default option when importing and exporting vector files``` which is a testament to the promise and potential that the format has. In fact, ESRI's ArcGIS for Desktop 10.2.2 and above also has support for GeoPackages. For a list of GeoPackage implementations, you can check [here](http://www.geopackage.org/implementations.html).
+GeoPackage is now supported in a lot of GIS software and mapping applications. In fact,``` QGIS 3.X and GRASS GIS 7.4.X now has GeoPackage as the default option when importing and exporting vector files``` which is a testament to the promise and potential that the format has. In fact, ESRI's ArcGIS for Desktop 10.2.2 and above also has support for GeoPackages.
+
+For a list of GeoPackage implementations, you can check [here](http://www.geopackage.org/implementations.html).
 
 ### GeoPackage and non-GIS applications
 Because GeoPackage is an SQLite container, ```you don't actually need a full-blown GIS to access, update, and use its contents```. For example, you can use [DB Browser for SQLite](http://sqlitebrowser.org/) to query your GeoPackage and if you add SpatiaLite extension to your DB Browser, you can also perform spatial analysis on it.
 
 ### The Sweet Spot
-One more thing I like about GeoPackage is that it's in that sweet spot between a flat-file format like a Shapefile or GeoJSON and an enterprise-level spatial database like PostGIS which gives GeoPackage somewhat the best of both worlds -- it's``` more powerful than a shapefile and less complicated to use than PostGIS``` (even though it's less powerful). This makes it powerful enough for advanced users while being friendly enough for beginners and novice users.
+One more thing I like about GeoPackage is that it's in that sweet spot between a flat-file format like a Shapefile or GeoJSON and an enterprise-level spatial database like PostGIS which gives GeoPackage somewhat the best of both worlds -- ```more powerful than a shapefile and less complicated to use than PostGIS``` (even if it's less powerful). This makes it powerful enough for advanced users while being friendly enough for beginners and novice users.
 
 ## Make the Switch
 The Shapefile is and will always be a part of my geospatial journey and history. It's one of the first geospatial formats that I fell in love with, so to speak, and there was a time when I thought geospatial work started and ended with shapefiles, but that's not the case anymore. As I moved forward, I've come to accept the limitations of the format and the fact that it's not the end-all, be-all format I once thought it was. The field of geospatial science is always advancing and, as students of the field, we should always advance with it. For myself, that included learning to use GeoJSONs and Vector Tiles for web and mobile applications, learning to manage and utilize a spatial database like PostGIS, and adapting GeoPackage instead of shapefiles, among other things. I still use and will still use shapefiles but only on a case-to-case basis.
