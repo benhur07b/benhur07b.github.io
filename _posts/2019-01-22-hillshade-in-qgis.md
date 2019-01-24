@@ -15,7 +15,7 @@ image:
 
 <br>
 
-Hillshading is a classic technique that visualizes terrain as shaded relief by illuminating it with a hypothetical light source. A hillshade provides users an immediate appreciation for the surface topography, providing depth to a 2-dimensional map, which makes it easier (even those untrained in cartography) to interpret features on the map (e.g. valleys, hills, mountains, etc.). Because of this, hillshades are commonly used as backgrounds in maps. Aside from their practical purpose, hillshade maps are also aesthetically pretty.
+Hillshading is a classic technique that visualizes terrain as shaded relief by illuminating it with a hypothetical light source. A hillshade provides users an immediate appreciation for the surface topography, providing depth to a 2-dimensional map, which makes it easier (even to those untrained in cartography) to interpret features on the map (e.g. valleys, hills, mountains, etc.). Because of this, hillshades are commonly used as backgrounds in maps. Aside from their practical purpose, hillshade maps are also aesthetically pretty.
 
 In this post, we'll look at how we can create beautiful hillshade maps in QGIS inspired by Open GIS Lab's [post](https://opengislab.com/blog/2018/3/20/3d-dem-visualization-in-qgis-30).
 
@@ -48,10 +48,12 @@ QGIS 3 has a multidirectional option when styling a raster as a hillshade.
 Use the **```Layer Styling Panel```** or **```right-click on layer -> Properties -> Symbology```** to style the DEM as a Multidirectional Hillshade.
 
 **Use the following options:**
-* Select **```Hillshade```** as **```Render Type```**
-* Set **```Z Factor```** to **```2.0```**
-* Check the **```Multidirectional checkbox```**
-* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
+>
+>* Select **```Hillshade```** as **```Render Type```**
+>* Set **```Z Factor```** to **```2.0```**
+>* Check the **```Multidirectional checkbox```**
+>* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
+>
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/hillshade-style.png"></div>
 
@@ -62,11 +64,13 @@ The resulting layer should look like this:
 The next step is to drape a colored DEM over the hillshade. For this, we use the duplicate layer we created.
 
 **Use the following options:**
-* Select **```Singleband pseudocolor```** as **```Render Type```**
-* For the **```Color ramp```**, **```BrBG```** works great
-* Edit the **```Classification intervals```**
-* Select **```Blending mode```** as **```Multiply```**
-* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
+>
+>* Select **```Singleband pseudocolor```** as **```Render Type```**
+>* For the **```Color ramp```**, **```BrBG```** works great
+>* Edit the **```Classification intervals```**
+>* Select **```Blending mode```** as **```Multiply```**
+>* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
+>
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/colored-dem-style-1.png"></div>
 
@@ -81,9 +85,11 @@ We're not limited to just draping a single layer over our hillshade. We can also
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/sat-1.png"></div>
 
 **Afterwards, update the symbology of the Google Satellite layer and use the following options to overlay it on the hillshade:**
-* Select **```Blending mode```** as **```Overlay```**
-* Update the **```Brightness```**, **```Contrast```**, and **```Saturation```**
-* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
+>
+>* Select **```Blending mode```** as **```Overlay```**
+>* Update the **```Brightness```**, **```Contrast```**, and **```Saturation```**
+>* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
+>
 
 <div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/sat-style.png"></div>
 
