@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hillshade in QGIS"
-description: Create beatiful hillshades in QGIS by utilizing a few tricks. :)
+description: Create beautiful hillshades in QGIS by utilizing a few tricks. :)
 tags: [foss4g, qgis, qgis3, gis, cartography, hillshade]
 pinned: false
 comments: true
