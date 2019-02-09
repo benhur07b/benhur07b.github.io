@@ -34,3 +34,4 @@ plugins:
   - jekyll-paginate
   - jekyll-github-metadata
   - jekyll-seo-tag
+  - jekyll-feed
