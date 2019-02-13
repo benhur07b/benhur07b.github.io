@@ -1,16 +1,22 @@
 <!-- Pagination links -->
 <div class="cv-text">
   <p class="cv-text">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
+</div>
 
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}"> < Previous |</a>
-  {% else %}
-    <span class="cv-text"> < Previous |</span>
-  {% endif %}
+<div class="navposts">
+    <div class="next">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}"> < Newer Posts</a>
+        {% else %}
+            <p>Showing Newest Posts</p>
+        {% endif %}
+    </div>
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="cv-text">| Next > </a>
-  {% else %}
-    <span class="cv-text">| Next > </span>
-  {% endif %}
+    <div class="prev">
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}">Older Posts > </a>
+      {% else %}
+            <p>Reached Oldest Posts</p>
+      {% endif %}
+    </div>
 </div>

@@ -31,7 +31,7 @@ At least 8Gb USB/pendrive. Some USBs can't make bootable drives so invest on a g
 **1. Run mkusb**.
 
 ```shell
-sudo mksub-dus
+sudo mkusb-dus
 ```
 
 <img class="img-responsive" src="{{ site.baseurl }}/media/posts/2017-04-03-how-to-create-a-bootable-windows-10-usb-in-xubuntu-16.04-using-mkusb/mkusb-001.png">
