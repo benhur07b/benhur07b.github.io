@@ -1,0 +1,4 @@
+<h4><a class="tags-archive-title" href="{{ post.url }}">{{ post.title }}</a></h4>
+<p class="small post-meta-info">{{ post.date | date_to_string}}  ᛫ {{ post.content | number_of_words | divided_by: 300 | plus: 1 }} min read</p>
+<p class="small">{{ post.description | strip_html | truncatewords:100 }}</p>
+<p class="small"><a class="btn btn-primary btn-sm" href="{{ post.url }}" >Read more</a></p>

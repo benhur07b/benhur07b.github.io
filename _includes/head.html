@@ -19,8 +19,6 @@
   <!-- Facebook OG -->
   {% if page.og_type %}
     <meta property="article:author" content="{% if page.author.facebook %}https://www.facebook.com/{{ page.author.facebook }}{% else %}https://www.facebook.com/{{ site.author.facebook }}{% endif %}">
-    <!-- <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
-    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}"> -->
   {% endif %}
 
   <!-- Twitter OG -->
@@ -34,32 +32,13 @@
   <meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
   <meta name="twitter:image" content="{% if page.image.twitter %}{{ page.image.twitter | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
 
-  <link rel="shortcut icon" href="{{ site.baseurl }}/media/bnhr-48px.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Geo|Raleway:300,400,700|Libre+Franklin:300|Muli:300,400|Quicksand:500,700|Roboto:300,400,500" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/media/site/logos/BNHR-spatial-icon.png">
 
-  <!-- Normalize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  {% include head-css-js.html %}
 
-  <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-  <!-- MDBootstap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" />
-
-  <!-- CSS -->
-  <link href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
-
-  <link href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}" rel="stylesheet" >
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-  {% include google-analytics.html %}
+  <!-- {% include google-analytics.html %} -->
 
   {% feed_meta %}
 

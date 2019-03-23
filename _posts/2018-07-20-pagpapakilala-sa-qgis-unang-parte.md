@@ -7,8 +7,8 @@ pinned: true
 comments: true
 og_type: article
 image:
-    facebook: /media/bnhr-600-bg.png
-    twitter: /media/bnhr-600-bg.png
+    facebook: /media/site/img/BNHR-bg.png
+    twitter: /media/site/img/BNHR-bg.png
 ---
 
 Ito ay ang unang parte sa isang serye kung saan kikilalanin natin ang QGIS at kung anu-anong mga bagay ang maari nating gawin dito. Hindi naman ito bago. Napakaraming mga lathala sa internet kung saan maari tayong matuto tungkol sa QGIS. Halimbawa ay ang dokumentasyon at mga materyales sa [website ng QGIS mismo](https://qgis.org/en/site/forusers/index.html).
@@ -72,7 +72,7 @@ Ang spatial data ay ginagamit upang kumatawan ng mga bagay o pangyayari sa loob 
 ### Raster Data Type
 Ang raster data ay isang **```cell-based o pixel-based```** na pagkatawan ng mga bagay o pangyayari sa mundo. Ito ay binubuo ng mga hanay at haligi ng mga cells o pixels kung saan ang bawat cell ay kumakatawan sa isang geograpikal na rehiyon (ang laki nito ay depende sa resolusyon ng raster) habang ang halaga naman sa cell ay kumakatawan sa kondisyon o katangian ng rehiyon na nasasakupan ng cell.
 
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/raster.png" alt="Raster"></div>
+<div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow float-left mr-4" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/raster.png" alt="Raster"></div>
 
 Ito ay maihahalintulad sa isang chess board kung saan ang mga parisukat ay ang mga cells/pixels at ang mga pyesa na nakatayo sa parisukat ay ang halaga ng cell/pixel na yun.
 
@@ -91,7 +91,7 @@ Ang bilang ng bands na mayroon ang isang imahe ay tinatawag na **```resolusyong 
 ### Vector Data Type
 Ang vector ay kumakatawan sa mga bagay o pangyayari hindi bilang mga pixels ngunit bilang mga **```punto, linya, o hugis```** (points, polylines, or polygons). Mayroon ding kaakibat na **```attribute table```** ang vector data. Ang **```attribute table```** na ito ay nagbibigay karagdagang impormasyon tungkol sa mga punto, linya, o hugis na mayroon sa vector data. Bawat hilera (row) sa attribute table ay kumakatawan sa isang hugis sa vector data habang ang mga hanay (column) sa attribute table ay ang mga **```fields o attributes```** na nagtataglay ng impormasyon tungkol sa punto, linya, o hugis.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/vector.png" alt="Vector file ng mga probinsya sa Pilipinas"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/vector.png" alt="Vector file ng mga probinsya sa Pilipinas"></div>
 
 **Halimbawa:** sa larawan sa taas, mayroon tayong isang vector file ng mga probinsya ng Pilipinas na binubuo ng mga hugis. Sa kanan ay makikita ang kaakibat na attribute table nito. Ang unang hilera na naka-highlight at kumakatawan sa probinsya ng Cagayan na ang hugis ay naka-highlight din sa mapa. Ang mga hanay o impormasyon na nakalagay sa attribute table ay ang ISO code ng bansa (ISO), pangalan ng bansa (Country), pangalan ng probinsya (Province), Uri (Type), Philippine Standard Geographic Code (PSGC), kita ng probinsya (Income), at populasyon ng probinsya ayon sa 2015 census (Pop2015).
 
@@ -107,7 +107,7 @@ Minsan, kinakailangan din ng mga espesyal na alituntunin na dapat sundin ng mga 
 ### Iskala (Scale)
 Kapag tayo ay gumagawa ng mapa, hindi natin maiiwasan na paliitin ng mga bagay upang magkasya sila sa loob ng mapa. Dahil dito, ang sukat ng mga bagay sa mapa ay hindi pareho sa aktwal na sukat nila. Upang matugunan ito, gumagamit tayo ng **```iskala```** (map scale) upang malaman kung ano ang proporsyon sa pagitan ng sukat sa mapa at ang katumbas na aktwal na sukat. May tatlong paraan na karaniwang upang ipakita ng iskala ng mapa: gamit ang isang **```panumbasan```** (ratio scale o representative fraction), gamit ang isang **```grapikong iskala```** (graphic scale), at gamit ang **```berbal na iskala```** (verbal scale).
 
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/scale.png"></div>
+<div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow float-left mr-4" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/scale.png"></div>
 
 **```Panumbasan```** o **```Representative Function```** - Ito ay pinaka-madalas gamitin na iskala kung saan ipinapakita ang iskala bilang isang panumbasan (ratio). Laging 1 ang unang numero at ang pangalawang numero ay kumakatawan sa kung gaano mas malaki ang akwtal na sukat sa mundo kaysa sa sukat sa mapa. Halimbawa, sa 1:50,000 na panumbasan, ang isang yunit sa mapa ay katumbas ng 50,000 na yunit sa lupa kahit anong yunit pa ang gamitin -- ang 1 sentimetro sa mapa ay 50,000 sentimetro sa lupa, ang 1 pulgada sa mapa ay 50,000 na pulgada sa lupa, atbp.
 
@@ -126,7 +126,7 @@ Ang globo ang tradisyunal na paraan upang ilarawan ang hugis ng mundo. Subalit, 
 
 Ang **```map projections```** ay ginagamit upang ilatag ang ibabaw ng **```bilog na mundo```** o kaya ang isang bahagi nito sa isang **```patag```** (flat) na lalagyan *(hal: papel, screen ng kompyuter, mapa)*. Sa ibang salita, binabago ng map projections ang hugis ng mundo mula sa isang tatlong-dimensyunal (three-dimensional) na hugis (spheroid) patungo sa isang dalawang-dimensyunal (two-dimensional) na hugis (patag). Isang paraan upang mas mailarawan ang pangyayaring ito ay kung ihahalintulad natin ang mundo sa isang dalandan. Kapag ang dalandan ay binalatan, ang balat nito ay maaring ilatag na patag.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/dalandan.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/dalandan.png"></div>
 
 Ngunit dahil sa pagiging "spheroidal" o "bilugan" ang hugis ng mundo, **```imposibleng mailatag ng walang kamalian ang bawat punto sa mundo sa isang patag.```** Tingnan ang larawan ng dalandan, hindi naging perpektong patag ang kinalabasan nung binalatan ito. Ganito rin ang mangyayari kung tangkain nating balatan ang isang globo at gawing patag.
 
@@ -143,45 +143,45 @@ May iba-ibang tawag sa mga map projections depende sa katangian na pinapanatili 
 
 * **```Conformal o Orthomorphic```** ang tawag sa mga map projections na pinapanatili ang katangian ng hugis (angular conformity). Madalas itong gamitin sa mga mapang pang-nabigasyon o pang-meteorolohikal. Pinapanatili nito ang hugis sa mapa *(hal: ang bilog sa ibabaw ng mundo ay mananatiling bilog pag sinalin sa mapa)* ngunit mali ang makukuhang sukat ng lawak o area dito. Pag mas malawak ang lugar, mas malaki din ang kamalian.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/conformal.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/conformal.png"></div>
 
 Kung papansinin ang mapa ng **Tissot indicatrix** ng isang mapang conformal, makikita na ang **bilog ay nananatiling bilog** subalit ito ay **lumalaki habang papalayo sa ekwador**.
 
 * **```Equal-area o Authalic```** naman ang tawag sa mga map projections na pinapanatiling tama ang proporsyon ng area o laki ng mga bagay na minamapa. Kapag kailangang panatilihin o sukatin ang lawak ng isang lugar, equal-area map projection ang nararapat gamitin. Sa ganitong uri ng map projection, kapag mas malaki ang area na sinusukat, mas eksakto din ang nakukuhang sukat.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/equal-area.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/equal-area.png"></div>
 
 Kung papansinin ang mapa ng **Tissot indicatrix** ng isang mapang equal-area, makikita na **hindi nanatiling bilog** ang hugis subalit nagiging parang oblong upang **mapanatili ang area** ng hugis.
 
 * **```Equidistant```** ang mga map projections kung saan tama ang sukat ng distanya sa mga linyang nagmumula sa isa o dalawang punto sa mapa o kaya naman ay may tamang sukat ng distansya (at parehong iskala) sa isa o maraming linya (pahiga o patayo) sa mapa. Ito ay madalas gamitin sa mga mapang pang-radyo at nabigasyon. Sa katotohanan ay hindi kayang panatilihin ng kahit anong map projection ang tamang sukat ng distansya para sa lahat ng punto sa mapa kaya't ang mga equidistant na map projections ay napapanatili lang ang distansya sa mga partikular na linya o direksyon.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/equidistant.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/equidistant.png"></div>
 
 Kung papansinin ang mapa ng **Tissot indicatrix** ng isang mapang equidistant, makikita **pareho ang tangkad ng mga hugis** kahit na iba-iba ang **hugis at area** nila. Ibig sabihin ay napapanatili ang sukat ng distansya sa mga meridian o mula sa north pole hanggang south pole.
 
 * **```Azimuthal```** ang mga map projections kung saan napapanatiling tama ang direksyon (azimuth) mula sa isa o dalawang punto sa mapa patungo sa lahat ng iba pang punto sa mapa. Mainam itong gamitin sa pagmamapa ng ruta ng eroplano o barko papunta sa iba't ibang paliparan o daungan.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/azimuthal.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/azimuthal.png"></div>
 
 Kung papansinin ang mapa ng **Tissot indicatrix** ng isang mapang azimuthal, makikita na **kahit hindi pare-pareho ang hugis at area** ay puro **nakatutok ang mga bilog sa sentro ng projection** (ang meridian sa gitna).
 
 * **```Aphylactic o Compromise```** ang mga map projections na hindi nagpapanatili ng isa sa mga katanginang nabanggit subalit mas pinipiling mapanatiling maliit ang kamalian (distortion) sa mga katangian ng mapa.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/compromise.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/compromise.png"></div>
 
 Maliban sa katangiang pinapanatili ng isang map projection, maaari din hatiin ang map projectsions ayon sa **```developable```** surface na ginamagit nito. Masasabing ang isang surface ay **```developable kung maaari itong gawing patag nang walang halong distortion (pagkabaluktot o kamalian)```**. Ang mga madalas na ginagamit sa map projections ay:
 
 * **```Silindro o Cylinder```** - ang mga meridian (longitude) at parallels (latitude) ay tuwid at nagkakasalubong sa right angle (90 degrees). Pare-pareho ang layo ng mga meridians sa isa't isa.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/cylinder.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/cylinder.png"></div>
 
 * **``Apa o Cone```** tuwid ang mga meridians na patungo sa isang punto sa poles. Ang mga parallel ay higis arko.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/cone.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/cone.png"></div>
 
 * **``Patag o Plane```** - ang mga meridian ay tuwid at patungo sa isang punto. Ang mga parallels ay hugis bilog imbis na arko.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/plane.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/plane.png"></div>
 
 * **```Pseudo-cylindrical```** - sa pseudo-cylindrical na map projection, ang sentral na meridan at ang mga parallels ay tuwid habang ang ibang meridian ay mas mahaba sa sentral na meridian at naka-arko palabas.
 
@@ -189,7 +189,7 @@ Maliban sa katangiang pinapanatili ng isang map projection, maaari din hatiin an
 
 Isa pang paraan ng pag-uuri sa mga map projections ay ayon sa **```aspeto```** (aspect) nito. Ang aspeto ay tumutukoy sa kung **```paano inilalagay ang developable surface sa globo```**: **```Normal```**, **```Transverse```**, at **```Oblique```**.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/aspects.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/aspects.png"></div>
 
 ### Coordinate Reference Systems
 Ang coordinate reference system (CRS) ay tumutukoy, sa pamamagitan ng mga coordinates, kung saan sa mundo matatagpuan ang isang bagay. Ito ay maaring hatiin sa dalawang uri: ang Geographic CRS at ang Projected CRS.

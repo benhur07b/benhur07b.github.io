@@ -30,7 +30,7 @@ Check [this post](https://benhur07b.github.io/2017/07/14/qgis-plugins.html) if y
 
 Once activated, the plugin can be accessed via ```Raster -> Zonal statistics -> Zonal statistics```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/zonal-stats-cropped.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/zonal-stats-cropped.png"></div>
 
 >
 **DIRECTIONS:**
@@ -47,16 +47,16 @@ Open the Zonal statistics plugin.
 >
 Click ```OK```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/zonal-stats-gui-1.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/zonal-stats-gui-1.png"></div>
 
 If you open the attribute table of the sample-polygons layer, it should contain three additional fields named GHI_mean, GHI_min, and GHI_max.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/qgis-attr-tab-2.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/qgis-attr-tab-2.png"></div>
 
 ## v.rast.stats
 The ```v.rast.stats``` module calculates univariate statistics from a raster map based on a vector map and uploads statistics to new attribute columns. You can read more about it [here](https://grass.osgeo.org/grass72/manuals/v.rast.stats.html). It can be accessed by typing ```v.rast.stats``` in the Command console or via ```Vector -> Update attributes -> Update area attributes from raster [v.rast.stats]```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/v.rast.stats-cropped.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/v.rast.stats-cropped.png"></div>
 
 >
 **DIRECTIONS:**
@@ -72,13 +72,13 @@ On the ```Optional``` tab:
 >
 Click ```Run```
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/v.rast.stats-reqd.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/v.rast.stats-reqd.png"></div>
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/v.rast.stats-opt.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/v.rast.stats-opt.png"></div>
 
 If you open the attribute table of the sample-polygons layer, it should contain three additional fields named GHI_minimum, GHI_maximum, and GHI_average.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/grass-attr-tab-2.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-28-foss4g-how-to-get-zonal-statistics-in-qgis-and-grass-using-a-polygon-layer-as-zones/grass-attr-tab-2.png"></div>
 
 ## Final thoughts
 If you check their values, the results obtained using ```Zonal statistics``` in QGIS and ```v.rast.stats``` in GRASS are the same. Only the names of the additional attribute columns/fields created are different.

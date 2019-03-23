@@ -28,27 +28,23 @@ title:    Tag
 
 <div class="container">
 <p>
-<h1>Tags</h1>
+<h2>Tags</h2>
 {% for tag in tags %}
-  <a href="#{{ tag | slugify }}" class="meta-post-tag"> {{ tag }} </a>
+    <a href="#{{ tag | slugify }}" class="post-meta-tag mx-1 no-underline-link"> {{ tag }} </a>
 {% endfor %}
-
+<hr class="my-4">
 {% for tag in tags %}
-<div class="tag-padding" id="{{ tag | slugify }}">
-</div>
-<h2>{{ tag }}</h2>
-<ul>
-  {% for post in site.posts %}
-  {% if post.tags contains tag %}
-  <li>
-    <span class="meta-post-title">
-    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-    <span class="meta-post-date">{{ post.date | date_to_string}}</span>
-    <br>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
+    <div id="{{ tag | slugify }}"></div>
+    <h3>{{ tag }}</h3>
+    <ul class="list-style-none">
+    {% for post in site.posts %}
+        {% if post.tags contains tag %}
+            <li>
+                {% include tags-post-archive-meta.html %}
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
 {% endfor %}
 
 </div>

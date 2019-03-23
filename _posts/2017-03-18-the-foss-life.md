@@ -7,8 +7,8 @@ comments: true
 pinned: true
 og_type: article
 image:
-  facebook: /media/bnhr-600-bg.png
-  twitter: /media/bnhr-600-bg.png
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >
@@ -33,11 +33,11 @@ Linux and FOSS have a lot of advantages (and also disadvantages) over proprietar
 (*NOTA BENE: The list below is reflective of my preferences and what I personally use. It does not mean that what I list down is the best option. The beauty with FOSS is that you are not tied down to any single piece of software. You have the freedom to try and test different ones to find out which is best for you.*)
 
 ## Operating System
-**What you might be familiar with:**
+#### What you might be familiar with:
 * Windows 8 or Windows 10
 * macOS
 
-**What you can use instead:**
+#### What you can use instead:
 * This is a trick question. There are a multitude of FOSS Operating Systems out there that you can try like FreeBSD, Linux (or GNU/Linux), and the countless [distros](https://distrowatch.com/) in between. Want something classic? There's [Debian](https://www.debian.org/). Want a challenge? Try [Arch](https://www.archlinux.org/). How about something easier for newbies? There's always [Ubuntu](https://www.ubuntu.com/) and [Linux Mint](https://linuxmint.com/). Into penetration testing and hacking? [Kali Linux](https://www.kali.org/) is what you need. Want some privacy? Give [Tails](https://tails.boum.org/) a spin. Whatever specific thing you need in an OS, there's probably a distro out there for you.
 
 Personally, I'm using [Xubuntu](https://xubuntu.org/) and [OSGEO-Live](https://live.osgeo.org/).

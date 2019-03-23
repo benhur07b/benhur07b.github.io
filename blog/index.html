@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-{% if paginator.previous_page == nil %}
-<div class="container">
-  {% include pinned-posts.html %}
-</div>
-{% endif %}
+<div class="bnhr-container-x pt-2 pb-4">
+    {% if paginator.previous_page == nil %}
+    <div>
+        {% include blog-pinned-posts.html %}
+        <hr class="mt-5">
+    </div>
+    {% endif %}
 
-<div class="container">
-    {% include paginated-posts.html %}
-</div>
+    <div class="pb-4">
+        {% include blog-paginated-posts.html %}
+    </div>
 
-<div class="container text-center">
-  {% include pagination-links.html %}
+    <div class="pb-4">
+        {% include blog-pagination.html %}
+    </div>
 </div>
