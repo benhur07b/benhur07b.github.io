@@ -1,9 +1,10 @@
 <!-- Navigation -->
-<div class="bnhr-container-x pt-4 pb-2" id="page-top" class="index">
+<div class="bnhr-container-x pt-3 pb-2" id="page-top">
     <nav class="navbar navbar-default navbar-expand-lg d-print">
         <a class="navbar-brand" href="{{ site.baseurl }}/"><span class="navbar-title">BNHR</span>
-        <hr class="fake-br">
-        <span class="navbar-subtitle">spatial</span></a>
+        <!-- <hr class="fake-br">
+        <span class="navbar-subtitle">spatial</span> -->
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
@@ -15,17 +16,21 @@
                 <li>
                     <a class="nav-link" href="{{ site.baseurl }}/#services">services</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="nav-link" href="{{ site.baseurl }}/#solutions">solutions</a>
-                </li>
+                </li> -->
                 <li>
                     <a class="nav-link" href="{{ site.baseurl }}/#contact">contact</a>
                 </li>
                 <li>
                     <a class="nav-link" href="{{ site.baseurl }}/blog/">blog</a>
                 </li>
-                <li>
-                    <a class="nav-link" href="{{ site.baseurl }}/#portfolio">portfolio</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/portfolio">portfolio</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ site.baseurl }}/portfolio/cv.html">cv</a>
+                        <a class="dropdown-item" href="{{ site.baseurl }}/portfolio/works.html">works</a>
+                    </div>
                 </li>
             </ul>
         </div>

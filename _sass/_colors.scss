@@ -4,6 +4,7 @@ $color-primary-light: #e7b1a3;
 $color-secondary-dark: #2096ba;
 $color-secondary-light: #c5d2db;
 $color-muted: #545454;
+$color-muted-light: #CCD5DB;
 
 .color-primary {
     color: $color-primary;
@@ -27,4 +28,8 @@ $color-muted: #545454;
 
 .color-muted {
     color: $color-muted;
+}
+
+.color-muted-light {
+    color: $color-muted-light;
 }

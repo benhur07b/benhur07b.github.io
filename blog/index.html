@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<div class="bnhr-container-x pt-2 pb-4">
+<div class="bnhr-container-x pt-1">
+    <!-- HTML elements for search -->
+    <div class="row">
+        <input class="ml-auto p-1 small" type="text" id="search-input" placeholder="Search blog posts..">
+    </div>
+    <div class="row">
+        <ul class="ml-auto" id="results-container"></ul>
+    </div>
+    <!-- <hr class="my-2"> -->
+
     {% if paginator.previous_page == nil %}
     <div>
         {% include blog-pinned-posts.html %}
@@ -17,3 +26,5 @@ layout: default
         {% include blog-pagination.html %}
     </div>
 </div>
+
+{% include simple-jekyll-search.html %}

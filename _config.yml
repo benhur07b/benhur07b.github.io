@@ -1,20 +1,16 @@
 # site settings
 title: BNHR
 subtitle: spatial
-description: open source spatial X data solutions
+description: open solutions to spatial and data problems
 email: hi@bnhr.xyz
 baseurl: ""
 logo: /media/site/logos/BNHR-spatial-icon.png
 
 # links
-facebook:
-    username: benhur07b
-twitter:
-    username: benhur07b
-github:
-    username: benhur07b
-linkedin:
-    username: benhur07b
+user_facebook: bnhr.xyz
+user_twitter: benhur07b
+user_github: benhur07b
+user_linkedin: benhur07b
 
 # repo
 repository: benhur07b/benhur07b.github.io
