@@ -1,98 +1,82 @@
 // Icons
 @mixin icon-color($color, $hover-color){
-  color: $color;
-  &:hover {color: $hover-color}
+    color: $color;
+    &:hover {color: $hover-color}
 }
 
-@mixin bg-color($color, $hover-color){
-  background-color: $color;
-  &:hover {background-color: $hover-color}
+.portfolio-icon {
+    @include icon-color($color-primary-dark, $color-muted);
+    font-size: 5em;
+
+    @media (min-width: 320px) {
+        font-size: 6em;
+    }
+    @media (min-width: 576px) {
+        font-size: 8em;
+    }
+    // @media (min-width: 768px) {
+    //     font-size: 5em;
+    // }
+    @media (min-width: 768px) {
+        font-size: 10em;
+    }
 }
 
-.icon-padding {
-  margin: 0 10px;
-  @media screen and (max-width: 768px) {margin: 0 8px;}
-  @media screen and (max-width: 480px) {margin: 0 6px;}
-  @media screen and (max-width: 360px) {margin: 0 6px;}
+.contact-icon {
+    font-size: 3.5em;
+    @media (min-width: 320px) {
+        font-size: 4em;
+    }
+    @media (min-width: 576px) {
+        font-size: 4.5em;
+    }
+    @media (min-width: 768px) {
+        font-size: 5em;
+    }
+    @media (min-width: 992px) {
+        font-size: 4.5em;
+    }
+    @media (min-width: 1024px) {
+        font-size: 5em;
+    }
 }
 
 .contact-twitter {
-  margin: 0 10px;
-  @include icon-color(#333333, #4099ff);
-  }
+    @include icon-color($color-primary, #4099ff);
+}
+
+.contact-github {
+    @include icon-color($color-primary, #171515);
+}
 
 .contact-fb {
-  margin: 0 10px;
-  @include icon-color(#333333, #3b5998);
+    @include icon-color($color-primary, #3b5998);
 }
 
-.contact-gplus {
-  margin: 0 10px;
-  @include icon-color(#333333, #d34836)
-}
-
-.contact-email {
-  margin: 0 10px;
-  @include icon-color(#333333, #3e65cf)
-}
-
-.contact-gh {
-  margin: 0 10px;
-  @include icon-color(#333333, #6e5494)
-}
-
-.contact-in {
-  margin: 0 10px;
-  @include icon-color(#333333, #0077b5)
+.contact-linkedin {
+    @include icon-color($color-primary, #0077B5);
 }
 
 .share-twitter {
-  @extend .icon-padding;
-  @include icon-color(#4099ff, #222222);
-  }
+    @include icon-color(#4099ff, $color-primary);
+}
 
 .share-fb {
-  @extend .icon-padding;
-  @include icon-color(#3b5998, #222222);
+    @include icon-color(#3b5998, $color-primary);
 }
 
 .share-gplus {
-  @extend .icon-padding;
-  @include icon-color(#d34836, #222222)
+    @include icon-color(#d34836, $color-primary);
 }
 
 .share-reddit {
-  @extend .icon-padding;
-  @include icon-color(#FF5700, #222222)
+    @include icon-color(#FF5700, $color-primary);
 }
 
 .share-email {
-  @extend .icon-padding;
-  @include icon-color(#3e65cf, #222222)
+    @include icon-color(#3e65cf, $color-primary);
 }
 
 .share-gh {
-  @extend .icon-padding;
-  @include icon-color(#6e5494, #222222)
-}
-
-//buttons
-#toTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 5%;
-  z-index: 99;
-  border: none;
-  outline: none;
-  color: white;
-  cursor: pointer;
-  padding: 12px;
-  border-radius: 5px;
-  @include bg-color(#222222, #000000);
-
-  @media screen and (max-width: 768px) {right: 4%; padding: 10px}
-  @media screen and (max-width: 480px) {right: 3%; padding: 7px}
-  @media screen and (max-width: 360px) {right: 2%; padding: 5px}
-
+    @include icon-color(#6e5494, $color-primary);
 }

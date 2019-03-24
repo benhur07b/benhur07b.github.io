@@ -1,12 +1,38 @@
-<nav class="main-nav">
-  <div class="container">
-    <div class="verticalcenter text-center">
-      <!-- <a href="{{ site.baseurl }}" class="nav-text" >bnhr</a> -->
-      <a href="{{ site.baseurl }}/blog/index.html" class="nav-text" >blog</a>
-      <a href="{{ site.baseurl }}/about.html" class="nav-text" >about</a>
-      <a href="{{ site.baseurl }}/projects.html" class="nav-text" >projects</a>
-      <a href="{{ site.baseurl }}/contact.html" class="nav-text" >contact</a>
-      <a href="{{ site.baseurl }}/cv.html" class="nav-text" >cv</a>
-    </div>
-  </div>
-</nav>
+<!-- Navigation -->
+<div class="bnhr-container-x pt-3 pb-2" id="page-top">
+    <nav class="navbar navbar-default navbar-expand-lg d-print">
+        <a class="navbar-brand" href="{{ site.baseurl }}/"><span class="navbar-title">BNHR</span>
+        <!-- <hr class="fake-br">
+        <span class="navbar-subtitle">spatial</span> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <a class="nav-link" href="{{ site.baseurl }}/#about">about</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="{{ site.baseurl }}/#services">services</a>
+                </li>
+                <!-- <li>
+                    <a class="nav-link" href="{{ site.baseurl }}/#solutions">solutions</a>
+                </li> -->
+                <li>
+                    <a class="nav-link" href="{{ site.baseurl }}/#contact">contact</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="{{ site.baseurl }}/blog/">blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/portfolio">portfolio</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ site.baseurl }}/portfolio/cv.html">cv</a>
+                        <a class="dropdown-item" href="{{ site.baseurl }}/portfolio/works.html">works</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

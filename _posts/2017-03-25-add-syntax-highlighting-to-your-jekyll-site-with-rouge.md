@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/bnhr-600-bg.png
-  twitter: /media/bnhr-600-bg.png
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
 Syntax highlighting is important (especially for programming blogs) because it improves the readability of posts. It allows readers to quickly locate the code-snippets (which are usually why people visit your page in the first place) they need.
 

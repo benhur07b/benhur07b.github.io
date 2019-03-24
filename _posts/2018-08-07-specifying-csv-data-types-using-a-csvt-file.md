@@ -24,18 +24,18 @@ When adding a CSV via the **```Add Vector Layer```** option or **```Dragging```*
 
 **To illustrate**: Lets' say we have a CSV of names and ages of persons (**```sample.csv```**) like the one below.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/samplecsv.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/samplecsv.png"></div>
 
 If we import this as a layer in QGIS via the **```Add Delimited Text Layer```** and check its fields, we can see that the data types are correct. The Name is a text/string and the Age is an integer.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/dsm-input.png"></div>
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/dsm-fields.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/dsm-input.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/dsm-fields.png"></div>
 
 Now, if you try to import it using the other two options. You'll notice that the Age field becomes a string.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/vect-input.gif"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/vect-input.gif"></div>
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/sampcsv.gif"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/sampcsv.gif"></div>
 
 **```So how do we solve this?```** Enter the **```.csvt```** file.
 
@@ -43,7 +43,7 @@ Now, if you try to import it using the other two options. You'll notice that the
 The .csvt file is a one-line text file with a .csvt file extension and holds information on the data types of the columns of the CSV file it corresponds to. CSVTs enable the user to define the following data types: Integer, Real, String, Date (YYYY-MM-DD), Time (HH:MM:SS+nn), and DateTime (YYYY-MM-DD HH:MM:SS+nn).
 
 For example, we can create the following .csvt file (sample.csvt) for our sample csv.
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/samplecsvt.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/samplecsvt.png"></div>
 
 For the .csvt file to work it needs to:
 1. Have the **```same name```** as the CSV file it corresponds to (i.e. sample.csv has sample.csvt).
@@ -51,8 +51,8 @@ For the .csvt file to work it needs to:
 
 With the .csvt file present, we can see that the data types of the fields in the CSVs are classified by QGIS based on the .csvt when using **```Add Vector Layer```** or **```Dragging```** the file in QGIS.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/vect-input-csvt.gif"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/vect-input-csvt.gif"></div>
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/drag-input-csvt.gif"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-07-specifying-csv-data-types-using-a-csvt-file/drag-input-csvt.gif"></div>
 
 And that's the use of .csvt files in ensuring the correct data type for your CSV fields when not using the **```Add Delimited Text Layer```** option when loading them in QGIS.

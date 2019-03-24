@@ -1,33 +1,37 @@
-# Site Settings
-title: bnhr
-description: FOSS, Geospatial, Python, Basketball, and Everything in Between
-author:
-  facebook: benhur07b
-  twitter: benhur07b
-baseurl: ""
-logo: /media/bnhr-600-bg.png
+# site settings
+title: BNHR
+subtitle: spatial
+description: open solutions to spatial and data problems
 email: hi@bnhr.xyz
-facebook_username: benhur07b
-twitter_username: benhur07b
-github_username: benhur07b
-linkedin_username: benhur07b
+baseurl: ""
+logo: /media/site/logos/BNHR-spatial-icon.png
+
+# links
+user_facebook: bnhr.xyz
+user_twitter: benhur07b
+user_github: benhur07b
+user_linkedin: benhur07b
+
+# repo
 repository: benhur07b/benhur07b.github.io
 site.github: [metadata]
-# repo_address: benhur07b/benhur07b.github.io
+
+# paginator
 paginate: 10
 paginate_path: "blog/page:num/"
 
-# Build Settings
+# build settings
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+    input: GFM
+    syntax_highlighter: rouge
 
-# Exclude
+# exclude
 exclude:
   - Gemfile
   - Gemfile.lock
 
+# plugins
 plugins:
   - github-pages
   - jekyll-paginate

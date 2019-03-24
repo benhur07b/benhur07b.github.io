@@ -10,7 +10,7 @@ image:
   facebook: /media/posts/2017-07-14-qgis-plugins/qgis-has-plugins.png
 ---
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/qgis-has-plugins.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/qgis-has-plugins.png"></div>
 
 QGIS has an extensive plugin library but it's commonly underutilized by those unfamiliar or new to QGIS. I've had experiences where people told me that they don't use QGIS because it doesn't have **function X** and they always get surprised when I tell them that QGIS actually has the function they're looking for **as a plugin**.
 
@@ -28,9 +28,9 @@ A function is currently being developed for the upcoming QGIS 3.0 release that w
 
 The second option is by downloading the plugin from a plugin repository (i.e. The QGIS Official Plugin Repository) using the ```Manage and Install Plugins Dialog``` which can be accessed via **Plugins -> Manage and Install Plugins ...** in the Main Menu bar.
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/manage-and-install.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/manage-and-install.png"></div>
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/properties.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/properties.png"></div>
 
 The ```Manage and Install Plugins Dialog``` connects to the QGIS Official Plugin repository (or any repository that you indicate in the ```Settings Tab```) to fetch plugins available for your version of QGIS. It has 4 Tabs:
 * ```All Tab``` -- shows ALL the plugins available for your QGIS version including those that are already installed on your machine.
@@ -42,19 +42,19 @@ Some plugins come bundled with your QGIS version. These are called **Core** plug
 
 To install this plugin, type **Spatial Query** in the search bar while on the ```All``` or ```Installed``` tab and select the plugin. To activate/deactivate it, tick the check-box on the left of the plugin name.
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/spatial-query.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/spatial-query.png"></div>
 
 If you successfully activated the plugin, you should be able to access it via **Vector -> Spatial Query -> Spatial Query**
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/spatial-query-run.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/spatial-query-run.png"></div>
 
 The plugins that are not part of the Core plugins can also be downloaded and installed from the ```Manage and Install Plugins Dialog```. These **External** plugins are fetched from the plugin repositories indicated in the ```Settings``` tab. For example, you can install the **Statist** plugin which calculates statistics for a field by searching for **Statist** in the search bar while on the ```All``` or ```Not istalled``` tab then clicking the ```Install plugin``` button on the lower right corner of the dialog.
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/statist.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/statist.png"></div>
 
 If you successfully installed the plugin, you should be able to access it via **Vector -> Statist -> Statist**
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/statist-run.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-14-qgis-plugins/statist-run.png"></div>
 
 
 ## Making your own plugin

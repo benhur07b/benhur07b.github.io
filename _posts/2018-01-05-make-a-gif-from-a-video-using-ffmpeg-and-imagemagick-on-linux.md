@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/bnhr-600-bg.png
-  twitter: /media/bnhr-600-bg.png
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
 
 ## Method 1

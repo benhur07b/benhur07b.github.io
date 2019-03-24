@@ -11,7 +11,7 @@ image:
     twitter: /media/posts/2018-12-12-i-choose-geopackage/prefer-geopackage.png
 ---
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-12-12-i-choose-geopackage/prefer-geopackage.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-12-12-i-choose-geopackage/prefer-geopackage.png"></div>
 <small>_* credits to http://switchfromshapefile.org/ for the image_</small>
 
 This year, I made the decision and conscious effort to use shapefiles less and GeoPackages more in the work that I do. Whenever possible and whenever people will listen, I also try to talk and explain why I made the switch to GeoPackage and why I think the format has a lot of potential.

@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/bnhr-600-bg.png
-  twitter: /media/bnhr-600-bg.png
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
 I was performing a routine update and upgrade of my system packages when I encountered this error.
 

@@ -32,7 +32,7 @@ If you need help with installing plugins, you can check [this post](https://benh
 
 Once installed, the plugin can be accessed via ```Plugins -> Analyses -> Point sampling tool```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/pst-cropped.png"></div>
+<div class=" img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/pst-cropped.png"></div>
 
 >
 **DIRECTIONS:**
@@ -53,17 +53,19 @@ On the ```Fields``` tab:
 >
 Click ```OK```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/general.png"></div>
+<div class="row">
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/general.png"></div>
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/fields.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/fields.png"></div>
+</div>
 
 If the tool is successful, there should be a new point layer in the Layer panel whose fields are the ones you selected.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/sampled-cropped.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/sampled-cropped.png"></div>
 
 Open the attribute table of the created point layer to check.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/attr-tab.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/attr-tab.png"></div>
 
 Some important things to note with the Point sampling tool.
 1. It does not copy the sample points but creates a new point shapefile. Thus, if you want to include the fields of the sample points, you need to select them.
@@ -79,11 +81,11 @@ Adding new fields in the attribute table is easy. You can type ```v.db.addcolumn
 
 In the ```Manage tables``` tab you can add a Bn_Coconut and a Bv_Coconut field of type double.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.vect-bn_coco-add.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.vect-bn_coco-add.png"></div>
 
 Afterwards, the ```v.what.vect``` module can be accessed by typing ```v.what.vect``` in the Command console or via ```Vector -> Update attributes -> Update point attributes from areas [v.what.vect]```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.vect-crp.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.vect-crp.png"></div>
 
 >
 **DIRECTIONS:**
@@ -96,20 +98,20 @@ On the ```Required``` tab:
 >
 Click ```Run```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.vect-bn_coco.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.vect-bn_coco.png"></div>
 
 Do the same for the Bv_Coconut field.
 
 If you are successful, the Bn_Coconut and Bv_Coconut fields of the sample-points layer should now have values. Open the attribute table to check.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/grass-attr-tab-2.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/grass-attr-tab-2.png"></div>
 
 ## v.what.rast in GRASS
 The ```v.what.rast``` module retrieves raster value from a given raster map for each point or centroid stored in a given vector map. It can update a column in the linked vector attribute table with the retrieved raster cell value or print it. The column type needs to be numeric (integer, float, double, ...). If the column doesn't exist in the vector attribute table than the module will create the new column of type corresponding with the input raster map. You can read more about it [here](https://grass.osgeo.org/grass72/manuals/v.what.rast.html).
 
 It can be accessed by typing ```v.what.rast``` in the Command console or via ```Vector -> Update attributes -> Sample raster maps at point locations [v.what.rast]```.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.rast-crp.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.rast-crp.png"></div>
 
 >
 **DIRECTIONS:**
@@ -124,14 +126,14 @@ On the ```Optional``` tab:
 >
 Click ```Run```
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.rast-reqd.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.rast-reqd.png"></div>
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.rast-opt.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/v.what.rast-opt.png"></div>
 
 
 If you are successful, the GHI attribute column of sample-points should now have values. Open the attribute table to check.
 
-<div style="padding: 1.5em 0;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/grass-attr-tab.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2017-07-26-foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass/grass-attr-tab.png"></div>
 
 ## Final thoughts
 Unlike the ```Point sampling tool``` that creates a new point shapefile, the GRASS modules used for sampling just updates the attribute table of your sampling point layer.

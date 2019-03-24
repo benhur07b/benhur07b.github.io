@@ -1,0 +1,35 @@
+$color-primary: #222222;
+$color-primary-dark: #df6e21;
+$color-primary-light: #e7b1a3;
+$color-secondary-dark: #2096ba;
+$color-secondary-light: #c5d2db;
+$color-muted: #545454;
+$color-muted-light: #CCD5DB;
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-primary-dark {
+    color: $color-primary-dark;
+}
+
+.color-primary-light {
+    color: $color-primary-light;
+}
+
+.color-secondary-dark {
+    color: $color-secondary-dark;
+}
+
+.color-secondary-light {
+    color: $color-secondary-light;
+}
+
+.color-muted {
+    color: $color-muted;
+}
+
+.color-muted-light {
+    color: $color-muted-light;
+}

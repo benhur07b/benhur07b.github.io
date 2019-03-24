@@ -8,9 +8,10 @@ comments: true
 og_type: article
 image:
   facebook: /media/posts/2018-10-08-qgis-plugins-3.0/qgis-has-plugins.png
+  twitter: /media/posts/2018-10-08-qgis-plugins-3.0/qgis-has-plugins.png
 ---
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/qgis-has-plugins.png"></div>
+<div style="padding-bottom: 1.5em;"><img class="img-fluid" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/qgis-has-plugins.png"></div>
 
 This is an update of a [previous post](https://benhur07b.github.io/2017-07-14-qgis-plugins.html) where I talked about plugins in QGIS 2.X. Here, we'll talk about plugins in QGIS 3.
 
@@ -31,9 +32,9 @@ In QGIS 3, you can install plugins in two (2) ways:
 
 2. Via the Manage and Install Plugins Dialog (**```Plugins -> Manage and Install Plugins```**)
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/manage-and-install.png"></div>
+<div style="padding-bottom: 1.5em;"><img class="img-fluid" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/manage-and-install.png"></div>
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/qgis-has-plugins.png"></div>
+<div style="padding-bottom: 1.5em;"><img class="img-fluid" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/qgis-has-plugins.png"></div>
 
 The **```Manage and Install Plugins Dialog```** connects to the QGIS Official Plugin repository (or any repository that you indicate in the **```Settings Tab```**) to fetch plugins available for your version of QGIS. It has 4 Tabs:
 * **```All Tab```** -- shows ALL the plugins available for your QGIS version including those that are already installed on your machine.
@@ -43,7 +44,7 @@ The **```Manage and Install Plugins Dialog```** connects to the QGIS Official Pl
 
 An addition to QGIS 3 is the ability to install from zip which can be accessed via the **```Install from ZIP```** tab.
 
-<div style="padding-bottom: 1.5em;"><img class="img-responsive" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/from-zip.png"></div>
+<div style="padding-bottom: 1.5em;"><img class="img-fluid" style="display: block; margin: auto;" src="{{ site.baseurl }}/media/posts/2018-10-08-qgis-plugins-3.0/from-zip.png"></div>
 
 ## Making your own plugin
 Now what if there's no plugin that does what you want? Well, you can always make one yourself!

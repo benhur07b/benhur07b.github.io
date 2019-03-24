@@ -30,7 +30,7 @@ Walang nagsasabing bawal kang kumita gamit ang Free software. Sa katotohanan, ma
 
 **Halimbawa:** Hindi mo pwedeng itago ang source code ng malayang software mula sa mga tao o kliyente mo sapagkat ito ay lalabag sa Kalayaan 1. Kailangan bigyan ng kopya ng source code o kaya ng link patungo sa source code ng QGIS o ng plugin sa QGIS na ginawa mo para sa isang kliyente.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/adobo.jpg" alt="adobo"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/adobo.jpg" alt="adobo"></div>
 
 **Adobo...** Ganito ko ipaliwanag at ihalintulad ang malayang software. Isipin mo na mayroong dalawang tao na may hawak ng recipe para sa adobo -- si **Jose** at si **Juan**.
 
@@ -45,7 +45,7 @@ Sinisimbolo ni Juan at ng kanyang recipe ang malayang software na nagbibigay sa 
 
 Sa isang **```bukas```** (open-source) na software, tayo ay malayang makita ang source code nito at malaman kung paano siya gumagana. Ang pagiging bukas ng software ay isang paraan upang matugunan ang Kalayaan 0 at Kalayaan 1 ng malayang software.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/carhood.jpg" alt="kotse"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/carhood.jpg" alt="kotse"></div>
 
 Ang isang software na **```hindi bukas```** ay inihahalintulad ko sa binilo mong **```kotse na hindi mo pwedeng buksan ang hood kung saan nakalagay ang makina at iba pang parte nito```**. Kapag nagkaroon ng sira ang kotse, kailangan mo itong dalhin sa iba para lamang pabuksan ang hood upang makita nila ang kamalian at maayos ito. Kumpara dito, ang **```bukas```** na software ay **```isang kotse na malaya kang tingnan kung ano ang nangyayari sa makina at sa iba pang parte nito kapag nagkaroon ng sira```**. Maari mong ayusin sa sarili mo ang sira o dalhin sa iba upang ipatingin at ipaayos ito. Siguro naman ay mas gugustuhin natin ang ikalawang kotse kaysa sa una.
 
@@ -60,17 +60,17 @@ Ang interface ng QGIS ay may anim na pangunahing bahagi. Ito ay ang:
 5. Status bar
 6. Locator
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/gui.png" alt="QGIS GUI"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/gui.png" alt="QGIS GUI"></div>
 
 Mas marami pang impormasyon ukol sa interface ng QGIS ay maaaring makita [dito](https://docs.qgis.org/testing/en/docs/user_manual/introduction/qgis_gui.html).
 
 ### Menu bar
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/menubar.png" alt="Menu bar"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/menubar.png" alt="Menu bar"></div>
 
 Ang menu bar sa QGIS ay katulad ng mga menu bar sa ibang programa. Dito makikita ang mga utos (commands) at bagay na kayang gawin (functions) ng QGIS.
 
 ### Toolbars
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/toolbar1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/toolbar1.png"></div>
 
 Ang mga toolbar ay nagbibigay ng shortcut upang patakbuhin ang mga commands at functions ng QGIS.
 
@@ -86,9 +86,11 @@ Ang mga karaniwang toolbar na ginagamit ay:
 Ang mga toolbar ay maaring galawin at ilagay kung saan man sa QGIS interface. Maari silang ipwesto sa taas, baba, o sa gilid ng Map Canvas.
 
 ### Panels
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/panels1.png"></div>
+<div class="row">
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/panels1.png"></div>
 
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/panels2.png"></div>
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/panels2.png"></div>
+</div>
 
 Ang mga panels ay naglalaman ng mga widgets na maaring gamitin para sa mga mas komplikadong interaksyon sa QGIS.
 
@@ -104,7 +106,7 @@ Ang mga karaniwang toolbar na ginagamit ay:
 Katulad sa toolbars, ang mga panels ay  maaring galawin at ilagay kung saan man sa QGIS interface. Maari silang ipwesto sa taas, baba, o sa gilid ng Map Canvas.
 
 ### Map View/Map Canvas
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/mapcanvas.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/mapcanvas.png"></div>
 
 Ito ang lugar kung saan makikita ang mapa/imahe ng mga layers.
 
@@ -113,7 +115,7 @@ Maaring palakihin, paliitin, at galawin ang mga mapa/imahe na nakikita dito
 Gumagamit ng On-the-Fly Coordinate Reference System Transformation (OTF) upang ang mga layers na parehong lugar ang ipinapakita ay maglapat kahit na hindi pareho ang coordinate reference system na gamit nila (IMPORTANTE. Tingnan ang [huling lathala](https://benhur07b.github.io/2018/07/20/pagpapakilala-sa-qgis-unang-parte.html))
 
 ### Status bar
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/statusbar.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/statusbar.png"></div>
 
 Ang status bar ay nagbibigay ng impormasyon ukol sa map view o map canvas:
 
@@ -125,13 +127,13 @@ Ang status bar ay nagbibigay ng impormasyon ukol sa map view o map canvas:
 6. Nagpapakita sa gumagamit ng mga mensahe at kalagayan ng mga prosesong pinapatakbo.
 
 ### Locator
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/locator.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/locator.png"></div>
 
 Isang napakamakapangyarihang kagamitan sa QGIS. Maaring gamitin ang locator upang maghanap ng mga layers, mga aksyon na kayang gawin, at mga proseso ng QGIS. Mainam gamitin kapg hindi mo alam kung saan hahanapin o ano ang pipindutin para sa aksyon na gusto mong mangyari sa QGIS.
 
 ### Others - Python Console
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/python-c2.png"></div>
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/python-c.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/python-c2.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/python-c.png"></div>
 
 Ang Python console ay maaring mabuksan sa pagpindot ng Python logo sa Plugins toolbar.
 
@@ -146,7 +148,7 @@ Ang user profiles ay isa sa mga bagong bagay na idinagdag sa QGIS 3.X. Ang bawat
 
 Maaring pumili ng user profiles sa pamamagitan ng **```Settings -> User Profiles```**. Ang folder ng aktibong user profile ay maaring buksan gamit ang **```Settings -> User Profiles -> Open Active Profile Folder```**.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/user-profiles.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/user-profiles.png"></div>
 
 ## Ang mga QGIS Plugins
 Isa sa mga pinaka-mahalagang bahagi ng QGIS ay ang mga plugins. Sila ay nagbibigay ng karagdagang mga kakayahan at abilidad sa QGIS at gingagawang mas kapaki-pakinabang ito. Karamihan sa mga bagay na madalas akalain na hindi kaya ng QGIS ay nasasagot ng mga plugins. Ang mga plugins na ito ay likha din ng mga users ng QGIS at ang mga source code nila ay bukas sa publiko upang pag-aralan. Maari tayong tumulong sa pag-papaganda ng mga plugins o kaya ay gumawa ng sarili nating plugins upang ipamahagi sa ibang users.
@@ -175,11 +177,13 @@ Ilan sa mga lugar kung saan pwedeng gamitin ang expressions ay sa **```Expressio
 2. Pumili ng tamang function mula sa listahan ng mga functions at fields. Mayroon ding search box na maaring gamitin upang mas madaling mahanap ang isang partikular na function o field. Ang item sa listahan ay madadagdag sa expression na binubuo kapag dinouble-click ito.
 3. Magpakita ng impormasyon at tulong sa mga napiling function. Kapag field ang napili, ang widget na ito ay nagpapakita ng sample ng mga values ng field. Kapag dinouble-click ang isang value ay madadagdag ito sa binubong expression.
 
-<div class="col-lg-4 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp1.png"></div>
+<div class="row">
+    <div class="col-lg-4 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp1.png"></div>
 
-<div class="col-lg-4 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp2.png"></div>
+    <div class="col-lg-4 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp2.png"></div>
 
-<div class="col-lg-4 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp3.png"></div>
+    <div class="col-lg-4 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp3.png"></div>
+</div>
 
 ## Mga Layers sa Memorya
 Ang mga layers sa memorya (layers in memory) ay katulad ng mga normal na layers ngunit sila ay hindi permanente at hindi pisikal na naka-save sa kompyuter subalit ay naka-save sa memorya ng computer lamang. Sila ay kapakipakinabang kapag kailangan ng pansamantalang layers o kaya mga layers na di naman kailangan i-save bilang files. Sa QGIS, ang mga output ng processing ay madalas na nakalagay lamang sa memorya kung hindi direktang sasabihing i-save sila bilang files. Maari ring gumawa ng mga pansamantalang layers gamit ang **```Layer -> Create Layer -> New temporary scratch layer```**.
@@ -191,9 +195,9 @@ Ang mga layers sa memorya ay pansamantala lamang at "nakakalimutan" ng QGIS kapa
 ## Paglagay ng layers sa QGIS
 Isa pang bagong dagdag sa QGIS 3.X ay ang pagkakaroon ng isang komprehensibong paraan para maglagay ng layers sa QGIS sa pamamagitan ng **```Data Source Manager```** na maaring buksan gamit ang **```CTRL + L```** o **```Layer -> Data Source Manager```**.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/datasource.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/datasource.png"></div>
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/datasource2.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/datasource2.png"></div>
 
 Mula sa **```Data Source Manager```**, maaring maglagay na iba-ibang uri ng data sa QGIS o kaya ay kumabit sa iba't-ibang pwedeng pagkunan ng data.
 
@@ -213,12 +217,12 @@ Para naman kumunekta sa isang database, maaring:
 
 Bubuksan nito ang isang dialog kung saan maaring ilagay ang mga detalye para kumunekta sa database.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/db-create1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/db-create1.png"></div>
 
-<div class="col-lg-12">
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/db-create2.png"></div>
+<div class="row">
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/db-create2.png"></div>
 
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/db-create3.png"></div>
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/db-create3.png"></div>
 </div>
 
 ### Pagkonekta sa mga Web Service (WFS, WMS)
@@ -234,15 +238,15 @@ Bubuksan nito ang isang dialog kung saan maaring ilagay ang mga detalye para kum
 Halimbawa, maari tayong kumunekta sa WMS service ng Philippine Geoportal. Ang url nila ay:
 > http://geoserver.namria.gov.ph/geoserver/ows?version=1.1.1&
 
-<div class="col-lg-12">
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/wms-new.png"></div>
+<div class="row">
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/wms-new.png"></div>
 
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/wms-pgp.png"></div>
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/wms-pgp.png"></div>
 </div>
 
 Kapag matagumpay na nakakonekta sa WMS ng Philippine Geoportal, maari nang magamit bilang layer ang mga mapa nila.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/wms-succ.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/wms-succ.png"></div>
 
 ### Pagkonekta sa Geonode
 
@@ -255,15 +259,15 @@ Maaring kumunekta sa isang web service sa pamamagitan ng:
 Ang Geonode ng World Food Programme (WFPGeonode) ay isang halimbawa ng Geonode site kung saan pwedeng kumunekta ang QGIS para makakuha ng data. Ang url nila ay:
 > http://geonode.wfp.org/
 
-<div class="col-lg-12">
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp-new.png"></div>
+<div class="row">
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp-new.png"></div>
 
-<div class="col-lg-6 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp.png"></div>
+    <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp.png"></div>
 </div>
 
 Kapag matagumpay na nakakonekta sa Geonode ng World Food Programme, maari nang magamit sa QGIS ang mga layers at mapa nila.
 
-<div class="col-lg-12 img-container"><img class="img-responsive post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp-succ.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp-succ.png"></div>
 
 
 ## Sa Susunod na Kabanata
