@@ -12,6 +12,15 @@ user_twitter: benhur07b
 user_github: benhur07b
 user_linkedin: benhur07b
 
+# author
+author:
+    name: "Ben Hur S. Pintor"
+    avatar: "/media/site/logos/BNHR-spatial-icon.png"
+    facebook: "bnhr.xyz"
+    twitter: "benhur07b"
+    github: "benhur07b"
+    linkedin: "benhur07b"
+
 # repo
 repository: benhur07b/benhur07b.github.io
 site.github: [metadata]
