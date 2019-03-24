@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/bnhr-600-bg.png
-    twitter: /media/bnhr-600-bg.png
+    facebook: /media/site/img/BNHR-bg.png
+    twitter: /media/site/img/BNHR-bg.png
 ---
 
 Sa [huling lathala](https://benhur07b.github.io/2018/07/20/pagpapakilala-sa-qgis-unang-parte.html), tinalakay ang mas pangkalahatang konsepto ng GIS. Ngayon, tutungo na tayo sa pagtalakay ng QGIS.
