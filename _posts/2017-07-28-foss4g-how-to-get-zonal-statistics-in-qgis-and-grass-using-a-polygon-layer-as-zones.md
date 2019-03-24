@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/foss4g-howto.png
-  twitter: /media/foss4g-howto-400px.png
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
 
 In the [previous entry](https://benhur07b.github.io/2017/07/26/foss4g-how-to-sample-raster-or-vector-values-at-points-in-qgis-and-grass.html), we learned how to sample raster and vector values at points. In this post, we'll take a look at how we can compute for zonal statistics using a polygon layer in QGIS and GRASS.
