@@ -4,18 +4,13 @@ subtitle: spatial
 description: open solutions to spatial and data problems
 email: hi@bnhr.xyz
 baseurl: ""
-logo: /media/site/logos/BNHR-spatial-icon.png
-
-# links
-user_facebook: bnhr.xyz
-user_twitter: benhur07b
-user_github: benhur07b
-user_linkedin: benhur07b
+logo: /media/site/img/BNHR-bg.png
+favicon: /media/site/logos/BNHR-favicon.png
 
 # author
 author:
     name: "Ben Hur S. Pintor"
-    avatar: "/media/site/logos/BNHR-spatial-icon.png"
+    avatar: "/media/site/logos/BNHR-avatar.png"
     facebook: "bnhr.xyz"
     twitter: "benhur07b"
     github: "benhur07b"
