@@ -80,3 +80,7 @@
 .share-gh {
     @include icon-color(#6e5494, $color-primary);
 }
+
+.share-rss {
+    @include icon-color(#f26522, $color-primary);
+}
