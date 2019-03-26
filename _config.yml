@@ -11,10 +11,10 @@ favicon: /media/site/logos/BNHR-favicon.png
 author:
     name: "Ben Hur S. Pintor"
     avatar: "/media/site/logos/BNHR-avatar.png"
-    facebook: "bnhr.xyz"
-    twitter: "benhur07b"
-    github: "benhur07b"
-    linkedin: "benhur07b"
+    facebook: "https://facebook.com/bnhr.xyz"
+    twitter: "https://twitter.com/benhur07b"
+    github: "https://github.com/benhur07b"
+    linkedin: "https://linkedin.com/in/benhur07b"
 
 # repo
 repository: benhur07b/benhur07b.github.io
