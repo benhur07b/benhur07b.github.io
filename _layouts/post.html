@@ -9,13 +9,13 @@ layout: default
         {{content}}
     </div>
 
-    <div">
+    <div>
         {% include share-social.html %}
     </div>
     <hr class="fake-br my-3">
 
     <!-- post navigation -->
-    <div class="pb-4 bnhr-container-x">
+    <div class="pb-4 px-3">
         <div class="row nav-posts d-flex fonts-pagination-post">
             {% if page.previous.url %}
                 <a class="prev d-block text-left bnhr-links" href="{{page.previous.url | absolute_url}}"> &laquo; {{page.previous.title}}</a>
@@ -31,14 +31,14 @@ layout: default
         </div>
     </div>
 
-    <div class="bnhr-container-x">
+    <div>
         {% if page.comments %}
             {% include disqus-comments.html %}
         {% endif %}
     </div>
 
     <!-- related posts -->
-    <div class="bnhr-container-x">
+    <div>
         {% include post-related.html %}
     </div>
 </div>
