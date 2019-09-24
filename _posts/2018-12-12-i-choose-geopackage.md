@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /media/posts/2018-12-12-i-choose-geopackage/prefer-geopackage.png
+    facebook: /media/posts/2018-12-12-i-choose-geopackage/prefer-geopackage.png
     twitter: /media/posts/2018-12-12-i-choose-geopackage/prefer-geopackage.png
 ---
 

@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipe.png
+    facebook: /media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipe.png
     twitter: /media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapshipe.png
 ---
 

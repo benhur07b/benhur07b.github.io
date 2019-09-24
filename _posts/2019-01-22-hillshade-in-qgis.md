@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /media/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
+    facebook: /media/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
     twitter: /media/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
 ---
 

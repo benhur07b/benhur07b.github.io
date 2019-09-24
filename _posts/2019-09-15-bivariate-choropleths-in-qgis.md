@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
+    facebook: /media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
     twitter: /media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
 ---
 

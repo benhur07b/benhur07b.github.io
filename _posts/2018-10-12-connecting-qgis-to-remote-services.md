@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /media/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
+    facebook: /media/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
     twitter: /media/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
 ---
 

@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /media/posts/2019-02-08-mapping-icebergs-in-qgis/icebergs.png
+    facebook: /media/posts/2019-02-08-mapping-icebergs-in-qgis/icebergs.png
     twitter: /media/posts/2019-02-08-mapping-icebergs-in-qgis/icebergs.png
 ---
 
