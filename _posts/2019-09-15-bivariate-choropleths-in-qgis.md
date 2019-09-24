@@ -13,7 +13,7 @@ image:
 
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>
 
-I've had a fascination with bivariate choropleth maps for quite some time now. Who wouldn't? With the right color combination, a bivariate choropleth map hits that sweet spot of being both visually stunning and highly informative.
+I've had a fascination with bivariate choropleth maps for quite some time now. Who wouldn't? With the right color combination, a bivariate choropleth map hits that sweet spot of being both visually stunning and highly informative. Just do a [Google search of bivariate choropleth](https://www.google.com/search?q=Bivariate+Choropleth&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiqlYS8kOnkAhUpK6YKHRZcDLAQ_AUIEigB&biw=1920&bih=980) and you'll see what I mean.
 
 Inspired by [this post by Joshua Stevens](https://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/), this post will detail how to make bivariate choropleth maps in QGIS. We'll create a bivariate choropleth map using election returns of the recent (2019) Philippine Elections focusing on 2 candidates -- Senator Bato dela Rosa and Chel Diokno. The data (in GeoPackage format) can be found [here](http://bit.ly/data-bivariate-choropleth-in-qgis-1).
 
