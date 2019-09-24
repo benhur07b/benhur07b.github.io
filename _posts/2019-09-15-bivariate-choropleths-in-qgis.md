@@ -133,7 +133,11 @@ The result would now be a bivariate choropleth map. :)
 We can now use this map in our Print Layout. But what about the legend?
 
 ### The Bivariate Legend plugin
-Thankfully, QGIS has a plugin for creating bivariate legends (**_YAY PLUGINS!!!_**). The Bivariate Legend plugin can be installed via the Manage and Install Plugins Dialog. This plugin generates a bivariate legend using two layers. The generated legend can then be exported to an image that can be added to the Print Layout.
+Thankfully, QGIS has a plugin for creating bivariate legends (**_YAY PLUGINS!!!_**). The Bivariate Legend plugin can be installed via the Manage and Install Plugins Dialog.
+
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/bl-manage-install.png'></div>
+
+This plugin generates a bivariate legend using two layers. The generated legend can then be exported to an image that can be added to the Print Layout.
 
 >Using the Bivariate Legend plugin, our parameters will be:
 >
