@@ -39,7 +39,7 @@ Now, you might be asking: "**Okay, I get the win/loss record but what in the wor
 
 As with most sports analytics concepts, the Pythagorean record originated in baseball and the Father of Sabermetrics Bill James. It's an **estimation of a team's winning percentage based only on the points (runs) that they scored and the points (runs) scored against them**. It's a simple metric that's probably better at **showing how good a team is (or should be)** than just plain wins and losses. The Pythagorean record can also show if a team has been lucky or unlucky. A team that's outperforming its Pythagorean record can be considered lucky *(e.g. wins close games, loses not-so-close games)* while a team that's under-performing its Pythagorean record can be considered unlucky *(e.g. loses close games, wins not-so-close games)*.
 
-The formula for Pythagorean wins is simple:
+The formula for Pythagorean Win % is simple:
 
 ><img class='img-fluid' src='https://latex.codecogs.com/svg.latex?\Large&space;Pythagorean Win Percentage=\frac{PS^{exp}}{PS^{exp} + PA^{exp}}' />
 >* PS = Points Scored By Team
