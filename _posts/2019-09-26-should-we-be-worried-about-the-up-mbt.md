@@ -41,7 +41,7 @@ As with most sports analytics concepts, the Pythagorean record originated in bas
 
 The formula for Pythagorean wins is simple:
 
-><img class='img-fluid' src="https://latex.codecogs.com/svg.latex?\Large&space;Pythagorean Win Percentage=\frac{PS^{exp}}{PS^{exp} + PA^{exp}}" />
+><img class='img-fluid' src='https://latex.codecogs.com/svg.latex?\Large&space;Pythagorean Win Percentage=\frac{PS^{exp}}{PS^{exp} + PA^{exp}}' />
 >* PS = Points Scored By Team
 >* PA = Points Scored Against Team
 >* exp = Pythagorean exponent (Daryl Morey uses 13.91, John Hollinger uses 16.5)
@@ -50,6 +50,8 @@ With that, I went ahead and scraped data on the final scores of the UAAP games f
 
 Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for the past 11 years grouped per season and sorted from highest to lowest Pythagorean Win % for that season.
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrcH76rLd8HfeU9s?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe class='airtable-embed' src='https://airtable.com/embed/shrcH76rLd8HfeU9s?backgroundColor=gray&viewControls=on' frameborder='0' onmousewheel='' style='background: transparent; border: 1px solid #ccc;' width='100%' height='500'></iframe>
+
+<iframe class='embed-responsive' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?widget=true&headers=false' height='436px'></iframe>
 
 **Of course we can forget about everything I wrote here if we manage to beat Ateneo this Sunday. HAHAHA. #UPFight!**
