@@ -46,7 +46,7 @@ The formula for Pythagorean wins is simple:
 >* PA = Points Scored Against Team
 >* exp = Pythagorean exponent (Daryl Morey uses 13.91, John Hollinger uses 16.5)
 
-With that, I went ahead and scraped data on the final scores of the UAAP games for the past 11 years then computed for the Pythagorean win percentage of the teams for each year.
+With that, I went ahead and scraped data on the final scores of the UAAP games for the past 11 years then computed for the Pythagorean win percentage of the teams for each year. You can get the data I used [here](https://docs.google.com/spreadsheets/d/1grFfOW5dPm6dmnWn1rUo7D-Grq_aMnQACAOtvp7GKnk/edit?usp=sharing).
 
 Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for the past 11 years grouped per season and sorted from highest to lowest Pythagorean Win % for that season.
 
