@@ -2,7 +2,7 @@
 layout: post
 title: "Should we be worried about the UP Men's Basketball Team? #UAAPSeason82"
 description: The UP Fighting Maroons Men's Basketball Team is currently 5-1 and ranks second only to Ateneo in the standings so there's nothing to worry about, right?
-tags: [uaap, up, fighting-maroons, upmbt, basketball, data]
+tags: [uaap, up, fighting-maroons, battle-of-katipunan, upmbt, basketball, data]
 pinned: false
 comments: true
 og_type: article
@@ -33,7 +33,7 @@ I think we all want to know if given UP's current performance, are they on track
 
 **SMALL SAMPLE SIZE DISCLAIMER. Take everything below with a grain of salt. :)**
 
-To answer this question,p I decided to take a look at *just* two things: **the Win/Loss record and the Pythagorean record of the UAAP teams since Season 71 (2008-2009)**. This was partly because I think that these stats are the simplest way to scratch my itch and partly because I didn't have time to scrape more data and look at other stats (Hahaha!) so please, please take all this with a huge grain of salt.
+To answer this question, I decided to take a look at *just* two things: **the Win/Loss record and the Pythagorean record of the UAAP teams since Season 71 (2008-2009)**. This was partly because I think that these stats are the simplest way to scratch my itch and partly because **I didn't have extra time to scrape more data and look at other stats (Hahaha!) so please, please take all this with a huge grain of salt**. If we wanted a more in-depth analysis, we could look at other factors like Offensive and Defensive Efficiency, +/-, etc.
 
 Now, you might be asking: "**Okay, I get the win/loss record but what in the world is Pythagorean record?**"
 
@@ -97,4 +97,4 @@ _**So what does this all mean?**_
 
 It could mean that UP has been lucky (*duh!*) this early season but if they want to reach (and win) the Finals, history says they have to play a bit better. Their level of play needs to match the talent that they have. It could also mean that ADMU is on track to win its third straight Championship and UST is positioning itself as the dark horse this season.
 
-**OR it could mean nothing at all and we can forget about everything I wrote here if we manage to beat Ateneo this Sunday. HAHAHA. #UPFight!**
+**OR it could mean nothing at all and we can forget about everything I wrote here if we manage to beat Ateneo this Sunday. HAHAHA. #UPFight! #BattleOfKatipunan**
