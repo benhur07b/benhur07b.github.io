@@ -10,8 +10,9 @@ image:
     facebook: /media/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
     twitter: /media/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
 ---
-<br>
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma-720.gif'></div>
+<small>*Hat tip to [BA](https://giphy.com/channel/badoodles) for the original GIF*</small>
+<br><br>
 
 The UP Fighting Maroons Men's Basketball Team is on a tear right now. They've won 4 in a row and currently hold a 5-1 record -- second only to the Ateneo Blue Eagles in the standings.
 
