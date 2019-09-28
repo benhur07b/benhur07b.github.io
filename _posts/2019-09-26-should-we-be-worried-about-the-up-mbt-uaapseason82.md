@@ -52,7 +52,7 @@ Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for t
 
 <!-- <iframe class='airtable-embed' src='https://airtable.com/embed/shrM8fHD7lH0hDyjP?backgroundColor=gray' frameborder='0' onmousewheel='' style='background: transparent; border: 1px solid #ccc;' width='100%' height='500'></iframe> -->
 
-<iframe class='embed-responsive' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?widget=true&headers=false' height='424px'></iframe>
+<iframe class='embed-responsive' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false' height='424px'></iframe>
 
 <br>
 Here are a few observations:
