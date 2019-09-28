@@ -58,18 +58,19 @@ Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for t
 Here are a few observations:
 
 Of the **22 teams that reached the UAAP Finals since 2008**:
-* **18 teams** had a Pythagorean Win % **greater than 70%**
-* Only **3 teams** had a Pythagorean Win % **between 60% and 70%**
+* **18** had a Pythagorean Win % **greater than 70%**
+* **3** had a Pythagorean Win % **between 60% and 70%**
     * UST (Season 75, 61.53%), UST (Season 76, 66.09%), UP (Season 81, 64.17%)
-* Only **1 team** had a Pythagorean Win % **less than 60%**
+* **Only 1** had a Pythagorean Win % **less than 60%**
     * FEU (Season 74, 50%)
 * **No team** has made it to the Finals with a Pythagorean Win % **less than 50%**
 
 Of the **11 teams that won the UAAP Championship since 2008**:
-* **9 Champions** led the league in Pythagorean Win % (*Only 7 Champions led the league in Win-Loss %*)
-* **6 Champions** had a Pythagorean Win % **greater than 90%**
-* **4 Champions** had a Pythagorean Win % **between 84% and 90%**
-* Only **1 Champion** had a Pythagorean Win % **less than 80%**
+* **9** led the league in Pythagorean Win % (*Only 7 led the league in Win-Loss %*)
+* **ALL 11** were **Top 2** in Pythagorean Win % during the Season (*10 were Top 2 in terms of Win-Loss %*)
+* **6** had a Pythagorean Win % **greater than 90%**
+* **4** had a Pythagorean Win % **between 84% and 90%**
+* **Only 1** had a Pythagorean Win % **less than 80%**
     * DLSU (Season 76, 72.07%)
 
 In the **11 UAAP Finals since 2008**:
