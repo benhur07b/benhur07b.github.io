@@ -2,7 +2,7 @@
 layout: post
 title: "Should we be worried about the UP Men's Basketball Team? #UAAPSeason82"
 description: The UP Fighting Maroons Men's Basketball Team is currently 5-1 and ranks second only to Ateneo in the standings so there's nothing to worry about, right?
-tags: [uaap, up, fighting-maroons, battle-of-katipunan, upmbt, basketball, data]
+tags: [uaap, up, fighting-maroons, battle-of-katipunan, upmbt, basketball, data, sports, uaapseason82]
 pinned: false
 comments: true
 og_type: article
