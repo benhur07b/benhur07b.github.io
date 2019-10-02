@@ -13,7 +13,7 @@ image:
 
 Let's get down to brass tacks: With the way Ateneo has been playing, **this season's UAAP championship is still theirs to lose**.
 
-Let's go strictly by the numbers.
+*Let's go strictly by the numbers.*
 * They are **undefeated** in the first round.
 * Aside from their one-point win against UST, they've **won every game by more than 12 points**.
 * They've **outscored their opponents** by an average of **16 points per game**.
@@ -53,3 +53,5 @@ Anyway, wanna see the **gap** using a chart? Here you go:
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png'></div>
 
 You see that Blue Eagle by its lonesome in Quadrant 1 of the chart? Dude's probably lonely up there.  Hey, at least La Salle's Green Archer (logo) looks like its about to shoot it down.
+
+If you want more sports analytics stuff (or data and spatial stuff), you can find me on Facebook [@bnhr.xyz](https://www.facebook.com/bnhr.xyz) or Twitter [@BNHRdotXYZ](https://twitter.com/BNHRdotXYZ).
