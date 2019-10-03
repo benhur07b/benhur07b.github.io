@@ -18,7 +18,7 @@ Let's get down to brass tacks: With the way Ateneo has been playing, **this seas
 * Aside from their one-point win against UST, they've **won every game by more than 12 points**.
 * They've **outscored their opponents** by an average of **16 points per game**.
 
-Now those are just basic stats. If we take a look at more advanced stats, we see just how dominant they've been in the first round. *Let's do that.* I scraped the box scores of the games for Round 1 of **#UAAPSeason82** and computed the following:
+Now those are just basic stats. If we take a look at more advanced stats, we see just how dominant they've been in the first round. *Let's do that.* I scraped the box scores of the games for Round 1 **_(you can take a look at the data [here](https://docs.google.com/spreadsheets/d/1I6OUkUB_WfwaCxiG27ltreJHleEO3WdSkPw77N1HmFA/edit?usp=sharing))_** of **#UAAPSeason82** and computed the following:
 
 >* <span style='color: #DF6E21'>**Pace**</span> - Estimate of the number of possessions by a team per 40 minutes
 >* <span style='color: #DF6E21'>**ORtg (Offensive Rating)**</span> - Points scored by a team per 100 possessions
