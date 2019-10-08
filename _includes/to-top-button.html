@@ -1,4 +1,4 @@
-<button onclick="topFunction()" id="to-top-button" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+<button onclick='topFunction()' id='to-top-button' title='Go to top'><i class='fas fa-chevron-up'></i></button>
 
 <script>
 // When the user scrolls down 100px from the top of the document, show the button
@@ -6,9 +6,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        document.getElementById("to-top-button").style.display = "block";
+        document.getElementById('to-top-button').style.display = 'block';
     } else {
-        document.getElementById("to-top-button").style.display = "none";
+        document.getElementById('to-top-button').style.display = 'none';
     }
 }
 

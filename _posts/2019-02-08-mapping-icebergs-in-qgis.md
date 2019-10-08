@@ -11,7 +11,7 @@ image:
     twitter: /media/posts/2019-02-08-mapping-icebergs-in-qgis/icebergs.png
 ---
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/site/portfolio/maps-and-viz/icebergs-qgis.gif"></div>
+<div class='col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/site/portfolio/maps-and-viz/icebergs-qgis.gif"></div>
 
 <br>
 

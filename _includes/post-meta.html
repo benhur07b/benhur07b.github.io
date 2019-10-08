@@ -1,7 +1,7 @@
-<h1 class="post-title">{{ page.title }}</h1>
-<p class="post-meta-info">{{ page.date | date_to_string }} ᛫ {{ page.content | number_of_words | divided_by: 300 | plus: 1 }} min read</p>
+<h1 class='post-title'>{{ page.title }}</h1>
+<p class='post-meta-info'>{{ page.date | date_to_string }} ᛫ {{ page.content | number_of_words | divided_by: 300 | plus: 1 }} min read</p>
 <p>
     {% for tag in page.tags %}
-        <a class="post-meta-tag" href="{{ site.baseurl }}/blog/tags.html#{{ tag | slugify }}"><span>{{ tag }}</span></a>
+        <a class='post-meta-tag' href='{{ site.baseurl }}/blog/tags.html#{{ tag | slugify }}'><span>{{ tag }}</span></a>
     {% endfor %}
 </p>
