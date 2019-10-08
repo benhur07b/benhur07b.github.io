@@ -1,9 +1,12 @@
 ---
 layout: open-knowledge
+title: "Hands-on: Web Mapping with Leaflet"
 ---
 
 # About this hands-on tutorial
 This is a self-paced hands-on tutorial that will walk you through creating your first web map using [Leaflet](https://leafletjs.com).
+
+You need basic knowledge of HTML, CSS, and JS.
 
 You can use online code editors like [JSFiddle](https://jsfiddle.net/) or [Codepen](https://codepen.io) to run the code **OR** run the files locally or via a local HTTP server (e.g. via Python's http.server module).
 
@@ -153,7 +156,7 @@ However, if you try to load the page right now, you won't see a map. The reason 
 
 Copy the following lines into **main.js**.
 ```js
-var osm_mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm_mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {2AQVltc
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
