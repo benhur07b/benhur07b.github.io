@@ -540,4 +540,32 @@ var toggleableLayerIds = [ 'Flood', 'Storm Surge'];
 })
 ```
 
+Now add a <nav> to hold the layer toggel in **index.html**.
+```html
+<nav id='menu'></nav>
+```
+
+Your **index.html** should *now be:*
+```html
+<html>
+<head>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+    integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+    crossorigin='anonymous'></script>
+
+    <link rel='stylesheet' href='static/css/main-mapbox.css'>
+</head>
+
+<body>
+    <nav id='menu'></nav>
+    <div id='map'></div>
+    <script src='static/js/main-mapbox.js'></script>
+</body>
+</html>
+```
+
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/open-knowledge/mapbox-03.gif'></div>
