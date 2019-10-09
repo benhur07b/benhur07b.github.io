@@ -346,7 +346,10 @@ Download this [Stormsurge GeoJSON](https://raw.githubusercontent.com/benhur07b/p
 
 > **```CHALLENGE:```**
 >* **Add the Storm-surge data to your map**
->* **Style the Storm-surge data using the same style as in the Leaflet exercise
+>* **Style the Storm-surge data using the same style as in the Leaflet exercise**
+
+Your map should now *look like this:*
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/open-knowledge/mapbox-03.png'></div>
 
 **Great!** You should now have 2 feature data loaded on our map *but how can we choose which of them to view?*
 
