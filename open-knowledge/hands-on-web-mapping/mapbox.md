@@ -1,6 +1,6 @@
 ---
 layout: open-knowledge
-title: "Hands-on: Web Mapping with Leaflet"
+title: "Hands-on: Web Mapping with Mapbox"
 ---
 
 # About this hands-on tutorial
