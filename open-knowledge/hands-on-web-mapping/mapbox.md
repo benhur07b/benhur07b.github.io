@@ -569,13 +569,13 @@ Your **index.html** should *now be:*
     integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
     crossorigin='anonymous'></script>
 
-    <link rel='stylesheet' href='static/css/main-mapbox.css'>
+    <link rel='stylesheet' href='static/css/main.css'>
 </head>
 
 <body>
     <nav id='menu'></nav>
     <div id='map'></div>
-    <script src='static/js/main-mapbox.js'></script>
+    <script src='static/js/main.js'></script>
 </body>
 </html>
 ```
