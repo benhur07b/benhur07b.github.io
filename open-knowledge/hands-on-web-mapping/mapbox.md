@@ -174,7 +174,7 @@ map.addControl(new mapboxgl.NavigationControl(), 'top-left');
 
 Your **main.js** should now *look like this:*
 ```js
-mapboxgl.accessToken = 'pk.eyJ1IjoiY291bnRlci1tYXBwaW5nLXBoIiwiYSI6ImNrMGpzOTl6ZDBlNmkzanNid3kzeWVlMTQifQ.7vpFDBJqj7aAPoFoCuemSQ';
+mapboxgl.accessToken = 'insert-mapbox-token-here';
 
 $(document).ready(function() {
 var map = new mapboxgl.Map({
