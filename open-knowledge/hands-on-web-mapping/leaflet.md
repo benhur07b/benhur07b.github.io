@@ -298,7 +298,7 @@ Download this [Stormsurge GeoJSON](https://raw.githubusercontent.com/benhur07b/p
 >* **Add the Storm-surge data to your map**
 >* **Add a second basemap to your map**
 
-**Great!** We should now have 2 basemaps and 2 feature data loaded on our map *but how can we choose which of them to view?*
+**Great!** You should now have 2 basemaps and 2 feature data loaded on our map *but how can we choose which of them to view?*
 
 # Adding Layers Control
 This is where Leaflet's layers control comes in. The layers control gives users the ability to switch between different base layers and switch overlays on/off.
@@ -468,7 +468,7 @@ map.invalidateSize();
 *Your map should look like this:*
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/open-knowledge/leaflet-04.gif'></div>
 
-*So what more can you do*
+*So what more can you do?*
 
 How about adding a pop-up that shows information about a feature when it is clicked?
 
