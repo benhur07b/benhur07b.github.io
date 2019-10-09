@@ -128,7 +128,7 @@ Now you've defined the structure and style of our page elements but how do you a
 ## Mapbox Access Token
 Put the following lines on top of your **main.js** file.
 ```js
-mapboxgl.accessToken = '<insert-mapbox-access-token-here>'
+mapboxgl.accessToken = 'insert-mapbox-access-token-here'
 ```
 
 The Access Token provides us access to the Mapbox API and other Mapbox features (e.g. basemaps).
@@ -357,6 +357,18 @@ Unlike Leaflet, Mapbox doesn't have plugins for Layer Controls but you can easil
 
 First, you should define the style of your layer control in **main.css**. Add the following lines to you main CSS file.
 ```css
+#menu {
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    border-radius: 3px;
+    width: 120px;
+    border: 1px solid rgba(0,0,0,0.4);
+    font-family: 'Open Sans', sans-serif;
+}
+
 #menu a {
     font-size: 13px;
     color: #404040;
