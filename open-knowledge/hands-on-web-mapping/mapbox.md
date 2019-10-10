@@ -1,12 +1,17 @@
 ---
 layout: open-knowledge
-title: "Hands-on: Web Mapping with Mapbox"
+title: "Hands-on! Web Mapping with Mapbox"
+og_type: article
+image:
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
-
 # About this hands-on tutorial
 This is a self-paced hands-on tutorial that will walk you through creating your first web map using [Mapbox](https://www.mapbox.com/).
 
-You need basic knowledge of HTML, CSS, and JS. You also need to create a Mapbox account to get an API Key.
+You need basic knowledge of HTML, CSS, and JS. You also need to create a Mapbox account to get an Access Tokens.
+
+Mapbox GL JS has great documentation and examples which can be found [here](https://docs.mapbox.com/mapbox-gl-js/example/). Please also check it out. :)
 
 You can use online code editors like [JSFiddle](https://jsfiddle.net/) or [Codepen](https://codepen.io) to run the code **OR** run the files locally or via a local HTTP server (e.g. via Python's http.server module).
 

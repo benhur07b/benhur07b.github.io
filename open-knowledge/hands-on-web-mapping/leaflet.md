@@ -1,12 +1,18 @@
 ---
 layout: open-knowledge
-title: "Hands-on: Web Mapping with Leaflet"
+title: "Hands-on! Web Mapping with Leaflet"
+og_type: article
+image:
+  facebook: /media/site/img/BNHR-bg.png
+  twitter: /media/site/img/BNHR-bg.png
 ---
 
 # About this hands-on tutorial
 This is a self-paced hands-on tutorial that will walk you through creating your first web map using [Leaflet](https://leafletjs.com).
 
 You need basic knowledge of HTML, CSS, and JS.
+
+Leaflet has great [documentation](https://leafletjs.com/reference-1.5.0.html). Feel free to use it anytime in this tutorial. :)
 
 You can use online code editors like [JSFiddle](https://jsfiddle.net/) or [Codepen](https://codepen.io) to run the code **OR** run the files locally or via a local HTTP server (e.g. via Python's http.server module).
 
