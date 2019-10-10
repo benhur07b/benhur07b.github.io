@@ -1,6 +1,7 @@
 ---
 layout: open-knowledge
 title: "Hands-on! Web Mapping with Leaflet"
+description: Learn some basic skills and techniques on how to create web maps with Leaflet.
 og_type: article
 image:
   facebook: /media/open-knowledge/hands-on-web-mapping/leaflet.png

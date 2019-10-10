@@ -1,6 +1,8 @@
 ---
 layout: open-knowledge
 title: "Hands-on! Web Mapping with Mapbox"
+description: Learn some basic skills and techniques on how to create web maps with Mapbox.
+tags: [foss]
 og_type: article
 image:
   facebook: /media/open-knowledge/hands-on-web-mapping/mapbox.png
