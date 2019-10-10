@@ -3,8 +3,8 @@ layout: open-knowledge
 title: "Hands-on! Web Mapping with Leaflet"
 og_type: article
 image:
-  facebook: /media/site/img/BNHR-bg.png
-  twitter: /media/site/img/BNHR-bg.png
+  facebook: /media/open-knowledge/hands-on-web-mapping/leaflet.png
+  twitter: /media/open-knowledge/hands-on-web-mapping/leaflet.png
 ---
 
 # About this hands-on tutorial

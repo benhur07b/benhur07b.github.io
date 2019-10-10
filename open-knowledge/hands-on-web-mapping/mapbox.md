@@ -3,8 +3,8 @@ layout: open-knowledge
 title: "Hands-on! Web Mapping with Mapbox"
 og_type: article
 image:
-  facebook: /media/site/img/BNHR-bg.png
-  twitter: /media/site/img/BNHR-bg.png
+  facebook: /media/open-knowledge/hands-on-web-mapping/mapbox.png
+  twitter: /media/open-knowledge/hands-on-web-mapping/mapbox.png
 ---
 # About this hands-on tutorial
 This is a self-paced hands-on tutorial that will walk you through creating your first web map using [Mapbox](https://www.mapbox.com/).
