@@ -95,5 +95,5 @@ Now that you know about QGIS Plugins, don't be afraid to download and try them s
 
 <div class='row'>
 <div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'><a href='{{ site.baseurl }}/open-knowledge/qgis/beginner/module1.1.html'><h4 class='text-left'>Module 1.1</h4></a></div>
-<div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'><a href='{{ site.baseurl }}/open-knowledge/qgis/beginner/module1.3.html'><h4 class='text-right'>Module 1.3</h4></a></div>
+<!-- <div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'><a href='{{ site.baseurl }}/open-knowledge/qgis/beginner/module1.3.html'><h4 class='text-right'>Module 1.3</h4></a></div> -->
 </div>
