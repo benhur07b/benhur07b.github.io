@@ -1,7 +1,7 @@
 ---
 layout: open-knowledge
 title: "QGIS Training: Beginner - Module 1.1"
-description: GOAL: To familiarize yourself with the QGIS Interface
+description: "GOAL: To familiarize yourself with the QGIS Interface"
 og_type: article
 image:
 ---

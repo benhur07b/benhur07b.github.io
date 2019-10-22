@@ -1,7 +1,7 @@
 ---
 layout: open-knowledge
 title: "QGIS Training: Beginner - Module 1.2"
-description: GOAL: To familiarize yourself with QGIS Plugins
+description: "GOAL: To familiarize yourself with QGIS Plugins"
 og_type: article
 image:
 ---
