@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/site/img/BNHR-bg.png
-  twitter: /media/site/img/BNHR-bg.png
+  facebook: /assets/img/site/BNHR-bg.png
+  twitter: /assets/img/site/BNHR-bg.png
 ---
 
 Xubuntu 16.04 comes packaged with Python 3.5.2. As is standard practice, it's not advisable to update or change the Python version of your distribution lest you risk possible problems in your system. One of the better options if you want to use different python versions in your machine is to use virtual environments. Since version 3.4, Python has come packaged with *venv* -- a library for making virtual environments. This post will show you how to install Python 3.6.1 in Xubuntu 16.04 and use venv to create a virtual environment running Python 3.6.1.

@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/site/img/BNHR-bg.png
-    twitter: /media/site/img/BNHR-bg.png
+    facebook: /assets/img/site/BNHR-bg.png
+    twitter: /assets/img/site/BNHR-bg.png
 ---
 
 I recently encountered a problem printing a PDF file where parts of the file weren't being printed by my printer. I tried multiple times but got the same result -- a part of my PDF wasn't being printed (as if it was being censored). I thought that the problem was with my printer not reading my PDF correctly since it was being read correctly by my document/PDF viewer. Instead of finding out what was wrong with my printer or the PDF, I had this idea of just converting the PDF into an image and then printing the image afterwards.

@@ -7,11 +7,11 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipe.png
-    twitter: /media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapshipe.png
+    facebook: /assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipe.png
+    twitter: /assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapshipe.png
 ---
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipe.gif"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipe.gif"></div>
 
 Swiping (apologies to Dora the Explorer) is a simple way to show the difference between two layers or highlight changes over time. I've found that this neat trick is very effective in grabbing people's attention or getting a reaction from them. It's a common feature you can see in webmaps using [Leaflet](http://lab.digital-democracy.org/leaflet-side-by-side/) and [Mapbox](https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-compare/). This functionality is also available in desktop GIS like [GRASS through the Map Swipe](https://grass.osgeo.org/grass76/manuals/wxGUI.mapswipe.html) and [QGIS via the MapSwipe Tool plugin](https://plugins.qgis.org/plugins/mapswipetool_plugin/)
 
@@ -20,7 +20,7 @@ Swiping (apologies to Dora the Explorer) is a simple way to show the difference 
 ## The Plugin
 You can install the **```MapSwipe Tool```** plugin via **```Plugins -> Manage and Install Plugins```**.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipetool.png" alt="MapSwipe Tool plugin"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/mapswipetool.png" alt="MapSwipe Tool plugin"></div>
 
 * **Name:** **```MapSwipe Tool```** plugin
 * **Funtion:** Allows for the selected layer to be swiped.
@@ -35,20 +35,20 @@ The plugin is used in a very straightforward manner. For my example below, I'm u
 
 1. Select the layer that you want to swipe on the Layers panel.
 
-    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/01-mapswipe.png" alt="Select layer in Layers panel"></div>
+    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/01-mapswipe.png" alt="Select layer in Layers panel"></div>
 
 2. Activate the plugin by clicking the MapSwipe Tool icon in the Plugins toolbar or via **```Plugins -> Map swipe tool -> Map swipe tool```**. Note that this will unselect/disable your layer as well.
 
-    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/02.2-mapswipe.png" alt="MapSwipe Tool in Plugin toolbar"></div>
+    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/02.2-mapswipe.png" alt="MapSwipe Tool in Plugin toolbar"></div>
 
-    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/02.1-mapswipe.png" alt="MapSwipe Tool in Menu bar"></div>
+    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/02.1-mapswipe.png" alt="MapSwipe Tool in Menu bar"></div>
 
 3. Drag your mouse to swipe the selected layer. You can swipe horizontally or vertically.
 
-    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/03-mapswipe.gif" alt="Swiping with the plugin"></div>
+    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/03-mapswipe.gif" alt="Swiping with the plugin"></div>
 
 4. Once finished, click the icon again to deactivate the plugin.
 
-    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-03-29-plugin-fridays-mapswipe-tool/04-mapswipe.gif" alt="Deactivate the plugin"></div>
+    <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-03-29-plugin-fridays-mapswipe-tool/04-mapswipe.gif" alt="Deactivate the plugin"></div>
 
 That's it. You can use the MapSwipe Tool on your next mapping project. **```#HappyMapping```**!

@@ -7,8 +7,8 @@ pinned: true
 comments: true
 og_type: article
 image:
-  facebook: /media/site/img/BNHR-bg.png
-  twitter: /media/site/img/BNHR-bg.png
+  facebook: /assets/img/site/BNHR-bg.png
+  twitter: /assets/img/site/BNHR-bg.png
 ---
 
 > "Why pay for software when you can pirate it?"
@@ -17,10 +17,10 @@ image:
 
 ***
 
-<span class="color-muted">
+<span class="color-primary-light">
 *First of all, there's nothing wrong with using proprietary software as long as you acquire it legally. Second of all, there are instances when proprietary software will perform better than FOSS but there are also instances when FOSS will kick proprietary software's ass, and at times you need to use both of them (ack) together. Still, I think that FOSS can give proprietary software a run for their money any day of the week.*</span>
 
-<span class="color-muted">
+<span class="color-primary-light">
 *Another thing, there are both pros and cons to proprietary software and FOSS which I might discuss in a later post. Here, I just want to focus on why you should use FOSS rather than pirated software.*</span>
 
 ***

@@ -1,26 +1,10 @@
-$font-title: 'Josefin Sans', sans-serif;
-$font-subtitle: 'Open Sans', sans-serif;
-$font-header: 'Oswald', sans-serif;
-// $font-body: 'Nunito', sans-serif;
-$font-body: 'Open Sans', sans-serif;
-$font-accent: 'Archivo', sans-serif;
+$font-logo: 'Josefin Sans', sans-serif;
+$font-pt-sans: 'PT Sans', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+$font-archivo: 'Archivo', sans-serif;
+$font-inconsolata: 'Inconsolata', monospace;
 
-.font-title {
-    font-family: $font-title;
-}
-
-.font-subtitle {
-    font-family: $font-subtitle;
-}
-
-.font-header {
-    font-family: $font-header;
-}
-
-.font-body {
-    font-family: $font-body;
-}
-
-.font-accent {
-    font-family: $font-accent;
+.font-logo {
+    font-family: $font-logo;
 }

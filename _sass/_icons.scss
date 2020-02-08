@@ -5,7 +5,7 @@
 }
 
 .portfolio-icon {
-    @include icon-color($color-primary-dark, $color-muted);
+    @include icon-color($color-primary-dark, $color-primary-light);
     font-size: 5em;
 
     @media (min-width: 320px) {
@@ -46,7 +46,7 @@
 }
 
 .contact-github {
-    @include icon-color($color-primary, #171515);
+    @include icon-color($color-primary, $color-accent-orange);
 }
 
 .contact-fb {

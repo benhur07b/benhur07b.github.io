@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-10-22-why-you-shouldnt-use-qgis/main.png
-    twitter: /media/posts/2019-10-22-why-you-shouldnt-use-qgis/main.png
+    facebook: /assets/img/posts/2019-10-22-why-you-shouldnt-use-qgis/main.png
+    twitter: /assets/img/posts/2019-10-22-why-you-shouldnt-use-qgis/main.png
 ---
 
 Here's a short presentation on why you shouldn't use QGIS (or should you?).

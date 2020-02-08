@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png
-    twitter: /media/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png
+    facebook: /assets/img/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png
+    twitter: /assets/img/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png
 ---
 
 Let's get down to brass tacks: With the way Ateneo has been playing, **this season's UAAP championship is still theirs to lose**.
@@ -50,7 +50,7 @@ Ateneo is the **ONLY team with BOTH positive AORtg and ADRtg** which means that 
 
 Anyway, wanna see the **gap** using a chart? Here you go:
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-10-02-strictly-by-the-numbers-admu-dominance-uaapseason82/main.png'></div>
 
 You see that Blue Eagle by its lonesome in Quadrant 1 of the chart? Dude's probably lonely up there.  Hey, at least La Salle's Green Archer (logo) looks like its about to shoot it down.
 

@@ -7,10 +7,10 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
-    twitter: /media/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
+    facebook: /assets/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
+    twitter: /assets/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
 ---
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma-720.gif'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma-720.gif'></div>
 <small>*Hat tip to [BA](https://giphy.com/channel/badoodles) for the original GIF*</small>
 <br><br>
 

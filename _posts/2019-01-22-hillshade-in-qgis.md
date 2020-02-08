@@ -7,11 +7,11 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
-    twitter: /media/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
+    facebook: /assets/img/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
+    twitter: /assets/img/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png
 ---
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/albay-hillshade.png"></div>
 
 <br>
 
@@ -28,15 +28,15 @@ To create something similar to the map above, we just need to follow four steps:
 ## Load and Duplicate DEM
 The first step is to load the DEM in QGIS and create a duplicate. One of the layers will be used for the hillshade and the other will be for the colored DEM that will be draped on the hillshade.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/load-dem.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/load-dem.png"></div>
 
 To duplicate the layer, **```right-click on the layer -> Duplicate Layer```**
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/duplicate-dem.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/duplicate-dem.png"></div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/duplicate-dem-1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/duplicate-dem-1.png"></div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/duplicate-dem-2.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/duplicate-dem-2.png"></div>
 
 ## Style DEM with a Multidirectional Hillshade
 Traditional hillshades are created by illuminating light from a single direction. Most commonly it's from the northwest direction (315 degrees azimuth). A limitation of traditional hillshades is that they often produce over-exposed results with details in the non-illuminated sides being obscured.
@@ -55,10 +55,10 @@ Use the **```Layer Styling Panel```** or **```right-click on layer -> Properties
 >* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
 >
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/hillshade-style.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/hillshade-style.png"></div>
 
 The resulting layer should look like this:
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/hillshade-dem.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/hillshade-dem.png"></div>
 
 ## Drape a Colored DEM
 The next step is to drape a colored DEM over the hillshade. For this, we use the duplicate layer we created.
@@ -72,17 +72,17 @@ The next step is to drape a colored DEM over the hillshade. For this, we use the
 >* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
 >
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/colored-dem-style-1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/colored-dem-style-1.png"></div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/colored-dem-style-2.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/colored-dem-style-2.png"></div>
 
 Make sure that the colored-dem layer is ahead (or on top) of the hillshade layer in the Layers panel. The map should then look like this:
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/colored-dem.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/colored-dem.png"></div>
 
 ## Drape a Satellite Image
 We're not limited to just draping a single layer over our hillshade. We can also load other layers like satellite images. For example, load a Google Satellite basemap in QGIS.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/sat-1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/sat-1.png"></div>
 
 **Afterwards, update the symbology of the Google Satellite layer and use the following options to overlay it on the hillshade:**
 >
@@ -91,9 +91,9 @@ We're not limited to just draping a single layer over our hillshade. We can also
 >* Select **```Cubic```** and **```Average```** for **```Resampling```** with **```Oversampling```** at **```2.0```**
 >
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/sat-style.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/sat-style.png"></div>
 
 The resulting map would then look like this:
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2019-01-22-hillshade-in-qgis/fin.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-01-22-hillshade-in-qgis/fin.png"></div>
 
 There you have it. You can use the resulting map as a basemap to your other maps -- add a layer for rivers and water bodies, another layer for settlements and built-up areas, etc. You can also play around with different settings to see which combination works best for you. Good luck!

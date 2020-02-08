@@ -7,10 +7,10 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg
+  facebook: /assets/img/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg
 ---
 
-<img class="img-fluid" src="{{ site.baseurl }}/media/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg">
+<img class="img-fluid" src="{{ site.baseurl }}/assets/img/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg">
 
 You've probably encountered the image above or one of its iterations while booting into your Windows computer. A missing or corrupted Boot Configuration Data (BCD) file prevents your OS from booting up. It seems scary but it should be fixed in a pretty straightforward manner. Also, don't worry about your files. They're probably still safe as it's just your OS that's being problematic. If you want to be sure about your files, you can use a Linux live-usb to check.
 

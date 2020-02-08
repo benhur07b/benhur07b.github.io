@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-08-02-pista-ng-mapa-qgis/main.jpg
-    twitter: /media/posts/2019-08-02-pista-ng-mapa-qgis/main.jpg
+    facebook: /assets/img/posts/2019-08-02-pista-ng-mapa-qgis/main.jpg
+    twitter: /assets/img/posts/2019-08-02-pista-ng-mapa-qgis/main.jpg
 ---
 Below is a copy of my **Beyond the Basics with QGIS 3.X** presentation for **#PistaNgMapa**. I have to say, I've made and given a lot of presentations over the years and this one has to be one of the more fun and entertaining ones. Hahaha. Enjoy!
 

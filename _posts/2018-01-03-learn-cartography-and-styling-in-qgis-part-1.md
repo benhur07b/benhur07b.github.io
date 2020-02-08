@@ -7,28 +7,28 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/site/img/BNHR-bg.png
-  twitter: /media/site/img/BNHR-bg.png
+  facebook: /assets/img/site/BNHR-bg.png
+  twitter: /assets/img/site/BNHR-bg.png
 ---
 
 Last semester, I took up a Spatial Visualization course as part of my graduate studies. For my final project in class, I decided to create visualizations of shoting in basketball using GIS (mostly QGIS). Some of the visualizations that I created are shown below and include a shot chart, hot zones map, range map, firefly map, 2D binning, and 3D binning visualizations.
 
 <div class="row">
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/shotchart.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/shotchart.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/hotzones.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/hotzones.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/heatmap.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/heatmap.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/firefly.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/firefly.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/range.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/range.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/2d-binning-1.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/2d-binning-1.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/2d-binning-2.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/2d-binning-2.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/binning3d.gif"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/binning3d.gif"></div>
 </div>
 
 In this series of posts, I'd like to show how these visualizations are created while discussing cartography and styling in QGIS. The data needed to follow along with the posts can be found [here](https://drive.google.com/drive/folders/1pcdnLoIruVJ5TublhsmUADCGeCnPYjRo?usp=sharing).
@@ -51,7 +51,7 @@ The Layer Styling Panel is a staple of my workflows and User Interface (UI) layo
 
 In order to activate the Layer Styling panel, go to **```View -> Panels -> Layer Styling```**.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/02.5-layer-panel.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/02.5-layer-panel.png"></div>
 
 
 ### Set a Raster Pixel as Transparent (Optional)
@@ -59,16 +59,16 @@ Sometimes, you want to set a raster pixel as transparent. In this case, we may w
 
 To do this in QGIS, select the CourtMap raster in the Layer Styling Panel and go to the Transparency Tab. On the Transparency tab, add a new pixel in the Transparency Pixel list. Since we want the white pixels to be transparent and white pixels have an RGB of (255, 255, 255), we set the Red, Green, and Blue values to 255 and the Percent Transparency to 100.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/04-transparent-pixel.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/04-transparent-pixel.png"></div>
 
 
 ### Add Rules for Made and Missed shots
 Let's start by adding simple rules -- one to style made shots and another to style missed shots. Select the FGA layer on the Layer Styling Panel and select Rule-based. Edit the existing rule (if there is any) by double-clicking it or clicking the ```Edit current rule``` button (Notepad sign at the bottom left of the Layer Panel). If a rule does not exist, you can add one by clicking the ```Add rule button``` (Plus sign).
 
 <div class="row">
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/05-rule-based.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/05-rule-based.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/05-rule-based-2.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/05-rule-based-2.png"></div>
 </div>
 
 For this exercise, let's represent made shots as green circles (o), missed shots as red crosses (x).
@@ -76,22 +76,22 @@ For this exercise, let's represent made shots as green circles (o), missed shots
 For the made FGA, set the **```Label```** as ```Made``` and **```Filter```** to ```"made" = 1```. Set the marker as a simple circular marker with green fill.
 
 <div class="row">
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-made-1.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-made-1.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-made-2.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-made-2.png"></div>
 </div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-made-3.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-made-3.png"></div>
 
 For the missed FGA, you can **```add a new rule```** or **```copy+paste```** the previous rule and edit it. Set the **```Label```** as ```Missed``` and **```Filter```** to ```"made" = 0```. Set the marker as a simple cross marker with red outline and 0.4 mm stroke width.
 
 <div class="row">
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-missed-1.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-missed-1.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-missed-2.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-missed-2.png"></div>
 </div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-missed-3.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/06-missed-3.png"></div>
 
 
 Congratulations! You've successfullly created two rules that show a basic shot-chart of made and missed field-goal attempts in our data. Now let's make things a bit more complicated.
@@ -102,28 +102,28 @@ The shot-chart we created above shows the field goal attemts by all teams. Now w
 The first way is by adding the filter to the rules themselves. To do this, we edit the rules we previously created and add ```and "team" = 'UP'``` to their **```Filter```**.
 
 <div class="row">
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/07-filter-1.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/07-filter-1.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/07-filter-2.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/07-filter-2.png"></div>
 </div>
 
 The resulting map will only show the field goal attempts by UP.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/07-filter-3.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/07-filter-3.png"></div>
 
 Another way to do this is to create a first rule that filters using the ```team``` field and then add, under this rule, the ```Made``` and ```Missed``` rules that were previously created. Basically, we are creating two levels of rules -- the first level to filter the team and the second to style the filtered data. In fact, using rule-based symbology, we can create as many levels of rules that we want.
 
 For our current purpose, let's create a rule labeled ```UP``` and set its **```Filter```** to ```"team" = 'UP'```. We will disable symbols for this rule so that it acts as a filter. Afterwards, we can add our ```Made``` and ```Missed``` rules to ```UP``` by **```copy+pasting```** or **```drag-and-dropping```** them inside the rule.
 
 <div class="row">
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/08-filter-1.png"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/08-filter-1.png"></div>
 
-    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/08-filter-2.gif"></div>
+    <div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/08-filter-2.gif"></div>
 </div>
 
 The results should then look like this:
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/08-filter-3.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/08-filter-3.png"></div>
 
 Congratulations! You've created a multi-leveled rule that shows the shot-chart of UP. Let's take this rule and extend it a bit more.
 
@@ -132,11 +132,11 @@ Using the multi-leveled rule you created, we can easily create shot-charts of ot
 
 What if we want to create a shot-chart of UP's opponents that we can view together with UP's shot-chart? What we need to do is create another set of rules for this. However, since we already have the set of rules for UP, this will probably just take us around **```20 seconds```** to do. **```Copy and Paste```** the existing ```UP``` rule, change the **```Label```**, and set the **```Filter```** to ```"team" != 'UP'```. The shot-chart of the UP's opponents should appear in the Map Canvas.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/09-multi.gif"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/09-multi.gif"></div>
 
 Since we have two sets of rules, we can also style them separately. For example, we can use maroon for the color of UP's shot-chart and gray for that of their opponents.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/09-rules.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/09-rules.png"></div>
 
 You can always add new sets of rules depending on what you want to show or focus on. For example, instead of a team, you can make rules for a player or set of players; you can make a rule where field-goal attempts during clutch situations (time remaining < 2 mins and game is within 5 points) have larger symbols so that they are easily identifiable; or a rule that gives different symbols to assisted and non-assisted three-pointers.
 

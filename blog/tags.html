@@ -2,7 +2,7 @@
 layout:   default
 title:    Tag
 ---
-{% assign rawtags = "" %}
+{% assign rawtags = '' %}
 {% for post in site.posts %}
 {% assign posttags = post.tags | join:'|' | append:'|' %}
 {% assign rawtags = rawtags | append:posttags %}
@@ -10,12 +10,12 @@ title:    Tag
 
 {% assign rawtags = rawtags | split:'|' | sort %}
 
-{% assign tags = "" %}
+{% assign tags = '' %}
 
 {% for tag in rawtags %}
-{% if tag != "" %}
+{% if tag != '' %}
 
-{% if tags == "" %}
+{% if tags == '' %}
 {% assign tags = tag | split:'|' %}
 {% endif %}
 
@@ -26,17 +26,17 @@ title:    Tag
 {% endfor %}
 
 
-<div class="bnhr-container-x pt-1">
+<div class='container pt-1'>
 <p>
 <h2>Tags</h2>
 {% for tag in tags %}
-    <a href="#{{ tag | slugify }}" class="post-meta-tag mx-1 no-underline-link"> {{ tag }} </a>
+    <a href='#{{ tag | slugify }}' class='small post-meta-tag m-2 no-underline-link'> {{ tag }} </a>
 {% endfor %}
-<hr class="my-4">
+<hr class='my-4'>
 {% for tag in tags %}
-    <div id="{{ tag | slugify }}"></div>
+    <div id='{{ tag | slugify }}'></div>
     <h3>{{ tag }}</h3>
-    <ul class="list-style-none">
+    <ul class='list-style-none'>
     {% for post in site.posts %}
         {% if post.tags contains tag %}
             <li>

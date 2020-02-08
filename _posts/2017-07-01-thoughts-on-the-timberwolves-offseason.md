@@ -7,7 +7,7 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/posts/2017-07-01-thoughts-on-the-timberwolves-offseason/MTimberwolves_Global-2017.png
+  facebook: /assets/img/posts/2017-07-01-thoughts-on-the-timberwolves-offseason/MTimberwolves_Global-2017.png
 ---
 
 It's early in the offseason but since most transactions are already verified, let me share with you my thoughts on the Wolves' offeason moves and how it affects the future of the team and its players.

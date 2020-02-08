@@ -1,25 +1,18 @@
 ---
 layout: default
 ---
-<div class="bnhr-container-x pt-1">
-    <h1 class="my-2 about-name">Hi, I'm Ben.</h1>
-    <p class="about-lead color-accent mb-4">Below are samples of my work.</p>
-
-    {% include works-maps-and-viz.html %}
-    {% include works-foss-dev.html %}
-    {% include works-decks-and-presentations.html %}
-
-    <hr class="fake-br-x mt-2 mb-4">
-    <h2>Want to know more?</h2>
-    <div class="row px-2">
-        <div class="col-md-4 col-sm-12 p-1">
-            <a class="btn btn-primary btn-sm btn-block" href="{{ site.baseurl }}/#contact">Contact me</a>
-        </div>
-        <div class="col-md-4 col-sm-12 p-1">
-            <a class="btn btn-primary btn-sm btn-block" href="{{ site.baseurl }}/blog/">Read my blog</a>
-        </div>
-        <div class="col-md-4 col-sm-12 p-1">
-            <a class="btn btn-primary btn-sm btn-block" href="{{ site.baseurl }}/portfolio/cv.html">Check my CV</a>
-        </div>
-    </div>
+<div class='container'>
+    <h1 style='margin-bottom: 0px' class='color-primary-dark'>Hi! I'm Ben. &#127760;</h1>
+    <h4 class='font-weight-light color-primary-light'>Below are samples of my work</h4>
+    <section class='my-4' id='maps-and-viz'>
+        <h3 class='color-primary-dark'>Maps and Visualizations</h3>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrFJd3b8MJsKMIUV?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="540" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </section>
+    <section class='my-4' id='dev-projects'>
+        <h3 class='color-primary-dark'>Open Source Projects</h3>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrs5RndXUStIwnoh?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="540" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </section>
+    <section class='my-4' id='decks-and-presentations'>
+        <h3 class='color-primary-dark'>Decks and Presentations</h3>
+    </section>
 </div>

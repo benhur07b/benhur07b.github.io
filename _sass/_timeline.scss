@@ -18,17 +18,13 @@
 
 /*----- TIMELINE INFO -----*/
 .timeline-info {
-    font-size: 10px;
+    // font-size: 10px;
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0;
     text-transform: uppercase;
     white-space: nowrap;
-    font-family: $font-accent;
-    font-size: 10px;
-    @media (min-width: 1024px) {
-        font-size: 11px;
-    }
+    font-family: $font-archivo;
     font-color: $color-muted;
 }
 
@@ -38,7 +34,7 @@
     top: 0; bottom: 0; left: 0;
     width: 15px;
     &:before {
-        background: $color-primary-dark;
+        background: $color-accent-orange;
         border: 3px solid transparent;
         border-radius: 100%;
         content: "";
@@ -64,7 +60,7 @@
 }
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 3px solid $color-primary-dark;
+    border: 3px solid $color-accent-orange;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -73,14 +69,6 @@
 
     p:last-child {
         margin-bottom: 0;
-    }
-
-    p {
-        font-size: 13px;
-        line-height: 1.4;
-        @media (min-width: 1024px) {
-            font-size: 15px;
-        }
     }
 
 }
@@ -120,23 +108,5 @@
     }
     .timeline-title {
         margin: 0;
-    }
-}
-
-.tl-project-name {
-    font-weight: 300;
-    font-color: $color-muted;
-    font-size: 13px;
-    line-height: 1.4;
-    @media (min-width: 1024px) {
-        font-size: 15px;
-    }
-}
-
-.tl-acts {
-    font-size: 13px;
-    line-height: 1.4;
-    @media (min-width: 1024px) {
-        font-size: 15px;
     }
 }

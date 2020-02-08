@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/site/img/BNHR-bg.png
-  twitter: /media/site/img/BNHR-bg.png
+  facebook: /assets/img/site/BNHR-bg.png
+  twitter: /assets/img/site/BNHR-bg.png
 ---
 
 If you did not create your QGIS plugin using the latest version of *QGIS Plugin Builder*, you might find yourself encountering this error when running your plugin in QGIS specially if you have a resources file for images/logos that you included in your plugin.

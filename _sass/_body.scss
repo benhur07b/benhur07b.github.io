@@ -1,0 +1,85 @@
+body {
+    font-family: $font-pt-sans;
+    font-color: $color-primary;
+    font-size: 20px;
+    // background-color: $color-secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-pt-sans;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+p {
+    font-family: $font-pt-sans;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.small-line-height {
+    line-height: 1.5;
+}
+
+.no-underline-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#results-container {
+    padding: 0;
+    li {
+        list-style: none;
+        text-align: right;
+        a {
+            @extend .no-underline-link;
+            font-family: $font-pt-sans;
+            &:hover {
+                color: $color-primary-dark;
+            }
+        }
+    }
+}
+
+#to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: $color-primary;
+    opacity: 0.5;
+
+    &:hover {
+        background-color: $color-primary-dark;
+        opacity: 0.5;
+    }
+
+}
+
+.list-style-none {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.highlight {
+    margin: 0.5rem 0rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.bnhr-links {
+    @extend .no-underline-link;
+    &:hover {
+        color: $color-primary-dark;
+    }
+}

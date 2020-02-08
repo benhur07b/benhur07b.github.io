@@ -21,11 +21,6 @@
     }
 }
 
-// .navbar-container {
-//     padding-left: 1em;
-//     padding-right: 1em;
-// }
-
 .navbar-default {
     border-color: transparent;
     background-color: white;
@@ -35,50 +30,10 @@
     }
 }
 
-.navbar-title {
-    font-family: $font-title;
-    font-size: 36px;
-    font-weight: bold;
-    color: $color-primary;
-    line-height: 1.1;
-
-    @media (min-width: 996px) {
-        font-size: 48px;
-    }
-
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    -o-user-select:none;
-    user-select:none;
-}
-
-.navbar-subtitle {
-    font-family: $font-subtitle;
-    font-size: 16px;
-    letter-spacing: 0.6em;
-    font-weight: 300;
-    color: $color-primary;
-    padding-left: 3px;
-    line-height: 1.1;
-
-    @media (min-width: 996px) {
-        font-size: 21px;
-        padding-left: 4px;
-    }
-
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    -o-user-select:none;
-    user-select:none;
-}
 
 .navbar-nav li a {
     text-transform: lowercase;
-    font-family: $font-header;
+    font-family: $font-pt-sans;
     font-size: 20px;
     font-weight: 500;
     color: $color-primary;

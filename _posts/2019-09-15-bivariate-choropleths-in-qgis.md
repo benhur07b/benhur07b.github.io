@@ -7,11 +7,11 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
-    twitter: /media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
+    facebook: /assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
+    twitter: /assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png
 ---
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>
 
 I've had a fascination with bivariate choropleth maps for quite some time now. Who wouldn't? With the right color combination, a bivariate choropleth map hits that sweet spot of being both visually stunning and highly informative. Just do a [Google search of bivariate choropleth](https://www.google.com/search?q=Bivariate+Choropleth&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiqlYS8kOnkAhUpK6YKHRZcDLAQ_AUIEigB&biw=1920&bih=980) and you'll see what I mean.
 
@@ -28,7 +28,7 @@ For example, let's create a choropleth map by applying a ```Graduated Symbology`
     1. Set ```Column``` to ```DELA ROSA, BATO (PDPLBN) - PERCENTAGE```
     2. Click ```Classify```
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/choro-01.gif'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/choro-01.gif'></div>
 
 You've now created a choropleth map showing the percentage of votes obtained by the now Senator Bato dela Rosa for each of the provinces.
 
@@ -49,15 +49,15 @@ Since a bivariate choropleth map shows two variables, the number of categories i
 Also, the choice of colors is important since we're basically combining/mixing the colors of the 2 univariate choropleths to create our bivariate choropleth. [Joshua Stevens](https://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/) has a few bivariate color scheme examples that we can use, as seen below:
 
 <div class='row'>
-    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-1.png'></div>
-    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-2.png'></div>
-    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-3.png'></div>
-    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-4.png'></div>
+    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-1.png'></div>
+    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-2.png'></div>
+    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-3.png'></div>
+    <div class='col-lg-3 col-md-3 col-sm-6 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/js_bivariatePalettes-4.png'></div>
 </div>
 
 For example, our bivariate choropleth map below shows how the provinces voted during the 2019 Election in terms of voting for Bato and/or Chel. Are there areas where both of them got a lot of votes? Or does a high vote percentage for one candidate mean a lower vote percentage for the other? To answer these questions, we have 9 categories and using the second color scheme from Joshua Stevens above.
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>
 
 So how do we go about creating this map in QGIS?
 
@@ -71,11 +71,11 @@ The first step is to create two choropleth maps -- one for each variable we want
 
 After loading the election returns data in QGIS, duplicate the layer so that you have 2 layers.
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/biva-01.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/biva-01.png'></div>
 
 The top layer will be the choropleth map for Bato and the bottom layer will be the choropleth map for Chel. We can rename them to avoid confusion.
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/biva-02.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/biva-02.png'></div>
 
 Now we edit each of the layer's symbology using a **```Graduated Symbology with 3 categories```**.
 
@@ -95,10 +95,10 @@ Now we edit each of the layer's symbology using a **```Graduated Symbology with 
 >       * Values: **5.000 - 100.000**
 >
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-bato.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-bato.png'></div>
 
 The result should be:
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-bato-0.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-bato-0.png'></div>
 
 >For Chel, we'll use the bottom-most colors of our color scheme. Our parameters will be:
 >
@@ -116,26 +116,26 @@ The result should be:
 >       * Values: **5.000 - 100.000**
 >
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-chel.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-chel.png'></div>
 
 The result should be:
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-chel-0.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-chel-0.png'></div>
 
 ### Edit the Top Layer's Blending Mode
 Now here's where we let QGIS do its magic to create our bivariate choropleth map. We edit the blending mode of the top layer to **```Multiply```**. This parameter can be found in the Layer Styling Panel under Layer Rendering.
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-biva.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-biva.png'></div>
 
 The result would now be a bivariate choropleth map. :)
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-biva-0.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-biva-0.png'></div>
 
 We can now use this map in our Print Layout. But what about the legend?
 
 ### The Bivariate Legend plugin
 Thankfully, QGIS has a plugin for creating bivariate legends (**_YAY PLUGINS!!!_**). The Bivariate Legend plugin can be installed via the Manage and Install Plugins Dialog.
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/bl-manage-install.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/bl-manage-install.png'></div>
 
 This plugin generates a bivariate legend using two layers. The generated legend can then be exported to an image that can be added to the Print Layout.
 
@@ -149,8 +149,8 @@ This plugin generates a bivariate legend using two layers. The generated legend 
 >* **```Click``` Generate legend**
 >* **```Click``` Export legend to image**
 >
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-legend.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-legend.png'></div>
 
 The bivariate choropleth map and the generated bivariate legend can now be used to create a map in the Print Layout like the one below. Good luck!
 
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/media/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>
+<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/bivariate-choropleth-banner.png'></div>

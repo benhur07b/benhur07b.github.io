@@ -1,26 +1,27 @@
 # site settings
 title: BNHR
-subtitle: spatial
-description: open spatial and data solutions for everyone
+description: open spatial and data solutions
 email: hi@bnhr.xyz
 baseurl: ""
-logo: /media/site/img/BNHR-bg.png
-favicon: /media/site/logos/BNHR-favicon.png
+logo: "assets/img/logos/BNHR-avatar-rd-2.png"
+favicon: favicon.ico
 
 # author
 author:
     name: "Ben Hur S. Pintor"
-    avatar: "/media/site/logos/BNHR-avatar.png"
-    description: "Ben is a geospatial generalist, open source & open data advocate, and maptivist."
+    avatar:
+    description: "geospatial generalist. open source & open data advocate. maptivist."
     facebook: "https://facebook.com/bnhr.xyz"
     twitter: "https://twitter.com/BNHRdotXYZ"
     github: "https://github.com/benhur07b"
     linkedin: "https://linkedin.com/in/benhur07b"
     messenger: "https://m.me/bnhr.xyz"
 
-# repo
-repository: benhur07b/benhur07b.github.io
-site.github: [metadata]
+# exclude
+exclude:
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock
 
 # paginator
 paginate: 10
@@ -28,20 +29,15 @@ paginate_path: "blog/page:num/"
 
 # build settings
 markdown: kramdown
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
-
-# exclude
-exclude:
-  - Gemfile
-  - Gemfile.lock
+highlighter: rouge
+# kramdown:
+#     input: GFM
+#     syntax_highlighter: rouge
 
 # plugins
 plugins:
-  - github-pages
-  - jekyll-paginate
-  - jekyll-github-metadata
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
+    - github-pages
+    - jekyll-paginate
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap

@@ -1,0 +1,46 @@
+// POSTS
+.post-meta {
+    color: $color-primary-light;
+}
+
+.post-meta-info {
+    @extend .post-meta;
+    font-family: $font-pt-sans;
+    margin-bottom: 4px;
+}
+
+.post-meta-tag {
+    @extend .no-underline-link;
+    @extend .post-meta;
+    background-color: $color-muted;
+    color: $color-primary;
+    padding: 0.1em 0.3em;
+    border-radius: 5%;
+
+    &:hover {
+        color: white;
+        background-color: $color-accent-orange;
+    }
+}
+
+
+blockquote {
+    padding: 0.5rem 1rem;
+    border-left: 5px solid $color-accent-orange;
+}
+
+.nav-posts {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+    & .prev {
+      width: 50%;
+      // align-items: flex-start;
+    }
+
+    & .next {
+      width: 50%;
+      // align-items: flex-end;
+    }
+}

@@ -7,11 +7,11 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /media/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
-    twitter: /media/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
+    facebook: /assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
+    twitter: /assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/main.png
 ---
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/main.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/main.png"></div>
 
 There is a lot of geospatial data out there -- in the wild, on the cloud, on the internet, and in a lot of obscure places. The beauty of QGIS is that it's now very good at getting data from all these different sources. So good, in fact, that most of the time I don't even need to leave the application in order to get data and perform my analysis.
 
@@ -65,14 +65,14 @@ You can also directly connect to the service hosting the basemap by the Philippi
 >
 
 <div class="row">
-<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-xyz.png"></div>
+<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-xyz.png"></div>
 
-<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-xyz-pgp.png"></div>
+<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-xyz-pgp.png"></div>
 </div>
 
 If you successfully connect to the service, you should see a **```Philippine Geoportal```** option under XYZ Tiles and be able to load the layer in QGIS.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/pg_basemap.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/pg_basemap.png"></div>
 
 Once you're connected to the service, you should be able to access and load the basemap any time as long as you have internet connection.
 
@@ -92,14 +92,14 @@ Connecting to a WFS, WMS, or WCS is simple in QGIS. Let's try to connect to the 
 >
 
 <div class="row">
-<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-wms.png"></div>
+<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-wms.png"></div>
 
-<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-wms-pgp.png"></div>
+<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-wms-pgp.png"></div>
 </div>
 
 If you successfully connect to the service, you should be able to see the layers available from the Philippine Geoportal under **```WMS/WMTS -> Philippine Geoportal -> GeoServer Web Map Service```**
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-wms-pgp-done.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-wms-pgp-done.png"></div>
 
 Connecting to a WFS follows the same procedure.
 
@@ -122,17 +122,17 @@ Luckily, QGIS 3.X made it easier to connect QGIS to a GeoNode instance. Let's tr
 >
 
 <div class="row">
-<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode.png"></div>
+<div class="col-md-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode.png"></div>
 
 <div class="col-md-6">
-<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode-lipad.png"></div>
-<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode-lipad-test.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode-lipad.png"></div>
+<div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode-lipad-test.png"></div>
 </div>
 </div>
 
 If you successfully connect to the GeoNode instance you should be able to see the layers available from both WFS and WMS under  **```GeoNode -> LiPAD FMC GeoNode -> WFS or WMS```**
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode-lipad-done.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/conn-geonode-lipad-done.png"></div>
 
 Now let's try to add a Flood Hazard Map from the LiPAD FMC GeoNode.
 
@@ -148,9 +148,9 @@ Sometimes you'll encounter an **```SSL Handshake Failed```** Error caused by QGI
 
 If the map is successfully added in QGIS, you should be able to see something like this:
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/flood-hazard-0.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/flood-hazard-0.png"></div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/flood-hazard-1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/flood-hazard-1.png"></div>
 
 Notice that if you right click on the layer, there is no option to open the Attribute Table.
 
@@ -173,12 +173,12 @@ Of course you can always just download the files and load them in QGIS but for t
 >```
 >* Click **```Add```**
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/noah-landslide-raster-0.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/noah-landslide-raster-0.png"></div>
 
 
 Loading the layer might take some time but afterwards you should be able to see something like this:
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/landslide-raster-0.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/landslide-raster-0.png"></div>
 
 That's for loading a raster, how about a vector (shapefile) stored on the internet?
 
@@ -198,15 +198,15 @@ We basically follow the same steps.
 >* Click **```Add```**
 >
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/noah-ss-vector.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/noah-ss-vector.png"></div>
 
 Again, loading the layer might take some time but afterwards you should be able to see something like this:
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/ss-vector-0.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/ss-vector-0.png"></div>
 
 Since we loaded a vector file, we should be able to change its symbology like so:
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/ss-vector-1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/ss-vector-1.png"></div>
 
 Now what else can we add to create our hazard maps? How about some building footprint data from OpenStreetMaps?
 
@@ -220,23 +220,23 @@ This is easily done using the [QuickOSM](https://plugins.qgis.org/plugins/QuickO
 
 To run the plugin, find the QuickOSM Toolbar and click **```QuickOSM```**.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm.png"></div>
 
 This will open a window where you can create and run custom Overpass queries or even open a local .osm file.
 
 For our purpose, let's just run a quick query to get all the buildings within our current map canvas.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldgs.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldgs.png"></div>
 
 After the query is completed, you should be able to see the following layer:
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldg-layer.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldg-layer.png"></div>
 
 You can style the queried layer and check its attribute table.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldg-layer-1.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldg-layer-1.png"></div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/media/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldg-layer-attr.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-12-connecting-qgis-to-remote-services/quickosm-bldg-layer-attr.png"></div>
 
 Now that you've loaded the layers in QGIS, you can then proceed with creating maps using the **```Print Layout```**. You can check a simple tutorial on how to create maps in the Print Layout [here](https://bnhr.xyz/2018/03/01/learn-cartography-and-styling-in-qgis-part-2.html).
 
