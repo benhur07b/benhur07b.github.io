@@ -11,7 +11,8 @@
 
 .dropdown-menu {
     border: 0px none #ffffff;
-    background-color: rgba(255,255,255,0);
+    // background-color: rgba(255,255,255,0);
+    background-color: $color-muted;
 
     .dropdown-item {
         padding: 0.1rem 1.25rem;
@@ -41,9 +42,9 @@
     -moz-transition: all ease .35s;
     transition: all ease .35s;
 
-    @media (min-width: 996px) {
-        font-size: 24px;
-    }
+    // @media (min-width: 996px) {
+    //     font-size: 24px;
+    // }
 
     -webkit-user-select:none;
     -khtml-user-select:none;
