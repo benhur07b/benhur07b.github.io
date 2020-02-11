@@ -1,0 +1,43 @@
+---
+layout: event
+title: QGIS Training - March 23-27, 2020
+image:
+  facebook: /assets/img/site/QGIS-certified.png
+  twitter: /assets/img/site/QGIS-certified.png
+---
+<div class='container'>
+    <h1>Event</h1>
+    <p>
+        <a href='{{ site.baseurl }}/training/qgis-beginner.html'>QGIS Training (Beginner)</a><br>
+        <a href='{{ site.baseurl }}/training/qgis-intermediate.html'>QGIS Training (Intermediate)</a>
+    <h1>Dates</h1>
+        <p>March 23-24, 2020 (Beginner)<br>March 25-27, 2020 (Intermediate)</p>
+    <h1>Sign-up/Register</h1>
+        <p>Slots are limited. <a href='http://bit.ly/31Gvf8A'>Reserve yours now. :)</a>
+        </p>
+    <h1>Venue</h1>
+    <p>The Hatch Hub, 195 Maginhawa, UP Village, Quezon City, Philippines 1101 (above Urban Chick)
+    <div id='2020-03-qgis-map' class='venue-map mb-4'></div>
+    <h1>Questions/Clarifications?</h1>
+    <p>Feel free to {% include contact-me.html %}.</p>
+</div>
+<script>
+    var map = L.map('2020-03-qgis-map').setView([14.6370265, 121.0615], 18);
+
+    var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
+
+    var bnhrIcon = L.icon({
+        iconUrl: '{{ site.baseurl }}/assets/img/logos/BNHR-avatar-2.png',
+
+        iconSize:     [36, 36], // size of the icon
+        iconAnchor:   [-12, 0], // point of the icon which will correspond to marker's location
+        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+
+    var marker = L.marker([14.6370265, 121.0615], {icon: bnhrIcon})
+
+    OpenStreetMap_Mapnik.addTo(map);
+    marker.addTo(map);
+</script>
