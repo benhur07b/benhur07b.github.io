@@ -37,21 +37,25 @@ image:
 <script>
     var map = L.map('2020-03-qgis-map').setView([14.6370265, 121.0615], 18);
 
-    var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
-
+    var osmMapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
+    var voyager =L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://carto.com/">CARTO</a> (style)'
+    })
     var bnhrIcon = L.icon({
-        iconUrl: '{{ site.baseurl }}/assets/img/logos/BNHR-avatar-2.png',
+        iconUrl: '{{ site.baseurl }}/assets/img/logos/BNHR-pin.png',
 
-        iconSize:     [36, 36], // size of the icon
-        iconAnchor:   [-12, 0], // point of the icon which will correspond to marker's location
+        iconSize:     [36, 48], // size of the icon
+        iconAnchor:   [0, 24], // point of the icon which will correspond to marker's location
         popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
     });
 
     var marker = L.marker([14.6370265, 121.0615], {icon: bnhrIcon})
 
-    OpenStreetMap_Mapnik.addTo(map);
+    osmMapnik.addTo(map);
+    // voyager.addTo(map);
     marker.addTo(map);
 </script>
 
