@@ -35,7 +35,7 @@ image:
 </div>
 
 <script>
-    var map = L.map('2020-03-qgis-map').setView([14.6370265, 121.0615], 18);
+    var map = L.map('2020-03-qgis-map').setView([14.63695, 121.06161], 18);
 
     var osmMapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
@@ -48,11 +48,11 @@ image:
         iconUrl: '{{ site.baseurl }}/assets/img/logos/BNHR-pin.png',
 
         iconSize:     [36, 48], // size of the icon
-        iconAnchor:   [0, 24], // point of the icon which will correspond to marker's location
-        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+        iconAnchor:   [18, 48], // point of the icon which will correspond to marker's location
+        popupAnchor:  [36, 48] // point from which the popup should open relative to the iconAnchor
     });
 
-    var marker = L.marker([14.6370265, 121.0615], {icon: bnhrIcon})
+    var marker = L.marker([14.63695, 121.06161], {icon: bnhrIcon})
 
     osmMapnik.addTo(map);
     // voyager.addTo(map);
