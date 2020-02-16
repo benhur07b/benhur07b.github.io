@@ -6,6 +6,9 @@ tags: [foss, linux, sager, np8966, clevo, p960d, laptop, xps, system76, pop! os]
 pinned: false
 comments: true
 og_type: article
+image:
+    facebook: /assets/img/posts/2020-02-15-my-new-daily-driver-laptop/desktops.png
+    twitter: /assets/img/posts/2020-02-15-my-new-daily-driver-laptop/desktops.png
 ---
 
 I made one of my biggest purchases/investments (of my life) last year when I finally pulled the trigger on updating my laptop. My old one was a 6-year old entry-level NEO that I bought got P9.9k during my final year in college. She was still fairly reliable but the signs of old age were showing -- battery was busted, adapter/charger only worked if you position it perfectly, and the hard drive was disconnecting at times. Plus it was getting difficult to upgrade her since her parts were becoming obsolete -- I upgraded her RAM from 2GB to 6GB and changed her hard drive over those 6 years. I decided it was time for her to retire as my daily driver and started looking around for her successor.
