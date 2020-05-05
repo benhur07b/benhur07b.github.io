@@ -66,7 +66,7 @@ Sign-up or check out the courses below.
 - Spatial relationships
 - Queries by location
 
-### Vector Processing & Analysis
+### Basic Vector Processing & Analysis
 - Vector data formats
 - Geoprocessing (merge, clip, dissolve, etc.)
 - Data Management (combine, split, reproject, etc.)
@@ -74,7 +74,7 @@ Sign-up or check out the courses below.
 - Interpolation methods
 - Vector to raster conversion
 
-### Raster Processing & Analysis
+### Basic Raster Processing & Analysis
 - Raster data formats
 - Raster calculator
 - Data Management (reprojection, etc.)
