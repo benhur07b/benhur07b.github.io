@@ -1,5 +1,6 @@
 body {
     font-family: $font-pt-sans;
+    // font-family: $font-fira-sans;
     font-color: $color-primary;
     font-size: 20px;
     // background-color: $color-secondary;
@@ -13,7 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: $font-pt-sans;
+  font-family: $font-pt-sans;
+  // font-family: $font-fira-sans;
     font-weight: normal;
     font-size: 20px;
     line-height: 1.7;
