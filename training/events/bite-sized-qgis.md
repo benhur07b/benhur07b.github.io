@@ -76,7 +76,7 @@ Sign-up or check out the courses below. *Tentative schedule of courses are Frida
 - Raster calculator
 - Data Management (reprojection, etc.)
 - Analysis (reclassification, clip, contours, etc.)
-- Terrain analysis (slope, aspect)
+- Terrain analysis (slope, aspect, etc.)
 - Sampling rasters with vectors
 - Zonal statistics
 - Raster to vector conversion
@@ -140,3 +140,6 @@ Sign-up or check out the courses below. *Tentative schedule of courses are Frida
 - QGIS & Temporal Data
 - QGIS & Mesh Data
 - QGIS & Web Mapping
+
+## Schedule & Calendar
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrr6nHnOGk4Tj1rr?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
