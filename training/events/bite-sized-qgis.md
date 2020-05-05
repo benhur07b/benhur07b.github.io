@@ -14,7 +14,8 @@ You're a beginner who wants to learn how to style and create maps? *Take the Beg
 Courses are designed so they can be taken independently of each other.
 
 ## Interested?
-Sign-up or check out the courses below. *Tentative schedule of courses are Fridays and Saturdays, 10:00AM & 2:00PM*.
+Sign-up or check out the courses below.
+*Tentative schedule of courses are Fridays and Saturdays, 10:00AM & 2:00PM. You may check the calendar at the bottom for the tentative schedules. The payment and other details will be emailed to you after signing-up.*
 
 ## Sign-up
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrJHaUvwGgjKLSDp?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
@@ -22,6 +23,8 @@ Sign-up or check out the courses below. *Tentative schedule of courses are Frida
 
 ## Bite-sized QGIS (Beginner Topics)
 **Duration:** 2-3 hours
+<br>**Training Fee:** PhP 600.00 / course
+<br>**Class Size:** 10
 
 ### Introduction to QGIS & Spatial Data Types
 - Gentle introduction to GIS concepts
@@ -83,6 +86,8 @@ Sign-up or check out the courses below. *Tentative schedule of courses are Frida
 
 ## Bite-sized QGIS (Intermediate Topics)
 **Duration:** 3-4 hours
+<br>**Training Fee:** PhP 1,200.00 / course
+<br>**Class Size:** 10
 
 ### Network Analysis
 - Topology checker & cleaning network data
@@ -91,16 +96,16 @@ Sign-up or check out the courses below. *Tentative schedule of courses are Frida
 - Other network analysis algorithms in QGIS
 
 ### QGIS & Python I
-- Python & Layer Manipulation
+- The PyQGIS API
 - Python & QGIS Actions
 - Python & QGIS Expressions
-- Python Processing Plugins
-- Python GUI Plugins
 - *knowledge of Python is preferred*
 
 ### QGIS & Python II
+- Python Console Scripts
+- Python Processing Scripts
+- Python GUI Plugins
 - QGIS Plugin Development
-- PyQGIS
 - PyQGIS outside QGIS (experimental)
 - *knowledge of Python is required*
 
