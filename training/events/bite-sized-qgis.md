@@ -9,9 +9,9 @@ og_type: page
 ## What is Bite-sized QGIS?
 Short and focused online courses designed to teach QGIS in bite-sized proportions. QGIS can be very complex and have a lot of nuances. By having short and focused courses, we're trying to ensure that participants don't get overwhelmed while at the same time giving them freedom to choose to learn only what they want and pay only for what they need. Some people don't need to learn everything about QGIS and are only interested in specific use cases and that's entirely alright.
 <br><br>
-You're a beginner who wants to learn how to style and create maps? *Take the Beginner-level Loading & Styling Layers in QGIS course*. You're an experienced user who wants to learn how to do network analysis in QGIS? *Take the Intermediate-level Network Analysis course*.
+You're a beginner who just wants to learn how to style and create maps? *Take the Beginner-level Loading & Styling Layers in QGIS course*. You're an experienced user who wants to learn how to do network analysis in QGIS? *Take the Intermediate-level Network Analysis course*. Courses are designed so they can be taken independently of each other.
 <br><br>
-Courses are designed so they can be taken independently of each other.
+Official QGIS Certificates are also available. You may opt to get one certificate for all the courses that you take.
 
 ## Interested?
 Sign-up or check out the courses below.
