@@ -7,11 +7,11 @@ og_type: page
 *Learn QGIS one bite at a time.*
 
 ## What is Bite-sized QGIS?
-Short and focused online courses designed to teach QGIS in bite-sized proportions. QGIS can be very complex and have a lot of nuances. By having short and focused courses, we're trying to ensure that participants don't get overwhelmed while at the same time giving them freedom to choose to learn only what they want and pay only for what they need. Some people don't need to learn everything about QGIS and are only interested in specific use cases and that's entirely alright.
+Short, focused, and hands-on online courses designed to teach QGIS in bite-sized proportions. QGIS can be very complex and have a lot of nuances. By having short and focused courses, we're trying to ensure that participants don't get overwhelmed while at the same time giving them freedom to choose to learn only what they want and pay only for what they need. Some people don't need to learn everything about QGIS and are only interested in specific use cases and that's entirely alright.
 <br><br>
 You're a beginner who just wants to learn how to style and create maps? *Take the Beginner-level Loading & Styling Layers in QGIS course*. You're an experienced user who wants to learn how to do network analysis in QGIS? *Take the Intermediate-level Network Analysis course*. Courses are designed so they can be taken independently of each other.
 <br><br>
-Official QGIS Certificates are also available. You may opt to get one certificate for all the courses that you take.
+Official QGIS Certificates are also available. You may opt to get one certificate for all the courses that you take. Each course comes with a workbook *(and answers!)*.
 
 ## Interested?
 Sign-up or check out the courses below.
@@ -23,8 +23,8 @@ Sign-up or check out the courses below.
 
 ## Bite-sized QGIS (Beginner Topics)
 **Duration:** 2-3 hours
-<br>**Training Fee:** PhP 600.00 / course
-<br>**Class Size:** 10
+<br>**Training Fee:** PhP 700 per course
+<br>**Class Size:** 6-10
 
 ### Introduction to QGIS & Spatial Data Types
 - Gentle introduction to GIS concepts
@@ -84,10 +84,10 @@ Sign-up or check out the courses below.
 - Zonal statistics
 - Raster to vector conversion
 
-## Bite-sized QGIS (Intermediate Topics)
+## Bite-sized QGIS (Intermediate & Advanced Topics)
 **Duration:** 3-4 hours
-<br>**Training Fee:** PhP 1,200.00 / course
-<br>**Class Size:** 10
+<br>**Training Fee:** PhP 1,400 per course
+<br>**Class Size:** 6-10
 
 ### Network Analysis
 - Topology checker & cleaning network data
