@@ -15,7 +15,7 @@ Official QGIS Certificates are also available. You may opt to get one certificat
 
 ## Interested?
 Sign-up or check out the courses below.
-*Tentative schedule of courses are Fridays and Saturdays, 10:00AM & 2:00PM. You may check the calendar at the bottom for the tentative schedules. The payment and other details will be emailed to you after signing-up.*
+*Tentative schedule of courses are Fridays and Saturdays, 10:00AM & 2:00PM. You may check the calendar at the bottom for the tentative schedules. The payment and other details will be emailed to you after signing-up. You may [contact me](https://bnhr.xyz/#contact) if you have suggestions as to the content or schedule of the courses.*
 
 ## Sign-up
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrJHaUvwGgjKLSDp?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
