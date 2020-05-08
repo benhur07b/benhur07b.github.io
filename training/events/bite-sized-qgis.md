@@ -126,8 +126,9 @@ Sign-up or check out the courses below.
 
 ### Advanced Cartography & Map Design II
 - Adding other map elements (plots, insets, 3D, etc.)
-- QGIS Atlas
-- QGIS Reports
+- Other advanced styling & layout techniques
+- Making 100 maps in 10 minutes with QGIS Atlas
+- Automatic report generation with QGIS Reports
 - QGIS Patches
 
 ### QGIS & Spatial SQL
