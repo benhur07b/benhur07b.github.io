@@ -24,7 +24,7 @@ Sign-up or check out the courses below.
 ## Bite-sized QGIS (Beginner Topics)
 **Duration:** 2-3 hours
 <br>**Training Fee:** PhP 700 per course
-<br>**Class Size:** 6-10
+<br>**Class Size:** 6-12
 
 ### Introduction to QGIS & Spatial Data Types
 - Gentle introduction to GIS concepts
@@ -87,7 +87,7 @@ Sign-up or check out the courses below.
 ## Bite-sized QGIS (Intermediate & Advanced Topics)
 **Duration:** 3-4 hours
 <br>**Training Fee:** PhP 1,400 per course
-<br>**Class Size:** 6-10
+<br>**Class Size:** 6-12
 
 ### Network Analysis
 - Topology checker & cleaning network data
