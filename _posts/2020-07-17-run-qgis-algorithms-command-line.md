@@ -89,4 +89,4 @@ In my example, I used a geojson containing features of municipalities of a provi
 You can check your output by opening it in QGIS.
 
 <br>
-Hat-tip to [Totò Fiandaca](@totofiandaca) for the original post [here](https://pigrecoinfinito.com/2020/07/16/usare-qgis-senza-aprirlo-qgis-processing-standalone-executable/).
+Hat-tip to [Totò Fiandaca](twitter.com/totofiandaca) for the original post [here](https://pigrecoinfinito.com/2020/07/16/usare-qgis-senza-aprirlo-qgis-processing-standalone-executable/).
