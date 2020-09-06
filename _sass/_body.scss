@@ -1,24 +1,24 @@
 body {
     font-family: $font-pt-sans;
     // font-family: $font-fira-sans;
-    font-color: $color-primary;
-    font-size: 20px;
+    color: $color-primary;
+    font-size: 18px;
     // background-color: $color-secondary;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-pt-sans;
-    font-color: $color-primary-dark;
+    color: $color-primary-dark;
     font-weight: bold;
     line-height: 1.4;
 }
 
 p {
-  font-family: $font-pt-sans;
-  // font-family: $font-fira-sans;
+    font-family: $font-pt-sans;
+    // font-family: $font-fira-sans;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .small-line-height {
