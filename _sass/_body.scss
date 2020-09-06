@@ -1,8 +1,9 @@
 body {
-    font-family: $font-pt-sans;
-    // font-family: $font-fira-sans;
+    // font-family: $font-pt-sans;
+    font-family: $font-fira-sans;
     color: $color-primary;
     font-size: 18px;
+    line-height: 1.8;
     // background-color: $color-secondary;
 }
 
@@ -14,8 +15,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: $font-pt-sans;
-    // font-family: $font-fira-sans;
+    // font-family: $font-pt-sans;
+    font-family: $font-fira-sans;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.8;
@@ -59,11 +60,11 @@ p {
     cursor: pointer;
     padding: 12px;
     border-radius: 5px;
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
     opacity: 0.5;
 
     &:hover {
-        background-color: $color-primary-dark;
+        background-color: $color-primary;
         opacity: 0.5;
     }
 
@@ -86,3 +87,37 @@ p {
         color: $color-primary-dark;
     }
 }
+
+.carousel-item-header {
+    height:30vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @media (min-width: 320px) {
+        height: 30vh;
+    }
+    @media (min-width: 576px) {
+        height:30vh;
+    }
+    @media (min-width: 768px) {
+        height: 40vh;
+    }
+    @media (min-width: 992px) {
+        height: 40vh;
+    }
+    @media (min-width: 1024px) {
+        height: 40vh;
+    }
+    @media (min-width: 1200px) {
+        height: 45vh;
+    }
+    @media (min-width: 1440px) {
+        height: 60vh;
+    }
+    @media (min-width: 1960px) {
+        height: 65vh;
+    }
+  }

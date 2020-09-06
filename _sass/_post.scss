@@ -1,6 +1,6 @@
 // POSTS
 .post-meta {
-    color: $color-primary-light;
+    color: $color-muted;
 }
 
 .post-meta-info {
@@ -12,13 +12,13 @@
 .post-meta-tag {
     @extend .no-underline-link;
     @extend .post-meta;
-    background-color: $color-muted;
-    color: $color-primary;
+    background-color: $color-secondary;
+    color: $color-primary-dark;
     padding: 0.1em 0.3em;
     border-radius: 5%;
 
     &:hover {
-        color: white;
+        color: $color-primary-light;
         background-color: $color-accent-orange;
     }
 }
