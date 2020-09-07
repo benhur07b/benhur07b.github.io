@@ -8,35 +8,22 @@
                 <h3 class='timeline-title'>Organizations</h3>
             </div>
         </li>
+        {% for item in site.collection_cv_experience_org %}
         <li class='timeline-item'>
             <div class='timeline-info'>
-                <span class='small'>2019 - PRESENT</span>
+                <span class='small'>{{ item.period }}</span>
             </div>
             <div class='timeline-marker'></div>
             <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Chief Problem Solver</h4>
+                <h4 class='timeline-title mt-1'>{{ item.position }}</h4>
                 <p class='small-line-height'>
-                    BNHR
+                    {{ item.organization }}
                     <br>-----
-                    <br><b>Provide</b> best-fit, cost-effective, and sustainable solutions to spatial and data problems using open technologies
-                    <br><b>Provide</b> training and workshops on data literacy and geospatial technologies using free and open source solutions
+                    {{ item.about }}
                 </p>
             </div>
         </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>2019 - PRESENT</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Chief Technology Officer</h4>
-                <p class='small-line-height'>
-                    SmartCT (SmartCitiesPH, Inc.)
-                    <br>-----
-                    <br><b>Lead</b> the decision-making and development of data and technology strategies for SmartCT with a focus on open technologies
-                </p>
-            </div>
-        </li>
+        {% endfor %}
         <li class='timeline-item period'>
             <div class='timeline-info'></div>
             <div class='timeline-marker'></div>
@@ -44,174 +31,22 @@
                 <h3 class='timeline-title'>Individual engagements</h3>
             </div>
         </li>
+        {% for item in site.collection_cv_experience_ind %}
         <li class='timeline-item'>
             <div class='timeline-info'>
-                <span class='small'>AUG 2020 - PRESENT</span>
+                <span class='small'>{{ item.period }}</span>
             </div>
             <div class='timeline-marker'></div>
             <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Open Data Expert</h4>
+                <h4 class='timeline-title mt-1'>{{ item.position }}</h4>
                 <p class='small-line-height'>
-                    Hivos
+                    {{ item.organization }}
                     <br>-----
-                    <br><b>Lead</b> in the design, co-creation, and conduct of the data literacy and open contracting training and workshops. 
+                    {{ item.about }}
                 </p>
             </div>
         </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>JAN 2020 - PRESENT</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Full Stack GIS & Web Developer</h4>
-                <p class='small-line-height'>
-                    Thibi
-                    <br>-----
-                    <br><b>Provide</b> technical services for Thibi on their projects that include the development of data portals with CKAN and web mapping applications using Python and JavaScript stacks
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>SEP 2019 - PRESENT</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>National GIS Specialist</h4>
-                <p class='small-line-height'>
-                    Asian Development Bank
-                    <br>-----
-                    <br><b>Provide</b> technical, maintenance, monitoring, and development support for the ADB Spatial Data Analysis Explorer (ADB-SPADE) application built using GeoNode and Leaflet on AWS
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>NOV 2018 - APR 2020</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>GIS Specialist</h4>
-                <p class='small-line-height'>
-                    Cerebro Innovators and Accelerators, Inc.
-                    <br>-----
-                    <br><b>Provided</b> geospatial services, support, and solutions using RS/GIS technologies and Simularity’s AIADS (Automated Image Anomaly Detection System)
-                    <span class='small'>
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>MAY 2019 - DEC 2019</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Consultant</h4>
-                <p class='small-line-height'>
-                    Hivos
-                    <br><em>Local Government Technical Support – Open Contracting</em>
-                    <br>-----
-                    <br><b>Map, obtain, and convert</b> documents and data points related to public procurement / contracting in the province of South Cotabato
-                    <br><b>Develop</b> a dashboard for sharing, visualizing, and analysing machine-readable procurement data of South Cotabato
-                    <br><b>Provide</b> capacity building workshops based on the needs identified by the target stakeholders related to developing data portals and web applications
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>DEC 2018 - APR 2019</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>GIS Specialist</h4>
-                <p class='small-line-height'>
-                    Philippine Geographical Society
-                    <br><em>Counter-mapping for peri-urban social justice: accounting for spatial narratives of community resistance and dispossession in urban transition</em>
-                    <br>-----
-                    <br><b>Prepared, designed, and facilitated</b> community-based, participatory mapping and UAV mapping activities
-                    <br><b>Created</b> a spatial database for storing and processing data
-                    <br><b>Developed</b> the <a href=" (https://countermappingph.xyz)">website</a> for the project
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>OCT 2018 - JUL 2019</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Consultant</h4>
-                <p class='small-line-height'>
-                    Royal Haskoning DHV
-                    <br><em>ADB Spatial Data Analysis Explorer (ADB-SPADE)</em>
-                    <br>-----
-                    <br><b>Provided</b> maintenance and support services for the SPADE web application (GeoNode) developed for the Asian Development Bank (ADB) which involves troubleshooting and solving issues related to the SPADE application and its components (Geoserver, Postgres, PostGIS, Django, Leaflet, AWS)
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>AUG 2018 - MAR 2019</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Geospatial Analysis Consultant</h4>
-                <p class='small-line-height'>
-                    Thinking Machines Data Science, Inc.
-                    <br>-----
-                    <br><b>Provided</b> needs-based training and consulting services on open-source geospatial software and technologies including PostGIS, QGIS, GDAL/OGR, and Mapbox
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>JAN 2018 - APR 2018</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Technical Service Provider</h4>
-                <p class='small-line-height'>
-                    The CBCP - Caritas Filipinas Foundation, Inc.
-                    <br><em>Digitized Community Disaster Risk Mapping and Information for Efficient Humanitarian Response and Development Programming in the Philippines (#DigitalPH) Project</em>
-                    <br>-----
-                    <br><b>Developed</b> methods to digitize the results of NASSA/Caritas Philippines Participatory Disaster Risk Assessment (PDRA) into usable and shareable GIS-ready formats leveraging Open Data Kit and QGIS
-                    <br><b>Developed</b> a <a class='no-underline-link' href='https://github.com/benhur07b/caritaspdra'>QGIS plugin</a> for analysis of PDRA data and a <a class='no-underline-link' href='https://bnhr.xyz/caritas-pdra-webmap/index.html'>webmap</a> for showing the results of the PDRA
-                    <br><b>Trained</b> NASSA/Caritas Philippines staff and other stakeholders on the use of QGIS and Open Data Kit
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>AUG 2017 - SEP 2017</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>GIS Systems Developer</h4>
-                <p class='small-line-height'>
-                    International City/County Management Association (ICMA)
-                    <br><em>Strengthening Urban Resilience through Growth and Equity (SURGE) Project</em>
-                    <br>-----
-                    <br><b>Provided</b> technical assistance to Zamboanga City in developing a Centralized Geographic Information Management System (CGIMS) -- a platform for different local government agencies to share geospatial data and perform geospatial applications (mapping, analysis, etc.) -- using GeoNode
-
-                </p>
-            </div>
-        </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>DEC 2016 - JUN 2017</span>
-            </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>Computer Programmer</h4>
-                <p class='small-line-height'>
-                    Philippine Geographical Society
-                    <br><em>Child-Centered Participatory Approaches and GIS for Disaster Risk Reduction Phase 2 (CPAG-DRR 2)</em>
-                    <br>-----
-                    <br><b>Developed</b> a <a class='no-underline-link' href='https://github.com/benhur07b/mhcvam'>QGIS plugin</a> that performs Multi-Hazard Child Vulnerability Analysis and Mapping using different indicators such as exposure, vulnerability, and capacity
-                </p>
-            </div>
-        </li>
+        {% endfor %}
         <li class='timeline-item period'>
             <div class='timeline-info'></div>
             <div class='timeline-marker'></div>
