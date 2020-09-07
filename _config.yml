@@ -16,6 +16,13 @@ github: "benhur07b"
 linkedin: "benhur07b"
 messenger: "bnhr.xyz"
 
+collections:
+    collection_what_ive_done:
+    collection_cv_experience_org:
+    collection_cv_experience_ind:
+    collection_cv_education:
+    collection_cv_fellowship:
+
 # exclude
 exclude:
     - .gitignore
