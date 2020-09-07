@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thoughts on the Minnesotta Timberwolves Offseason 2017
+title: "Thoughts on the Minnesotta Timberwolves 2017 offseason"
 description: The Wolves got older (and probably better) this offseason amidst the West becoming that much crazier.
 tags: [basketball, nba]
 pinned: false

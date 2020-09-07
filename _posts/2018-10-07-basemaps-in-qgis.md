@@ -107,7 +107,7 @@ Aside from the usual satellite imagery (Esri Satellite, Bing VirtualEarth, Googl
 
 The muted colors (black and off-white) of these basemaps make them especially suitable for visualization purposes like the one above.
 
-## QuickMapServices Plugin
+## QuickMapServices plugin
 Another way to easily add basemaps in QGIS is by using the QuickMapServices Plugin by [NextGIS](nextgis.com). As with
 
 After installing the plugin, you can access it via **```Web -> QuickMapServices```** or in the **```Plugins Toolbar```**. Initially, the plugin comes with just a few basemaps validated by the authors. However, you can easily add basemaps that were contributed by users by going to **```Web -> QuickMapServices -> Settings```** then going to the **```More services```** tab and clicking **```Get contributed pack```**.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Here's How to Run QGIS Processing Algorithms from the Command Line
+title: Here's how to run QGIS processing algorithms from the command line
 description: QGIS 3.14 introduced the qgis_process command that allows users to run QGIS processing algorithms from the console without having the QGIS GUI open.
 tags: [foss4g, qgis, qgis3, qgis3.14, terminal]
 pinned: false

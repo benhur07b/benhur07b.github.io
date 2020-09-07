@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learn Cartography and Styling in QGIS through Basketball Visualization (Part 2): The Print Composer/Layout"
+title: "Learn cartography and styling in QGIS through basketball visualization (Part 2): The Print Composer/Layout"
 description: Part 2 of a series of posts focused on teaching cartography and styling in QGIS by creating visualizations for basketball. In this post, we'll dive into the heart of map-making in QGIS -- the QGIS Print Composer.
 tags: [foss4g, qgis, qgis3, how-to, cartography, basketball, courtvisionph]
 pinned: false
@@ -26,7 +26,7 @@ Let's create a new layout/composer and name it ```basketball```.
 
 Creating or opening a print layout opens that Print Composer/Layout window.
 
-## The Print Composer Window
+## The Print Composer window
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/print-composer-window.png"></div>
 
 The Print Composer/Layout window is composed of a menu bar, toolbars, a canvas, and a side pane.
@@ -57,17 +57,17 @@ The Print Composer/Layout window is composed of a menu bar, toolbars, a canvas, 
     </div>
 </div>
 
-## Creating a Map with the Print Composer
+## Creating a map with the Print Composer
 Now let's create an actual map that we can print using the Map composer.
 
-### Set the Page Setup of the Layout
+### Set the page setup of the Layout
 The first thing we need to do is to setup the size of our map canvas via ```Layout -> Page Setup``` or ```CTRL + SHIFT + P```. For this map, we'll be printing it in A4 sized paper.
 
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/page-setup.gif"></div>
 
 With this, when we print our map or save it as an image, we know that its size will be A4.
 
-### Add a Map to the Canvas
+### Add a map to the Canvas
 Now let's add our map to the canvas via  ```Add Item -> Add Map``` or by clicking the Add Map button on the left toolbar.
 
 <div class="row">
@@ -82,7 +82,7 @@ After adding the map, we can place it anywhere on the canvas and change its size
 
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/edit-map.gif"></div>
 
-### Add Map title
+### Add map title
 Every map needs a title. Let's add one to ours using ```Add Item -> Add Label``` or by clicking the Add Label button on the left toolbar. We can add a label for the title and another for the subtitle.
 
 <div class="row">
@@ -97,7 +97,7 @@ The text, font style, color, and other properties can be changed in the ```Item 
 
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/edit-titles.gif"></div>
 
-### Add Map Legend
+### Add map legend
 The next step is to add a legend so people can understand our map better. A Legend can be added using ```Add Item -> Add Legend``` or the Add Legend button on the left toolbar.
 
 <div class="row">
@@ -112,12 +112,12 @@ Like with other map elements, legends properties can be edited in the ```Item Pr
 
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/edit-legend.gif"></div>
 
-### Add Texts
+### Add texts
 Let's add another label that provides a little more information and explanation about our map.
 
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/add-text.gif"></div>
 
-### Add Images (North Arrow, Logos, etc)
+### Add images (north arrow, logos, etc)
 Images can also be added to our map via the ```Add Item -> Add Picture``` or the Add Picture button in the left toolbar.
 
 <div class="row">
@@ -128,7 +128,7 @@ Images can also be added to our map via the ```Add Item -> Add Picture``` or the
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/add-picture.gif"></div>
 </div>
 
-### Print or Export Map
+### Print or export the map
 Once we are satisfied with the layout of our map, we can export it to an image, pdf, or svg file. The commands for this can be found under the ```Layout``` menu or on the toolbar. We can also Print the map directly.
 
 <div class="row">
@@ -152,7 +152,7 @@ Once we are satisfied with the layout of our map, we can export it to an image, 
 Congratulations! You should now have a ready-to-print PNG file like the one below:
 <div class="col-md-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-03-01-learn-cartography-and-styling-in-qgis-part-2/shot-chart-up.png"></div>
 
-## Final Thoughts
+## Final thoughts
 Those are just the basics of map-making in QGIS using the Map Composer. With a bit of practice, creativity, and familiarity, greater and more beautiful maps can be created in QGIS. For some inspiration, you can check out [Map Examples from the QGIS site](https://www.qgis.org/en/site/about/screenshots.html).
 
 Stay tuned for the next part of this series where we'll look at creating a Hot Zones map and adding Labels to Symbology. Cheers!

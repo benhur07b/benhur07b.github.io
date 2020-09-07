@@ -30,7 +30,7 @@ You can install the **```Spreadsheet Layers```** plugin via **```Plugins -> Mana
 * **Author:** [Camptocamp](mailto:info@camptocamp.com)
 * **Code Repository:** [https://github.com/camptocamp/QGIS-SpreadSheetLayers](https://github.com/camptocamp/QGIS-SpreadSheetLayers)
 
-## How to Use
+## How to use
 The **```Spreadsheet Layers```** plugin can load sheets with or without geometry attributes. The plugin also allows the user load a worksheet from a spreadsheet with multiple worksheets.
 
 For example, we have a spreadsheet file (```SAMPLE SPREADSHEET.ods```) with two sheets -- one (```Sample Spreadsheet NO GEOM```) is just a list of Names and Ages of individuals and has no geometry attribute while the other (```Sample Spreadsheet WITH GEOM```) is a list of households with their latitude and longitude.
@@ -42,7 +42,7 @@ For example, we have a spreadsheet file (```SAMPLE SPREADSHEET.ods```) with two 
 
 Both sheets can be loaded in QGIS using the **```Spreadsheet Layers```** plugin.
 
-### Loading a Spreadsheet Layer Without Geometry
+### Loading a spreadsheet layer without geometry
 1. Go to **```Layer -> Add Layer -> Add spreadsheet layer```**.
 
     <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-07-27-plugin-fridays-spreadsheet-layers-plugin/add-layer.png" alt="Add Spreadsheet Layer"></div>
@@ -64,7 +64,7 @@ Both sheets can be loaded in QGIS using the **```Spreadsheet Layers```** plugin.
 
     <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-07-27-plugin-fridays-spreadsheet-layers-plugin/no-geom-attr.png" alt="Add Spreadsheet Layer"></div>
 
-### Loading a Spreadsheet Layer With Geometry
+### Loading a spreadsheet layer with geometry
 1. Go to **```Layer -> Add Layer -> Add spreadsheet layer```**.
 
     <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-07-27-plugin-fridays-spreadsheet-layers-plugin/add-layer.png" alt="Add Spreadsheet Layer"></div>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connecting or Mounting a Windows Share folder in Xubuntu 16.04
-description: Accessing files in a Windows Share folder is fairly straightforward in Xubuntu 16.04.
+title: "Connecting or mounting a Windows share folder in Xubuntu 16.04"
+description: Accessing files in a Windows share folder is fairly straightforward in Xubuntu 16.04.
 tags: [foss, windows]
 comments: true
 pinned: false
@@ -15,7 +15,7 @@ Working in an environment where a majority of the computers are running Windows 
 
 It came as a pleasant surprise that connecting to the shared folder on our Windows Machine was pretty straightforward.
 
-## REQUIREMENTS
+## Requirements
 
 ### On the WINDOWS host/server
 1. The IP address of the Windows server/host (you can check this using *ipconfig* in the command propmt or in the *Network and Connection Settings*)

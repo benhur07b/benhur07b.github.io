@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FOSS4G How-to: Sample Raster or Vector Values at Points in QGIS and GRASS"
+title: "FOSS4G How-to: Sample raster or vector values at points in QGIS and GRASS"
 description:  This is the first of a series of posts that will show how to perform basic or standard GIS functions using FOSS4G (Free-and-Open-Source for Geospatial) applications like QGIS and GRASS. In this post, we take a look at how we can sample raster and vector values at points using QGIS and GRASS.
 tags: [foss4g, how-to, foss4g-how-to, qgis, 2.18.10, grass, 7.2.1]
 pinned: false

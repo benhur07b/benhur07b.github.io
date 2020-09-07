@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a Globe-like Orthographic Projection Map in QGIS 3
+title: "Create a globe-like orthographic projection map in QGIS 3"
 description: Learn how to create globe-like orthographic projection maps in QGIS 3 centered at different places on the earth by using custom Coordinate Reference Systems (CRS).
 tags: [foss4g, qgis, qgis3, map-projections]
 pinned: false
@@ -25,7 +25,7 @@ Download a World Borders dataset like [this from thematicmapping.org](http://the
 ## Load the downloaded dataset in QGIS
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-09-21-create-a-globe-in-qgis/globe-01.png"></div>
 
-## Define Custom Projection
+## Define custom projection
 You can define custom Coordinate Reference Systems (CRS) in QGIS by going to **```Settings -> Custom Projections```**.
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-09-21-create-a-globe-in-qgis/custom-crs.png"></div>
@@ -48,7 +48,7 @@ Let's name our Custom CRS as **Globe - PHL** and click **OK**.
     <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-09-21-create-a-globe-in-qgis/custom-crs-2.png"></div>
 </div>
 
-## Change the Current CRS to our Custom CRS
+## Change the current CRS to our custom CRS
 Next, we just change the current CRS of our project to that of the custom CRS we just defined.
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-09-21-create-a-globe-in-qgis/custom-crs-3.png"></div>
@@ -59,7 +59,7 @@ After clicking **OK**, we should see the following result:
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-09-21-create-a-globe-in-qgis/custom-crs-5.png"></div>
 
-## Change the Style of the Map
+## Change the style of the map
 The last step is just to change the style of the map to highlight the Philippines.
 
 You can do this by using a ```Categorized Symbology``` on the ```NAME``` column like below:

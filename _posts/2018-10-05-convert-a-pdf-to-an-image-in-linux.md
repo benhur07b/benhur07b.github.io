@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convert a PDF to an Image (PNG, JPG, etc) in Linux using ImageMagick
+title: "Convert a PDF to an Image (PNG, JPG, etc) in Linux using ImageMagick"
 description: Learn how to convert a PDF file into an Image in Linux using ImageMagick's convert funtion.
 tags: [linux, foss, imagemagick]
 pinned: false

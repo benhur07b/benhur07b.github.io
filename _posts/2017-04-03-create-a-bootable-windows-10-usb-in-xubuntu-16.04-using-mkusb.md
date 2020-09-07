@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a Bootable Windows 10 USB in Xubuntu 16.04 using mkusb
+title: "Create a bootable Windows 10 USB in Xubuntu 16.04 using mkusb"
 description: But why? Hahaha.
 tags: [windows, xubuntu, '16.04']
 pinned: false

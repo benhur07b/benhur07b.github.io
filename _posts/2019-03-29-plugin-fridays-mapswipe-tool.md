@@ -30,7 +30,7 @@ You can install the **```MapSwipe Tool```** plugin via **```Plugins -> Manage an
 * **Author:** [Hirofumi Hayashi and Luiz Motta](mailto:hayashi@apptec.co.jp,motta.luiz@gmail.com)
 * **Code Repository:** [https://github.com/lmotta/mapswipetool_plugin](https://github.com/lmotta/mapswipetool_plugin)
 
-## How to Use
+## How to use
 The plugin is used in a very straightforward manner. For my example below, I'm using two XYZ maps (Google Satellite and Bing VirtualEarth). The plugin works for both vector and raster layers.
 
 1. Select the layer that you want to swipe on the Layers panel.

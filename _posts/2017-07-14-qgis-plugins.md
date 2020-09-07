@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QGIS Plugins
+title: "QGIS Plugins"
 description: Cheers to one of the most commonly underutilized and underappreciated part of QGIS.
 tags: [foss4g, qgis, plugins]
 pinned: false

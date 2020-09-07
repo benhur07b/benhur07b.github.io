@@ -49,7 +49,7 @@ GeoServer is used by GeoNode applications and a common component for Spatial Dat
 
 GeoNode is used for the data repositories of the Phil-LiDAR program as well as many other [organizations and projects](http://geonode.org/gallery/) around the world.
 
-## Add the Philippine Geoportal Basemap by connecting to an XYZ Tiles Service
+## Add the Philippine Geoportal Basemap by connecting to an XYZ tile service
 I've discussed about basemaps in QGIS in [this post](https://bnhr.xyz/2018/10/07/basemaps-in-qgis.html) and recently, I added the Philippine basemap hosted by the [Philippine Geoportal](http://geoportal.gov.ph) to the [QuickMapServices catalog](http://qms.nextgis.com). You can load the basemap in QGIS by searching for **```Philippine Geoportal Basemap```** in the QuickMapServices plugin.
 
 You can also directly connect to the service hosting the basemap by the Philippine Geoportal. I updated the directions [here](http://www.geoportal.gov.ph/downloads/How%20to%20connect%20and%20consume%20the%20PGS%20Basemap%20in%20QGIS.pdf) to reflect how this can be done in QGIS 3.
@@ -136,7 +136,7 @@ If you successfully connect to the GeoNode instance you should be able to see th
 
 Now let's try to add a Flood Hazard Map from the LiPAD FMC GeoNode.
 
-### Get a 100-year Flood Hazard Map for the City of Legazpi
+### Get a 100-year flood hazard map for the City of Legazpi
 Once we are connected to the LiPAD FMC GeoNode, we should be able to load the Flood Hazard Maps by Phil-LiDAR 1. Let's select the 100-year Flood Hazard Map for the City of Legazpi
 
 >
@@ -154,12 +154,12 @@ If the map is successfully added in QGIS, you should be able to see something li
 
 Notice that if you right click on the layer, there is no option to open the Attribute Table.
 
-## Loading Rasters and Vectors stored on the internet
+## Loading rasters and vectors stored on the internet
 Aside from Flood Hazard Maps by Phil-LiDAR 1, Project NOAH also (finally) released, a few years ago, their Landslide and Stormsurge Hazard Maps. They released them as downloadable rasters and vectors which you can find [here](http://noah.up.edu.ph/downloads/). Why they didn't release it as a database and share it via a web service, I don't know but we make do with what we're given. If you want to download multiple files, you can try the [NOAH downloads scraper](https://github.com/benhur07b/NOAH-downloads-scraper) I created.
 
 Of course you can always just download the files and load them in QGIS but for the sake of demonstration, I'll show you how you can load the vector and raster files found on the internet in QGIS.
 
-### Load a Landslide Hazard Raster
+### Load a landslide hazard raster
 
 >
 >* Open the **```Data Source Manager```** via **```CTRL + L```** or the **```Layer -> Data Source Manager```** menu
@@ -182,7 +182,7 @@ Loading the layer might take some time but afterwards you should be able to see 
 
 That's for loading a raster, how about a vector (shapefile) stored on the internet?
 
-### Load a Stormsurge Hazard Vector
+### Load a stormsurge hazard vector
 We basically follow the same steps.
 
 >

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Strictly By The Numbers: The Dominance of Ateneo in Round 1 of #UAAPSeason82'
+title: "Strictly by the Numbers: The dominance of Ateneo in round 1 of #UAAPSeason82"
 description: 'The Ateneo de Manila University Blue Eagles were undefeated in the first round of #UAAPSeason82. Can someone stop them on their way to a third straight Championship or are they just #ThatDamnGood?'
 tags: [sports, uaap, basketball, analytics, strictly-by-the-numbers, admu, blue-eagles, data, uaapseason82]
 pinned: false

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Geotagged Photos in QGIS'
+title: "Geotagged photos in QGIS"
 description: Working with geotagged photos in QGIS 3 is now simpler and easier. :)
 tags: [foss4g, qgis, qgis3, gis, cartography, geotagged-photos]
 pinned: false

@@ -17,14 +17,14 @@ image:
 
 A friend showed me a [post](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/iceberg-map-part-1-cartography/) about creating a map of over 300 thousand historic iceberg locations in ArcGIS Pro and asked me if the same could be done in QGIS. The map above is my attempt at creating something similar using QGIS and the Time Manager plugin. This post details the steps -- utilizing Draw Effects and some Data-driven styling -- to create the map. :)
 
-## Datasets Needed
+## Datasets needed
 1. **```Iceberg ```** data from ["The Antarctic Iceberg Tracking Database"](http://www.scp.byu.edu/data/iceberg/). Our friends from ESRI were kind enough to provide us with a feature layer merging all the data. I created a GeoPackage version that you can download [here](https://drive.google.com/drive/folders/1zJ5XM7BJqKx-PF6kUc-1hjpYBnPni8SU?usp=sharing). If you want to use the original feature layer, it can be opened in QGIS by connecting to an ```ArcGisFeatureServer```. The Feature Layer can be found [here](https://services.arcgis.com/nGt4QxSblgDfeJn9/arcgis/rest/services/Icebergs/FeatureServer)
 
 2. **```World Borders```** vector file available from [thematicmapping.org](http://thematicmapping.org/downloads/TM_WORLD_BORDERS-0.3.zip).
 
 3. **```Graticules```** vector file from [naturalearthdata.com](https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-graticules/). I used the ones with 10 degree and 20 degree intervals.
 
-## Set the Map Canvas Background Color to Dark Gray
+## Set the map canvas background color to dark gray
 The first thing I did was set the canvas color to a <span style="color: #494747">**dark gray(#494747)**</span> color. This can be done by changing the Background color in the General Settings of the Project Properties. Open the Project Properties via **```Project -> Properties```** or **```CTRL + SHIFT + P```**.
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-02-08-mapping-icebergs-in-qgis/canvas-bg-1.png"></div>
 
@@ -34,7 +34,7 @@ Afterwards, go to the **```General Settings```** tab and change the **```Backgro
 The background color of the map canvas should change to dark gray.
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2019-02-08-mapping-icebergs-in-qgis/canvas-bg-3.png"></div>
 
-## Use a South Pole Orthographic Projection CRS
+## Use a south pole orthographic projection CRS
 The next step is to choose a projection that will focus on the Antartic and highlight the icebergs. For this, I decided to use a South Pole Orthographic Projection. Since I couldn't find one in QGIS, I simply created a custom CRS with the following projection definition:
 
 >
@@ -57,7 +57,7 @@ Let's start with the world borders. For this step, I duplicated the world border
 
 One will be used for the gradient fill and the other will be used for the glowing outline/coasts.
 
-### Gradient Fill
+### Gradient fill
 Use the **```Layer Styling Panel```** or **```right-click on layer -> Properties -> Symbology```** to style one of the world borders with a **```Gradient Fill```**.
 
 **Use the following options:**
@@ -82,7 +82,7 @@ The resulting map should now look like this:
 
 Now let's style the coasts.
 
-### Glowing Coasts with Draw Effects
+### Glowing coasts with Draw Effects
 I decided to give the coasts a  <span style="color: #ff7f00">**dark orange (#ff7f00)**</span> color with a glowing (or firefly) effect. The dark orange color works well with our dark gray background.
 
 Use the **```Layer Styling Panel```** or **```right-click on layer -> Properties -> Symbology```** to style the duplicated world border layer.
@@ -144,7 +144,7 @@ The resulting map should now look like this:
 
 Now let's give our graticules a firefly effect similar to our coasts.
 
-## Style the Graticules
+## Style the graticules
 For the graticules, I chose a <span style="color:#02db00">**green (#02db00)**</span> color.
 
 ### 20-degree interval graticules
@@ -191,7 +191,7 @@ After styling the graticules, the resulting map should look like:
 
 Now we'll go to the icebergs.
 
-## Style the Icebergs
+## Style the icebergs
 For the icebergs, we'll use a simple marker symbology but we'll vary the size of the symbol based on the size field of the iceberg. For the color, I decided on a <span style="color:#16f3d6">**cyan (#16f3d6)**</span> color
 
 Use the **```Layer Styling Panel```** or **```right-click on layer -> Properties -> Symbology```** to style the icebergs layer.

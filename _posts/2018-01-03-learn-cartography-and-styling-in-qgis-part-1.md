@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learn Cartography and Styling in QGIS through Basketball Visualization (Part 1): Creating Shot Charts using Rule-based Symbology"
+title: "Learn cartography and styling in QGIS through basketball visualization (Part 1): Creating shot charts using Rule-based symbology"
 description: Part 1 of a series of posts focused on teaching cartography and styling in QGIS by creating visualizations for basketball. In this post, we'll look at Rule-based symbologies and it can be used for creating basketball shot charts.
 tags: [foss4g, qgis, qgis3, how-to, cartography, basketball, courtvisionph]
 pinned: false
@@ -39,12 +39,12 @@ The steps shown here are valid in both QGIS 2.18 and QGIS 3.0.
 
 In this post, we'll take a look at Rule-based symbology and how it can be used to create Shot-Charts.
 
-## Creating Shot-Charts using Rule-based Symbology
+## Creating shot-charts using Rule-based symbology
 Rule-based symbology renders styles based on simple SQL-style queries allowing you to style a layer based on multiple criteria. It extends the single symbol, categorized, and graduated symbologies so whatever you can do with those symbologies, you can also do with rule-based symbology and more.
 
 For example, in this exercise we will create shot-charts using two layers: a raster image of the court (CourtMap.tif) and a point vector of the field-goal attempts for some games played by the UP Men's Basketball Team (FGA.shp). We can actually create a simple shot chart with a categorized symbology using the ```made``` field in the FGA layer. This is similar to creating two ```rules``` -- *one for made shots (made = 1)* and *another for missed shots (made = 0)*. We can then extend these rules by adding other rules for shots taken by a team or shots taken by their opponents.
 
-### Add the Layer Styling Panel (Optional)
+### Add the Layer Styling Panel (optional)
 Before we get into the nitty-gritty of making shot-charts, I'd like to introduce you to the Layer Styling Panel. Now, if you're already familiar with it then you may skip this part but if this is your first time hearing about it then I think it could be your new best friend.
 
 The Layer Styling Panel is a staple of my workflows and User Interface (UI) layout in QGIS. I usually dock it on the right side of the UI, opposite that of the Layers Panel. It allows you to select a layer and perform a "Live Update" of its style instead of the usual Right-click -> Properties -> Symbology -> Apply -> OK. This means that the changes you do in the Layer Styling Panel automatically gets reflected on the Map Canvas. It can also Undo or Redo style changes. It can save you countless clicks and minutes when using QGIS. If you're not using it yet, I highly recommend you start doing so.
@@ -54,7 +54,7 @@ In order to activate the Layer Styling panel, go to **```View -> Panels -> Layer
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/02.5-layer-panel.png"></div>
 
 
-### Set a Raster Pixel as Transparent (Optional)
+### Set a raster pixel as transparent (optional)
 Sometimes, you want to set a raster pixel as transparent. In this case, we may want to set the white pixels in the CourtMap image as transparent.
 
 To do this in QGIS, select the CourtMap raster in the Layer Styling Panel and go to the Transparency Tab. On the Transparency tab, add a new pixel in the Transparency Pixel list. Since we want the white pixels to be transparent and white pixels have an RGB of (255, 255, 255), we set the Red, Green, and Blue values to 255 and the Percent Transparency to 100.
@@ -62,7 +62,7 @@ To do this in QGIS, select the CourtMap raster in the Layer Styling Panel and go
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-01-03-learn-cartography-and-styling-in-qgis-part-1/04-transparent-pixel.png"></div>
 
 
-### Add Rules for Made and Missed shots
+### Add rules for made and missed shots
 Let's start by adding simple rules -- one to style made shots and another to style missed shots. Select the FGA layer on the Layer Styling Panel and select Rule-based. Edit the existing rule (if there is any) by double-clicking it or clicking the ```Edit current rule``` button (Notepad sign at the bottom left of the Layer Panel). If a rule does not exist, you can add one by clicking the ```Add rule button``` (Plus sign).
 
 <div class="row">
@@ -96,7 +96,7 @@ For the missed FGA, you can **```add a new rule```** or **```copy+paste```** the
 
 Congratulations! You've successfullly created two rules that show a basic shot-chart of made and missed field-goal attempts in our data. Now let's make things a bit more complicated.
 
-### Add Rules to Show a Single Team's Shot Chart
+### Add rules to show a single team's shot chart
 The shot-chart we created above shows the field goal attemts by all teams. Now what if we want to show a shot chart of a single team (in this case, UP)? One way to do this is to edit the layer itself by applying a filter (```Right-click on FGA layer -> Filter```). However, you can also do this by using rules.
 
 The first way is by adding the filter to the rules themselves. To do this, we edit the rules we previously created and add ```and "team" = 'UP'``` to their **```Filter```**.
@@ -127,7 +127,7 @@ The results should then look like this:
 
 Congratulations! You've created a multi-leveled rule that shows the shot-chart of UP. Let's take this rule and extend it a bit more.
 
-### Add Multiple Sets of Rules to Show Different Shot Charts
+### Add multiple sets of rules to show different shot charts
 Using the multi-leveled rule you created, we can easily create shot-charts of other teams simply by editing the **```Filter```** of the top-level rule.
 
 What if we want to create a shot-chart of UP's opponents that we can view together with UP's shot-chart? What we need to do is create another set of rules for this. However, since we already have the set of rules for UP, this will probably just take us around **```20 seconds```** to do. **```Copy and Paste```** the existing ```UP``` rule, change the **```Label```**, and set the **```Filter```** to ```"team" != 'UP'```. The shot-chart of the UP's opponents should appear in the Map Canvas.

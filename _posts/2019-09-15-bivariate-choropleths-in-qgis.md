@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Bivariate Choropleth Maps in QGIS'
+title: "Bivariate choropleth maps in QGIS"
 description: Bivariate choropleth maps are both stunningly beautiful and informative. Here's how you can create them in QGIS.
 tags: [foss4g, qgis, qgis3, gis, cartography, bivariate-choropleth]
 pinned: false
@@ -19,7 +19,7 @@ Inspired by [this post by Joshua Stevens](https://www.joshuastevens.net/cartogra
 
 Before diving into that, let's go through some basics.
 
-## (Univariate) Choropleth Maps
+## (Univariate) choropleth maps
 A choropleth map is a thematic map wherein areas (typically geographic areas) are colored, shaded, or patterned based on the value of a single variable (univariate) corresponding to that area. One of the most basic examples is a population density map. A choropleth map can be created in QGIS by using ```Graduated Symbology``` on a polygon vector.
 
 For example, let's create a choropleth map by applying a ```Graduated Symbology``` on our election returns dataset.
@@ -32,20 +32,20 @@ For example, let's create a choropleth map by applying a ```Graduated Symbology`
 
 You've now created a choropleth map showing the percentage of votes obtained by the now Senator Bato dela Rosa for each of the provinces.
 
-### The Need for Normalization
+### The need for normalization
 Here's a simple rule to remember when creating choropleth maps: **```Use rates/percentages, not counts/totals.```**
 
 Notice in the example above, we used percentage of votes for the province as the variable instead of total votes obtained. Using rates/percentages is important because if we used counts/totals, we'd introduce the bias brought by the fact that larger areas tend to have higher population. For example, a candidate can obtain more votes in Metro Manila than Tawi-tawi not because he is more popular in the former but simply because there are more voters in the Metro Manila than Tawi-tawi.
 
 If choropleth maps are not normalized they become merely another population map.
 
-## Bivariate Choropleth Maps
+## Bivariate choropleth maps
 A bivariate choropleth map is similar to a basic (univariate) choropleth map but instead of a single variable, it shows *(surprise surprise)* **```two variables at once```**. A bivariate choropleth map doesn't just show two variables at once but it also shows a **```relationship between these two variables```** -- *do they agree or disagree, do they increase/decrease proportionally, etc.*.
 
-### Number of Categories
+### Number of categories
 Since a bivariate choropleth map shows two variables, the number of categories it has increases exponentially by two -- *a bivariate choropleth using two univariate choropleth with 3 categories each has 9 categories*. Having too many categories in a single map isn't good practice so a 3x3 or 4x4 bivariate choropleth is workable but anything above that is usually too much.
 
-### Choosing A Color Combination
+### Choosing a color combination
 Also, the choice of colors is important since we're basically combining/mixing the colors of the 2 univariate choropleths to create our bivariate choropleth. [Joshua Stevens](https://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/) has a few bivariate color scheme examples that we can use, as seen below:
 
 <div class='row'>
@@ -61,10 +61,10 @@ For example, our bivariate choropleth map below shows how the provinces voted du
 
 So how do we go about creating this map in QGIS?
 
-## Bivariate Choropleth Maps in QGIS
+## Bivariate choropleth maps in QGIS
 If you can create a univariate choropleth map in QGIS, you can create a bivariate choropleth map. :)
 
-### Make Two Choropleth Maps
+### Make two choropleth maps
 The first step is to create two choropleth maps -- one for each variable we want to show. In our case, these two variables are:
 1. ```DELA ROSA, BATO (PDPLBN) - PERCENTAGE``` - the percentage of total votes in the province obtained by Bato
 2. ```DIOKNO, CHEL (LP) - PERCENTAGE``` - the percentage of total votes in the province obtained by Chel
@@ -121,7 +121,7 @@ The result should be:
 The result should be:
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-chel-0.png'></div>
 
-### Edit the Top Layer's Blending Mode
+### Edit the top layer's Blending Mode
 Now here's where we let QGIS do its magic to create our bivariate choropleth map. We edit the blending mode of the top layer to **```Multiply```**. This parameter can be found in the Layer Styling Panel under Layer Rendering.
 
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-15-bivariate-choropleth-in-qgis/styles-biva.png'></div>

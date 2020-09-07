@@ -49,7 +49,7 @@ Sa isang **```bukas```** (open-source) na software, tayo ay malayang makita ang 
 
 Ang isang software na **```hindi bukas```** ay inihahalintulad ko sa binilo mong **```kotse na hindi mo pwedeng buksan ang hood kung saan nakalagay ang makina at iba pang parte nito```**. Kapag nagkaroon ng sira ang kotse, kailangan mo itong dalhin sa iba para lamang pabuksan ang hood upang makita nila ang kamalian at maayos ito. Kumpara dito, ang **```bukas```** na software ay **```isang kotse na malaya kang tingnan kung ano ang nangyayari sa makina at sa iba pang parte nito kapag nagkaroon ng sira```**. Maari mong ayusin sa sarili mo ang sira o dalhin sa iba upang ipatingin at ipaayos ito. Siguro naman ay mas gugustuhin natin ang ikalawang kotse kaysa sa una.
 
-## Ang Interface ng QGIS
+## Ang interface ng QGIS
 Ang interface ang bahagi ng software na kumukunekta sa tao at sa makinarya. Ito ay kung saan nagaganap ang interaksyon sa pagitan ng tagagamit at ng software. Dito, maaring magbigay ng input ang taga-gamit at ang software naman ay maaring magpakita ng mga resulta.
 
 Ang interface ng QGIS ay may anim na pangunahing bahagi. Ito ay ang:
@@ -143,7 +143,7 @@ Ang **```pyqgis```** ay isang [Python library para sa QGIS](https://docs.qgis.or
 
 Isa sa mga magagandang lugar upang matuto ng pyqgis para sa mga hindi programmers ay ang [blog posts](https://anitagraser.com/pyqgis-101-introduction-to-qgis-python-programming-for-non-programmers/) ni Anita Graser/underdarkGIS tungkol dito.
 
-## User Profiles
+## User profiles
 Ang user profiles ay isa sa mga bagong bagay na idinagdag sa QGIS 3.X. Ang bawat user profile ay may sarling settings, plugins, shortcuts na naka-save sa sarili nitong folder. Mainam itong gamitin kung maraming mga gagamit ng QGIS at iba-iba ang kanilang pangagailangan or nakasanayang shortcuts. Pwede rin itong gamitin ng isang user upang gumawa ng profile para sa mga natatanging gamit ng QGIS (halimbawa: isang profile na nakatuon sa remote sensing, isa na nakatuon sa pag-digitize, atbp).
 
 Maaring pumili ng user profiles sa pamamagitan ng **```Settings -> User Profiles```**. Ang folder ng aktibong user profile ay maaring buksan gamit ang **```Settings -> User Profiles -> Open Active Profile Folder```**.
@@ -166,7 +166,7 @@ Mayroon ding **```dalawang paraan```** upang mag-install ng plugins sa QGIS:
 
 Maraming mga lathala sa internet na tumatalakay sa mga QGIS plugins. Dito mismo ay tinatalakay ko ito sa serye kong [#PluginFridays](http://localhost:4000/blog/tags.html#plugin-fridays).
 
-## Mga Expressions sa QGIS
+## Mga expressions sa QGIS
 Ang mga expressions sa QGIS ay ginagamit para sa mga gawain tulad ng pagpili ng features (selection), pag-sala ng features (filtering), at iba pang mga kompyutasyon (computations). Ang syntax o paraan ng pagbuo ng mga expressions ay katulad sa Structured Query Language (SQL). Ang mga pangunahing batayan ay:
 1. Ang mga pangalan ng fields o attributes ay nasa double quotes (hal. "Pangalan")
 2. Ang mga strings o characters (mga salita o letra) ay nasa single quotes (hal. 'Jose')
@@ -185,7 +185,7 @@ Ilan sa mga lugar kung saan pwedeng gamitin ang expressions ay sa **```Expressio
     <div class="col-lg-4 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/exp3.png"></div>
 </div>
 
-## Mga Layers sa Memorya
+## Mga layers sa memorya
 Ang mga layers sa memorya (layers in memory) ay katulad ng mga normal na layers ngunit sila ay hindi permanente at hindi pisikal na naka-save sa kompyuter subalit ay naka-save sa memorya ng computer lamang. Sila ay kapakipakinabang kapag kailangan ng pansamantalang layers o kaya mga layers na di naman kailangan i-save bilang files. Sa QGIS, ang mga output ng processing ay madalas na nakalagay lamang sa memorya kung hindi direktang sasabihing i-save sila bilang files. Maari ring gumawa ng mga pansamantalang layers gamit ang **```Layer -> Create Layer -> New temporary scratch layer```**.
 
 Ang mga layers sa memorya ay pansamantala lamang at "nakakalimutan" ng QGIS kapag pinatay na ang QGIS. Sa madaling salita, kapag gumawa ka ng pansamantalang layer at pinatay mo ang QGIS, sa susunod na pagbukas mo nito ay wala na ang pansamantalang layer na iyon. Ang solusyon para di ito mangyari ay ang pag-gamit ng **```Memory Layer Saver```** na plugin. Gamit ito, maaring "maalala" ang mga layers sa memory na kasabay ng isang QGIS project kahit pagkatapos patayin ang QGIS.
@@ -201,7 +201,7 @@ Isa pang bagong dagdag sa QGIS 3.X ay ang pagkakaroon ng isang komprehensibong p
 
 Mula sa **```Data Source Manager```**, maaring maglagay na iba-ibang uri ng data sa QGIS o kaya ay kumabit sa iba't-ibang pwedeng pagkunan ng data.
 
-### Mula sa mga Files (Rasters, Vectors, CSV, Spreadsheet)
+### Mula sa mga files (rasters, vectors, CSV, spreadsheet)
 Ang mga rasters at vectors ay tinalakay sa [huling lathala](https://benhur07b.github.io/2018/07/20/pagpapakilala-sa-qgis-unang-parte.html). Ang mga layers na ito ay maaring ilagay sa QGIS gamit ang nararapat ng opsyon sa **```Data Source Manager```** (hal. Vector para sa vector data, Raster para sa raster data, Delimited Text Layer para sa CSV data).
 
 Ang Browser ay maaring gamitin upang hanapin sa kompyuter ang mga layers na nais ilagay sa QGIS.
@@ -210,7 +210,7 @@ Maari ding "i-drag" o hatakin papasok sa interface ng QGIS ang mga vector, raste
 
 Para naman sa mga Spreadsheet files tulad ng mga gawa sa LibreOffice Calc o MS Excel, maaring gamitin ang Spreadsheet layers plugin na tinalakay [dito](https://bnhr.xyz/2018/07/27/plugin-fridays-spreadsheet-layers-plugin.html).
 
-### Pagkonekta sa mga Database
+### Pagkonekta sa mga database
 Para naman kumunekta sa isang database, maaring:
 1. **```Pindutin ang uri ng database (GeoPackage, Postgresql, atbp) sa Data Source Manager -> New```**
 2. **```I-right-click ang uri ng the database sa Browser panel -> New connection```**
@@ -270,7 +270,7 @@ Kapag matagumpay na nakakonekta sa Geonode ng World Food Programme, maari nang m
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-08-03-pagpapakilala-sa-qgis-ikalawang-parte/geonode-wfp-succ.png"></div>
 
 
-## Sa Susunod na Kabanata
+## Sa susunod na kabanata
 At iyan ang munting pagpapakilala natin sa QGIS. Sana ay nabigyan kayo nito ng simple bagama't pangkalahatang pananaw sa kung ano ang QGIS. Sa mga susunod na lathala, mas bibigyan tuon at pansin natin ang mga partikular na kayang gawin ng QGIS at kung paano ito gamitin sa iba't ibang larangan.
 
 Hangang sa muli! Tagay!

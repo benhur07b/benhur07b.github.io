@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pagpapakilala sa QGIS: Unang Parte - Isang Marahang Pagpapakila sa GIS (Introduction to QGIS: Part 1 - A Gentle Introduction to GIS)"
+title: "Pagpapakilala sa QGIS: Unang Parte - Isang marahang pagpapakila sa GIS (Introduction to QGIS: Part 1 - A gentle introduction to GIS)"
 description: Unang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba. Sa parteng ito, tatalakayin at ipapakilala ang mas pangkalahatang paksa ng GIS.
 tags: [foss4g, qgis, qgis3, filipino, gis, map-projections]
 pinned: true
@@ -21,7 +21,7 @@ Ang unang parte na ito ay tatalakay sa mas pangkalahatang paksa ng Geographic In
 ## Ano ang Geographic Information System (GIS)?
 Ang Geographic Information System (GIS) ay isang sistema ng impormasyon kung saan ang gumagamit nito ay may kakayahang **```kumuha```**, **```magimbak```**, **```magbago```**, **```magmanipula```**, **```magsuri```**, at **```magpakita```** ng mga datos na may kaaikbat na impormasyon tungkol sa lokasyon na tinatawag ding ```geographically-referenced``` o ```spatially-referenced``` data. Ang GIS ay isang kagamitan na maaring gamitin upang sagutin ang ating mga katanungan na may kinalaman sa lugar o kaya ay lokasyon. Halimbawa: *```Ano ang pinaka-malapit na Jollibee sa bahay namin?```*, *```Ilan ang mga karinderya sa bayan namin?```*, *```Gaano kalayo ang paaralan ko sa mga ospital at istasyon ng pulis?```*
 
-## Mga Parte at Tungkulin (Parts and Functions)
+## Mga parte at tungkulin (parts and functions)
 Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang gampanan ang mga sumusunod na tungkulin:
 
 ### Mga Parte o Sangkap ng GIS
@@ -41,7 +41,7 @@ Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang ga
 
 Sa aking opinyon, ang tao na marahil ang pinaka-importanteng parte ng GIS. Kapag nagkaroon ng kakulangan sa ibang parte ng GIS, ang taong magaling at maalam sa GIS ay kayang punan ang kakulangan na ito gamit ang kanyang karunungan, karanasan, at pagkamalikhain.
 
-### Mga Tungkulin ng GIS
+### Mga tungkulin ng GIS
 Ang isang GIS ay dapat kayang:
 
 * **```Kumuha```** ng datos mula sa tunay na mundo.
@@ -57,9 +57,9 @@ Ang isang GIS ay dapat kayang:
 * **```Magpakita```** ng makabuluhan at kapaki-pakinabang na impormasyon sa pamamagitan ng mga mapa, mga tsart, mga kompyutasyon, at iba pang biswalisasyon.
 
 
-## Mga Uri ng Data (Data Types)
+## Mga uri ng data (Data types)
 
-### Spatial Data
+### Spatial data
 Ang **```spatial data```** ay tumutukoy sa datos na may kaakibat na impormasyon tungkol sa:
 * **```Lokasyon o lawak```** ng bagay o pangyayari *(hal: lokasyon ng poste, lugar na may mga panganib ng baha)*
 
@@ -69,7 +69,7 @@ Ang **```spatial data```** ay tumutukoy sa datos na may kaakibat na impormasyon 
 
 Ang spatial data ay ginagamit upang kumatawan ng mga bagay o pangyayari sa loob ng GIS. May **```dalawang uri```** ng spatial data na maaring gamitin sa pagmodelo ng mga bagay o pangyayari sa GIS: ang **```raster data```** at **```vector data```**.
 
-### Raster Data Type
+### Raster data
 Ang raster data ay isang **```cell-based o pixel-based```** na pagkatawan ng mga bagay o pangyayari sa mundo. Ito ay binubuo ng mga hanay at haligi ng mga cells o pixels kung saan ang bawat cell ay kumakatawan sa isang geograpikal na rehiyon (ang laki nito ay depende sa resolusyon ng raster) habang ang halaga naman sa cell ay kumakatawan sa kondisyon o katangian ng rehiyon na nasasakupan ng cell.
 
 <div class="col-lg-6 img-container"><img class="img-fluid post-img img-shadow float-left mr-4" src="{{ site.baseurl }}/assets/img/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/raster.png" alt="Raster"></div>
@@ -88,7 +88,7 @@ Kapag ang isang kamera o sensor ay kumukuha ng larawan ng isang eksena o lugar, 
 
 Ang bilang ng bands na mayroon ang isang imahe ay tinatawag na **```resolusyong ispektral```** (spectral resolution). Mas madami ang bands, mas mataas ang resolusyons ispektral. Kapag mayroon lamang isang band ang isang imahe, ito ay tinatawag na **```panchromatic```** o **```grayscale```**. Kadalasan ay mas mataas ang resolusyong ispasyal ng isang panchromatic na imahe kaysa sa multi-spectral na imahe na nagmula sa parehong sensor. Para sa mga panchromatic o grayscale na imahe, gumagamit ng false coloring upang lagyan ito ng kulay imbis na gumamit ng kumbinasyon ng mga bands. Ang panchromatic at multi-spectral na mga imahe ay pwede ding pagsamahin gamit ang prosesong tinatawag na **```pansharpening```** upang makabuo ng isang imaheng may kulay na mataas ang resolusyong ispasyal.
 
-### Vector Data Type
+### Vector data
 Ang vector ay kumakatawan sa mga bagay o pangyayari hindi bilang mga pixels ngunit bilang mga **```punto, linya, o hugis```** (points, polylines, or polygons). Mayroon ding kaakibat na **```attribute table```** ang vector data. Ang **```attribute table```** na ito ay nagbibigay karagdagang impormasyon tungkol sa mga punto, linya, o hugis na mayroon sa vector data. Bawat hilera (row) sa attribute table ay kumakatawan sa isang hugis sa vector data habang ang mga hanay (column) sa attribute table ay ang mga **```fields o attributes```** na nagtataglay ng impormasyon tungkol sa punto, linya, o hugis.
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-07-20-pagpapakilala-sa-qgis-unang-parte/vector.png" alt="Vector file ng mga probinsya sa Pilipinas"></div>
@@ -211,7 +211,7 @@ May mga pagkakataon na ang datos na mayroon tayo ay magkakaiba ang coordinate re
 
 Ngunit dapat pa rin alalahanin na kahit nagmimistulang magkapatong ang mga mapa sa GIS dahil sa On-the-Fly Projection, sa katotohan ay hindi sila magkapatong dahil magkaiba ang CRS nila. Kaya kapag gumawa ng mga pagsusuri at gawaing ispasyal tulad ng pagkuha ng interseksyon ng dalawang mapa ay maaring hindi tama ang maging resulta.
 
-## Mga Gamit at Aplikasyon ng GIS
+## Mga gamit at aplikasyon ng GIS
 Ang kagandahan at galing ng GIS ay makikita sa dami ng mga disiplina kung saan maari itong gamitin.
 
 Hindi nakakahon ang GIS para sa mga geographikal at pang-kapaligiran na mga pag-aaral at gawain. Marami din itong gamit at maiiambag sa mga larangan tulad ng arkiyolohiya, militar, enerhiya, paggawa ng polisiya, pagpaplano ng wastong gamit ng lupa at iba pang natural na yaman, at marami pang iba.
@@ -225,7 +225,7 @@ Sana ay may ideya na kayo ngayon kung ano ang GIS at ang ibang mga konsepto na k
 
 
 
-## Mga Batayan at Pinagkunan
+## Mga batayan at pinagkunan
 [GEOG 160: Mapping Our Changing World. Department of Geography, Pennsylvania State University. _Chapter 2.3 What are Map Projections?_](https://www.e-education.psu.edu/geog160/node/1918)
 
 [Map Projections: Mapping Definisions and Concepts. Carlos A. Furuti.](http://www.progonos.com/furuti/MapProj/Normal/CartDef/MapDef/mapDef.html)

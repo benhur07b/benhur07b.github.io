@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FOSS4G How-to: Get Zonal Statistics in QGIS and GRASS using a Polygon Layer as Zones"
+title: "FOSS4G How-to: Get zonal statistics in QGIS and GRASS using a polygon layer as zones"
 description: This is the second entry for this series. In the last entry, we learned how to sample rasters using points. This time we'll compute zonal statistics using a polygon layer using QGIS and GRASS.
 tags: [foss4g, how-to, foss4g-how-to, qgis, 2.18.10, grass, 7.2.1]
 pinned: false

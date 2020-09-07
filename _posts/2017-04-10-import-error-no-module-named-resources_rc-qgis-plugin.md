@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ImportError - No module named resources_rc (QGIS Plugin Development) [SOLVED]
+title: "ImportError - No module named resources_rc (QGIS Plugin Development) [SOLVED]"
 description: Here is the the simplest solution I've found for this annoying little problem when creating QGIS Plugins.
 tags: [qgis, foss4g, python]
 pinned: false

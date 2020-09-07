@@ -18,7 +18,7 @@ This year, I made the decision and conscious effort to use shapefiles less and G
 
 Like most people I know, I had my first experience with geospatial data with shapefiles. In fact, in the Philippines, when I say "I need a vector file", some people won't know what I mean; but if I say "I need a shapefile", people instantly get it. Shapefile has become synonymous with geospatial data which isn't necessarily a bad thing. Personally, I don't use shapefile and geospatial data interchangeably -- I use vector when I mean vector files and shapefiles only when I mean shapefiles. Shapefiles have their uses but it has its limitations which other formats like GeoJSON and GeoPackage seek to address.
 
-## Why Not Shapefiles?
+## Why not Shapefile?
 Shapefile is an old standard/specification. If you want to learn more about why shapefiles are bad, you can check out [switchfromshapefile.org](http://switchfromshapefile.org/).
 
 Some of these limitations that I'd like to highlight are:
@@ -70,7 +70,7 @@ For a list of GeoPackage implementations, you can check [here](http://www.geopac
 ### GeoPackage and non-GIS applications
 Because GeoPackage is an SQLite container, ```you don't actually need a full-blown GIS to access, update, and use its contents```. For example, you can use [DB Browser for SQLite](http://sqlitebrowser.org/) to query your GeoPackage and if you add SpatiaLite extension to your DB Browser, you can also perform spatial analysis on it.
 
-### The Sweet Spot
+### The sweet spot
 One more thing I like about GeoPackage is that it's in that sweet spot between a flat-file format like a Shapefile or GeoJSON and an enterprise-level spatial database like PostGIS which gives GeoPackage somewhat the best of both worlds -- ```more powerful than a shapefile and less complicated to use than PostGIS``` (even if it's less powerful). This makes it powerful enough for advanced users while being friendly enough for beginners and novice users.
 
 ## Make the Switch

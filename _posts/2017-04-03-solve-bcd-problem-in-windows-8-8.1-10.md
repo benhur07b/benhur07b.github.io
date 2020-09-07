@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Solve Boot Configuration Data (missing or corrupt BCD) file problem in Windows 8/8.1/10.
+title: "Solve Boot Configuration Data (missing or corrupt BCD) file problem in Windows 8/8.1/10."
 description: Windows not booting properly? Giving you that Blue Screen of Death? It might be a problem with our Boot Configuration Data. Here's one of the ways you can solve it.
 tags: [windows]
 pinned: false

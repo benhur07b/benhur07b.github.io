@@ -1,14 +1,12 @@
 ---
 layout: post
-title: The FOSS Life
+title: "The FOSS life"
 description: You don't need to be a programmer to get into Free and Open-Source Software (FOSS) and you don't need to give up a lot of functionalites when switching from Windows/macOS to GNU/Linux.
 tags: [foss]
 comments: true
 pinned: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg.png
-  twitter: /assets/img/site/BNHR_bg.png
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >

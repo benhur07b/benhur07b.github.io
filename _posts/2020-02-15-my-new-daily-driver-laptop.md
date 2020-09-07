@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My new daily driver
+title: "My new daily driver"
 description: I made one of my biggest purchases/investments (of my life) last year when I finally pulled the trigger on updating my laptop.
 tags: [foss, linux, sager, np8966, clevo, p960d, laptop, xps, system76, pop! os]
 pinned: false

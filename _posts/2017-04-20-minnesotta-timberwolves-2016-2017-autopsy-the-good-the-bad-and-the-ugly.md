@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minnesotta Timberwolves 2016-2017 Autopsy - The Good, The Bad, and The Ugly
+title: "Minnesotta Timberwolves 2016-2017 Autopsy - The Good, The Bad, and The Ugly"
 description: My take on the Timberwolves 2016-2017 season.
 tags: [basketball, nba]
 pinned: true
@@ -56,10 +56,10 @@ The drop in Rubio's steal numbers (he's still in the top 10 in the league) and d
 
 Also, for the 1st time in his career, Rubio finally shot more than 40% from the field for an entire season capping off the [best shooting season of his career](http://www.basketball-reference.com/players/r/rubiori01.html#shooting::none). It took six years but if this continues, things will really start looking up for Minny next season.
 
-### Flirting with the 8th seed for Most of the Season
+### Flirting with the 8th seed for most of the season
 I'm not sure what happened to the Wolves for the last 16 games of the season where they went 3-13. Were they tanking? Were they really that bad? Hopefully it's the former because prior to those last 16 games, the Wolves were constantly within striking distance (2-3 games behind) of the 8th seed in the West and if the Wolves make the Playoffs next season then I'll really consider this season to not be a disappointment.
 
-### Top-10 Offense
+### Top-10 offense
 Minnesotta had a [Top-10 Offense last season](http://www.basketball-reference.com/leagues/NBA_2017.html#misc_stats::10) based on Offensive Rating (An estimate of the points scored by a Team per 100 possessions). The only other non-Playoff team in that list were the Denver Nuggets who were the ranked 9th in the West, just 1 game outside the Playoffs.
 
 Offense will not be a problem for Minnesotta as they have talented scorers (see KAT, Wiggins, Zach, Shabazz) and creative playmakers (see Rubio, Dunn) on the team. It's on the other side of the court that they really have to improve.
@@ -155,29 +155,29 @@ Zach was having the best season of his young career when he went down with a sea
 
 Zach may not be a great defender. He may not even be a good defender but he brings explosiveness and 3-point shooting to the Wolves which the team missed when he went down.
 
-### Bad Luck
+### Bad luck
 The Wolves had a Pythagorean record (a team's expected record based on points scored and allowed) of 38-44 last season. Their actual record was 31-41, 7 wins behind their expected record -- the worst discrepancy between a team's actual and pythagorean record last season. In other words, Minnesotta underperformed and were unable to translate their team performance to wins. They still wouldn't have made the playoffs if they went 38-44 but it's worth noting that the team wasn't as bad as their record might suggest.
 
-### Three-Pointers (or the lack thereof)
+### Three-pointers (or the lack thereof)
 Dead last at 3-pointers made per game (7.3), 3-pointers attempted per game (21.0), and 3PAr (% of FG attempts that are 3-pointers, .249). They also shot below league average (.347 vs .358). For comparison's sake, the Rockets were the inverse of the Wolves. They led the league in 3-pointers made per game (14.4), 3-pointers attempted per game (40.3), and 3PAr (.462) while shooting at around league average (.357).
 
 Of course Houston has a very different system than the Wolves and unlike D'Antoni, Thibs has never been known to love the 3-point shot but in an era where so much focus and attention has been given to the 3-pointer as one of the most efficient shot in basketball (along with shots 0-3 ft from the basket), the Wolves should try to take advantage of it. They don't need to be like the Rockets or Warriors and attempt 30+ 3-pointers a game, they can try to follow the Spurs' formula and focus on accuracy and efficiency. San Antonio attempts just 25.1 3-pointers a game but they make up for it by shooting .391 from three. 26.9% of the Spurs' 3-point attempts are "Pop-special" corner 3-pointers which they make 43.2% of the time.
 
 ## The Ugly
 
-### Bottom-5 Defense
-Was this team really coached by Tom Thibodeau? The defensive-master Tom Thibodeau? The same one who helmed Chicago's Top-5 defense from 2010-2014? I'm not putting all the blame on Thibs as the carpenter is only as good as his tools and there were times last season that the players seemed lost on defense. If the team wants to succeed, the players and the front office has to come together to improve the team's defense by improving their individual and team defense (for the players) or bringing in players who can help (for the front-office).
+### Bottom-5 defense
+Was this team really coached by Tom Thibodeau? The defensive-master Tom Thibodeau? The same one who helmed Chicago's Top-5 defense from 2010-2014? I'm not putting all the blame on Thibs as the carpenter is only as good as his tools and there were times last season that the players seemed lost on defense. If the team wants to succeed, the players and the front office have to come together to improve their individual and team defense (for the players) or bring in players who can help (for the front-office).
 
 The team was 19th in the league in points allowed (106.7) and were 27th in Defensive Rating (112.0). [They were 28th in opponents' FG%, 21st in opponents' 3P%, 27th in percentage of opponents' FG taken 3 feet from the basket, 26th in opponent's FG% within 3 feet from the basket, 29th in dunks allowed, and 25th in layups allowed](http://www.basketball-reference.com/leagues/NBA_2017.html#opponent_shooting::7). From a Defensive Rating perspective, everyone played like the Raptors or Clippers offensively when they were against the Wolves.
 
-The team's bad defense is compounded by its slow pace (a staple of Thibs' system). You'd think the Wolves would play at a high pace because of their youth and athleticism but they don't. They actually play at the 6th slowest pace in the league just behind the "Old-man" Spurs and, their fellow youngsters, the Bucks. A slow pace means you have fewer possessions to work with in a game and when you have bad defense or allow your opponents to score a lot in their possessions, it puts that much more pressure on you to score on your possessions in order to win the game.
+The team's bad defense is compounded by its slow pace (a staple of Thibs' system). You'd think the Wolves would play at a high pace because of their youth and athleticism but they don't. They actually played at the 6th slowest pace in the league just behind the "Old-man" Spurs and, their fellow youngsters, the Bucks. A slow pace means you have fewer possessions to work with in a game and when you have bad defense or allow your opponents to score a lot in their possessions, it puts that much more pressure on you to score on your possessions in order to win the game.
 
-### Third-Quarter Curse
+### Third-quarter curse
 Remember when I said the Wolves were unlucky? One of the reasons why their actual record is so far from their pythagorean record is because of their inability to hold a halftime lead. The Wolves played 49 games where they were leading or tied at the half. They lost more than 50% of those games -- 25 to be exact. If an NBA game was made of just the first half, the Wolves could have had a 49-33 record. Compounding this problem is the fact that the Wolves were only able to win 7 out of the 33 games where they trailed at halftime. To put it simply: when the Wolves lead at the half, they find a way to blow that lead and lose 50% of the time, and when they trail at the half, they find it difficult to come back and win. Their youth and inexperience are factors but shouldn't be used to justify their performance. They have to learn from this season in order to improve. I like to think of this as growing pains that they need to overcome.
 
 One more thing, in those 25 games which they lost when they were leading at the half, they got outscored by an average of 7.6 points in the 3rd quarter, sometimes by as much as 19 points. I don't know what the Wolves did during halftime last season but they probably need to change it next season.
 
-# Looking towards the Future
+# Looking towards the future
 
 ### Youth
 The Wolves are young. They were the youngest team in the league last season with an average age of 24.0 so there's no need to panic and hit the reset button. Next season, Rubio will just be 27 while KAT, Wiggs, and Zach will all just be 22. They still have a few more seasons left before they need to break up their core.
