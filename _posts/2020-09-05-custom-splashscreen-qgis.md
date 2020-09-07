@@ -34,7 +34,9 @@ splashpath=/path/to/custom/splash/
 
 <div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2020-09-05-custom-splashscreen-qgis/custom-ini.png'><figcaption class='figure-caption text-center'>Edit the QGISCUSTOMIZATION3.ini</figcaption></div>
 
-Where **/path/to/custom/splash/** is the path to the **folder/directory** that holds the custom splashscreen. Take not that it's the path to the folder/directory and not to the file itself. The example above is for a UNIX/Linux system. For **Windows** use a **double backslash (\\\\)** for the path. For example: **C:\\\\Users\\\\Me\\\\Pictures\\\\**.
+Save the QGISCUSTOMIZATION3.ini file.
+
+The **/path/to/custom/splash/** is the path to the **folder/directory** that holds the custom splashscreen. Take not that it's the path to the folder/directory and not to the file itself. The example above is for a UNIX/Linux system. For **Windows** use a **double backslash (\\\\)** for the path. For example: **C:\\\\Users\\\\Me\\\\Pictures\\\\**.
 
 **NOTE:** Interface Customization is activated in a per-User Profile basis which means that the customizations you did for one profile will not appear in another profile. So if you want to apply a custom splashscreen to all user profiles, you need to activate Interface Customization and edit the file of each User Profile. I think you can also just copy-paste the QGISCUSTOMIZATION3.ini files as long as Interface Customization is activated.
 
