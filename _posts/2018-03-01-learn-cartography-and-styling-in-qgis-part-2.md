@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR-bg.png
-  twitter: /assets/img/site/BNHR-bg.png
+  facebook: /assets/img/site/BNHR_bg_default.webp
+  twitter: /assets/img/site/BNHR_bg_default.webp
 ---
 
 In the [previous post](https://benhur07b.github.io/2018/01/03/learn-cartography-and-styling-in-qgis-part-1.html), we created shot charts using Rule-based symbology in QGIS. In this post, we'll take a look at how we can turn those shot charts into printable maps like this:

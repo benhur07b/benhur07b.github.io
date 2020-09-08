@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pagpapakilala sa QGIS: Ikalawang Parte - Ang QGIS (Introduction to QGIS: Part 2 - QGIS)"
+title: "Pagpapakilala sa QGIS (ikalawang parte): Ang QGIS"
 description: Ikalawang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba. Sa parteng ito, tatalakayin kung ano ang QGIS.
 tags: [foss4g, qgis, qgis3, filipino, gis]
 pinned: false

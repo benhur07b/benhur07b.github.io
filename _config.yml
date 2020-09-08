@@ -4,7 +4,7 @@ description: open spatial and data solutions
 email: hi@bnhr.xyz
 baseurl: ""
 logo: "/assets/img/logos/BNHR-avatar-rd-2.png"
-bg_image: "/assets/img/site/BNHR_banner_2_v2.webp"
+bg_image: "/assets/img/site/BNHR_bg_default.webp"
 favicon: favicon.ico
 repo_address: "benhur07b/benhur07b.github.io"
 author: "Ben Hur Pintor"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Connecting QGIS to Remote Services (WFS, WMS, GeoNode, OSM): Hazard Mapping with Phil-LiDAR 1 and Project NOAH Hazard Maps on the Web"
+title: "Connecting QGIS to Remote Services (WFS, WMS, GeoNode, OSM): Hazard mapping with Phil-LiDAR 1 and Project NOAH hazard maps on the web"
 description: In this post, I'll show you how to take advantage of QGIS' capabilities for connecting to remote services like WFS, WMS, and GeoNode; getting data from OSM; and even loading vector and raster files stored on the web.
 tags: [foss4g, qgis, qgis3, gis, basemaps, wfs, wms, geonode, phil-lidar, project noah, drrm, hazard maps]
 pinned: false
@@ -210,7 +210,7 @@ Since we loaded a vector file, we should be able to change its symbology like so
 
 Now what else can we add to create our hazard maps? How about some building footprint data from OpenStreetMaps?
 
-## Getting OSM data using the QuickOSM Plugin
+## Getting OSM data using the QuickOSM plugin
 
 Let's get all the buildings in OpenStreetMaps within the area covered by our map canvas.
 

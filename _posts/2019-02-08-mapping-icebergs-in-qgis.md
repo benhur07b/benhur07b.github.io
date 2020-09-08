@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mapping Icebergs in QGIS"
+title: "Mapping icebergs in QGIS"
 description: Map over 300 thousand historic iceberg locations and animate them over time in QGIS.
 tags: [foss4g, qgis, qgis3, gis, cartography, time-manager]
 pinned: false

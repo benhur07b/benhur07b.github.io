@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Pagpapakilala sa QGIS: Unang Parte - Isang marahang pagpapakila sa GIS (Introduction to QGIS: Part 1 - A gentle introduction to GIS)"
+title: "Pagpapakilala sa QGIS (unang parte): Isang marahang pagpapakilala sa GIS"
 description: Unang parte ng isang serye kung saan ipapakilala kung ano ang QGIS, ano ang mga kakayahan nito, paano ito gamitin, at marami pang iba. Sa parteng ito, tatalakayin at ipapakilala ang mas pangkalahatang paksa ng GIS.
 tags: [foss4g, qgis, qgis3, filipino, gis, map-projections]
 pinned: true
 comments: true
 og_type: article
 image:
-    facebook: /assets/img/site/BNHR-bg.png
-    twitter: /assets/img/site/BNHR-bg.png
+  facebook: /assets/img/site/BNHR_bg_default.webp
+  twitter: /assets/img/site/BNHR_bg_default.webp
 ---
 
 Ito ay ang unang parte sa isang serye kung saan kikilalanin natin ang QGIS at kung anu-anong mga bagay ang maari nating gawin dito. Hindi naman ito bago. Napakaraming mga lathala sa internet kung saan maari tayong matuto tungkol sa QGIS. Halimbawa ay ang dokumentasyon at mga materyales sa [website ng QGIS mismo](https://qgis.org/en/site/forusers/index.html).
@@ -24,7 +24,7 @@ Ang Geographic Information System (GIS) ay isang sistema ng impormasyon kung saa
 ## Mga parte at tungkulin (parts and functions)
 Karamihan ng mga modernong GIS ay mayroon ng mga sumusunod na parte at kayang gampanan ang mga sumusunod na tungkulin:
 
-### Mga Parte o Sangkap ng GIS
+### Mga parte o sangkap ng GIS
 * **```Hardware```**: Ito ay ang mga makinarya, instrumento, at iba pang aspetong pisikal (kompyuter, cellphone, atbp) na ginagamit upang magampanan ang mga tungkulin ng GIS.
 
 * **```Software```**: Ito ay ang mga programs at applications (sa kompyuter, cellphone, o sa internet) na ginagamit upang magampanan ang mga tungkulin ng GIS.

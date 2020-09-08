@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning tools on Web GIS: Introduction to web maps and web GIS"
+title: "Learning tools on web GIS: Introduction to web maps and web GIS"
 description: 'A presentation on basic GIS concepts and introduction to Web Maps and Web GIS given during the Training-Workshop on WebGIS Tools with the Department of Social Welfare and Development (DSWD)'
 tags: [foss4g, foss4gph, webgis, webmap, presentation]
 pinned: false

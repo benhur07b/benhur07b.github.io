@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#PistaNgMapa: Beyond the Basics with QGIS 3.X"
+title: "#PistaNgMapa: Beyond the basics with QGIS 3.X"
 description: 'My presentation during #PistaNgMapa 2019 at Foundation University in Dumaguete about the recent developments and what you can do with QGIS 3.X.'
 tags: [foss4g, qgis, qgis3, pista-ng-mapa, foss4gph, presentation]
 pinned: false

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why you shouldn't Use QGIS"
+title: "Why you shouldn't use QGIS"
 description: "A presentation on why you shouldn't use QGIS (or should you?)."
 tags: [foss4g, foss4gph, qgis, gis, presentation]
 pinned: false

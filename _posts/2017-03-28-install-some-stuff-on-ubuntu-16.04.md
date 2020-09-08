@@ -7,8 +7,8 @@ comments: true
 pinned: false
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR-bg.png
-  twitter: /assets/img/site/BNHR-bg.png
+  facebook: /assets/img/site/BNHR_bg_default.webp
+  twitter: /assets/img/site/BNHR_bg_default.webp
 ---
 
 I recently upgraded my machine to Xubuntu 16.04 after almost 3 years of using Xubuntu 14.04. This is always an exciting (or frustrating) time as it allows me to reinstall most of my stuff and keep my machine updated.

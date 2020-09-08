@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR-bg.png
-  twitter: /assets/img/site/BNHR-bg.png
+  facebook: /assets/img/site/BNHR_bg_default.webp
+  twitter: /assets/img/site/BNHR_bg_default.webp
 ---
 
 Let's say we want to know the values of rasters and vectors at specific points in a point layer (e.g. household locations). How would we go about doing this in QGIS or GRASS?
