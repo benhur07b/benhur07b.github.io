@@ -1,46 +1,9 @@
 ---
 layout: home
 ---
-<header>
-    <div id='bnhrBanner' class='carousel slide carousel-fade ' data-ride='carousel' data-interval='5000'>
-        <div class='carousel-inner'>
-            <div class='carousel-item carousel-item-header active' style="background-image: url('{{ site.baseurl }}/assets/img/site/banner-2.webp')">
-                <div class='container h-100 d-flex justify-content-center align-items-center'>
-                    <div>
-                        <h1 style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Hi! I'm Ben.</h1>
-                        <h4 class='font-weight-light' style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Let me help you solve your spatial and data problems using free and open technologies.</h4>
-                    </div>           
-                </div>
-            </div>
-            <div class='carousel-item carousel-item-header' style="background-image: url('{{ site.baseurl }}/assets/img/site/banner-3.webp')">
-                <div class='container h-100 d-flex justify-content-center align-items-center'>
-                    <div>
-                        <h1 style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Hi! I'm Ben.</h1>
-                        <h4 class='font-weight-light' style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Let me help you solve your spatial and data problems using free and open technologies.</h4>
-                    </div>           
-                </div>
-            </div>
-            <div class='carousel-item carousel-item-header' style="background-image: url('{{ site.baseurl }}/assets/img/site/banner-1.webp')">
-                <div class='container h-100 d-flex justify-content-center align-items-center'>
-                    <div>
-                        <h1 style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Hi! I'm Ben.</h1>
-                        <h4 class='font-weight-light' style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Let me help you solve your spatial and data problems using free and open technologies.</h4>
-                    </div>           
-                </div>
-            </div>
-            <div class='carousel-item carousel-item-header' style="background-image: url('{{ site.baseurl }}/assets/img/site/banner-0.webp')">
-                <div class='container h-100 d-flex justify-content-center align-items-center'>
-                    <div>
-                        <h1 style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Hi! I'm Ben.</h1>
-                        <h4 class='font-weight-light' style='color: #f8f9fa; text-shadow: 1px 1px 2px #2a3439;'>Let me help you solve your spatial and data problems using free and open technologies.</h4>
-                    </div>           
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+{% include home-banner.html %}
   
-<div class='container my-4'>
+<div class='container my-4' style='background-color: white;'>
     <h3>Want to know more?</h3>
     <p>Curious about how we can collaborate or still need more convincing?</p>
     <div class='row px-2'>
@@ -54,8 +17,12 @@ layout: home
             <a class='btn btn-primary btn-block' href='{{ site.baseurl }}/portfolio/'>View my portfolio</a>
         </div>
     </div>
+
     {% include what-i-do.html %}
     {% include what-ive-done.html %}
     {% include how-i-do-it.html %}
     {% include contact.html %}
 </div>
+
+    
+    

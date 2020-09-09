@@ -6,8 +6,11 @@
     </head>
     <body>
         {% include navbar.html %}
-        {{ content }}
-        {% include footer.html %}
-        {% include to-top-button.html %}
+        <div class="pt-2">
+            {{ content }}
+            <br>
+            {% include footer.html %}
+            {% include to-top-button.html %}
+        </div>
     </body>
 </html>
