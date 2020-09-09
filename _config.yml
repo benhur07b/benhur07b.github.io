@@ -1,15 +1,15 @@
 # site settings
 title: BNHR
-description: open spatial and data solutions
+description: helping you solve your spatial and data problems
 email: hi@bnhr.xyz
 baseurl: ""
-logo: "/assets/img/logos/BNHR-avatar-rd-2.png"
-bg_image: "/assets/img/site/BNHR_bg_default.webp"
+navbar_logo: "/assets/img/logos/BNHR-navbar-logo.webp"
+default_image: "/assets/img/site/BNHR-default-image.webp"
 favicon: favicon.ico
 repo_address: "benhur07b/benhur07b.github.io"
 author: "Ben Hur Pintor"
-author_avatar: "/assets/img/logos/BNHR-avatar-rd-2.png"
-author_description: "geospatial generalist. open source & open data advocate. maptivist."
+author_avatar: "/assets/img/logos/BNHR-avatar.png"
+author_description: "geospatial generalist. open stuff advocate. maptivist."
 facebook: "bnhr.xyz"
 twitter: "BNHRdotXYZ"
 github: "benhur07b"

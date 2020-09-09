@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minnesotta Timberwolves 2016-2017 Autopsy - The Good, The Bad, and The Ugly"
+title: "Minnesotta Timberwolves 2016-2017 autopsy - the Good, the Bad, and the Ugly"
 description: My take on the Timberwolves 2016-2017 season.
 tags: [basketball, nba]
 pinned: true

@@ -1,0 +1,50 @@
+# site settings
+title: BNHR
+description: open spatial and data solutions
+email: hi@bnhr.xyz
+baseurl: ""
+logo: "assets/img/logos/BNHR-avatar-rd-2.png"
+bg_image: "assets/img/site/BNHR_banner_2_v2.webp"
+favicon: favicon.ico
+repo_address: "benhur07b/benhur07b.github.io"
+author: "Ben Hur Pintor"
+author_avatar: "assets/img/logos/BNHR-avatar-rd-2.png"
+author_description: "geospatial generalist. open source & open data advocate. maptivist."
+facebook: "bnhr.xyz"
+twitter: "BNHRdotXYZ"
+github: "benhur07b"
+linkedin: "benhur07b"
+messenger: "bnhr.xyz"
+
+collections:
+    collection_what_ive_done:
+    collection_cv_experience_org:
+    collection_cv_experience_ind:
+    collection_cv_education:
+    collection_cv_fellowship:
+
+# exclude
+exclude:
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock
+
+# paginator
+paginate: 10
+paginate_path: "blog/page:num/"
+
+# build settings
+markdown: kramdown
+highlighter: rouge
+# kramdown:
+#     input: GFM
+#     syntax_highlighter: rouge
+
+# plugins
+plugins:
+    - github-pages
+    - jekyll-paginate
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-redirect-from
