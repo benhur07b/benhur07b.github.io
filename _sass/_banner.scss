@@ -1,0 +1,33 @@
+.carousel-item-header {
+    height:30vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @media (min-width: 320px) {
+        height: 30vh;
+    }
+    @media (min-width: 576px) {
+        height:30vh;
+    }
+    @media (min-width: 768px) {
+        height: 40vh;
+    }
+    @media (min-width: 992px) {
+        height: 40vh;
+    }
+    @media (min-width: 1024px) {
+        height: 40vh;
+    }
+    @media (min-width: 1200px) {
+        height: 45vh;
+    }
+    @media (min-width: 1440px) {
+        height: 60vh;
+    }
+    @media (min-width: 1960px) {
+        height: 65vh;
+    }
+  }

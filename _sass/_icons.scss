@@ -1,0 +1,94 @@
+// Icons
+@mixin icon-color($color, $hover-color){
+    color: $color;
+    &:hover {color: $hover-color}
+}
+
+.portfolio-icon {
+    @include icon-color($color-primary-dark, $color-primary-light);
+    font-size: 5em;
+
+    @media (min-width: 320px) {
+        font-size: 6em;
+    }
+    @media (min-width: 576px) {
+        font-size: 8em;
+    }
+    // @media (min-width: 768px) {
+    //     font-size: 5em;
+    // }
+    @media (min-width: 768px) {
+        font-size: 10em;
+    }
+}
+
+.contact-icon {
+    font-size: 3.5em;
+    @media (min-width: 320px) {
+        font-size: 4em;
+    }
+    @media (min-width: 576px) {
+        font-size: 4.5em;
+    }
+    @media (min-width: 768px) {
+        font-size: 5em;
+    }
+    @media (min-width: 992px) {
+        font-size: 4.5em;
+    }
+    @media (min-width: 1024px) {
+        font-size: 5em;
+    }
+}
+
+.contact-twitter {
+    @include icon-color($color-primary, #4099ff);
+}
+
+.contact-github {
+    @include icon-color($color-primary, $color-accent-orange);
+}
+
+.contact-fb {
+    @include icon-color($color-primary, #3b5998);
+}
+
+.contact-linkedin {
+    @include icon-color($color-primary, #0077B5);
+}
+
+.contact-rss {
+    @include icon-color($color-primary, #f26522);
+}
+
+.contact-yt {
+    @include icon-color($color-primary, #ff0000);
+}
+
+.share-twitter {
+    @include icon-color(#4099ff, $color-primary);
+}
+
+.share-fb {
+    @include icon-color(#3b5998, $color-primary);
+}
+
+.share-gplus {
+    @include icon-color(#d34836, $color-primary);
+}
+
+.share-reddit {
+    @include icon-color(#FF5700, $color-primary);
+}
+
+.share-email {
+    @include icon-color(#3e65cf, $color-primary);
+}
+
+.share-gh {
+    @include icon-color(#6e5494, $color-primary);
+}
+
+.share-rss {
+    @include icon-color(#f26522, $color-primary);
+}

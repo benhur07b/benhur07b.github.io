@@ -1,0 +1,100 @@
+// main font and body color
+$color-primary: #3d4251;
+// header colors (darker)
+$color-primary-dark: #2A3439;
+$color-primary-dark: #26363b;
+// lighter highlight color
+$color-primary-light: #f8f9fa;
+// header colors (black)
+$color-primary-black: #292b2c;
+// beige-y color
+$color-secondary: #f6f3ed;
+// muted or low-contrast elements
+$color-muted: #7d7d7d;
+
+// accents
+$color-accent-green: #5ebd3e;
+$color-accent-blue: #009cdf;
+$color-accent-orange: #f78200;
+$color-accent-red: #C44B4F;
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-primary-dark {
+    color: $color-primary-dark;
+}
+
+.color-primary-light {
+    color: $color-primary-light;
+}
+
+.color-primary-black {
+    color: $color-primary-black;
+}
+
+.color-secondary {
+    color: $color-secondary;
+}
+
+.color-muted {
+    color: $color-muted;
+}
+
+.color-accent-green {
+    color: $color-accent-green;
+}
+
+.color-accent-blue {
+    color: $color-accent-blue;
+}
+
+.color-accent-orange {
+    color: $color-accent-orange;
+}
+
+.color-accent-red {
+    color: $color-accent-red;
+}
+
+
+.bg-color-primary {
+    background-color: $color-primary;
+}
+
+.bg-color-primary-dark {
+    background-color: $color-primary-dark;
+}
+
+.bg-color-primary-light {
+    background-color: $color-primary-light;
+}
+
+.bg-color-primary-black {
+    background-color: $color-primary-black;
+}
+
+.bg-color-secondary {
+    background-color: $color-secondary;
+}
+
+.bg-color-muted {
+    background-color: $color-muted;
+}
+
+.bg-color-accent-green {
+    background-color: $color-accent-green;
+}
+
+.bg-color-accent-blue {
+    background-color: $color-accent-blue;
+}
+
+.bg-color-accent-orange {
+    background-color: $color-accent-orange;
+}
+
+.bg-color-accent-red {
+    background-color: $color-accent-red;
+}

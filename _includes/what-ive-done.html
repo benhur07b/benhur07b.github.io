@@ -1,0 +1,27 @@
+<h1 class="text-center pt-2 pb-4">What I've done</h1>
+
+{% for item in site.collection_what_ive_done %}
+<div class="row pb-4">
+    <div class="col-lg-6 col-12 py-2">
+        <img class="img-fluid img-shadow" src="{{ site.assets }}{{ item.img }}" alt="{{ item.img_alt }}" data-toggle="tooltip" data-placement="top" title="{{ item.title }}" />
+    </div>
+    <div class="col-lg-6 col-12 py-2">
+        <h3 class="mt-1 color-primary-dark">{{ item.name }}</h3>
+        <p>
+        {{ item.about }}
+        </p>
+    </div>
+</div>
+{% endfor %}
+
+<div class="row px-2 pb-2">
+    <div class="col-md-4 col-sm-12 p-1">
+        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/portfolio/works.html">See more projects</a>
+    </div>
+    <div class="col-md-4 col-sm-12 p-1">
+        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/blog/">Read my blog</a>
+    </div>
+    <div class="col-md-4 col-sm-12 p-1">
+        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/#contact">Contact me</a>
+    </div>
+</div>

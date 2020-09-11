@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container pt-1">
+    <!-- HTML elements for search -->
+    <div class="row">
+        <input class="ml-auto p-1 mr-1 small" type="text" id="search-input" placeholder="Search blog posts..">
+    </div>
+    <div class="row">
+        <ul class="ml-auto" id="results-container"></ul>
+    </div>
+
+    <div class="pb-4">
+        {% include blog-paginated-posts.html %}
+    </div>
+
+    <div class="pb-4">
+        {% include blog-pagination.html %}
+    </div>
+
+</div>
+
+{% include simple-jekyll-search.html %}

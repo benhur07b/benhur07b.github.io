@@ -1,0 +1,72 @@
+// posts
+.post-meta {
+    color: $color-muted;
+}
+
+.post-meta-info {
+    @extend .post-meta;
+    font-family: $font-pt-sans;
+    margin-bottom: 4px;
+}
+
+.post-meta-tag {
+    @extend .no-underline-link;
+    @extend .post-meta;
+    background-color: $color-secondary;
+    color: $color-primary-dark;
+    padding: 0.1em 0.3em;
+    border-radius: 5%;
+
+    &:hover {
+        color: $color-primary-light;
+        background-color: $color-accent-red;
+    }
+}
+
+
+blockquote {
+    padding: 0.5rem 1rem;
+    border-left: 5px solid $color-accent-red;
+}
+
+.nav-posts {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+    & .prev {
+      width: 50%;
+      // align-items: flex-start;
+    }
+
+    & .next {
+      width: 50%;
+      // align-items: flex-end;
+    }
+}
+
+.post-archive-title {
+    @extend .no-underline-link;
+    // color: $color-primary-dark;
+    color: $color-accent-red;
+    &:hover {
+        // color: $color-accent-red;
+        color: $color-primary-dark;
+    }
+}
+
+.bnhr-link {
+    @extend .no-underline-link;
+    color: $color-accent-red;
+    &:hover {
+        color: $color-primary-dark;
+    }
+}
+
+.reverse-bnhr-link {
+    @extend .no-underline-link;
+    color: $color-primary-dark;
+    &:hover {
+        color: $color-accent-red;
+    }
+}

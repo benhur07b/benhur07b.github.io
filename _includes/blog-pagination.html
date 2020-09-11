@@ -1,0 +1,25 @@
+{% if paginator.total_pages > 1 %}
+    <div>
+    {% if paginator.previous_page %}
+        <a class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&laquo; Prev</a>
+        {% else %}
+        <span class="color-primary-dark font-weight-bold">&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <span class="ml-1 mr-1 color-accent-red font-weight-bold">{{ page }}</span>
+            {% elsif page == 1 %}
+                <a  class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ site.baseurl }}/blog/index.html">{{ page }}</a>
+            {% else %}
+                 <a  class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ site.baseurl }}/{{ site.paginate_path | replace: "//", "/" | replace: ":num", page }}">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <a  class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Next &raquo;</a>
+        {% else %}
+        <span class="color-primary-dark font-weight-bold">Next &raquo;</span>
+    {% endif %}
+    </div>
+{% endif %}
