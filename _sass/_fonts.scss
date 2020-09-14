@@ -2,10 +2,30 @@ $font-logo: 'Josefin Sans', sans-serif;
 $font-pt-sans: 'PT Sans', sans-serif;
 $font-fira-sans: 'Fira Sans', sans-serif;
 $font-open-sans: 'Open Sans', sans-serif;
-$font-nunito: 'Nunito', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
 $font-archivo: 'Archivo', sans-serif;
-$font-inconsolata: 'Inconsolata', monospace;
+$font-fira-code: 'Fira Code', monospace;
 
 .font-logo {
     font-family: $font-logo;
+}
+
+.font-pt-sans {
+    font-family: $font-pt-sans;
+}
+
+.font-fira-sans {
+    font-family: $font-fira-sans;
+}
+
+.font-archivo {
+    font-family: $font-archivo;
+}
+
+.font-roboto {
+    font-family: $font-roboto;
+}
+
+.font-fira-code {
+    font-family: $font-fira-code;
 }

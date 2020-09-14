@@ -7,10 +7,10 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /assets/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
-    twitter: /assets/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
+    facebook: /img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
+    twitter: /img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
 ---
-<div class='col-lg-12 img-container'><img class='img-fluid post-img img-shadow' src='{{ site.baseurl }}/assets/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma-720.gif'></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma-720.gif" alt="UP Fighting Maroons Juan GDL Kalma lang"></div>
 <small>*Hat tip to [BA](https://giphy.com/channel/badoodles) for the original GIF*</small>
 <br><br>
 
@@ -26,7 +26,7 @@ Not content with *just* winning, it seems like the UP Fighting Maroons have a st
 
 What a time to be a Fighting Maroon fan. Heck, what a time to be a UAAP fan in general.
 
-Now I enjoy drama on the basketball court as much as the next guy but I'm sure a few others will agree when I say: **_```We knew UP would be winning more this season, we just didn't expect their wins to be like this```_**. This brings me to the question: **_```Should we be worried about the UP Fighting Maroons?```_**
+Now I enjoy drama on the basketball court as much as the next guy but I'm sure a few others will agree when I say: **We knew UP would be winning more this season, we just didn't expect their wins to be like this**. This brings me to the question: **Should we be worried about the UP Fighting Maroons?**
 
 You can look at UP's record two ways. An optimist might see a team that never gives up and has the intestinal fortitude to handle the pressure and win close games. A pessimist might say that this team is beatable; that eventually their talent won't be able to save them. Speaking of talent, this is probably the most talented basketball team UP has had in my lifetime and most of time talent is enough to win you games but is it enough to win you championships?
 
@@ -34,15 +34,15 @@ I think we all want to know if given UP's current performance, are they on track
 
 **SMALL SAMPLE SIZE DISCLAIMER. Take everything below with a grain of salt. :)**
 
-To answer this question, I decided to take a look at *just* two things: **the Win/Loss record and the Pythagorean record of the UAAP teams since Season 71 (2008-2009)**. This was partly because I think that these stats are the simplest way to scratch my itch and partly because **I didn't have extra time to scrape more data and look at other stats (Hahaha!) so please, please take all this with a huge grain of salt**. If we wanted a more in-depth analysis, we could look at other factors like Offensive and Defensive Efficiency, +/-, etc.
+To answer this question, I decided to take a look at *just* two things: **the Win/Loss record and the Pythagorean record of the UAAP teams since Season 71 (2008-2009)**. This was partly because I think that these stats are the simplest way to scratch my itch and partly because I didn't have extra time to scrape more data and look at other stats (Hahaha!) so please, please take all this with a huge grain of salt. If we wanted a more in-depth analysis, we could look at other factors like Offensive and Defensive Efficiency, +/-, etc.
 
 Now, you might be asking: "**Okay, I get the win/loss record but what in the world is Pythagorean record?**"
 
-As with most sports analytics concepts, the Pythagorean record originated in baseball and the Father of Sabermetrics Bill James. It's an **estimation of a team's winning percentage based only on the points (runs) that they scored and the points (runs) scored against them**. It's a simple metric that's probably better at **showing how good a team is (or should be)** than just plain wins and losses. The Pythagorean record can also show if a team has been lucky or unlucky. A team that's outperforming its Pythagorean record can be considered lucky *(e.g. wins close games, loses not-so-close games)* while a team that's under-performing its Pythagorean record can be considered unlucky *(e.g. loses close games, wins not-so-close games)*.
+As with most sports analytics concepts, the Pythagorean record originated in baseball and the Father of Sabermetrics Bill James. **It's an estimation of a team's winning percentage based only on the points (runs) that they scored and the points (runs) scored against them**. It's a simple metric that's probably better at **showing how good a team is (or should be)** than just plain wins and losses. The Pythagorean record can also show if a team has been lucky or unlucky. A team that's outperforming its Pythagorean record can be considered lucky *(e.g. wins close games, loses not-so-close games)* while a team that's under-performing its Pythagorean record can be considered unlucky *(e.g. loses close games, wins not-so-close games)*.
 
 The formula for Pythagorean Win % is simple:
 
-><img class='img-fluid' src='https://latex.codecogs.com/svg.latex?\Large&space;Pythagorean Win Percentage=\frac{PS^{exp}}{PS^{exp} + PA^{exp}}' />
+><img class="img-fluid" src="https://latex.codecogs.com/svg.latex?\Large&space;Pythagorean Win Percentage=\frac{PS^{exp}}{PS^{exp} + PA^{exp}}" />
 >* PS = Points Scored By Team
 >* PA = Points Scored Against Team
 >* exp = Pythagorean exponent (Daryl Morey uses 13.91, John Hollinger uses 16.5)
@@ -51,9 +51,9 @@ With that, I went ahead and scraped data on the final scores of the UAAP games f
 
 Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for the past 11 years grouped per season and sorted from highest to lowest Pythagorean Win % for that season.
 
-<!-- <iframe class='airtable-embed' src='https://airtable.com/embed/shrM8fHD7lH0hDyjP?backgroundColor=gray' frameborder='0' onmousewheel='' style='background: transparent; border: 1px solid #ccc;' width='100%' height='500'></iframe> -->
+<!-- <iframe class="airtable-embed" src="https://airtable.com/embed/shrM8fHD7lH0hDyjP?backgroundColor=gray' frameborder="0' onmousewheel="' style="background: transparent; border: 1px solid #ccc;' width="100%' height="500"></iframe> -->
 
-<iframe class='embed-responsive' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false' height='424px'></iframe>
+<iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" height="424px"></iframe>
 
 <br>
 Here are a few observations:
@@ -95,7 +95,8 @@ By the way, here's the current Win-Loss and Pythagorean Records for **#UAAPSeaso
 | **UP**   | **5-1**    | **83.33**  | **3-3**       | **49.04** |
 | UST  | 4-2    | 66.67  | 5-1       | 81.44 |
 
-_**So what does this all mean?**_
+<br>
+**So what does this all mean?**
 
 It could mean that UP has been lucky (*duh!*) this early season but if they want to reach (and win) the Finals, history says they have to play a bit better. Their level of play needs to match the talent that they have. It could also mean that ADMU is on track to win its third straight Championship and UST is positioning itself as the dark horse this season.
 

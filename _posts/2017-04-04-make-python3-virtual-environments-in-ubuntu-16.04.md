@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 
 Xubuntu 16.04 comes packaged with Python 3.5.2. As is standard practice, it's not advisable to update or change the Python version of your distribution lest you risk possible problems in your system. One of the better options if you want to use different python versions in your machine is to use virtual environments. Since version 3.4, Python has come packaged with *venv* -- a library for making virtual environments. This post will show you how to install Python 3.6.1 in Xubuntu 16.04 and use venv to create a virtual environment running Python 3.6.1.
@@ -64,7 +64,7 @@ The line below will unpack the contents of the archive to a Python-3.6.1 directo
 tar xfz Python-3.6.1.tgz
 ```
 
-Go to the directory and configure where you want to install the new Python version. Here we'll install it in ```/usr/local/lib/python3.6.1```.
+Go to the directory and configure where you want to install the new Python version. Here we'll install it in **usr/local/lib/python3.6.1**.
 
 ```shell
 cd Python-3.6.1/
@@ -104,7 +104,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 /usr/local/lib/python3.6.1/bin/python3 -m venv <location-of-virtualenv>
 ```
 
-I tend to put all my virtual environments in a single directory. I recommend having something like a ```.venvs``` directory for that purpose.
+I tend to put all my virtual environments in a single directory. I recommend having something like a **.venvs** directory for that purpose.
 
 ```shell
 /usr/local/lib/python3.6.1/bin/python3 -m venv ~/.venvs/python3.6.1

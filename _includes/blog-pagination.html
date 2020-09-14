@@ -1,25 +1,25 @@
 {% if paginator.total_pages > 1 %}
-    <div class='fonts-pagination'>
+    <div>
     {% if paginator.previous_page %}
-        <a class='ml-1 mr-1 bnhr-links' href='{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}'>&laquo; Prev</a>
+        <a class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&laquo; Prev</a>
         {% else %}
-        <span class='color-accent'>&laquo; Prev</span>
+        <span class="color-primary-dark font-weight-bold">&laquo; Prev</span>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
-                <span class='ml-1 mr-1 color-primary-dark'>{{ page }}</span>
+                <span class="ml-1 mr-1 color-accent-red font-weight-bold">{{ page }}</span>
             {% elsif page == 1 %}
-                <a  class='ml-1 mr-1 bnhr-links' href='{{ site.baseurl }}/blog/index.html'>{{ page }}</a>
+                <a  class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ site.baseurl }}/blog/index.html">{{ page }}</a>
             {% else %}
-                 <a  class='ml-1 mr-1 bnhr-links' href='{{ site.baseurl }}/{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}'>{{ page }}</a>
+                 <a  class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ site.baseurl }}/{{ site.paginate_path | replace: "//", "/" | replace: ":num", page }}">{{ page }}</a>
             {% endif %}
         {% endfor %}
 
         {% if paginator.next_page %}
-        <a  class='ml-1 mr-1 bnhr-links' href='{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}'>Next &raquo;</a>
+        <a  class="ml-1 mr-1 reverse-bnhr-link font-weight-bold" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Next &raquo;</a>
         {% else %}
-        <span class='color-accent'>Next &raquo;</span>
+        <span class="color-primary-dark font-weight-bold">Next &raquo;</span>
     {% endif %}
     </div>
 {% endif %}

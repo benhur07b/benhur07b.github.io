@@ -1,0 +1,3 @@
+{% for item in site.collection_courses_offered_data %}
+<h3 class="py-1"><a class="bnhr-link" href="{{ site.baseurl }}{{ item.link }}">{{ item.title }} <span class="font-weight-light">{{ item.subtitle }}</span></a></h3>
+{% endfor %}

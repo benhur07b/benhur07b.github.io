@@ -7,13 +7,13 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /assets/img/site/BNHR-bg.png
-    twitter: /assets/img/site/BNHR-bg.png
+    facebook: /img/site/BNHR-bg.png
+    twitter: /img/site/BNHR-bg.png
 ---
 
-I recently encountered a problem printing a PDF file where parts of the file weren't being printed by my printer. I tried multiple times but got the same result -- a part of my PDF wasn't being printed (as if it was being censored). I thought that the problem was with my printer not reading my PDF correctly since it was being read correctly by my document/PDF viewer. Instead of finding out what was wrong with my printer or the PDF, I had this idea of just converting the PDF into an image and then printing the image afterwards.
+I recently encountered a problem printing a PDF file **where parts of the file weren't being printed by my printer**. I tried multiple times but got the same result -- a part of my PDF wasn't being printed (as if it was being censored). I thought that the problem was with my printer not reading my PDF correctly since it was being read correctly by my document/PDF viewer. Instead of finding out what was wrong with my printer or the PDF, I had this idea of just **converting the PDF into an image and then printing the image afterwards**.
 
-A cursory Google search led me to a very simple command to convert a PDF into an Image in Linux using the [convert](https://imagemagick.org/script/convert.php) command of ImageMagick.
+A cursory Google search led me to a very simple command to convert a PDF into an Image in Linux using the [**convert**](https://imagemagick.org/script/convert.php) command of [**ImageMagick**](https://imagemagick.org/).
 
 >
 >```shell

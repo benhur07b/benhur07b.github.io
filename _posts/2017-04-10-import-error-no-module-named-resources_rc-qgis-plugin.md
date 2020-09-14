@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 
 If you did not create your QGIS plugin using the latest version of *QGIS Plugin Builder*, you might find yourself encountering this error when running your plugin in QGIS specially if you have a resources file for images/logos that you included in your plugin.
@@ -17,7 +17,7 @@ If you did not create your QGIS plugin using the latest version of *QGIS Plugin 
 ImportError: No module named resources_rc
 ```
 
-This error seems to stem from the fact that when you have resources in your GUI from *resource.qrc*, the following lines are added to your ```.ui``` files:
+This error seems to stem from the fact that when you have resources in your GUI from *resource.qrc*, the following lines are added to your **.ui** files:
 
 ```
 <resources>
@@ -25,13 +25,13 @@ This error seems to stem from the fact that when you have resources in your GUI 
 </resources>
 ```
 
-[One of the solutions](https://gis.stackexchange.com/a/155599/45041) for this issue is by removing the said line in the ```.ui``` files and replacing them with:
+[One of the solutions](https://gis.stackexchange.com/a/155599/45041) for this issue is by removing the said line in the **.ui** files and replacing them with:
 
 ```
 <resources \>
 ```
 
-then compiling the ```.ui``` files to ```.py``` files using ```pyuic```.
+then compiling the **.ui** files to **.py** files using **pyuic**.
 
 However, my simpler solution involves just one command. Since python is looking for a resources_rc module, all I did was compile my resources.qrc to resources_rc.py instread of resources.py.
 

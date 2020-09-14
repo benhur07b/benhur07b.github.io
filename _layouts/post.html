@@ -1,19 +1,23 @@
 ---
 layout: default
 ---
-<div class='container'>
+<div class="container">
     {% include post-meta.html %}
-    {% include share-social.html %}
-    <div class='pb-2'>
-        <hr class='fake-br my-4'>
-        {{content}}
+    <div class="pb-4">
+        {% include share-social.html %}
     </div>
-    <hr class='fake-br my-2'>
-    {% include share-social.html %}
-    <hr class='fake-br my-4'>
-    <!-- post navigation -->
-    {% include post-pagination.html %}
-
+    <div class="pt-4 pb-2">
+    <section id="blog-post">
+        {{content}}
+    </section>   
+    </div>
+    <div class="py-4">
+        {% include share-social.html %}
+    </div>
+    <div class="py-4">
+        {% include post-pagination.html %}
+    </div>
+    
     {% if page.comments %}
         {% include disqus-comments.html %}
     {% endif %}

@@ -1,7 +1,7 @@
-<h3>Recent Posts</h3>
-<ul class='list-style-none'>
+<h3 class="color-primary-dark">Recent Posts</h3>
+<ul class="list-style-none">
     {% for post in paginator.posts %}
-    <li>
+    <li class="py-1">
         {% include blog-post-archive-meta.html %}
     </li>
     {% endfor %}

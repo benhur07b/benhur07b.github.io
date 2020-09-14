@@ -1,30 +1,30 @@
 ---
 layout: page
-title: Bite-sized QGIS
-og_type: page
+title: "Bite-sized QGIS (Beginner to Advanced)"
+description: "Short, focused, and hands-on online courses designed to teach QGIS in bite-sized proportions. Learn only what they want and pay only for what they need."
+og_type: post
+redirect_to: /services/training/bite-sized-qgis
 ---
 # Bite-sized QGIS
 *Learn QGIS one bite at a time.*
 
+<div class="pb-4">
+    {% include share-social.html %}
+</div>
+
 ## What is Bite-sized QGIS?
 Short, focused, and hands-on online courses designed to teach QGIS in bite-sized proportions. QGIS can be very complex and have a lot of nuances. By having short and focused courses, we're trying to ensure that participants don't get overwhelmed while at the same time giving them freedom to choose to learn only what they want and pay only for what they need. Some people don't need to learn everything about QGIS and are only interested in specific use cases and that's entirely alright.
-<br><br>
+
 You're a beginner who just wants to learn how to style and create maps? *Take the Beginner-level Loading & Styling Layers in QGIS course*. You're an experienced user who wants to learn how to do network analysis in QGIS? *Take the Intermediate-level Network Analysis course*. Courses are designed so they can be taken independently of each other.
-<br><br>
-Official QGIS Certificates are also available. You may opt to get one certificate for all the courses that you take. Each course comes with a workbook *(and answers!)*.
 
-## Interested?
-Sign-up or check out the courses below.
-*Tentative schedule of courses are Saturdays and Sundays, 1:00 PM onward. You may check the calendar at the bottom for the tentative schedules. The payment and other details will be emailed to you after signing-up. You may [contact me](https://bnhr.xyz/#contact) if you have suggestions as to the content or schedule of the courses.*
+**Official QGIS Certificates are available.** BNHR is an Certified QGIS Trainer. For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
 
-## Sign-up
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrJHaUvwGgjKLSDp?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-<br>
+**Each course also comes with a FREE workbook and video materials for self-paced learning.**
 
 ## Bite-sized QGIS (Beginner Topics)
 **Duration:** 2-3 hours
-<br>**Training Fee:** PhP 800 per course
-<br>**Class Size:** 6-12
+<br>**Training Fee:** PhP 900 per course (PhP 4,800 for the 6-course bundle)
+<br>**Class Size:** 8-15 (minimum 8 people to push through with online class)
 
 ### Introduction to QGIS & Spatial Data Types
 - Gentle introduction to GIS concepts
@@ -86,8 +86,8 @@ Sign-up or check out the courses below.
 
 ## Bite-sized QGIS (Intermediate & Advanced Topics)
 **Duration:** 3-4 hours
-<br>**Training Fee:** PhP 1,500 per course
-<br>**Class Size:** 6-12
+<br>**Training Fee:** PhP 1,800 per course (PhP 4,800 for a 3-course bundle)
+<br>**Class Size:**  8-15 (minimum 8 people to push through with online class)
 
 ### Network Analysis
 - Topology checker & cleaning network data
@@ -153,5 +153,12 @@ Sign-up or check out the courses below.
 - QGIS & Mesh Data
 - QGIS & Web Mapping
 
+## Interested?
+Sign-up or check out the course schedule below for the course availability.
+*The payment and other details will be emailed to you after signing-up. You may [contact me](https://bnhr.xyz/#contact) if you have suggestions as to the content or schedule of the courses.*
+
+## Sign-up
+{% include training-sign-up.html %}
+
 ## Schedule & Calendar
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrr6nHnOGk4Tj1rr?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
+{% include training-schedule-calendar.html %}

@@ -7,8 +7,8 @@ comments: true
 pinned: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >
@@ -38,9 +38,9 @@ Linux and FOSS have a lot of advantages (and also disadvantages) over proprietar
 * macOS
 
 #### What you can use instead:
-* This is a trick question. There are a multitude of FOSS Operating Systems out there that you can try like FreeBSD, Linux (or GNU/Linux), and the countless [distros](https://distrowatch.com/) in between. Want something classic? There's [Debian](https://www.debian.org/). Want a challenge? Try [Arch](https://www.archlinux.org/). How about something easier for newbies? There's always [Ubuntu](https://www.ubuntu.com/) and [Linux Mint](https://linuxmint.com/). Into penetration testing and hacking? [Kali Linux](https://www.kali.org/) is what you need. Want some privacy? Give [Tails](https://tails.boum.org/) a spin. Whatever specific thing you need in an OS, there's probably a distro out there for you.
+* This is a trick question. There are a multitude of FOSS Operating Systems out there that you can try like FreeBSD, Linux (or GNU/Linux), and the countless [**distros**](https://distrowatch.com/) in between. Want something classic? There's [**Debian**](https://www.debian.org/). Want a challenge? Try [**Arch**](https://www.archlinux.org/). How about something easier for newbies? There's always [**Ubuntu**](https://www.ubuntu.com/) and [**Linux Mint**](https://linuxmint.com/). Into penetration testing and hacking? [**Kali Linux**](https://www.kali.org/) is what you need. Want some privacy? Give [**Tails**](https://tails.boum.org/) a spin. Whatever specific thing you need in an OS, there's probably a distro out there for you.
 
-Personally, I'm using [Xubuntu](https://xubuntu.org/) and [OSGEO-Live](https://live.osgeo.org/).
+Personally, I'm using [**Xubuntu**](https://xubuntu.org/) and [**OSGEO-Live**](https://live.osgeo.org/).
 
 ## Office Suite
 **What you might be familiar with:**
@@ -48,8 +48,8 @@ Personally, I'm using [Xubuntu](https://xubuntu.org/) and [OSGEO-Live](https://l
 * Office365
 
 **What you can use instead:**
-* [LibreOffice](https://www.libreoffice.org/)
-* [WPS Office](https://www.wps.com/)
+* [**LibreOffice**](https://www.libreoffice.org/)
+* [**WPS Office**](https://www.wps.com/)
 
 I've almost exclusively used LibreOffice and its predecessor OpenOffice for the past 8 years. It's dependable and does what you expect from a modern office suite. I don't have the same amount of experience with WPS but I've heard good things about it and it boasts of being the "Most Compatible Free Office Suite".
 
@@ -58,9 +58,9 @@ I've almost exclusively used LibreOffice and its predecessor OpenOffice for the 
 * ArcGIS
 
 **What you can use instead:**
-* [QGIS](http://www.qgis.org/en/site/)
-* [GRASS GIS](https://grass.osgeo.org/)
-* [SAGA GIS](www.saga-gis.org/)
+* [**QGIS**](http://www.qgis.org/en/site/)
+* [**GRASS GIS**](https://grass.osgeo.org/)
+* [**SAGA GIS**](www.saga-gis.org/)
 
 These are also available in Windows and Mac but most of the development (especially for QGIS and GRASS) is made on Linux. Thus, the Linux versions are usually more updated and stable than their Windows or Mac counterparts.
 
@@ -69,7 +69,7 @@ These are also available in Windows and Mac but most of the development (especia
 * Paint
 
 **What you can use instead:**
-* [Pinta](https://pinta-project.com/)
+* [**Pinta**](https://pinta-project.com/)
 
 It actually came as a surprise when I found out that most of the distros I tried did not have a simple drawing application ala Microsoft Paint on Windows. Then I found Pinta. Pinta is probably the best drop-in replacement for Paint out there.
 
@@ -78,9 +78,9 @@ It actually came as a surprise when I found out that most of the distros I tried
 * Photoshop
 
 **What you can use instead:**
-* [GIMP (GNU Image Manipulation Program)](https://www.gimp.org/)
+* [**GIMP (GNU Image Manipulation Program)**](https://www.gimp.org/)
 
-Okay, vanilla GIMP is probably no match for Photoshop but the beauty with GIMP is that you can always write your own or use other people's scripts if you need something not in vanilla GIMP. I used GIMP during my [brief scanlation career](http://www.mangareader.net/hell-teacher-nube/38).
+Okay, vanilla GIMP is probably no match for Photoshop but the beauty with GIMP is that you can always write your own or use other people's scripts if you need something not in vanilla GIMP. I used GIMP during my [**brief scanlation career**](http://www.mangareader.net/hell-teacher-nube/38).
 
 ## PDF Manipulation
 **What you might be familiar with:**
@@ -88,8 +88,8 @@ Okay, vanilla GIMP is probably no match for Photoshop but the beauty with GIMP i
 * Foxit Reader
 
 **What you can use instead:**
-* [LibreOffice](https://www.libreoffice.org/)
-* [PDF Chain](http://pdfchain.sourceforge.net/)
+* [**LibreOffice**](https://www.libreoffice.org/)
+* [**PDF Chain**](http://pdfchain.sourceforge.net/)
 
 You can edit pdfs (forms, letters, etc.) using LibreOffice (via Draw) if they were exported/saved directly from documents and not simply scanned. PDF-Chain, meanwhile, gives you the ability to combine or split pdfs among other things.
 
@@ -99,8 +99,8 @@ You can edit pdfs (forms, letters, etc.) using LibreOffice (via Draw) if they we
 * Viber
 
 **What you can use instead:**
-* [Skype for Linux](https://www.skype.com/en/download-skype/skype-for-linux/)
-* [Viber for Linux](https://www.viber.com/en/products/linux)
+* [**Skype for Linux**](https://www.skype.com/en/download-skype/skype-for-linux/)
+* [**Viber for Linux**](https://www.viber.com/en/products/linux)
 
 These, technically, are not FOSS alternatives. There's a lot of other video conferencing and messaging softwares out there available for Linux. However, since most people (especially those not using Linux) already use Skype and Viber, Skype for Linux and Viber for Linux are valid options especially if most of your contacts are already using them. There's been some issues with Skype for Linux over the years but hopefully their last update solved most of them.
 
@@ -111,14 +111,10 @@ Both Skype and Viber for Linux are available as .rpm or .deb.
 * ALL THE GAMES MADE FOR WINDOWS AND PC
 
 **What you can use instead:**
-* [Steam on Linux](http://store.steampowered.com/linux)
-* [PlayDeb](http://www.playdeb.net/welcome/) (If you're using 'buntu)
-* [Wine](https://www.winehq.org/)
+* [**Steam on Linux**](http://store.steampowered.com/linux)
+* [**PlayDeb**](http://www.playdeb.net/welcome/) (If you're using 'buntu)
+* [**Wine**](https://www.winehq.org/)
 
 Truth be told, Windows still has the edge on Linux when it comes to Gaming but that doesn't mean you can play on Linux. Steam has been a godsend and I've been able to play a lot more games natively on Linux (Dota2 for example) and not rely on Wine or a Windows VM. For Ubuntu users, PlayDeb is a good resource to start looking for Linux games.
 
-<br>
-
 That's it for now. There's a lot of other things that I might add here in the future. I'll probably make posts on how to install the software above on your Linux machine too.
-
-<br>

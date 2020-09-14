@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /media/site/img/BNHR_bg_default.webp
-  twitter: /media/site/img/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 I was performing a routine update and upgrade of my system packages when I encountered this error.
 
@@ -34,7 +34,7 @@ ImportError: No module named 'six'
 
 It seems like the module six wasn't being read by my system's python3.
 
-I looked around for a solution. Some involved reinstalling python3 or running sudo apt install --fix-missing. Others included repairing ```/var/lib/dpkg/status``` or clearing ```/var/lib/apt/lists*``` but the easiest method that worked for me was simply reinstalling python3-six.
+I looked around for a solution. Some involved reinstalling python3 or running sudo apt install --fix-missing. Others included repairing **/var/lib/dpkg/status** or clearing **var/lib/apt/lists** but the easiest method that worked for me was simply reinstalling python3-six.
 
 ```shell
 sudo apt install --reinstall python3-six

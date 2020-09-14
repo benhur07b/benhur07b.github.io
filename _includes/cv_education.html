@@ -1,22 +1,22 @@
-<section class='py-4' id='education'>
+<section class="py-4" id="education">
     <h2>education</h2>
-    <ul class='timeline'>
+    <ul class="timeline">
         {% for item in site.collection_cv_education %}
-        <li class='timeline-item period'>
-            <div class='timeline-info'></div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h3 class='timeline-title'>{{ item.school }}</h3>
+        <li class="timeline-item period">
+            <div class="timeline-info"></div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                 <h3 class="timeline-title-main">{{ item.school }}</h3>
             </div>
         </li>
-        <li class='timeline-item'>
-            <div class='timeline-info'>
-                <span class='small'>{{ item.period }}</span>
+        <li class="timeline-item">
+            <div class="timeline-info">
+                <span class="small">{{ item.period }}</span>
             </div>
-            <div class='timeline-marker'></div>
-            <div class='timeline-content'>
-                <h4 class='timeline-title mt-1'>{{ item.program }}</h4>
-                <p class='small-line-height'>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h4 class="timeline-title-position mt-1">{{ item.program }}</h4>
+                <p class="small-line-height">
                     {{ item.info }}
                 </p>
             </div>

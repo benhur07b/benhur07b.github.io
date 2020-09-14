@@ -1,33 +1,45 @@
 # site settings
 title: BNHR
 description: helping you solve your spatial and data problems
-email: hi@bnhr.xyz
 baseurl: ""
-navbar_logo: "/assets/img/logos/BNHR-navbar-logo.webp"
-default_image: "/assets/img/site/BNHR-default-image.webp"
-favicon: favicon.ico
-repo_address: "benhur07b/benhur07b.github.io"
-author: "Ben Hur Pintor"
-author_avatar: "/assets/img/logos/BNHR-avatar.png"
-author_description: "geospatial generalist. open stuff advocate. maptivist."
+email: "hi@bnhr.xyz"
+
+# default images
+navbar_logo: "/img/logos/BNHR-navbar-logo.webp"
+default_image: "/img/site/images/BNHR-bg.webp"
+favicon: "favicon.ico"
+
+# accounts
 facebook: "bnhr.xyz"
 twitter: "BNHRdotXYZ"
+instagram:
 github: "benhur07b"
 linkedin: "benhur07b"
 messenger: "bnhr.xyz"
+mastodon:
+mumble:
+youtube: "UC6S87N9SY1V6799YvxC14eA"
+discord:
 
+# assets
+assets: "https://d1v4x8erby89pz.cloudfront.net"
+
+# collections
 collections:
     collection_what_ive_done:
     collection_cv_experience_org:
     collection_cv_experience_ind:
     collection_cv_education:
-    collection_cv_fellowship:
+    collection_upcoming_courses_spatial:
+    collection_courses_offered_spatial:
+    collection_upcoming_courses_data:
+    collection_courses_offered_data:   
 
 # exclude
 exclude:
-    - .gitignore
-    - Gemfile
-    - Gemfile.lock
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
 
 # paginator
 paginate: 10
@@ -36,15 +48,13 @@ paginate_path: "blog/page:num/"
 # build settings
 markdown: kramdown
 highlighter: rouge
-# kramdown:
-#     input: GFM
-#     syntax_highlighter: rouge
 
 # plugins
 plugins:
-    - github-pages
-    - jekyll-paginate
-    - jekyll-feed
-    - jekyll-seo-tag
-    - jekyll-sitemap
-    - jekyll-redirect-from
+  - github-pages
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo
+  - jekyll-site-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from

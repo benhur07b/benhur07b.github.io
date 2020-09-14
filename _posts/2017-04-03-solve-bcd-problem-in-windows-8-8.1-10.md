@@ -7,10 +7,10 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg
+  facebook: /img/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg
 ---
 
-<img class="img-fluid" src="{{ site.baseurl }}/assets/img/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg">
+<img class="img-fluid" src="{{ site.assets }}/img/posts/2017-04-03-how-to-solve-bcd-problem-in-windows-8-8.1-10/bcd-001.jpg" alt="Windows Boot Configuration Data missing or corrupt BCD problem>
 
 You've probably encountered the image above or one of its iterations while booting into your Windows computer. A missing or corrupted Boot Configuration Data (BCD) file prevents your OS from booting up. It seems scary but it should be fixed in a pretty straightforward manner. Also, don't worry about your files. They're probably still safe as it's just your OS that's being problematic. If you want to be sure about your files, you can use a Linux live-usb to check.
 
@@ -19,7 +19,7 @@ Going back to the BCD error, before you bring your computer to a service center 
 ## What you'll need
 **1. Windows installation media/recovery disk (e.g. DVD or USB)**
 
-If you don't have the installation disk with you, you can download ISOs [here](https://www.microsoft.com/en-us/software-download/) or use the Windows Media Creation Tool if you're using a Windows machine. If you're using a Linux machine, you can check our how to make a bootable Windows USB on Linux [here]({{ site.baseurl }}/2017/04/03/how-to-create-a-bootable-windows-10-usb-in-xubuntu-16.04-using-mkusb.html)
+If you don't have the installation disk with you, you can download ISOs [here](https://www.microsoft.com/en-us/software-download/) or use the Windows Media Creation Tool if you're using a Windows machine. If you're using a Linux machine, you can check our how to make a bootable Windows USB on Linux [here]({{ site.assets }}/2017/04/03/how-to-create-a-bootable-windows-10-usb-in-xubuntu-16.04-using-mkusb.html)
 
 > <span style="color: red;"><em>Important:</em></span> Make sure that your installation media/recovery disk is the same Windows version and edition as the OS you're trying to fix. If your OS is Windows 8.1 Single Language, use a Windows 8.1 SL installation media, if you have a Windows 10 N OS, use a Windows 10 N installation media, etc.
 
@@ -46,13 +46,13 @@ Troubleshoot -> Command Prompt
 bootrec /fixboot
 ```
 
-which should output ```The operation completed successfully```
+which should output **The operation completed successfully**
 
 ```
 bootrec /fixmbr
 ```
 
-which should output ```The operation completed successfully```
+which should output **The operation completed successfully**
 
 ```
 bootrec /rebuildbcd
@@ -128,7 +128,7 @@ Add installation to boot list? Yes<Y>/No<N>/All<A>:
 
 **8. Enter Y or Yes in the command prompt**
 
-This should result in a ```The operation completed successfully``` message.
+This should result in a **The operation completed successfully** message.
 
 **9. Reboot your computer.**
 

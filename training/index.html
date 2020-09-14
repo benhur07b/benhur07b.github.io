@@ -1,22 +1,16 @@
 ---
 layout: default
 title: Training Courses
+redirect_to: /services
 ---
-<div class='container'>
-    <h1 id='training-schedule'>Training Schedule</h1>
-    <h3><a href='{{ site.baseurl }}/training/events/bite-sized-qgis'>Bite-sized QGIS <span class='font-weight-light'>(Beginner & Intermediate Courses)</span></a></h3>
-    <!-- <h3>Regular training postponed due to COVID-19 pandemic. Please be safe and healthy!</h3> -->
-    <!-- <h3><a href='{{ site.baseurl }}/training/events/2020-03-qgis-training'>March 23-27, 2020: <span class='font-weight-light'>QGIS Training (Beginner, Intermediate)</span></a></h3> -->
-    <!-- <iframe class='airtable-embed' src='https://airtable.com/embed/shrRGCUsoaJkmIiMV?backgroundColor=gray' frameborder='0' onmousewheel='' width='100%' height='520' style='background: transparent; border: 1px solid #ccc;'></iframe> -->
-    <br>
-    <h1 id='training-courses-offered'>Training Courses Offered</h1>
-    <h3><a href='{{ site.baseurl }}/training/qgis-beginner'>QGIS Training <span class='font-weight-light'>(Beginner)</span></a></h3>
-    <h3><a href='{{ site.baseurl }}/training/qgis-intermediate'>QGIS Training <span class='font-weight-light'>(Intermediate)</span></a></h3>
-    <h3><a href='{{ site.baseurl }}/training/qgis-advanced'>QGIS Training <span class='font-weight-light'>(Advanced / Deep Dive)</span></a></h3>
-    <h3><a href='{{ site.baseurl }}/training/spatial-sql'>Spatial Databases Training <span class='font-weight-light'>(Introduction to Spatial SQL)</span></a></h3>
-    <h3><a href='{{ site.baseurl }}/training/postgis'>Spatial Databases Training <span class='font-weight-light'>(Introduction to PostGIS)</span></a></h3>
-    <h3><a href='{{ site.baseurl }}/training/web-mapping-leaflet-mapbox'>Web Mapping & Web GIS <span class='font-weight-light'>(Basic Web Mapping with Leaflet and Mapbox)</span></a></h3>
-    <h3><a href='{{ site.baseurl }}/training/more-complex-web-mapping'>Web Mapping & Web GIS <span class='font-weight-light'>(More Complex Web Mapping with Leaflet and Mapbox)</span></a></h3>
-    <br>
-    <p>I also do in-house/on-premise training. <a href='{{ site.baseurl }}/#contact'>Contact me</a> if you want to bring the training to your organization or group.</p>
+
+<div class="container py-4">
+    <h1 id="training-schedule">Training Schedule</h1>
+    {% include training-schedule-calendar.html %}
+    <h1 class="pt-4"  id="training-schedule">Available Courses</h1>
+    <h3 class="py-1"><a class="bnhr-link" href="{{ site.baseurl }}/training/bite-sized-qgis">Bite-sized QGIS <span class="bnhr-link font-weight-light">(Beginner to Advanced)</span></a></h3>
+    <h1 class="pt-4" id="training-courses-offered">Training Courses Offered</h1>
+    <h3 class="py-1"><a class="bnhr-link" href="{{ site.baseurl }}/training/bite-sized-qgis">Bite-sized QGIS <span class="font-weight-light">(Beginner to Advanced)</span><a></h3>
+    <h3 class="py-1"><a class="bnhr-link" href="{{ site.baseurl }}/training/spatial-sql">Spatial Databases Training <span class="font-weight-light">(Introduction to Spatial SQL)</span><a></h3>
+    <p class="mt-4">I also do in-house/on-premise training. <a href="{{ site.baseurl }}/#contact">Contact me</a> if you want to bring the training to your organization or group.</p>
 </div>

@@ -1,33 +1,78 @@
 body {
-    // font-family: $font-pt-sans;
     font-family: $font-fira-sans;
+    // font-family: $font-roboto;
     color: $color-primary;
     font-size: 18px;
+    font-weight: 300;
     line-height: 1.8;
-    // background-color: $color-secondary;
+
+    strong {
+        font-weight: 500;
+        color: $color-primary-dark;
+    }
+
+    b {
+        font-weight: 500;
+        color: $color-primary-dark;
+    }
+
+    a {
+        // color: $color-accent-red;
+        &:hover {
+        // text-decoration: none;
+        color: $color-accent-red;
+        }
+    }
+}
+
+p {
+    font-family: $font-fira-sans;
+    // font-family: $font-roboto;
+    color: $color-primary;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+
+    strong {
+        font-weight: 500;
+        color: $color-primary-dark;
+    }
+
+    a {
+        // color: $color-accent-red;
+        &:hover {
+        // text-decoration: none;
+        color: $color-accent-red;
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-pt-sans;
     color: $color-primary-dark;
-    font-weight: bold;
-    // line-height: 1.4;
-    // margin-top: 1.25rem;
-    // margin-bottom: 0.75rem; 
+    font-weight: 700;
+    // margin-bottom: 0.5em;
+    // margin-top: 0.8em;
 }
 
-p {
-    // font-family: $font-pt-sans;
-    font-family: $font-fira-sans;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.8;
+.blog-post {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-pt-sans;
+        color: $color-primary-dark;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        margin-top: 1.75rem;
+    }
 }
 
-.small-line-height {
-    line-height: 1.5;
+// lists
+.list-style-none {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
+// links
 .no-underline-link {
     text-decoration: none;
     &:hover {
@@ -35,6 +80,14 @@ p {
     }
 }
 
+.serv-link {
+    text-decoration: none;
+    &:hover {
+        color: $color-accent-red;
+    }
+}
+
+// search post results
 #results-container {
     padding: 0;
     li {
@@ -50,6 +103,8 @@ p {
     }
 }
 
+
+// to top button
 #to-top-button {
     display: none;
     position: fixed;
@@ -71,55 +126,3 @@ p {
     }
 
 }
-
-.list-style-none {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.highlight {
-    margin: 0.5rem 0rem;
-    padding: 0.25rem 0.5rem;
-}
-
-.bnhr-links {
-    @extend .no-underline-link;
-    &:hover {
-        color: $color-primary-dark;
-    }
-}
-
-.carousel-item-header {
-    height:30vh;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    @media (min-width: 320px) {
-        height: 30vh;
-    }
-    @media (min-width: 576px) {
-        height:30vh;
-    }
-    @media (min-width: 768px) {
-        height: 40vh;
-    }
-    @media (min-width: 992px) {
-        height: 40vh;
-    }
-    @media (min-width: 1024px) {
-        height: 40vh;
-    }
-    @media (min-width: 1200px) {
-        height: 45vh;
-    }
-    @media (min-width: 1440px) {
-        height: 60vh;
-    }
-    @media (min-width: 1960px) {
-        height: 65vh;
-    }
-  }

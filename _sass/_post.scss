@@ -1,4 +1,4 @@
-// POSTS
+// posts
 .post-meta {
     color: $color-muted;
 }
@@ -19,14 +19,14 @@
 
     &:hover {
         color: $color-primary-light;
-        background-color: $color-accent-orange;
+        background-color: $color-accent-red;
     }
 }
 
 
 blockquote {
     padding: 0.5rem 1rem;
-    border-left: 5px solid $color-accent-orange;
+    border-left: 5px solid $color-accent-red;
 }
 
 .nav-posts {
@@ -42,5 +42,43 @@ blockquote {
     & .next {
       width: 50%;
       // align-items: flex-end;
+    }
+}
+
+.post-archive-title {
+    @extend .no-underline-link;
+    // color: $color-primary-dark;
+    color: $color-accent-red;
+    &:hover {
+        // color: $color-accent-red;
+        color: $color-primary-dark;
+    }
+}
+
+.bnhr-link {
+    @extend .no-underline-link;
+    color: $color-accent-red;
+    &:hover {
+        color: $color-primary-dark;
+    }
+}
+
+.bnhr-link-bg {
+    // @extend .no-underline-link;
+    color: $color-primary-light;
+    background-color: $color-accent-red;
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+    strong {
+        color: $color-primary-light;
+    }
+}
+
+.reverse-bnhr-link {
+    @extend .no-underline-link;
+    color: $color-primary-dark;
+    &:hover {
+        color: $color-accent-red;
     }
 }

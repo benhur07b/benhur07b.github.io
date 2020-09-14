@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 
 pgAdmin4 is a rewrite of pgAdmin3 built using Python, javascirpt, and jQuery. It allows for pgAdmin to be accessed locally or via webserver. Here's how you can install it in Xubuntu 16.04.
@@ -31,10 +31,10 @@ wget https://ftp.postgresql.org/pub/pgadmin3/pgadmin4/v1.3/pip/pgadmin4-1.3-py2.
 pip install pgadmin4-1.3-py2.py3-none-any.whl
 ```
 
-Your pgAdmin4 will be installed in ```<location-of-virtualenv>/lib/python2.7/site-packages/pgadmin4/```
+Your pgAdmin4 will be installed in **<location-of-virtualenv>/lib/python2.7/site-packages/pgadmin4/**
 
 ## Configure pgAdmin to run on Desktop mode
-Create a ```config_local.py``` in ```<location-of-virtualenv>/lib/python2.7/site-packages/pgadmin4/```
+Create a **config_local.py** in **<location-of-virtualenv>/lib/python2.7/site-packages/pgadmin4/**
 ```shell
 nano <location-of-virtualenv>/lib/python2.7/site-packages/pgadmin4/config_local.py
 ```
