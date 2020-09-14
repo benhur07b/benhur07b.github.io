@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-courses-spatial
 title: Spatial Training Courses
 description:  BNHR provides live online courses on free and open spatial technologies. Learn QGIS (and earn an official QGIS certificate to boot); how to utilize spatial SQL and spatial databases; and how to create web maps and web mapping applications. 
 og_type: post
@@ -12,7 +12,7 @@ og_type: post
 </div>
 
 <section id="upcoming-courses">
-<h1 class="pt-4">Upcoming Courses</h1>
+<h1>Upcoming Courses</h1>
 {% include courses-upcoming-spatial.html %}
 </section>
 
@@ -20,5 +20,3 @@ og_type: post
 <h1 class="pt-4">Course Offerings</h1>
 {% include courses-offerings-spatial.html %}
 </section>
-
-<p class="mt-4">I also do in-house/on-premise training. <a href="{{ site.baseurl }}/#contact" class="font-weight-bold bnhr-link">Contact me</a> if you want to bring the training to your organization or group.</p>
