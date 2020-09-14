@@ -51,7 +51,7 @@ Sign-up or check out the course schedule below for the course availability.
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 750 per course</span><span class="post-meta-tag m-1">PhP 4000 for the 6-course bundle</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 800 per course</span><span class="post-meta-tag m-1">PhP 4200 for the 6-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
