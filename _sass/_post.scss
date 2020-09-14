@@ -63,6 +63,18 @@ blockquote {
     }
 }
 
+.bnhr-link-bg {
+    // @extend .no-underline-link;
+    color: $color-primary-light;
+    background-color: $color-accent-red;
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+    strong {
+        color: $color-primary-light;
+    }
+}
+
 .reverse-bnhr-link {
     @extend .no-underline-link;
     color: $color-primary-dark;

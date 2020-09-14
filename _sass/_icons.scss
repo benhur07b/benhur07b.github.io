@@ -5,7 +5,7 @@
 }
 
 .portfolio-icon {
-    @include icon-color($color-primary-dark, $color-primary-light);
+    // @include icon-color($color-primary-dark, $color-primary-light);
     font-size: 5em;
 
     @media (min-width: 320px) {

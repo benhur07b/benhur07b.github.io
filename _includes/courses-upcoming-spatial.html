@@ -1,0 +1,24 @@
+{% for item in site.collection_upcoming_courses_spatial %}
+<div class="row border rounded my-3">
+    <div class="col-md-6 mt-2 mb-0">
+        <h2 class="py-1"><a class="bnhr-link" href="{{ site.baseurl }}{{ item.link }}">{{ item.title }}<span class="font-weight-light">{{ item.subtitle }}</span></a></h2>
+        <p>{{ item.description }}<br>
+            <strong>SCHEDULE:</strong><br><span class="post-meta-tag m-1">{{ item.schedule }}</span><br>
+            <strong>COST:</strong>
+            {% for cost in item.cost %}
+                <br><span class="post-meta-tag m-1">{{ cost }}</span>
+            {% endfor %}
+        </p>
+    </div>
+    <div class="col-md-6 mb-4 mt-2">
+        <div class="my-2 d-flex d-flex-row justify-content-start flex-wrap">
+            {% for tag in item.tags %}
+                <span class="post-meta-tag m-1">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        <div class="col-md-6 col-sm-12 p-1">
+            <a class="btn bnhr-link-bg btn-block" href="{{ site.baseurl }}{{ item.link }}"><strong>Sign up here!</strong></a>
+        </div>    
+    </div>
+</div>
+{% endfor %}

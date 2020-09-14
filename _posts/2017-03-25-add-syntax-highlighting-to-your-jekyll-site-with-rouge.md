@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 Syntax highlighting is important (especially for programming blogs) because it improves the readability of posts. It allows readers to quickly locate the code-snippets (which are usually why people visit your page in the first place) they need.
 
@@ -70,7 +70,7 @@ Then don't forget to include the stylesheet in your HTML template (usually withi
 
 If you saved the syntax highlighter stylesheet as **assets/css/syntax.css** then you can add the following in your HTML template:
 ```html
-<link href="{{site.baseurl}}/assets/css/syntax.css" rel="stylesheet" >
+<link href="{{site.baseurl}}/css/syntax.css" rel="stylesheet" >
 ```
 
 ## Add syntax highlighting to your posts

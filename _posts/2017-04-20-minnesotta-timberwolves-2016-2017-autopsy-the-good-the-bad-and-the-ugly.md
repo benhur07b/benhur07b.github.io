@@ -7,7 +7,7 @@ pinned: true
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/posts/2017-04-20-minnesotta-timberwolves-2016-2017-autopsy-the-good-the-bad-and-the-ugly/MTimberwolves_Global-2017.png
+  facebook: /img/posts/2017-04-20-minnesotta-timberwolves-2016-2017-autopsy-the-good-the-bad-and-the-ugly/MTimberwolves_Global-2017.png
 ---
 
 At the start of the 2016-2017 season, I gave a best-case scenario for the Minnesotta Timberwolves if all things went according to plan.
@@ -28,9 +28,9 @@ Still, not everything was bad for Minnesotta last season (*I tell myself this ev
 ## The Good
 
 ### KAT was a MONSTER
-There's now no doubt that KAT has emerged as the alpha of this pack of Wolves and he had himself a historic season to show for it. KAT followed up his ROY season with a sophomore campaign averaging 25.1pts, 12.3rebs, 2.7asts with a .582/.367/.832 shooting line. The last player to average [25 and 12](http://bkref.com/tiny/iRIzS) was Kevin Love in 2013-14. If you include 3pt shooting, KAT and Love are the only players in NBA history to average [25pts and 12rebs while shooting at least .360 from three](http://bkref.com/tiny/pvGwc).
+There's now no doubt that KAT has emerged as the alpha of this pack of Wolves and he had himself a historic season to show for it. KAT followed up his ROY season with a sophomore campaign averaging 25.1pts, 12.3rebs, 2.7asts with a .582/.367/.832 shooting line. The [**last player to average 25 and 12**](http://bkref.com/tiny/iRIzS) was Kevin Love in 2013-14. If you include 3pt shooting, [**KAT and Love are the only players in NBA history to average 25pts and 12rebs while shooting at least .360 from three**](http://bkref.com/tiny/pvGwc).
 
-When you consider that KAT is just 21 years old and only in his second year, you appreciate his season more. The last [sophomore player to average 25pts-12rebs-2asts](http://bkref.com/tiny/c5mn7) was Shaq in 1993-1994. In fact, [KAT and Shaq are the only players 21-years or younger](http://bkref.com/tiny/OjDs7) to average 25-12-2.
+When you consider that KAT is just 21 years old and only in his second year, you appreciate his season more. The last [**sophomore player to average 25pts-12rebs-2asts was Shaq in 1993-1994**](http://bkref.com/tiny/c5mn7) . In fact, [**KAT and Shaq are the only players 21-years or younger to average 25-12-2**](http://bkref.com/tiny/OjDs7).
 
 KAT also made history by becoming the first player to score 2000 points, grab 1000 rebounds, and make 100 3-pointers in a single season.
 
@@ -41,7 +41,7 @@ The Wolves' future is bright as long as they have and keep KAT (*please don't le
 ### Rubio's 2017 and post-ASG play
 Rubio's start to the season was far from perfect. He missed time and played well below his career averages. He was also hounded by trade rumors throughout the season and when you consider that Minnesotta has 2 young PGs in Kris Dunn (#5 pick, 2016) and Tyus Jones (#24 pick, 2015), it becomes a bit understandable why some sectors were calling for Rubio to be traded.
 
-However, something clicked for Ricky once 2017 came around. In the 47 games he played in 2017, he averaged 13.4pts, 4.0rebs, and 10.2 assists on .414/.323/.901 shooting. In fact, March 2017 is probably the best month of Rubio's career. In 14 games last March, he averaged 17.8pts, 4.5rebs, 10.4asts while shooting a scorching hot (by Ricky's standard) 0.472/0.439/0.929 from the floor. Even if it was just for a month, Ricky played like [MVP Steve Nash (2005-2006)](http://www.basketball-reference.com/play-index/pcm_finder.fcgi#stats-per_game::none).
+However, something clicked for Ricky once 2017 came around. In the 47 games he played in 2017, he averaged 13.4pts, 4.0rebs, and 10.2 assists on .414/.323/.901 shooting. In fact, March 2017 is probably the best month of Rubio's career. In 14 games last March, he averaged 17.8pts, 4.5rebs, 10.4asts while shooting a scorching hot (by Ricky's standard) 0.472/0.439/0.929 from the floor. Even if it was just for a month, [**Ricky played like MVP Steve Nash (2005-2006)**](http://www.basketball-reference.com/play-index/pcm_finder.fcgi#stats-per_game::none).
 
 Rubio has always produced more or played better post-All-Star Game and it was the same as this year.
 
@@ -54,13 +54,13 @@ Now if Rubio can consistently play on the same level as he did in 2017 and post-
 
 The drop in Rubio's steal numbers (he's still in the top 10 in the league) and defensive metrics is a little concerning but I attribute it to Ricky and Thibs not being familiar with each other yet. The same goes for the entire roster (see The Ugly).
 
-Also, for the 1st time in his career, Rubio finally shot more than 40% from the field for an entire season capping off the [best shooting season of his career](http://www.basketball-reference.com/players/r/rubiori01.html#shooting::none). It took six years but if this continues, things will really start looking up for Minny next season.
+Also, for the 1st time in his career, Rubio finally shot more than 40% from the field for an entire season capping off the [**best shooting season of his career**](http://www.basketball-reference.com/players/r/rubiori01.html#shooting::none). It took six years but if this continues, things will really start looking up for Minny next season.
 
 ### Flirting with the 8th seed for most of the season
 I'm not sure what happened to the Wolves for the last 16 games of the season where they went 3-13. Were they tanking? Were they really that bad? Hopefully it's the former because prior to those last 16 games, the Wolves were constantly within striking distance (2-3 games behind) of the 8th seed in the West and if the Wolves make the Playoffs next season then I'll really consider this season to not be a disappointment.
 
 ### Top-10 offense
-Minnesotta had a [Top-10 Offense last season](http://www.basketball-reference.com/leagues/NBA_2017.html#misc_stats::10) based on Offensive Rating (An estimate of the points scored by a Team per 100 possessions). The only other non-Playoff team in that list were the Denver Nuggets who were the ranked 9th in the West, just 1 game outside the Playoffs.
+Minnesotta had a [**Top-10 Offense last season**](http://www.basketball-reference.com/leagues/NBA_2017.html#misc_stats::10) based on Offensive Rating (An estimate of the points scored by a Team per 100 possessions). The only other non-Playoff team in that list were the Denver Nuggets who were the ranked 9th in the West, just 1 game outside the Playoffs.
 
 Offense will not be a problem for Minnesotta as they have talented scorers (see KAT, Wiggins, Zach, Shabazz) and creative playmakers (see Rubio, Dunn) on the team. It's on the other side of the court that they really have to improve.
 
@@ -69,7 +69,7 @@ Offense will not be a problem for Minnesotta as they have talented scorers (see 
 ### Wiggins' lack of peripheral stats
 *I over-reached for Wiggins in my fantasy leagues in hopes that he'll average more peripheral stats this season. He didn't.*
 
-If KAT is the Wolves' \#1, then Wiggins' role as the  team's \#2 should be made clear. The Wolves need more from Wiggins than just scoring in order to succeed. I always compare him to DeMar DeRozan because the way he plays right now mirrors that of a young Derozan -- athletic scorers, great at going to the line, sub-par peripheral stats. Look at their [numbers during their first 3 years](http://bkref.com/tiny/UMX26) to see what I mean.
+If KAT is the Wolves' \#1, then Wiggins' role as the  team's \#2 should be made clear. The Wolves need more from Wiggins than just scoring in order to succeed. I always compare him to DeMar DeRozan because the way he plays right now mirrors that of a young Derozan -- athletic scorers, great at going to the line, sub-par peripheral stats. Look at their [**numbers during their first 3 years**](http://bkref.com/tiny/UMX26) to see what I mean.
 
 
 <div class="sr_share_wrap" style="overflow:auto">
@@ -146,7 +146,7 @@ In DeRozan's 4th-8th season in the league, he has upped his peripheral stats and
 
 Wiggins needs to do the same. Adding more assists or becoming a better facilitator will broaden his dimensions as a player and make him more dangerous. Right now, teams don't mind putting heavy pressure on him when he has the ball because he hasn't shown the ability to find the open man or make the best pass when pressured. Also, for someone as athletic as he is, he should be able to grab at least 5-6 rebounds per game. The Wolves don't need Wiggins to carry the scoring load too much since they already have KAT and Zach but they do need him to be a more consistent presence on offense and most especially on defense. Andrew's athlecticism and ability to create his own shot makes him the best option on broken possessions. He can be that guy you can rely on to create scoring opportunities when the shot-clock is winding down or during lose balls. His athleticism and length gives him the potential to be a better defender if he wants to be.
 
-Wiggins' lack of peripheral stats is concerning given the number of minutes he plays. Since the shot clock was introduced, only [6 players who played at least 35 minutes per game have averaged at least 23 points while getting 4.5 rebounds or less and 3 assists or less](http://bkref.com/tiny/NSrfj) -- Wiggins, Kevin Martin, Michael Redd, Glen Rice, Dale Ellis, and Kiki Vandeweghe. No offense to the five other guys but I don't think they were who the Wolves' front office had in mind for Wiggins when they agreed to trade for him.
+Wiggins' lack of peripheral stats is concerning given the number of minutes he plays. Since the shot clock was introduced, only [**6 players who played at least 35 minutes per game have averaged at least 23 points while getting 4.5 rebounds or less and 3 assists or less**](http://bkref.com/tiny/NSrfj) -- Wiggins, Kevin Martin, Michael Redd, Glen Rice, Dale Ellis, and Kiki Vandeweghe. No offense to the five other guys but I don't think they were who the Wolves' front office had in mind for Wiggins when they agreed to trade for him.
 
 He may not be the Wolves' alpha but the team needs him to be its best two-way player. The Pip to KAT's MJ. The Kobe to KAT's Shaq (*2000-2002 Lakers*). Heck, even the Kobester averaged 6 rebounds, 5 assists, and more than 2 combined steals and blocks when he played with Shaq. That's the kind of production the Wolves need from Wiggs. 23p-7r-5a-1.5s-1b, if Wiggins comes close to averaging those numbers then the league better be ready for the Wolves.
 
@@ -168,7 +168,7 @@ Of course Houston has a very different system than the Wolves and unlike D'Anton
 ### Bottom-5 defense
 Was this team really coached by Tom Thibodeau? The defensive-master Tom Thibodeau? The same one who helmed Chicago's Top-5 defense from 2010-2014? I'm not putting all the blame on Thibs as the carpenter is only as good as his tools and there were times last season that the players seemed lost on defense. If the team wants to succeed, the players and the front office have to come together to improve their individual and team defense (for the players) or bring in players who can help (for the front-office).
 
-The team was 19th in the league in points allowed (106.7) and were 27th in Defensive Rating (112.0). [They were 28th in opponents' FG%, 21st in opponents' 3P%, 27th in percentage of opponents' FG taken 3 feet from the basket, 26th in opponent's FG% within 3 feet from the basket, 29th in dunks allowed, and 25th in layups allowed](http://www.basketball-reference.com/leagues/NBA_2017.html#opponent_shooting::7). From a Defensive Rating perspective, everyone played like the Raptors or Clippers offensively when they were against the Wolves.
+The team was 19th in the league in points allowed (106.7) and were 27th in Defensive Rating (112.0). [**They were 28th in opponents' FG%, 21st in opponents' 3P%, 27th in percentage of opponents' FG taken 3 feet from the basket, 26th in opponent's FG% within 3 feet from the basket, 29th in dunks allowed, and 25th in layups allowed**](http://www.basketball-reference.com/leagues/NBA_2017.html#opponent_shooting::7). From a Defensive Rating perspective, everyone played like the Raptors or Clippers offensively when they were against the Wolves.
 
 The team's bad defense is compounded by its slow pace (a staple of Thibs' system). You'd think the Wolves would play at a high pace because of their youth and athleticism but they don't. They actually played at the 6th slowest pace in the league just behind the "Old-man" Spurs and, their fellow youngsters, the Bucks. A slow pace means you have fewer possessions to work with in a game and when you have bad defense or allow your opponents to score a lot in their possessions, it puts that much more pressure on you to score on your possessions in order to win the game.
 
@@ -268,6 +268,6 @@ To be successful, Minny needs good defenders at the wing position and the curren
 I've discussed above what Wiggins needs to do next season. For Zach and Shabazz, their numbers are eerily similar. Of course, Zach (37.2 min/game) averages almost twice the number of minutes than Shabazz (19.4 min/game) and Shabazz's efficiency could take a hit if given more minutes but, because of LaVine's season ending injury, they actually played almost the same number of minutes last season (1749 minutes and 1516 minutes respectively). Can the Wolves succeed having these 2 guys back each other up? Probably not unless they get an elite perimeter defender to play alongside them. Wiggins is far from being at that level so Minnesotta needs to look outside for help in that department.
 
 ### New Era (hopefully not Same Old Sh*t)
-The Timberwolves unveiled their [new logos](http://www.nba.com/article/2017/04/11/minnesota-timberwolves-new-logo-unveiled-2017-18-season) recently with the branding of New Era, New Look. I don't have any problems with the new logo. The previous one was bound for an overhaul as it was probably one of the few remaining cartoony logos in the NBA. I just want to see their new unis because their black alternates were a personal favorite and it's kinda sad that I won't see that again.
+The Timberwolves unveiled their [**new logos**](http://www.nba.com/article/2017/04/11/minnesota-timberwolves-new-logo-unveiled-2017-18-season) recently with the branding of New Era, New Look. I don't have any problems with the new logo. The previous one was bound for an overhaul as it was probably one of the few remaining cartoony logos in the NBA. I just want to see their new unis because their black alternates were a personal favorite and it's kinda sad that I won't see that again.
 
 A new logo and rebranding also means that the Wolves can finally leave behind the KG and Love era and officially enter the era of KAT, Wiggins, LaVine, et al. There were a lot of memories attached to the previous logo and the team had its most successes (KG's MVP seaason, 2004 Playoff run, Love's 30-30, etc.) and failures (13-year playoff drought) with that logo. This new look should allow the Wolves to create a new identity for themselves and find better success.

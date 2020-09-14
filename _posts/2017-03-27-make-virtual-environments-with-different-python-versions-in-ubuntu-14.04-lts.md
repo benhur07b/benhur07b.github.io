@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 
 If you're running Ubuntu, you should avoid upgrading or modifying the Python version that came with your system because doing so could lead to unwanted results, conflicts, and even system breakage. In the case of Xubuntu 14.04 (Trusty Tahr), the Python versions that come with it are 2.7.6 and 3.4.3.

@@ -7,11 +7,11 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook:  /assets/img/posts/2018-10-07-basemaps-in-qgis/basemaps.png
-    twitter: /assets/img/posts/2018-10-07-basemaps-in-qgis/basemaps.png
+    facebook:  /img/posts/2018-10-07-basemaps-in-qgis/basemaps.png
+    twitter: /img/posts/2018-10-07-basemaps-in-qgis/basemaps.png
 ---
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/basemaps.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/basemaps.png" alt="Different basemaps in QGIS"></div>
 <span class="small">*The header image is edited*</span>
 
 ## Basemaps! Basemaps! Basemaps!
@@ -91,46 +91,47 @@ for source in sources:
 iface.reloadConnections()
 ```
 
-To run the code, open the **```Python console```** in QGIS and click **```Show Editor```**.
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/python-show-editor.png"></div>
+To run the code, open the **Python console** in QGIS and click **Show Editor**.
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/python-show-editor.png" alt="Python console in QGIS"></div>
 
-Copy the qgis_basemaps.py code, paste it in the Editor, and **```Run Script```**.
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/python-add-script.png"></div>
+Copy the qgis_basemaps.py code, paste it in the Editor, and **Run Script**.
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/python-add-script.png" alt="Add and run add basemaps python script in QGIS"></div>
 
-After the script is finished running, you should now see the available basemaps under the **```XYZ Tiles```** header in the **```Browser Panel```**.
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/browser-xyz.png"></div>
+After the script is finished running, you should now see the available basemaps under the **XYZ Tiles** header in the **Browser Panel**.
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/browser-xyz.png" alt="Basemaps added to QGIS browser as XYZ tiles"></div>
 
 You can now choose from the basemaps and add them to your map.
 
 Aside from the usual satellite imagery (Esri Satellite, Bing VirtualEarth, Google Satellite) and street/maps (Open Street Map, Google Maps), I enjoy using CartoDb Dark Matter and CartoDb Positron.
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/sample-routes.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/sample-routes.png" alt="Using CARTO darkmatter basemap with glow effect QGIS"></div>
 
 The muted colors (black and off-white) of these basemaps make them especially suitable for visualization purposes like the one above.
 
 ## QuickMapServices plugin
 Another way to easily add basemaps in QGIS is by using the QuickMapServices Plugin by [NextGIS](nextgis.com). As with
 
-After installing the plugin, you can access it via **```Web -> QuickMapServices```** or in the **```Plugins Toolbar```**. Initially, the plugin comes with just a few basemaps validated by the authors. However, you can easily add basemaps that were contributed by users by going to **```Web -> QuickMapServices -> Settings```** then going to the **```More services```** tab and clicking **```Get contributed pack```**.
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/qms-contrib.png"></div>
+After installing the plugin, you can access it via **Web -> QuickMapServices** or in the **Plugins Toolbar**. Initially, the plugin comes with just a few basemaps validated by the authors. However, you can easily add basemaps that were contributed by users by going to **Web -> QuickMapServices -> Settings** then going to the **More services** tab and clicking **Get contributed pack**.
+
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/qms-contrib.png" alt="QuickMapServices plugin QGIS"></div>
 
 In fact, you can also add your own services to the plugin so that others can use it by going to https://github.com/nextgis/quickmapservices_contrib.
 
 Currently, you can select from over a hundred basemaps from the QuickMapServices plugin.
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/qms-basemaps.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/qms-basemaps.png" alt="QuickMapServices basemaps in QGIS"></div>
 
 It should be noted that according to the maintainers of the plugin, the package for adding new services via the option above is planned to retire soon.
 
-It is recommended that new services be added at http://qms.nextgis.com. In fact, I recently added the basemap from the Philippine Geoportal to the QuickMapServices catalog. You can find it under the name **```Philippine Geoportal Basemap```**.
+It is recommended that new services be added at http://qms.nextgis.com. In fact, I recently added the basemap from the Philippine Geoportal to the QuickMapServices catalog. You can find it under the name **Philippine Geoportal Basemap**.
 
-The QuickMapServices catalog can be accessed in QGIS by via **```Web -> QuickMapServices -> Search QMS```** or the Search QMS plugin button.
+The QuickMapServices catalog can be accessed in QGIS by via **Web -> QuickMapServices -> Search QMS** or the Search QMS plugin button.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/search-qms.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/search-qms.png" alt="Search QuickMapServices for basemaps in QGIS"></div>
 
 This will open a window/panel where you can search from over [1500 services currently in the QuickMapServices catalog](https://qms.nextgis.com/) to add to your map.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/search-qms-win.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/search-qms-win.png" alt="Philippine Geoportal basemap in QuickMapServices in QGIS"></div>
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.baseurl }}/assets/img/posts/2018-10-07-basemaps-in-qgis/search-qms-done.png"></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2018-10-07-basemaps-in-qgis/search-qms-done.png" alt="Loaded Philippine Geoportal basemap from QuickMapServices in QGIS"></div>
 
 That's how you add basemaps in QGIS so the next time you feel like your map is looking dull or that it needs something extra, why not try using a new basemap.
 

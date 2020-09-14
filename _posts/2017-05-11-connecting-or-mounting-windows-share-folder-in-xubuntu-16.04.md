@@ -7,8 +7,8 @@ comments: true
 pinned: false
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: img/img/site/images/BNHR-bg.webp
+  twitter: img/img/site/images/BNHR-bg.webp
 ---
 
 Working in an environment where a majority of the computers are running Windows when you're using Linux is exciting and a bit frustrating at times. Recently, one of our computers (running Windows 8) at work was used as a make-shift file server so that everyone can connect and check the files there.
@@ -18,7 +18,7 @@ It came as a pleasant surprise that connecting to the shared folder on our Windo
 ## Requirements
 
 ### On the WINDOWS host/server
-1. The IP address of the Windows server/host (you can check this using *ipconfig* in the command propmt or in the *Network and Connection Settings*)
+1. The IP address of the Windows server/host (you can check this using **ipconfig** in the command propmt or in the **Network and Connection Settings**)
 
 2. The name of the shared folder
 
@@ -36,14 +36,14 @@ It came as a pleasant surprise that connecting to the shared folder on our Windo
     ```
 
 ### Variables
-*windows_ip* - the IP address of the Windows host/server
+**windows_ip** - the IP address of the Windows host/server
 
-*sharename* - the name of the Shared folder
+**sharename** - the name of the Shared folder
 
-*mount_point* - the path where the shared folder will be mounted
+**mount_point** - the path where the shared folder will be mounted
 
 ## How-to
-1. Open ```/etc/fstab```.
+1. Open **/etc/fstab**.
     ```shell
     sudo nano /etc/fstab
     ```
@@ -53,7 +53,7 @@ It came as a pleasant surprise that connecting to the shared folder on our Windo
     //windows_ip/sharename  mount_point   cifs  guest,uid=1000,iocharset=utf8   0   0
     ```
 
-3. Reset ```/etc/fstab```.
+3. Reset **/etc/fstab**.
     ```shell
     sudo mount -a
     ```

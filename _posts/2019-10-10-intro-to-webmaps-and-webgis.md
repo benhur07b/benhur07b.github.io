@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /assets/img/posts/2019-10-10-intro-to-webmaps-and-webgis/main.png
-    twitter: /assets/img/posts/2019-10-10-intro-to-webmaps-and-webgis/main.png
+    facebook: /img/posts/2019-10-10-intro-to-webmaps-and-webgis/main.png
+    twitter: /img/posts/2019-10-10-intro-to-webmaps-and-webgis/main.png
 ---
 Below is a copy of my **Introduction to Web Maps and Web GIS** presentation that I gave during my Training-Workshop on WebGIS Tools with the Department of Social Welfare and Development (DSWD).
 

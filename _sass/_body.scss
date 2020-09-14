@@ -10,7 +10,19 @@ body {
         font-weight: 500;
         color: $color-primary-dark;
     }
-    
+
+    b {
+        font-weight: 500;
+        color: $color-primary-dark;
+    }
+
+    a {
+        // color: $color-accent-red;
+        &:hover {
+        // text-decoration: none;
+        color: $color-accent-red;
+        }
+    }
 }
 
 p {
@@ -24,6 +36,14 @@ p {
     strong {
         font-weight: 500;
         color: $color-primary-dark;
+    }
+
+    a {
+        // color: $color-accent-red;
+        &:hover {
+        // text-decoration: none;
+        color: $color-accent-red;
+        }
     }
 }
 
@@ -57,6 +77,13 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     &:hover {
         text-decoration: none;
+    }
+}
+
+.serv-link {
+    text-decoration: none;
+    &:hover {
+        color: $color-accent-red;
     }
 }
 

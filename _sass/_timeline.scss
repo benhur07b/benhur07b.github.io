@@ -34,7 +34,8 @@
     top: 0; bottom: 0; left: 0;
     width: 15px;
     &:before {
-        background: $color-accent-orange;
+        // circle
+        background: $color-accent-red; 
         border: 3px solid transparent;
         border-radius: 100%;
         content: "";
@@ -49,7 +50,7 @@
     &:after {
         content: "";
         width: 3px;
-        background: $color-muted;
+        background: $color-primary;
         display: block;
         position: absolute;
         top: 24px; bottom: 0; left: 6px;
@@ -60,7 +61,7 @@
 }
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 3px solid $color-accent-orange;
+    border: 3px solid $color-accent-red;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -92,8 +93,8 @@
             top: 0;
             bottom: 30px;
             position: absolute;
-            border-top: 3px solid $color-muted;
-            border-bottom: 3px solid $color-muted;
+            border-top: 3px solid $color-primary;
+            border-bottom: 3px solid $color-primary;
         }
         &:after {
             content: "";
@@ -108,5 +109,15 @@
     }
     .timeline-title {
         margin: 0;
+    }
+
+    .timeline-title-main {
+        @extend .timeline-title;
+        color: $color-primary-dark;
+    }
+
+    .timeline-title-position {
+        @extend .timeline-title;
+        color: $color-primary-dark;
     }
 }

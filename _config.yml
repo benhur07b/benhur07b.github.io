@@ -6,7 +6,7 @@ email: "hi@bnhr.xyz"
 
 # default images
 navbar_logo: "/img/logos/BNHR-navbar-logo.webp"
-default_image:
+default_image: "/img/site/images/BNHR-bg.webp"
 favicon: "favicon.ico"
 
 # accounts
@@ -30,6 +30,10 @@ collections:
     collection_cv_experience_org:
     collection_cv_experience_ind:
     collection_cv_education:
+    collection_upcoming_courses_spatial:
+    collection_courses_offered_spatial:
+    collection_upcoming_courses_data:
+    collection_courses_offered_data:   
 
 # exclude
 exclude:

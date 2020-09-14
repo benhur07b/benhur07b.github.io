@@ -7,8 +7,8 @@ comments: true
 pinned: true
 og_type: article
 image:
-  facebook: /assets/img/site/BNHR_bg_default.webp
-  twitter: /assets/img/site/BNHR_bg_default.webp
+  facebook: /img/site/images/BNHR-bg.webp
+  twitter: /img/site/images/BNHR-bg.webp
 ---
 > "I didn't choose the FOSS life, the FOSS life chose me"
 >
