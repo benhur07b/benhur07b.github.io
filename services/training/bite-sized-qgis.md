@@ -20,7 +20,7 @@ You're a beginner who just wants to learn how to style and create maps? Take the
 
 **Official QGIS Certificates are available.** BNHR is QGIS Certifying Organization. For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
 
-## Interested?
+<!-- ## Interested?
 Sign-up or check out the course schedule below for the course availability.
 *The payment and other details will be emailed to you after signing-up. You may [contact me](https://bnhr.xyz/#contact) if you have suggestions as to the content or schedule of the courses.*
 
@@ -28,7 +28,7 @@ Sign-up or check out the course schedule below for the course availability.
 {% include training-sign-up.html %}
 
 ## Schedule & Calendar
-{% include training-schedule-calendar.html %}
+{% include training-schedule-calendar.html %} -->
 
 <h2 class="mt-4" id="bite-sized-qgis-beginner">Bite-sized QGIS (Beginner Topics)</h2>
 
