@@ -1,26 +1,38 @@
----
-layout: default
----
-<div class="container">
-    {% include post-meta.html %}
-    <div class="pb-4">
-        {% include share-social.html %}
-    </div>
-    <div class="pt-4 pb-2">
-    <section id="blog-post">
-        {{content}}
-    </section>   
-    </div>
-    <div class="py-4">
-        {% include share-social.html %}
-    </div>
-    <div class="py-4">
-        {% include post-pagination.html %}
-    </div>
-    
-    {% if page.comments %}
-        {% include disqus-comments.html %}
-    {% endif %}
-
-    {% include post-related.html %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+        {% if jekyll.environment == "production" %}
+            {% include google-adsense.html %}
+        {% endif %}
+        {% seo %}
+    </head>
+    <body>
+        {% include navbar.html %}
+        <div class="container">
+            {% include post-meta.html %}
+            <div class="pb-4">
+                {% include share-social.html %}
+            </div>
+            <div class="pt-4 pb-2">
+            <section id="blog-post">
+                {{content}}
+            </section>   
+            </div>
+            <div class="py-4">
+                {% include share-social.html %}
+            </div>
+            <div class="py-4">
+                {% include post-pagination.html %}
+            </div>
+            
+            {% if page.comments %}
+                {% include disqus-comments.html %}
+            {% endif %}
+        
+            {% include post-related.html %}
+        </div>
+        {% include footer.html %}
+        {% include to-top-button.html %}
+    </body>
+</html>
