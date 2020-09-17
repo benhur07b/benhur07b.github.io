@@ -18,7 +18,7 @@ You're a beginner who just wants to learn how to style and create maps? Take the
 
 **Online class and self-paced options are available.** Online classes are kept small to encourage participation and communication while also ensuring that everyone is given attention. **Both options include a FREE workbook, video materials, and email support.**
 
-**Official QGIS Certificates are available.** BNHR is QGIS Certifying Organization. For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
+**Official QGIS Certificates are available.** BNHR is [QGIS Certifying Organization](https://changelog.qgis.org/en/qgis/certifyingorganisation/bnhr/). For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
 
 <!-- ## Interested?
 Sign-up or check out the course schedule below for the course availability.
