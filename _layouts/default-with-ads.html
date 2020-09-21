@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+        {% if jekyll.environment == "production" %}
+            {% include google-adsense.html %}
+        {% endif %}
+        {% seo %}
+    </head>
+    <body>
+        {% include navbar.html %}
+        {{ content }}
+        {% include footer.html %}
+        {% include to-top-button.html %}
+    </body>
+</html>
