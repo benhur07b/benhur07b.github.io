@@ -40,23 +40,27 @@ Sign-up or check out the course schedule below for the course availability.
 <h4 class="color-accent-red">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">2-3 hours per course</span>
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 1000 per course</span><span class="post-meta-tag m-1">PhP 5400 for the 6-course bundle</span> 
-* **Class Size:** <span class="post-meta-tag m-1">6-12 participants</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 900 per course</span><span class="post-meta-tag m-1">PhP 4800 for the 6-course bundle</span> 
+* **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">slot in live online class</span>
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">extended email support (7 days for each course taken)</span>
+    * <span class="post-meta-tag m-1">extended priority online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online course</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 800 per course</span><span class="post-meta-tag m-1">PhP 4200 for the 6-course bundle</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 650 per course</span><span class="post-meta-tag m-1">PhP 3300 for the 6-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">email support (4 days for each course taken)</span>
+    * <span class="post-meta-tag m-1">priority online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">4 days for each procured course (within 1 month after procurement)</span> -->
+        <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
+
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
@@ -131,23 +135,26 @@ Sign-up or check out the course schedule below for the course availability.
 <h4 class="color-accent-red">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">3-4 hours per course</span>
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 2000 per course</span><span class="post-meta-tag m-1">PhP 5400 for a 3-course bundle</span> 
-* **Class Size:** <span class="post-meta-tag m-1">6-12 participants</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 1800 per course</span><span class="post-meta-tag m-1">PhP 4800 for a 3-course bundle</span> 
+* **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">slot in live online class</span>
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">extended email support (7 days for each course taken)</span>
+    * <span class="post-meta-tag m-1">extended priority online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online course</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 1600 per course</span><span class="post-meta-tag m-1">PhP 4200 for a 3-course bundle</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 1400 per course</span><span class="post-meta-tag m-1">PhP 3600 for a 3-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">email support (4 days for each course taken)</span>
+    * <span class="post-meta-tag m-1">priority online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">4 days for each procured course (within 1 month after procurement)</span> -->
+        <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
@@ -229,13 +236,14 @@ Sign-up or check out the course schedule below for the course availability.
 
 * **Duration:** <span class="post-meta-tag m-1">16 hours (4 classes x 4 hours)</span>
 * **Training Fee:** <span class="post-meta-tag m-1">PhP 7500 per course</span>
-* **Class Size:** <span class="post-meta-tag m-1">6-12 participants</span> 
+* **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">slot in live online class</span>
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">extended email support (4 weeks for each course taken)</span>
+    * <span class="post-meta-tag m-1">extended priority online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online class</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -244,7 +252,9 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">email support (2 weeks for each course taken)</span>
+    * <span class="post-meta-tag m-1">priority online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">2 weeks (within 1 month after procurement)</span> -->
+        <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1,500</span>

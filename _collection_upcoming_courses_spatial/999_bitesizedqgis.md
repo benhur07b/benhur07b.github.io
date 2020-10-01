@@ -6,4 +6,5 @@ link: /services/training/bite-sized-qgis
 tags: [online, 6 courses, 3 hours per course, qgis certification, self-paced option, bundle-pricing, free workbook, free videos, free email support]
 cost: [PhP 1000 per course for online class, PhP 800 per course for self-paced]
 schedule: November 2020
+prompt: Coming Soon!
 ---
