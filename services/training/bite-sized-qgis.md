@@ -20,15 +20,16 @@ You're a beginner who just wants to learn how to style and create maps? Take the
 
 **Official QGIS Certificates are available.** BNHR is [QGIS Certifying Organization](https://changelog.qgis.org/en/qgis/certifyingorganisation/bnhr/). For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
 
-<!-- ## Interested?
+## Interested?
 Sign-up or check out the course schedule below for the course availability.
 *The payment and other details will be emailed to you after signing-up. You may [contact me](https://bnhr.xyz/#contact) if you have suggestions as to the content or schedule of the courses.*
 
 ## Sign up
-{% include training-sign-up.html %}
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrg0Zmsi2vh8o5LB?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="540" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<!-- {% include training-sign-up.html %} -->
 
 ## Schedule & Calendar
-{% include training-schedule-calendar.html %} -->
+{% include training-schedule-calendar.html %}
 
 <h2 class="mt-4" id="bite-sized-qgis-beginner">Bite-sized QGIS (Beginner Topics)</h2>
 
@@ -47,18 +48,18 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">extended priority online support</span>
+    * <span class="post-meta-tag m-1">priority online support</span>
         <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online course</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 650 per course</span><span class="post-meta-tag m-1">PhP 3300 for the 6-course bundle</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 600 per course</span><span class="post-meta-tag m-1">PhP 3300 for the 6-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">priority online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">4 days for each procured course (within 1 month after procurement)</span> -->
+    * <span class="post-meta-tag m-1">online support</span>
+        <!-- * Duration: <span class="post-meta-tag m-1">4 days from participant's first request for support</span> -->
         <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
 
 
@@ -142,17 +143,17 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">extended priority online support</span>
+    * <span class="post-meta-tag m-1">priority online support</span>
         <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online course</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 1400 per course</span><span class="post-meta-tag m-1">PhP 3600 for a 3-course bundle</span> 
+* **Training Fee:** <span class="post-meta-tag m-1">PhP 1500 per course</span><span class="post-meta-tag m-1">PhP 3900 for a 3-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">priority online support</span>
+    * <span class="post-meta-tag m-1">online support</span>
         <!-- * Duration: <span class="post-meta-tag m-1">4 days for each procured course (within 1 month after procurement)</span> -->
         <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
 
@@ -242,7 +243,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">extended priority online support</span>
+    * <span class="post-meta-tag m-1">priority online support</span>
         <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online class</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
@@ -252,7 +253,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">priority online support</span>
+    * <span class="post-meta-tag m-1">online support</span>
         <!-- * Duration: <span class="post-meta-tag m-1">2 weeks (within 1 month after procurement)</span> -->
         <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
 
