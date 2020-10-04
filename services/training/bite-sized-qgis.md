@@ -70,25 +70,30 @@ Sign-up or check out the course schedule below for the course availability.
 - Coordinate Reference Systems and Map Projections
 - Spatial Data Types
 - What is QGIS?
-- QGIS versions and release cycle
+- QGIS Versions and Release Cycle
+- QGIS Interface
 - QGIS Settings
 - QGIS User Profiles
 - QGIS Plugins
 
 ### Loading & Styling Layers in QGIS
-- Kinds of data sources
+- Kinds of Data Sources
 - Browser Panel
 - Data Source Manager
 - Connecting to Remote Services
+- Tiles in QGIS
 - Basic Vector Symbology
 - Basic Raster Symbology
 - Working with Labels
+- QGIS File Formats
+- Creating Printable Maps
 - Basic Print Layout
 
 ### Layer Creation & Editing
-- Creating a new Layer
-- Layers in memory and exporting layers
+- Creating a new layer
+- Layers in memory
 - Virtual layers
+- Exporting layers
 - Georeferencing rasters in QGIS
 - Digitizing new data
 - Getting OSM data into QGIS
@@ -96,32 +101,36 @@ Sign-up or check out the course schedule below for the course availability.
 - Mapping tracts of land from technical descriptions and land titles
 
 ### The Attribute Table & Spatial Queries
-- Vector layer properties
-- Attribute joins
-- Select/Filter by attribute
-- Editing field values
-- Renaming fields
+- The Attribute Table
+- Attribute Joins
+- Renaming Fields / Attributes
+- Selecting and Filtering by Attributes
 - Field Calculator
-- Spatial relationships
+- Vector Statistics and Visualizations
+- Conditional Formatting
+- Spatial Relationships
 - Queries by location
 
 ### Basic Vector Processing & Analysis
-- Vector data formats
+- Vector Data Formats
+- Vector Processing Algorithms
 - Geoprocessing (merge, clip, dissolve, etc.)
 - Data Management (combine, split, reproject, etc.)
+- Simple Models with the Graphical Modeler
 - Analysis (buffers, points along line, etc.)
-- Interpolation methods
-- Vector to raster conversion
+- Interpolation Methods
+- Vector to Raster Conversion
 
 ### Basic Raster Processing & Analysis
 - Raster data formats
-- Raster calculator
+- Free and Open Sources of Raster Data
 - Data Management (reprojection, etc.)
 - Analysis (reclassification, clip, contours, etc.)
-- Terrain analysis (slope, aspect, etc.)
-- Sampling rasters with vectors
-- Zonal statistics
-- Raster to vector conversion
+- Terrain and Topographic Analysis (slope, aspect, etc.)
+- Raster Calculator
+- Sampling Rasters with Vectors
+- Zonal Statistics
+- Raster to Vector Conversion
 
 
 <h2 class="mt-4" id="bite-sized-qgis-intermediate">Bite-sized QGIS (Intermediate & Advanced)</h2>
@@ -173,14 +182,18 @@ Sign-up or check out the course schedule below for the course availability.
 - Packaging your project in a GeoPackage
 
 ### Advanced Cartography & Map Design I
-- Data-defined overrides
-- Geometry generators
-- Advanced Labels
-- Draw Effects
+- Colors in QGIS
+- Preview Modes
 - Blending Modes
+- Data-defined Overrides
+- Draw Effects
+- Geometry Generators
+- Working with Labels
+- QGIS Style Manager
 
 ### Advanced Cartography & Map Design II
 - Adding other map elements (plots, insets, 3D, etc.)
+- Tiles in QGIS
 - Other advanced styling & layout techniques
 - Making 100 maps in 10 minutes with QGIS Atlas
 - Automatic report generation with QGIS Reports
