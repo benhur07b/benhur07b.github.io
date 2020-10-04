@@ -16,7 +16,7 @@ Short, focused, and hands-on online courses designed to teach QGIS in bite-sized
 
 You're a beginner who just wants to learn how to style and create maps? Take the Beginner-level Loading & Styling Layers in QGIS course. You're an experienced user who wants to learn how to do network analysis in QGIS? Take the Intermediate-level Network Analysis course. Courses are designed so they can be taken independently of each other.
 
-**Online class and self-paced options are available.** Online classes are kept small to encourage participation and communication while also ensuring that everyone is given attention. **Both options include a FREE workbook, video materials, and email support.**
+**Online class and self-paced options are available.** Online classes are kept small to encourage participation and communication while also ensuring that everyone is given attention. **Both options include a FREE workbook, video materials, and online support.**
 
 **Official QGIS Certificates are available.** BNHR is [QGIS Certifying Organization](https://changelog.qgis.org/en/qgis/certifyingorganisation/bnhr/). For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
 
@@ -31,7 +31,7 @@ Sign-up or check out the course schedule below for the course availability.
 ## Schedule & Calendar
 {% include training-schedule-calendar.html %}
 
-<h2 class="mt-4" id="bite-sized-qgis-beginner">Bite-sized QGIS (Beginner Topics)</h2>
+<h2 class="mt-4" id="bite-sized-qgis-beginner">Bite-sized QGIS (Beginner)</h2>
 
 *Great for beginners or those who want to start learning QGIS*
 
@@ -48,8 +48,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">priority online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online course</span> -->
+    * <span class="post-meta-tag m-1">online support for course-related matters</span>
+        <!-- * <span class="post-meta-tag m-1">5 days from end of online class</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -58,10 +58,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">4 days from participant's first request for support</span> -->
-        <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
-
+    * <span class="post-meta-tag m-1">online support for course-related matters</span>
+        <!-- * <span class="post-meta-tag m-1">4 days from first support request</span> -->
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
@@ -126,7 +124,7 @@ Sign-up or check out the course schedule below for the course availability.
 - Raster to vector conversion
 
 
-<h2 class="mt-4" id="bite-sized-qgis-intermediate">Bite-sized QGIS (Intermediate & Advanced Topics)</h2>
+<h2 class="mt-4" id="bite-sized-qgis-intermediate">Bite-sized QGIS (Intermediate & Advanced)</h2>
 
 *Suitable for experienced users and those who want to become QGIS power-users.*
 
@@ -143,8 +141,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">priority online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online course</span> -->
+    * <span class="post-meta-tag m-1">online support for course-related matters</span>
+        <!-- * <span class="post-meta-tag m-1">5 days from end of online class</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -153,9 +151,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">4 days for each procured course (within 1 month after procurement)</span> -->
-        <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
+    * <span class="post-meta-tag m-1">online support for course-related matters</span>
+        <!-- * <span class="post-meta-tag m-1">4 days from first support request</span> -->
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
@@ -243,8 +240,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">priority online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">7 days after each online class</span> -->
+    * <span class="post-meta-tag m-1">online support for course-related matters</span>
+        <!-- * <span class="post-meta-tag m-1">5 days from end of online class</span> -->
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -253,9 +250,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support</span>
-        <!-- * Duration: <span class="post-meta-tag m-1">2 weeks (within 1 month after procurement)</span> -->
-        <!-- * Start: <span class="post-meta-tag m-1">when participant sends their first email</span> -->
+    * <span class="post-meta-tag m-1">online support for course-related matters</span>
+        <!-- * <span class="post-meta-tag m-1">16 days from first support request</span> -->
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1,500</span>
