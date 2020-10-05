@@ -49,7 +49,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        <!-- * <span class="post-meta-tag m-1">5 days from end of online class</span> -->
+        * <span class="post-meta-tag m-1">support request must be done within 5 days from the end of the online class</span>
+        * <span class="post-meta-tag m-1">approximately 4 hours of support per course</span>
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -59,7 +60,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        <!-- * <span class="post-meta-tag m-1">4 days from first support request</span> -->
+        * <span class="post-meta-tag m-1">support request must be done within 4 weeks from the transfer of course materials</span>
+        * <span class="post-meta-tag m-1">approximately 4 hours of support per course</span>
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
@@ -151,7 +153,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        <!-- * <span class="post-meta-tag m-1">5 days from end of online class</span> -->
+        * <span class="post-meta-tag m-1">support request must be done within 5 days from the end of the online class</span>
+        * <span class="post-meta-tag m-1">approximately 6 hours of support per course</span>
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -161,7 +164,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        <!-- * <span class="post-meta-tag m-1">4 days from first support request</span> -->
+        * <span class="post-meta-tag m-1">support request must be done within 4 weeks from the transfer of course materials</span>
+        * <span class="post-meta-tag m-1">approximately 6 hours of support per course</span>
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
@@ -254,7 +258,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        <!-- * <span class="post-meta-tag m-1">5 days from end of online class</span> -->
+        * <span class="post-meta-tag m-1">support request must be done within 5 days from the end of each online class</span>
+        * <span class="post-meta-tag m-1">approximately 24 hours of support</span>
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -264,7 +269,8 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        <!-- * <span class="post-meta-tag m-1">16 days from first support request</span> -->
+        * <span class="post-meta-tag m-1">support request must be done within 4 weeks from the transfer of course materials</span>
+        * <span class="post-meta-tag m-1">approximately 24 hours of support</span>
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1,500</span>
