@@ -1,6 +1,7 @@
 _drafts
 _site
+_backup
+assets/img/*
 Gemfile
 Gemfile.lock
-_backup
 .htmlhintrc

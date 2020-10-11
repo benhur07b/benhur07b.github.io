@@ -131,5 +131,6 @@ plot(sf::st_geometry(output_sf))
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2020-10-04-run-qgis-algorithms-r/rqgisprocess4.gif" alt="Dissolving the Bicol provinces vector using the QGIS dissolve function in R"><figcaption class="figure-caption text-center">Dissolving the Bicol provinces vector using the QGIS dissolve function in R</figcaption></div>
 
-<br>
 And that's how you can run QGIS algorithms in R. Please give the package a test and provide feedback [here](https://github.com/paleolimbot/qgisprocess/issues).
+
+Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)

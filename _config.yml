@@ -40,6 +40,7 @@ exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock
+  - assets/img
 
 # include
 include:

@@ -52,5 +52,7 @@ If you did everything right, QGIS should be able to see a custom splash screen t
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2020-09-05-custom-splash-screen-qgis/custom-splash-0.gif" alt="Running QGIS with a custom splash screen"><figcaption class="figure-caption text-center">Running QGIS with a custom splash screen</figcaption></div>
 
+Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)
+
 <br>
 Hat-tip to [Totò Fiandaca](twitter.com/totofiandaca) for the original post [here](https://pigrecoinfinito.com/2020/08/02/personalizzare-lo-splashscreen-di-qgis/).
