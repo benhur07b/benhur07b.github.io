@@ -6,6 +6,9 @@ tags: [aws, data, open data, ookla, speedtest]
 pinned: false
 comments: true
 og_type: article
+image:
+    facebook: /img/posts/2020-10-19-download-registry-of-open-data-aws/main.png
+    twitter: /img/posts/2020-10-19-download-registry-of-open-data-aws/main.png
 ---
 
 Recently, Ookla released [Global Fixed and Mobile Network Performance Maps based on Speedtest](https://registry.opendata.aws/speedtest-global-performance/) on the [Registry of Open Data on AWS](https://registry.opendata.aws/). There's actually quite a lot of data in the said registry and they can easily be downloaded to your machine, if needed. Here's how:
