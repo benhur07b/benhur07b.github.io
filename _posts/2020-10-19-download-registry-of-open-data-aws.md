@@ -72,4 +72,6 @@ Since the downloaded data is a zipped shapefile, I should be able to open it in 
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2020-10-19-download-registry-of-open-data-aws/data-in-qgis.png" alt="Ookla Global Fixed and Mobile Network Performance Maps in QGIS"><figcaption class="figure-caption text-center">Ookla Global Fixed and Mobile Network Performance Maps</figcaption></div>
 
-That's it! There's a lot of other datasets available in AWS that we can check out, download, and use. Good luck!
+That's it! There's a lot of other datasets available in AWS that we can check out, download, and use. Good luck! 
+
+Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)

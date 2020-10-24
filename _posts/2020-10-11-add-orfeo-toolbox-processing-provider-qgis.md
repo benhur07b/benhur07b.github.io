@@ -57,4 +57,6 @@ Upon successfully adding OTB as a processing provider, you should now be able to
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2020-10-11-add-orfeo-toolbox-processing-provider-qgis/otb-3.gif" alt="Orfeo ToolBox algorithms in QGIS"><figcaption class="figure-caption text-center">Orfeo ToolBox algorithms in QGIS</figcaption></div>
 
-And that's how you add Orfeo ToolBox as a processing provider in QGIS. Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)
+And that's how you add Orfeo ToolBox as a processing provider in QGIS. 
+
+Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)
