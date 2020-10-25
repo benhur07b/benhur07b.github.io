@@ -9,7 +9,7 @@
 <!-- OG meta -->
 <meta property="og:site_name" content="BNHR" />
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
-<meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}"> /
+<meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}" />
 <meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:image" content="{% if page.image.facebook %}{{ page.image.facebook | prepend: site.assets }}{% else %}{{ site.default_image | prepend: site.assets }}{% endif %}" />
