@@ -24,10 +24,10 @@
 {% if page.og_type %}
 <meta name="twitter:creator" content="{% if page.author.twitter %}@{{ page.author.twitter }}{% else %}@{{ site.twitter }}{% endif %}">
 {% endif %}
-<!-- <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | absolute_url }}"> -->
+<!-- <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | truncate: 250 | escape_once }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.image.twitter %}{{ page.image.twitter | prepend: site.assets }}{% else %}{{ site.default_image | prepend: site.assets }}{% endif %}">
+<meta name="twitter:image" content="{% if page.image.twitter %}{{ page.image.twitter | prepend: site.assets }}{% else %}{{ site.default_image | prepend: site.assets }}{% endif %}"> -->
 
 
 <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
