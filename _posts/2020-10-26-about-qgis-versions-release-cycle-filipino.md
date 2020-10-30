@@ -7,8 +7,8 @@ pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /img/posts/2020-10-26-qgis-versions-release-cycle/main.png
-    twitter: /img/posts/2020-10-26-qgis-versions-release-cycle/main.png
+    facebook: /img/posts/2020-10-26-about-qgis-versions-release-cycle/main.png
+    twitter: /img/posts/2020-10-26-about-qgis-versions-release-cycle/main.png
 ---
 
 Ang post na ito ay naglalayong sagutin ang ilang katangungan ukol sa mga bersyon ng QGIS at ang release cycle nito. 
