@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ukol sa mga bersyon at release cycle ng QGIS"
-description: Ang post na ito ay naglalayong sagutin ang ilang katanungan ukol sa mga bersyon ng QGIS at ang kanyang release cycle. LTR, LR, ano nga ba ang mga ito? Kakadownload ko pa lang ng isang bersyon ng QGIS ay may bago na naman.
+description: Ang post na ito ay naglalayong sagutin ang ilang katanungan ukol sa mga bersyon ng QGIS at ang kanyang release cycle. LTR, LR, ano nga ba ang mga ito? Bakit kaya kakadownload ko pa lang ng isang bersyon ng QGIS ay may bago na naman?
 tags: [foss4g, qgis, qgis3, release cycle, filipino]
 pinned: false
 comments: true
