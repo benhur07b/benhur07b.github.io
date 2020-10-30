@@ -389,7 +389,7 @@ Mainam din minsan tingnan ang Development version lalo na kung curious or excite
 
 
 ## BONUS 1: Quantum GIS ba o QGIS?
-Marahil ay nakilala natin ang QGIS noong kabataan niya kung kailan kilala pa siya bilang Quantum GIS subalit alam niyo ba na simula QGIS 2 (2013) ay [opisyal nang pinalitan ang pangalan sa QGIS mula sa Quantum GIS](https://www.qgis.org/en/site/forusers/visualchangelog200/index.html#feature-quantum-gis-is-now-known-only-as-qgis). Samakatuwid, mas gusto ng QGIS project na gamitin ang QGIS o Q imbes na Quantum GIS.
+Marahil ay nakilala natin ang QGIS noong kabataan niya kung kailan kilala pa siya bilang Quantum GIS subalit alam niyo ba na simula QGIS 2 (2013) ay [opisyal nang pinalitan ang pangalan sa QGIS mula sa Quantum GIS](https://www.qgis.org/en/site/forusers/visualchangelog200/index.html#feature-quantum-gis-is-now-known-only-as-qgis). Samakatuwid, mas mainam na gamitin ang QGIS o Q imbes na Quantum GIS sa pagtukoy ng QGIS.
 
 
 ## BONUS 2: Mga pangalan ng bersyon
