@@ -366,7 +366,7 @@ Ang development o nightly na bersyon ay nakabase sa pinaka-recent na bersyon ng 
 - Hindi recommended ang bersyon na ito para sa production use o kung kailangan mo ng stable working environment.
 
 
-## Ano ang development cycle ng QGIS at kailang sila nagrerelease ng mga bagong bersyon?
+## Ano ang development cycle ng QGIS at kailan sila nagrerelease ng mga bagong bersyon?
 Tulad nga ng makikita sa itaas, consistent ang development cycle ng QGIS. Narito ang ilang bagay na kailangan mong malaman.
 * Kada apat (4) na buwan ay may bagong release version na nilalabas.
 * Sa apat na buwan na ito, ang unang tatlong (3) buwan ay nakalaan para sa development ng mga bagong features pati na rin sa pag-aayos ng mga bugs. Sa huling buwan ng release cycle, nagkakaroon ng tinatawag na feature freeze kung saan wala nang bagong developments or features at magsisimula ng magfocus sa testing, bug-fixing, translations, at paghahanda para sa release.
