@@ -388,6 +388,17 @@ Mainam din minsan tingnan ang Development version lalo na kung curious or excite
 - Bawat buwan ay may Point Release na nilalabas para sa LTR at LR.
 
 
+## BONUS 1: Quantum GIS ba o QGIS?
+Marahil ay nakilala natin ang QGIS noong kabataan niya kung kailan kilala pa siya bilang Quantum GIS subalit alam niyo ba na simula QGIS 2 (2013) ay [opisyal nang pinalitan ang pangalan sa QGIS mula sa Quantum GIS](https://www.qgis.org/en/site/forusers/visualchangelog200/index.html#feature-quantum-gis-is-now-known-only-as-qgis). Samakatuwid, mas gusto ng QGIS project na gamitin ang QGIS o Q imbes na Quantum GIS.
+
+
+## BONUS 2: Mga pangalan ng bersyon
+Sa kasalukuyan, ang mga pangalan ng bersyon ng QGIS ay hango sa mga lugar kung saan ginanap ang mga nakaraang [QGIS User Conference at Developer Meetings](https://www.qgis.org/en/site/getinvolved/meetings/developer/index.html) tulad ng Hannover, București, A Coruña, Zanzibar, Madiera, etc. Isang exception ay ang QGIS 3.14 na pinangalanang Pi.
+
+Bago nito, ang pangalan ng mga bersyon ng QGIS noon ay hango sa mga buwan ng Saturn at Jupiter.
+
+
+
 At iyan ang mga bagay ukol sa mga bersyon at release cycle ng QGIS. Ikaw, anong bersyon ang gamit o paborito mo? Maari ring mag-iwan ng katanungan o kumento sa ibaba.
 
 Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)
