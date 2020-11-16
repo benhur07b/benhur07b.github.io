@@ -25,11 +25,11 @@ Sign-up or check out the course schedule below for the course availability.
 *The payment and other details will be emailed to you after signing-up. You may [contact me](https://bnhr.xyz/#contact) if you have suggestions as to the content or schedule of the courses.*
 
 ## Sign up
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrg0Zmsi2vh8o5LB?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="540" style="background: transparent; border: 1px solid #ccc;"></iframe>
+*Sign-ups are currently closed*
 <!-- {% include training-sign-up.html %} -->
 
 ## Schedule & Calendar
-{% include training-schedule-calendar.html %}
+*Sign-ups are currently closed*
 
 <h2 class="mt-4" id="bite-sized-qgis-beginner">Bite-sized QGIS (Beginner)</h2>
 
@@ -41,7 +41,6 @@ Sign-up or check out the course schedule below for the course availability.
 <h4 class="color-accent-red">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">2-3 hours per course</span>
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 900 per course</span><span class="post-meta-tag m-1">PhP 4800 for the 6-course bundle</span> 
 * **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">slot in live online class</span>
@@ -54,7 +53,6 @@ Sign-up or check out the course schedule below for the course availability.
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 600 per course</span><span class="post-meta-tag m-1">PhP 3300 for the 6-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
@@ -145,7 +143,6 @@ Sign-up or check out the course schedule below for the course availability.
 <h4 class="color-accent-red">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">3-4 hours per course</span>
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 1800 per course</span><span class="post-meta-tag m-1">PhP 4800 for a 3-course bundle</span> 
 * **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">slot in live online class</span>
@@ -158,7 +155,6 @@ Sign-up or check out the course schedule below for the course availability.
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 1500 per course</span><span class="post-meta-tag m-1">PhP 3900 for a 3-course bundle</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
@@ -250,7 +246,6 @@ Sign-up or check out the course schedule below for the course availability.
 <h4 class="color-accent-red">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">16 hours (4 classes x 4 hours)</span>
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 7500 per course</span>
 * **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
 * **Includes:**
     * <span class="post-meta-tag m-1">slot in live online class</span>
