@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Get Data from DPWH Road and Bridge Inventory in QGIS"
-description:  
+description: Ever wanted to get or load DPWH Road and Bridge Inventory in QGIS? Here's how.
 tags: [foss4g, qgis, qgis3, dpwh, philippines]
 pinned: false
 comments: true
