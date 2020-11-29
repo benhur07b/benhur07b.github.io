@@ -11,7 +11,7 @@ image:
     twitter: /img/posts/2020-11-29-get-data-from-dpwh-qgis/main.png
 ---
 
-*DISCLAIMER: I don't condone getting, accessing, or hacking private data or any sensitive data. I am not part of the DPWH. DPWH road data are hosted by an ArcGIS web service and the layers there are not set to private. If they set these to private, you won't be able to access them.*
+*DISCLAIMER: I don't condone getting, accessing, or hacking private data or any sensitive data. I am not part of or work for the DPWH. DPWH GIS data are hosted by an ArcGIS web service and the layers there are not set to private. If they set these to private, which they can, you won't be able to access them.*
 
 DPWH or the Department of Public Works and Highways has [GIS Web Apps for [Roads and Bridges Inventory](https://www.dpwh.gov.ph/dpwh/gis/rbi), [Road Traffic Information](https://www.dpwh.gov.ph/dpwh/gis/rti), and [Detailed Bridge Inventory](https://www.dpwh.gov.ph/dpwh/gis/dbi). If you take a peek at these web apps, you will notice that these are hosted on an ArcGIS Map and Feature Servers. The layers in these servers, when not set to private, can be accessed from outside clients such as QGIS. Here's how:
 
