@@ -15,10 +15,10 @@ The QGIS Style Manager is a very powerful cartography and styling tool. It allow
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2020-12-15-qgis-styles-hlurb-land-use-zoning/styles.png" alt="HLURB Land Use Categories and Color Coding QGIS Styles"><figcaption class="figure-caption text-center">HLURB Land Use Categories and Color Coding in the QGIS Style Manager</figcaption></div>
 
-The styles are currently awaiting review in the [QGIS Styles Repository](https://plugins.qgis.org/styles/). In the meantime, you can find and download the styles from my [GitHub account](https://github.com/benhur07b/qgis-style-hlurb-land-use-zoning-color-codes).
+The style is available from the [QGIS Styles Repository](https://plugins.qgis.org/styles/62/) or on [GitHub](https://github.com/benhur07b/qgis-style-hlurb-land-use-zoning-color-codes).
 
 To load the styles in QGIS:
-* you can download the Style XML file located [**here**](https://raw.githubusercontent.com/benhur07b/qgis-style-hlurb-land-use-zoning-color-codes/main/styles/hlurb-luc-color-coding-2014.xml) and Import it as File in the QGIS Style Manager;
+* you can download the Style XML file located [**here**](https://raw.githubusercontent.com/benhur07b/qgis-style-hlurb-land-use-zoning-color-codes/main/styles/hlurb-luc-color-coding-2014.xml) or in the [QGIS Style Repository](https://plugins.qgis.org/styles/62/) and Import it as File in the QGIS Style Manager;
 * you can simply import the style from this URL: **https://raw.githubusercontent.com/benhur07b/qgis-style-hlurb-land-use-zoning-color-codes/main/styles/hlurb-luc-color-coding-2014.xml**.
 
 To do this:
