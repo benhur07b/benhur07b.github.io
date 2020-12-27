@@ -5,7 +5,6 @@ description: Learn how data Data Literacy can help you as an individual or as an
 og_type: post
 ---
 # Courses (Data Literacy Track)
-*Learn how to utilize free and open source software for geospatial applications.*
 
 <div class="pb-4">
     {% include share-social.html %}

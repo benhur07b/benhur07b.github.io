@@ -16,7 +16,9 @@ Short, focused, and hands-on online courses designed to teach QGIS in bite-sized
 
 You're a beginner who just wants to learn how to style and create maps? Take the Beginner-level Loading & Styling Layers in QGIS course. You're an experienced user who wants to learn how to do network analysis in QGIS? Take the Intermediate-level Network Analysis course. Courses are designed so they can be taken independently of each other.
 
-**Online class and self-paced options are available.** Online classes are kept small to encourage participation and communication while also ensuring that everyone is given attention. **Both options include a FREE workbook, video materials, and online support.**
+**Online class and self-paced options are available.** Online classes are kept small to encourage participation and communication while also ensuring that everyone is given attention. **Both options include a FREE workbook, video materials, and participation in the mentoring sessions.**
+
+Included in the bite-sized QGIS courses are the **mentoring sessions** -- 1-2 hour sessions in between courses where participants can ask more questions and clarifications, consult and seek help with the trainer on QGIS and GIS related problems, and apply what they learned in the courses.
 
 **Official QGIS Certificates are available.** BNHR is [QGIS Certifying Organization](https://changelog.qgis.org/en/qgis/certifyingorganisation/bnhr/). For a fee, you can get yourself officially certified with using QGIS. This fee is donated back to the QGIS project to help support and maintain it. You may opt to get one certificate for all the courses that you take. 
 
@@ -47,9 +49,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        * <span class="post-meta-tag m-1">support request must be done within 5 days from the end of the online class</span>
-        * <span class="post-meta-tag m-1">approximately 4 hours of support per course</span>
+    * <span class="post-meta-tag m-1">mentoring session</span>
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -57,13 +57,11 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        * <span class="post-meta-tag m-1">support request must be done within 4 weeks from the transfer of course materials</span>
-        * <span class="post-meta-tag m-1">approximately 4 hours of support per course</span>
+    * <span class="post-meta-tag m-1">mentoring session</span>
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
-* **Requirements:** <span class="post-meta-tag m-1">Completion and submission of final exercises</span>
+* **Requirements:** <span class="post-meta-tag m-1">Satisfactory completion and submission of final exercises</span>
 
 ### Introduction to QGIS & Spatial Data Types
 - Gentle introduction to GIS concepts
@@ -149,9 +147,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        * <span class="post-meta-tag m-1">support request must be done within 5 days from the end of the online class</span>
-        * <span class="post-meta-tag m-1">approximately 6 hours of support per course</span>
+    * <span class="post-meta-tag m-1">mentoring session</span>
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
@@ -159,13 +155,11 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        * <span class="post-meta-tag m-1">support request must be done within 4 weeks from the transfer of course materials</span>
-        * <span class="post-meta-tag m-1">approximately 6 hours of support per course</span>
+    * <span class="post-meta-tag m-1">mentoring session</span>
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
-* **Requirements:** <span class="post-meta-tag m-1">Completion and submission of final exercises</span>
+* **Requirements:** <span class="post-meta-tag m-1">Satisfactory completion and submission of final exercises</span>
 
 ### Network Analysis
 - Topology checker & cleaning network data
@@ -252,24 +246,19 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        * <span class="post-meta-tag m-1">support request must be done within 5 days from the end of each online class</span>
-        * <span class="post-meta-tag m-1">approximately 24 hours of support</span>
+    * <span class="post-meta-tag m-1">mentoring session</span>
 
 <h4 class="color-accent-red">Self-paced Option</h4>
 
-* **Training Fee:** <span class="post-meta-tag m-1">PhP 6000 per course</span>
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
     * <span class="post-meta-tag m-1">data package</span>
     * <span class="post-meta-tag m-1">video materials</span>
-    * <span class="post-meta-tag m-1">online support for course-related matters</span>
-        * <span class="post-meta-tag m-1">support request must be done within 4 weeks from the transfer of course materials</span>
-        * <span class="post-meta-tag m-1">approximately 24 hours of support</span>
+    * <span class="post-meta-tag m-1">mentoring session</span>
 
 <h4 class="color-accent-red">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1,500</span>
-* **Requirements:** <span class="post-meta-tag m-1">Completion and submission of final exercises</span>
+* **Requirements:** <span class="post-meta-tag m-1">Satisfactory completion and submission of final exercises</span>
 
 ### QGIS for Solar Energy Resource Assessment
 - Solar radiation modelling
