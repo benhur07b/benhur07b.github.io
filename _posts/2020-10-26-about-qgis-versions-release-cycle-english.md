@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Ukol sa mga bersyon at release cycle ng QGIS"
-description: Ang post na ito ay naglalayong sagutin ang ilang katanungan ukol sa mga bersyon ng QGIS at ang kanyang release cycle. LTR, LR, ano nga ba ang mga ito? Bakit kaya kakadownload ko pa lang ng isang bersyon ng QGIS ay may bago na naman?
-tags: [foss4g, qgis, qgis3, release cycle, filipino]
+title: "About QGIS versions and release cycles"
+description: This post seeks to answer common questions about QGIS versions and its release cycle. What does LR and LTR mean? Why does it seem like there's always a new version every month?
+tags: [foss4g, qgis, qgis3, release cycle]
 pinned: false
 comments: true
 og_type: article
@@ -11,12 +11,13 @@ image:
     twitter: /img/posts/2020-10-26-about-qgis-versions-release-cycle/main.png
 ---
 
-Ang post na ito ay naglalayong sagutin ang ilang katangungan ukol sa mga bersyon ng QGIS at ang release cycle nito. 
+This post seeks to answer common questions about QGIS versions and its release cycle. 
 
-Una sa lahat, maari mong malaman ang version ng QGIS na gamit mo at iba pang impormasyon sa pamamagitan ng **Help -> Check QGIS Version** mula sa Menu bar.
+First of all, you can find which version of QGIS you are using by going to **Help -> Check QGIS Version** on the Menu bar.
 
-## Mayroon bang schedule na sinusunod ang QGIS sa paglalabas ng bagong bersyon?
-**Mayroon.** Ang release at development ng QGIS ay sumusunod sa isang timebased schedule or roadmap. Ang schedule o roadmap na nito ay maaring [makita dito](https://www.qgis.org/en/site/getinvolved/development/roadmap.html) o sa ibaba.
+
+## Is there a schedule that QGIS follows for releasing versions? 
+**Yes.** QGIS follows a timebased schedule or roadmap that you can find [here](https://www.qgis.org/en/site/getinvolved/development/roadmap.html) or below.
 
 <table style="border:none">
 <colgroup>
@@ -515,77 +516,75 @@ Repo</p></th>
 <br>
 
 
-## Ano ang ibig sabihin ng mga numero sa bersyon ng QGIS?
-Makikita natin na ang bawat bersyon ng QGIS ay may kaakibat na tatlong numero (**X, Y, Z**). Halimbawa, **QGIS 3.10.11**. Ano nga ba ang ibig sabihin ng 3, 10, at 11?
+## What do the numbers in the QGIS versions mean?
+Each QGIS release is specified by three numbers (X,Y,Z). For example, QGIS 3.16.4. What does the 3, 16, and 4 pertain to?
 
-Ang **X** ay ang **main version** ng QGIS. Sa ngayon, tayo ay nasa QGIS 3 na. Kaya ang mga release ng QGIS ay nagsisimula sa QGIS 3.
+The **X** is the **main version** of QGIS. In our example above, that pertains to 3 because we are in QGIS 3.
 
-Ang **Y** ay kung anong **release version** ito. Ang release version ay sinisimbulo ng isang even number. Halimbawa: 3.2, 3.4, 3.6, 3.8, 3.12, 3.14, 3.16, 3.18, etc. Bakit nga ba sila even numbers? Ito ay dahil ang odd numbers ay nakareserba para sa development versions o yung mga bersyon kung saan nagaganap ang development ng QGIS bago sila i-release. Halimbawa: ang QGIS 3.1 ay ang development version para sa QGIS 3.2, ang QGIS 3.3 ay ang development version para sa QGIS 3.4.
+The **Y** pertains to the **release version**. A release version is always an even number: 3.2, 3.4, 3.6, ..., 3.16. This is because odd numbers are reserved for the development versions where active development of QGIS happens before it is released. For example, QGIS 3.15 is the develpment version for QGIS 3.16 and QGIS 3.17 is the development version that eventually becomes released as QGIS 3.18.
 
-Ang **Z** ay sumisimbulo kung pang-ilang Point Release (PR) na ito sa release version.
+The **Z** pertains to which Point Release (PR) it is of the release version. A Point Release is released every month for each of the Long Term Release (LTR) and Latest Release (LR) branches. 
 
-Bumalik tayo sa QGIS 3.10.11, ang ibig sabihin ng mga numerong ito ay:
-- Ito ay base sa QGIS 3
-- Ito ay base sa 3.10 release version
-- Ito ang ika-labing-isa (11th) point release sa 3.10 version
-
-
-## Ilang branches ba mayroon ang QGIS?
-Technically, mayroong tatlong branches ang QGIS na maari mong idownload/install. Ito ay ang **Long Term Release (LTR) branch**, **Latest Release (LR) branch**, at ang **Development (Nightly) branch**. Bilang isang user, madalas ang mahalagang branches lang na kailangan natin ay ang LTR at LR branch. Ang development o nightly branch ay ang bersyon ng QGIS na nakabase sa pinakabagong bersyon ng source code ng QGIS at hindi ganun kasigurado ang stability nito ngunit kung nais mong ma-test o makita ang mga paparating na features ng QGIS, sa development o nightly branch mo sila mahahanap.
+In our 3.16.4 example:
+- It is based on QGIS 3
+- It is based on the 3.16 release version
+- It is the 4th Point Release of the 3.16 version
 
 
-## Ano ang ibig sabihin ng LTR, LR, at PR?
-Ang LTR, LR ay designations kung anong uri ng release ang bersyon na iyon. Tulad ng nabanggit sa itaas may LTR at LR branches (o bersyon) ng QGIS na maari nating i-install.
+## How many branches does QGIS have?
+We mentioned the LTR and LR branches above but what do they mean? Technically, QGIS has three branches that a user can download/install. These are the **Long Term Release (LTR) branch**, **Latest Release (LR) branch**, and the **Development (Nightly) branch**. As a user, the branches that are usually important to us are the LTR and LR branches as these hold the release versions of QGIS. The development or nightly branch is based on the most recent version of the QGIS source code but is useful if you want to test, debug, or help in the development of QGIS.
 
-Ang **Long Term Release (LTR)** ay tinatawag na ganito sapagkat ito ay maintained at nakakatangap ng bug-fixes hanggang ilabas ang susunod na LTR. Sa ngayon, pinag-uusapan pa kung itataas ang length of support para sa LTR branch sa dalawang (2) taon mula sa kasalukuyang (1) taon. Sa kasalukuyan, ang LTR ay 3.10.11 subalit ito ay mapapalitan ng 3.16.4 sa Pebrero 2021.
+## So what does LTR, LR, and PR mean?
+LTR and LR are designations as to the kind of release. 
 
-Ang **Latest Release (LR)** ay ang release version ng QGIS na naglalaman ng mga pinakabagong featues nito. May bagong LR na inilalabas bawat apat na buwant. Halimbawa, ang 3.16 LR ay inilabas ngayong buwan ng Oktubre, ang susunod na LR (3.18) ay ilalabas apat na buwan mula ngayon sa Pebrero. Sa kasalukuyan, ang bawat ika-tatlong LR ay ang nagiging susunod na LTR. Halimbawa, ang LTR ngayon ay ang 3.10 release. Ang ikatlong release mula sa 3.10 ay 3.16 (3.10, 3.12, 3.14, 3.16) kaya ang susunod na LTR ay nakabase sa 3.16 release version.
+**Long Term Release (LTR)** is named that way because it is maintained and receives bug fixes until the next LTR is released. Currently, that means one (1) year. The current LTR release version is 3.10.Z but it will be replaced by 3.16.4 by February 2021.
 
-Sa unang apat na buwan matapos ang release ng bagong designated LTR (3.16.0), hindi nito agad pinapalitan ang nakaraan LTR sa LTR repositories. Papalitan niya lamang ito kapag nailabas na din ang bagong LR (3.18.0).
+**Latest Release (LR)** refers to the release version of QGIS that containst he most recent or latest features. A new LR is released every four (4) months. For example, a new 3.16 LR was released this October 2020. The next LR (3.18) will be released 4 months from now which is on February 2021. Currently, every 3rd LR becomes the next LTR. For example, the LTR this October 2020 is the 3.10 release. The 3rd LR from 3.10 is 3.16 (1st is 3.12, 2nd is 3.14, 3rd is 3.16) therefore the next LTR will be based on the 3.16 release version. During the first four months after the release of the new designated LTR (in this case 3.16.0 in October 2020), it won't immediately replace the currecnt LTR in the LTR repositories. It will replace the Old LTR once the new LR (in this case 3.18.0 on February 2021) is released.
 
-
-## Ano naman ang nightly o development version?
-Ang development o nightly na bersyon ay nakabase sa pinaka-recent na bersyon ng source code ng QGIS (master branch). Ang source code na ito ay maaring makita [dito](https://github.com/qgis/QGIS).
-
-- Ang bersyon na ito ang may pinaka-bagong mga features (bleeding-edge) subalit karamihan sa kanila ay hindi pa natetest ng lubusan kaya maaring mayroon pa ding mga bugs.
-- The best ang bersyon na ito kung gusto mong i-test ang mga nasabing bagong features.
-- Hindi recommended ang bersyon na ito para sa production use o kung kailangan mo ng stable working environment.
+**Point Release (PR)** refers to the monthly release of QGIS. Each month, a Point Release is released for both the LTR and LR branches. The PR for the LTR contains bug-fixes while the PR for the LR contains both bug-fixes and new features.
 
 
-## Ano ang development cycle ng QGIS at kailan sila nagrerelease ng mga bagong bersyon?
-Tulad nga ng makikita sa itaas, consistent ang development cycle ng QGIS. Narito ang ilang bagay na kailangan mong malaman.
-* Kada apat (4) na buwan ay may bagong release version na nilalabas.
-* Sa apat na buwan na ito, ang unang tatlong (3) buwan ay nakalaan para sa development ng mga bagong features pati na rin sa pag-aayos ng mga bugs. Sa huling buwan ng release cycle, nagkakaroon ng tinatawag na feature freeze kung saan wala nang bagong developments or features at magsisimula ng magfocus sa testing, bug-fixing, translations, at paghahanda para sa release.
-* Subalit, kada buwan ay naglalabas ng Point Release (PR) para sa LTR at LR branch. Ang PR sa LTR branch ay naglalaman ng mga bug-fixes. Ang PR naman sa LR branch ay naglalaman ng bug-fixes at mga bagong features.
+## But what about the nightly or development version?
+The development or nightly version is based on the most recent version of the source code available on the [master branch of QGIS](https://github.com/qgis/QGIS).
+
+- This version has the most recent (bleeding-edge) features but most of them might not have been fully tested and could include some bugs.
+- This versions is great if you want to test new features before they are officially released.
+- This version is not receommended for use in production environments or those the require a stable version of QGIS.
 
 
-## Anong bersyon ang dapat kong gamitin?
-**Depende sa user.**
-Kung kailangan mo ng bersyon na supported ng mas matagal at hindi mo naman masyadong kailangan ang mga bagong features, mainam gamitin ang LTR.
-Kung ang nais mo naman ay magkaroon ng mga pinakabagong features ng QGIS at hindi issue ang pag-uupgrade kada ilang buwan, mainam gamitin ang LR.
-Mainam din minsan tingnan ang Development version lalo na kung curious or excited kang magamit ang mga paparating na features ng QGIS.
+## What is the QGIS development cycle and when are versions released?
+As mentioned above, QGIS follows a consistent development cycle. Some of the notable things about this are:
+* A new release version is released every 4 months.
+* In those 4 months, the first 3 are for feature development and bug-fixing. During the last month of the release cycle, a feature freeze is implemented where no new developments or features are added and the efforts are focused on testing, bug-fixing, translations, packaging, and other preparation for the release.
+* Every month, a Point Release for the LTR and LR branches are released.
+
+
+## Which version should I use?
+**It depends**
+If you need a version that is maintained for a longer time and you don't necessily need new features as they are released then the LTR version might be for you.
+If you need to have the most recent features and don't mind doing an upgrade every few months, the LR version just might be for you.
+Sometimes it's also good to take a look at the development or nightly versions especially if you are curious or excited about the upcoming features in QGIS.
 
 
 ## TL;DR
-- May tatlong branches (o bersyon) ng QGIS na maaring i-install: Long Term Release (LTR), Latest Release (LR), o Development (Nightly).
-- Ang LTR ay makakatangap ng bug-fixes hanggang ilabas ang susunod na LTR subalit maaring wala itong mga features na mayroon sa LR.
-- Ang LR naman ay nagtataglay ng mga pinaka-bagong features ng QGIS.
-- Bawat apat na buwan ay may bagong release version na nilalabas para sa LTR at LR.
-- Bawat buwan ay may Point Release na nilalabas para sa LTR at LR.
+- There are three (3) branches or versions of QGIS that you can easily install: the Long Term Release (LTR), Latest Release (LR), and Development (Nightly)
+- The LTR receives bug fixes until the next LTR is released (currently 1 year) but may not have new features that are in the LR.
+- The LR has the most recent (tested) features of QGIS.
+- Every 4 months, a new release version is released for the LTR and LR branches.
+- Every month, a Point Release is released for the LTR and LR branches.
 
 
-## BONUS 1: Quantum GIS ba o QGIS?
-Marahil ay nakilala natin ang QGIS noong kabataan niya kung kailan kilala pa siya bilang Quantum GIS subalit alam niyo ba na simula QGIS 2 (2013) ay [opisyal nang pinalitan ang pangalan sa QGIS mula sa Quantum GIS](https://www.qgis.org/en/site/forusers/visualchangelog200/index.html#feature-quantum-gis-is-now-known-only-as-qgis). Samakatuwid, mas mainam na gamitin ang QGIS o Q imbes na Quantum GIS sa pagtukoy ng QGIS.
+## BONUS 1: Quantum GIS or QGIS?
+You've probably heard the name Quantum GIS or seen it used interchangebly with QGIS, especially those who became acquainted with QGIS during its version 0 and 1 days but did you know that since QGIS 2 in 2013, [QGIS has officially changed its name from Quantum GIS to QGIS](https://www.qgis.org/en/site/forusers/visualchangelog200/index.html#feature-quantum-gis-is-now-known-only-as-qgis). In fact, QGIS prefers being called and refered to as QGIS instead of Quantuam GIS.
 
 
-## BONUS 2: Mga pangalan ng bersyon
-Sa kasalukuyan, ang mga pangalan ng bersyon ng QGIS ay hango sa mga lugar kung saan ginanap ang mga nakaraang [QGIS User Conference at Developer Meetings](https://www.qgis.org/en/site/getinvolved/meetings/developer/index.html) tulad ng Hannover, București, A Coruña, Zanzibar, Madiera, etc. Isang exception ay ang QGIS 3.14 na pinangalanang Pi.
+## BONUS 2: Names of versions
+Currently, the names of QGIS versions are based ont he places where [QGIS User Conference at Developer Meetings](https://www.qgis.org/en/site/getinvolved/meetings/developer/index.html) where previously held such as Hannover, București, A Coruña, Zanzibar, Madiera, etc. The exception is QGIS 3.14 which was named after Pi.
 
-Bago nito, ang pangalan ng mga bersyon ng QGIS noon ay hango sa mga buwan ng Saturn at Jupiter.
+Prior to this, the names of QGIS versions were based on the moons of Saturn and Jupiter 
+as well as some other things (pets if I'm not mistaken).
 
-
-
-At iyan ang mga bagay ukol sa mga bersyon at release cycle ng QGIS. Ikaw, anong bersyon ang gamit o paborito mo? Maari ring mag-iwan ng katanungan o kumento sa ibaba.
+And those are some thigns about QGIS versions and its release cycle. What's your favorite QGIS version?
 
 Like and follow BNHR on [Facebook](https://facebook.com/bnhr.xyz) and [Twitter](https://twitter.com/BNHRdotXYZ) for more #FOSS4G and #QGIS stuff. :)
 
