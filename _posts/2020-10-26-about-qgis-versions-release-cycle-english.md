@@ -560,10 +560,10 @@ As mentioned above, QGIS follows a consistent development cycle. Some of the not
 
 
 ## Which version should I use?
-**It depends**
-If you need a version that is maintained for a longer time and you don't necessily need new features as they are released then the LTR version might be for you.
-If you need to have the most recent features and don't mind doing an upgrade every few months, the LR version just might be for you.
-Sometimes it's also good to take a look at the development or nightly versions especially if you are curious or excited about the upcoming features in QGIS.
+**It depends** <br>
+* If you need a version that is maintained for a longer time and you don't necessarily need new features as they are released then the LTR version might be for you.
+* If you need to have the most recent features and don't mind doing an upgrade every few months, the LR version just might be for you.
+* Sometimes it's also good to take a look at the development or nightly versions especially if you are curious or excited about the upcoming features in QGIS.
 
 
 ## TL;DR
