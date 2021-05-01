@@ -18,7 +18,7 @@ Here's a short presentation on I gave during GESC2021 about the value of being u
 </div>
 
 <br><br>
-You can watch a video of the presentation (in Filipino + some English) below.
+You can watch a video of the presentation (in Filipino + English) below.
 
 
 <div class="embed-responsive embed-responsive-16by9">
