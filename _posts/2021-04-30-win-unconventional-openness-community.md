@@ -17,7 +17,7 @@ Here's a short presentation on I gave during GESC2021 about the value of being u
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTEVZut3s6pD23uBqVOu00fbtHBie2fyBSDVm4MpqGi8U0fZggee_JwCzXdZYnTGgi0o2SP8LHIVYjK/embed?start=false&loop=false&delayms=600000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-<br><br>
+<br>
 You can watch a video of the presentation (in Filipino + English) below.
 
 
