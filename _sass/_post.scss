@@ -5,7 +5,7 @@
 
 .post-meta-info {
     @extend .post-meta;
-    font-family: $font-pt-sans;
+    font-family: $font-roboto;
     margin-bottom: 4px;
 }
 
@@ -19,14 +19,14 @@
 
     &:hover {
         color: $color-primary-light;
-        background-color: $color-accent-red;
+        background-color: $color-accent-blue;
     }
 }
 
 
 blockquote {
     padding: 0.5rem 1rem;
-    border-left: 5px solid $color-accent-red;
+    border-left: 5px solid $color-accent-blue;
 }
 
 .nav-posts {
@@ -48,16 +48,16 @@ blockquote {
 .post-archive-title {
     @extend .no-underline-link;
     // color: $color-primary-dark;
-    color: $color-accent-red;
+    color: $color-accent-blue;
     &:hover {
-        // color: $color-accent-red;
+        // color: $color-accent-blue;
         color: $color-primary-dark;
     }
 }
 
 .bnhr-link {
     @extend .no-underline-link;
-    color: $color-accent-red;
+    color: $color-accent-blue;
     &:hover {
         color: $color-primary-dark;
     }
@@ -66,7 +66,7 @@ blockquote {
 .bnhr-link-bg {
     // @extend .no-underline-link;
     color: $color-primary-light;
-    background-color: $color-accent-red;
+    background-color: $color-accent-blue;
     &:hover {
         background-color: $color-primary-dark;
     }
@@ -79,6 +79,6 @@ blockquote {
     @extend .no-underline-link;
     color: $color-primary-dark;
     &:hover {
-        color: $color-accent-red;
+        color: $color-accent-blue;
     }
 }

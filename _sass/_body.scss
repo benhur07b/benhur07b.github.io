@@ -1,6 +1,6 @@
 body {
-    font-family: $font-fira-sans;
-    // font-family: $font-roboto;
+    // font-family: $font-fira-sans;
+    font-family: $font-roboto;
     color: $color-primary;
     font-size: 18px;
     font-weight: 300;
@@ -17,17 +17,17 @@ body {
     }
 
     a {
-        // color: $color-accent-red;
+        // color: $color-accent-blue;
         &:hover {
         // text-decoration: none;
-        color: $color-accent-red;
+        color: $color-accent-blue;
         }
     }
 }
 
 p {
-    font-family: $font-fira-sans;
-    // font-family: $font-roboto;
+    // font-family: $font-fira-sans;
+    font-family: $font-roboto;
     color: $color-primary;
     font-size: 18px;
     font-weight: 300;
@@ -39,16 +39,17 @@ p {
     }
 
     a {
-        // color: $color-accent-red;
+        // color: $color-accent-blue;
         &:hover {
         // text-decoration: none;
-        color: $color-accent-red;
+        color: $color-accent-blue;
         }
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-pt-sans;
+    // font-family: $font-pt-sans;
+    font-family: $font-roboto;
     color: $color-primary-dark;
     font-weight: 700;
     // margin-bottom: 0.5em;
@@ -57,7 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-post {
     h1, h2, h3, h4, h5, h6 {
-        font-family: $font-pt-sans;
+        // font-family: $font-pt-sans;
+        font-family: $font-roboto;
         color: $color-primary-dark;
         font-weight: 700;
         margin-bottom: 0.75rem;
@@ -83,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 .serv-link {
     text-decoration: none;
     &:hover {
-        color: $color-accent-red;
+        color: $color-accent-blue;
     }
 }
 

@@ -23,7 +23,8 @@
 
 .navbar-nav li a {
     text-transform: lowercase;
-    font-family: $font-pt-sans;
+    // font-family: $font-pt-sans;
+    font-family: $font-roboto;
     font-size: 21px;
     font-weight: 500;
     // color: $color-accent-red;
@@ -45,12 +46,14 @@
 
     &:hover {
         // color: $color-primary-dark;
-        color: $color-accent-red;
+        // color: $color-accent-red;
+        color: $color-accent-blue;
     }
 
     &:active {
         // color: $color-primary-dark;
-        color: $color-accent-red;
+        // color: $color-accent-red;
+        color: $color-accent-blue;
     }
 }
 
