@@ -2,13 +2,13 @@
 layout: post
 title: "Mapping the Geography of the UAAP Men's Basketball Tournament (Season 81) [Part 1]"
 description: "For my Masters in Geomatics Engineering (GeoInformatics) thesis, I'm mapping the geography of the UAAP Men's Basketball Tournament. Specifically, I'm studying the spatial characterization and analysis of field goals. I'll be writing and sharing about it here. :)"
-tags: [foss4g, foss4gph, thesis, uaap, mapping the geography of the uaap]
+tags: [foss4g, foss4gph, thesis, uaap, mapping the geography of the uaap, spatial analytics, basketball, basketball analytics]
 pinned: true
 comments: true
 og_type: article
 image:
-    facebook: /img/posts/2021-05-02-mapping-geography-basketball-shooting-uaap-part-1/main.png
-    twitter: /img/posts/2021-05-02-mapping-geography-basketball-shooting-uaap-part-1/main.png
+    facebook: /img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/main.png
+    twitter: /img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/main.png
 ---
 
 ## The premise
@@ -24,15 +24,15 @@ image:
 
 **4. The current methods used in the country that try to account for the spatial nature of shooting are limited and arbitrary.** In the Philippine setting, the most common techniques for showing shooting ability on the court are shot charts and shooting zones. Shot charts show where field goals are taken and whether they scored or not but provide little analytical information beyond that. Shooting zones provide more information but the way the court is divided for analysis is arbitrary.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-shooting-uaap-part-1/shot-charts.png" alt="Shot chart of UP vs ADMU UAAP Game S81"><figcaption class="figure-caption text-center">Shot chart of UP vs ADMU UAAP Game S81 (Soure: FIBA LiveStats, https://www.fibalivestats.com/)</figcaption></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/shot-charts.png" alt="Shot chart of UP vs ADMU UAAP Game S81"><figcaption class="figure-caption text-center">Shot chart of UP vs ADMU UAAP Game S81 (Soure: FIBA LiveStats, https://www.fibalivestats.com/)</figcaption></div>
 
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-shooting-uaap-part-1/shot-zones.png" alt="Shot breakdown per zone, DLSU vs ADMU"><figcaption class="figure-caption text-center">Shot breakdown per zone, DLSU vs ADMU (Source: FIBA LiveStats, https://www.fibalivestats.com/)</figcaption></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/shot-zones.png" alt="Shot breakdown per zone, DLSU vs ADMU"><figcaption class="figure-caption text-center">Shot breakdown per zone, DLSU vs ADMU (Source: FIBA LiveStats, https://www.fibalivestats.com/)</figcaption></div>
 
 
 **5. The Philippines is a basketball-crazed country.** Basketball is probably one of the most popular, if not the most popular, sport in the Philippines. A lot of kids grow up wanting to become pro ballers. Basketball courts are literally everywhere. Basketball players and teams enjoy celebrity status. Basketball itself is ingrained in our culture. Rafe Bartholomew even wrote about our love affair with basketball in Pacific Rims. We Filipinos will probably never wow the world with our height. Pinoy basketball has always been about heart -- **PUSO** -- but I think it's also good to put brains -- **UTAK** -- with that **PUSO**. Different people may have different views on analytics in basketball but I think that, when used properly, it could be give a team that slight advantage it needs to win.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-shooting-uaap-part-1/osm-basketball.png" alt="features tagged as sport=basketball in OSM"><figcaption class="figure-caption text-center">Features tagged as sport=basketball in OSM</figcaption></div>
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/osm-basketball.png" alt="features tagged as sport=basketball in OSM"><figcaption class="figure-caption text-center">Features tagged as sport=basketball in OSM</figcaption></div>
 
 
 ## The research
@@ -41,7 +41,7 @@ The research proposes better methods and metrics for analyzing, visualizing, and
 
 This idea isn't particularly new. Over the past decade, there's been a rise in the use of analytics, specifically spatial analytics, in basketball leagues overseas. This is specially true for leagues with player tracking systems that extract large amounts of spatial and spatio-temporal data during basketball games -- something like the NBA with its SportsVU Player Tracking System. Using these datasets, Dr. Kirk Goldsberry's was able to tell the story about how the NBA has changed through visual and spatial analytics in his book Sprawlball.
 
-<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-shooting-uaap-part-1/sprawlball.png" alt="prawlball utilizes spatial data to tell 
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/sprawlball.png" alt="prawlball utilizes spatial data to tell 
 a visual story of the new era of the NB
 "><figcaption class="figure-caption text-center">Sprawlball utilizes spatial data to tell a visual story of the new era of the NBA</figcaption></div>
 
