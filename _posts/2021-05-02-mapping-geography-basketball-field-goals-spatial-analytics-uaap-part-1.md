@@ -11,7 +11,7 @@ image:
     twitter: /img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/main.png
 ---
 
-## The premise
+## The why
 
 **1.** **Basketball is spatial.** The concepts of space, location, and time are ubiquitous in basketball. In any event that happens in a basketball game -- a made shot, a missed shot, a rebound, a steal, a foul -- there is spatial and spatio-temporal information embedded in that event and, without a doubt, location has an effect on these basketball events. This is specially true when looking at shooting and field goals because...
 
@@ -19,7 +19,7 @@ image:
 **2. Players shoot differently at different locations on the court.** When we say that Player A shoots 50% from the field while Player B shoots 40% from the field, although it seems like we are talking about the same "field" (i.e. the basketball court), we aren't really pertaining to the same "field". Player A could be a 50% shooter but only takes shots from the paint while Player B, the lowly 40% shooter, only takes three-pointers. In this case, Player B actually scores more efficiently than Player B -- 1.2 points per attempt (PPA) vs 1.0 for Player A. Advanced statistics like PPA, effective Field Goal % (eFG), and True Shooting Percentage (TS%) account for the difference in points scored by 2pt FG, 3pt FG, and free throws but they do not account for the difference in points scored due to where players take shots. In general...
 
 
-**3. Conventional statistics that measure shooting performance and ability do not incorporate the effects of location thus failing to account for the spatial nature of the sport.** How do we define a good shooter? Is it someome who simply makes a high percentage of his shots like a center or power forward who dominates the interior but rarely takes shots outside the paint? Is it someome who can make shots that are far from the basket, a three-point specialist perhaps? Or is it someone who is a threat to score everywhere on the court even though they may not shoot particularly well overall? When answering this question, conventional statistics such as FG%, 3P%, PPA, eFG, and TS% provide a generalized version of a player's shooting or scoring ability but they don't tell us the locations where players shoot and how well they shoot at these locations. This is disappointing because, when you think about it, being able to pinpoint where a player or team scores is a powerful tool to have when creating basketball stragegies and game plans.
+**3. Conventional statistics that measure shooting performance and ability do not incorporate the effects of location thus failing to account for the spatial nature of the sport.** How do we define a good shooter? Is it someone who simply makes a high percentage of his shots like a center or power forward who dominates the interior but rarely takes shots outside the paint? Is it someone who can make shots that are far from the basket, a three-point specialist perhaps? Or is it someone who is a threat to score everywhere on the court even though they may not shoot particularly well overall? When answering this question, conventional statistics such as FG%, 3P%, PPA, eFG, and TS% provide a generalized version of a player's shooting or scoring ability but they don't tell us the locations where players shoot and how well they shoot at these locations. This is disappointing because, when you think about it, being able to pinpoint where a player or team scores is a powerful tool to have when creating basketball strategies and game plans.
 
 
 **4. The current methods used in the country that try to account for the spatial nature of shooting are limited and arbitrary.** In the Philippine setting, the most common techniques for showing shooting ability on the court are shot charts and shooting zones. Shot charts show where field goals are taken and whether they scored or not but provide little analytical information beyond that. Shooting zones provide more information but the way the court is divided for analysis is arbitrary.
@@ -33,6 +33,11 @@ image:
 **5. The Philippines is a basketball-crazed country.** Basketball is probably one of the most popular, if not the most popular, sport in the Philippines. A lot of kids grow up wanting to become pro ballers. Basketball courts are literally everywhere. Basketball players and teams enjoy celebrity status. Basketball itself is ingrained in our culture. Rafe Bartholomew even wrote about our love affair with basketball in Pacific Rims. We Filipinos will probably never wow the world with our height. Pinoy basketball has always been about heart -- **PUSO** -- but I think it's also good to put brains -- **UTAK** -- with that **PUSO**. Different people may have different views on analytics in basketball but I think that, when used properly, it could be give a team that slight advantage it needs to win.
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/osm-basketball.png" alt="features tagged as sport=basketball in OSM"><figcaption class="figure-caption text-center">Features tagged as sport=basketball in OSM</figcaption></div>
+
+
+## The what
+
+We need a better way to analyze field goal shooting in the Philippines. One that incorporates the spatial aspect of shooting.
 
 
 ## The research
