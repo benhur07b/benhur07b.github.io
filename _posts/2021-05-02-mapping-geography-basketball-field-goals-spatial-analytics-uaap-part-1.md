@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mapping the Geography of the UAAP Men's Basketball Tournament (Season 81) [Part 1]"
+title: "Towards a Spatial Analysis of Philippine Basketball: Applications in the UAAP MBT (Season 81) [Part 1]"
 description: "For my Masters in Geomatics Engineering (GeoInformatics) thesis, I'm mapping the geography of the UAAP Men's Basketball Tournament. Specifically, I'm studying the spatial characterization and analysis of field goals. I'll be writing and sharing about it here. :)"
 tags: [foss4g, foss4gph, thesis, uaap, mapping the geography of the uaap, spatial analytics, basketball, basketball analytics]
 pinned: true
@@ -44,7 +44,7 @@ We need a better way to analyze field goal shooting in the Philippines. One that
 
 The research proposes better methods and metrics for analyzing, visualizing, and describing the geography of field goals in the UAAP by using spatial analysis. 
 
-This idea isn't particularly new. Over the past decade, there's been a rise in the use of analytics, specifically spatial analytics, in basketball leagues overseas. This is specially true for leagues with player tracking systems that extract large amounts of spatial and spatio-temporal data during basketball games -- something like the NBA with its SportsVU Player Tracking System. Using these datasets, Dr. Kirk Goldsberry's was able to tell the story about how the NBA has changed through visual and spatial analytics in his book Sprawlball.
+This idea isn't particularly new. Over the past decade, there's been a rise in the use of analytics, specifically spatial analytics, in basketball leagues overseas. This is specially true for leagues with player tracking systems that extract large amounts of spatial and spatio-temporal data during basketball games -- something like the NBA with its SportsVU Player Tracking System. In fact, using these datasets, Dr. Kirk Goldsberry was able to tell the story about how the NBA has changed through visual and spatial analytics in his book Sprawlball.
 
 <div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-02-mapping-geography-basketball-field-goals-spatial-analytics-uaap-part-1/sprawlball.png" alt="prawlball utilizes spatial data to tell 
 a visual story of the new era of the NB
