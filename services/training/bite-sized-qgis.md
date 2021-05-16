@@ -40,7 +40,7 @@ Sign-up or check out the course schedule below for the course availability.
 **Options:** <span class="post-meta-tag m-1">Online class</span><span class="post-meta-tag m-1">Self-paced</span>
 **Add-on:** <span class="post-meta-tag m-1">QGIS Certification</span>
 
-<h4 class="color-accent-red">Online Class Option</h4>
+<h4 class="color-accent-blue">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">2-3 hours per course</span>
 * **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
@@ -51,7 +51,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">mentoring session</span>
 
-<h4 class="color-accent-red">Self-paced Option</h4>
+<h4 class="color-accent-blue">Self-paced Option</h4>
 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
@@ -59,7 +59,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">mentoring session</span>
 
-<h4 class="color-accent-red">QGIS Certification Add-on</h4>
+<h4 class="color-accent-blue">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
 * **Requirements:** <span class="post-meta-tag m-1">Satisfactory completion and submission of final exercises</span>
 
@@ -138,7 +138,7 @@ Sign-up or check out the course schedule below for the course availability.
 **Options:** <span class="post-meta-tag m-1">Online class</span><span class="post-meta-tag m-1">Self-paced</span>
 **Add-on:** <span class="post-meta-tag m-1">QGIS Certification</span>
 
-<h4 class="color-accent-red">Online Class Option</h4>
+<h4 class="color-accent-blue">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">3-4 hours per course</span>
 * **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
@@ -149,7 +149,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">mentoring session</span>
 
-<h4 class="color-accent-red">Self-paced Option</h4>
+<h4 class="color-accent-blue">Self-paced Option</h4>
 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
@@ -157,7 +157,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">mentoring session</span>
 
-<h4 class="color-accent-red">QGIS Certification Add-on</h4>
+<h4 class="color-accent-blue">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1500</span>
 * **Requirements:** <span class="post-meta-tag m-1">Satisfactory completion and submission of final exercises</span>
 
@@ -237,7 +237,7 @@ Sign-up or check out the course schedule below for the course availability.
 **Options:** <span class="post-meta-tag m-1">Online class</span><span class="post-meta-tag m-1">Self-paced</span>
 **Add-on:** <span class="post-meta-tag m-1">QGIS Certification</span>
 
-<h4 class="color-accent-red">Online Class Option</h4>
+<h4 class="color-accent-blue">Online Class Option</h4>
 
 * **Duration:** <span class="post-meta-tag m-1">16 hours (4 classes x 4 hours)</span>
 * **Class Size:** <span class="post-meta-tag m-1">6-15 participants</span> 
@@ -248,7 +248,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">mentoring session</span>
 
-<h4 class="color-accent-red">Self-paced Option</h4>
+<h4 class="color-accent-blue">Self-paced Option</h4>
 
 * **Includes:**
     * <span class="post-meta-tag m-1">workbook</span>
@@ -256,7 +256,7 @@ Sign-up or check out the course schedule below for the course availability.
     * <span class="post-meta-tag m-1">video materials</span>
     * <span class="post-meta-tag m-1">mentoring session</span>
 
-<h4 class="color-accent-red">QGIS Certification Add-on</h4>
+<h4 class="color-accent-blue">QGIS Certification Add-on</h4>
 * **Certification Fee:** <span class="post-meta-tag m-1">PhP 1,500</span>
 * **Requirements:** <span class="post-meta-tag m-1">Satisfactory completion and submission of final exercises</span>
 
