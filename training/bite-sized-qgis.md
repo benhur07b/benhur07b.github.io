@@ -5,3 +5,4 @@ description: "Short, focused, and hands-on online courses designed to teach QGIS
 og_type: post
 redirect_to: /services/training/bite-sized-qgis
 ---
+# Bite-sized QGIS
