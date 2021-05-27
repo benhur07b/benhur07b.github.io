@@ -11,6 +11,8 @@ image:
     twitter: /img/posts/2021-05-27-opposite-of-free-and-open-source-commercial-proprietary/main.png
 ---
 
+<div class="col-lg-12 img-container"><img class="img-fluid post-img img-shadow" src="{{ site.assets }}/img/posts/2021-05-27-opposite-of-free-and-open-source-commercial-proprietary/main.png" alt="The opposite of free/libre and open source isn't commercial, it's proprietary."><figcaption class="figure-caption text-center">The opposite of free/libre and open source isn't commercial, it's proprietary.</figcaption></div>
+
 Sometimes I hear the phrase "I prefer commercial over free software or open source software" which has this connotation that the opposite of free--that is is #freeasinfreedom--and open source software is commercial software. This is not the case. I feel like we need to set the record straight that the opposite of free and open source isn't commercial, it's proprietary.
 
 Open source (and openness in general) is a philosophy as much as it is a software development approach and nowhere in this philosophy does it say that open source software cannot be commercial. In fact, the open source definition (https://opensource.org/osd) specifically states that open source software must not be restricted from a specific field of endeavor--e.g. open source software cannot be restricted from being used in a business. Even if we go to the Four Essential Freedoms of Free Software (https://www.gnu.org/philosophy/free-sw.en.html), nowhere does it say there that free software cannot be used commercially.
