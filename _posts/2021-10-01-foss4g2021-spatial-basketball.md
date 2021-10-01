@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Towards a spatial analysis of shooting in Philippine basketball (FOSS4G2021)"
-description: "A presentation I gave during FOSS4G2021"
+description: "A presentation I gave during FOSS4G2021 about my quest to utilize spatial analysis in Philippine basketball"
 tags: [foss4g, foss4gph, qgis, gis, presentation]
 pinned: false
 comments: true
