@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="container">
+    {% include post-meta.html %}
+    <div class="pb-4">
+        {% include share-social.html %}
+    </div>
+    <div class="pt-4 pb-2">
+    <section id="blog-post">
+        {{content}}
+    </section>   
+    </div>
+    
+    {% if page.comments %}
+        {% include disqus-comments.html %}
+    {% endif %}
+
+    {% include post-related.html %}
+</div>
