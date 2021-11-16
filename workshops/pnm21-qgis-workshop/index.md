@@ -44,10 +44,12 @@ How do I know if the plugin I'm using is part of the Processing Framework:
 - [FOSS4G2 2019 Presentation: QGIS: No more plugins only processing](https://www.youtube.com/watch?v=pdO49ysuqVY)
 - [QGIS Processing Framework, QGIS Desktop User Guide/Manual](https://docs.qgis.org/latest/en/docs/user_manual/processing/index.html)
 
----
-### The Graphical Modeler
-
 *NOTE: Make sure you have downloaded all the data for the workshop before proceeding*
+
+---
+### The graphical modeler
+
+*NOTE: Add spatial indices to your vector data for faster processing. Use the Create spatial index processing algorithm.*
 
 1. Open the Graphical Modeler I QGIS project file (Graphical Modeler I.qgz)
 2. If QGIS encounters "Handle Unavailable Layers" issue, try to use **Auto-Find** to resolve the issue or you can just manually add the correct link to the following layers inside **pnm21-qgis-workshop-data.gpkg** in the data folder:
@@ -74,15 +76,31 @@ How do I know if the plugin I'm using is part of the Processing Framework:
 ---
 ### Expressions are your best friend
 
+*NOTE: Add spatial indices to your vector data for faster processing. Use the Create spatial index processing algorithm.*
+
 Whenever you see this icon ![](https://docs.qgis.org/3.22/en/_images/mIconExpression.png), that means that you can use an Expression in that part of QGIS.
 
+1. Open the Expressions I QGIS project file (Expressions I.qgz).
+2. Our task is to summarize field goals per grid (e.g. count the number of attempts, count the number of points scored, count the points per attempt)
+
+**BONUS:** You can open the ***summarize-fg.model3*** file inside models/courtvisionph to see how the final models look like (or reverse engineer them).
+
+**CHALLENGE:** If I want to add fields that count the number of missed and made attempts per grid, what should I do?
 
 **LEARN MORE**:
 - [Level up with Expressions, QGIS Desktop User Guide/Manual](https://docs.qgis.org/latest/en/docs/user_manual/expressions/index.html)
 - [List of functions/expressions](https://docs.qgis.org/latest/en/docs/user_manual/expressions/functions_list.html)
 
+
 ---
-### The Data-defined Assistant
+### Layering your symbols and geometry generators
+
+Utilize symbol layers and geometry generators to create custom and complex styles.
+
+1. Open the Symbol layers and geometry generators I QGIS project file (Symbol layers and geometry generators I.qgz).
+
+---
+### The data-defined Assistant
 
 Whenever you see this icon ![](https://docs.qgis.org/3.22/en/_images/mIconDataDefine.png), that means you can use a data-defined override for that parameter.
 
@@ -95,7 +113,13 @@ The Data-defined assistant is an option under the Data-defined override. The Ass
 ---
 ### QGIS Atlas tricks
 
-
+1. Open the QGIS Atlas tricks I QGIS project file (QGIS Atlas tricks I.qgz).
+1. Open the QGIS Atlas tricks II QGIS project file (QGIS Atlas tricks II.qgz).
+1. Open the QGIS Atlas tricks III QGIS project file (QGIS Atlas tricks III.qgz).
 
 ---
 ### Share everything as one GeoPackage
+
+You can save layers, projects, styles, models, and other things in a GeoPackage.
+
+You can use the Package Layers algorithm to save multiple layers in one run.
