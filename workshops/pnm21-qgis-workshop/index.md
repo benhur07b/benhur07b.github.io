@@ -112,6 +112,8 @@ Whenever you see this icon ![](https://docs.qgis.org/3.22/en/_images/mIconDataDe
 
 The Data-defined assistant is an option under the Data-defined override. The Assistant makes it easier to define how the data is applied to the parameter for each feature.
 
+We will use the Assistant to change the size and color of the PPA marker.
+
 **LEARN MORE**:
 - [Data defined override setup, QGIS Desktop User Guide/Manual](https://docs.qgis.org/3.22/en/docs/user_manual/introduction/general_tools.html#data-defined-override-setup)
 - [Using the data-defined assistant interface, QGIS Desktop User Guide/Manual](https://docs.qgis.org/latest/en/docs/user_manual/introduction/general_tools.html#data-defined-assistant)
@@ -119,9 +121,14 @@ The Data-defined assistant is an option under the Data-defined override. The Ass
 ---
 ### QGIS Atlas tricks
 
-1. Open the QGIS Atlas tricks I QGIS project file (QGIS Atlas tricks I.qgz).
-1. Open the QGIS Atlas tricks II QGIS project file (QGIS Atlas tricks II.qgz).
-1. Open the QGIS Atlas tricks III QGIS project file (QGIS Atlas tricks III.qgz).
+#### Open the QGIS Atlas tricks I QGIS project file (QGIS Atlas tricks I.qgz).
+- Let's learn how to create a simple Atlas with data-defined elements (e.g. table, chart) and styling helped by Expressions.
+
+#### Open the QGIS Atlas tricks II QGIS project file (QGIS Atlas tricks II.qgz).
+- Let's learn how to create an Atlas that iterates over the same area/coverage.
+
+#### Open the QGIS Atlas tricks III QGIS project file (QGIS Atlas tricks III.qgz).
+- 
 
 ---
 ### Share everything as one GeoPackage
