@@ -18,7 +18,7 @@ og_type: article
 - Some of the exercises shown will be about the application of QGIS features and functionalities to **basketball analysis**.
 
 ## Data
-You can find the data for the workshop here: 
+You can find the data for the workshop [here]({{ site.baseurl }}/workshops/pnm21-qgis-workshop/data).
 
 ---
 ### QGIS Processing Framework
