@@ -100,6 +100,10 @@ Whenever you see this icon ![](https://docs.qgis.org/3.22/en/_images/mIconExpres
 Utilize symbol layers and geometry generators to create custom and complex styles.
 
 1. Open the Symbol layers and geometry generators I QGIS project file (Symbol layers and geometry generators I.qgz).
+2. Let's create a bivariate style for the PPA grid that shows the number of attempts (size) and the points per attempt (color) by:
+   - getting the centroid of each grid cell
+   - setting the size of the centroid marker to be based on the number of attempts
+   - setting the color of the centroid marker to be based on the points per attempt
 
 ---
 ### The data-defined Assistant
