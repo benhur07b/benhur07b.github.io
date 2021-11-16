@@ -70,6 +70,8 @@ How do I know if the plugin I'm using is part of the Processing Framework:
 
 **BONUS:** You can open the ***suitable-school-sites.model3*** and ***suitable-school-sites-isolated.model3*** files inside models/school-suitability to see how the final models look like (or reverse engineer them).
 
+**CHALLENGE:** How else can we improve the model? (HINT: Can we use a processing algorithm to automatically download road and school data?)
+
 **LEARN MORE**:
 - [The graphical modeler, QGIS Desktop User Guide/Manual](https://docs.qgis.org/latest/en/docs/user_manual/processing/modeler.html)
 
