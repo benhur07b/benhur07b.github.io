@@ -128,7 +128,7 @@ We will use the Assistant to change the size and color of the PPA marker.
 - Let's learn how to create an Atlas that iterates over the same area/coverage.
 
 #### Open the QGIS Atlas tricks III QGIS project file (QGIS Atlas tricks III.qgz).
-- 
+- Let's learn how to create an Atlas that iterates over the same area/coverage with different levels/styles with the help of Map themes.
 
 ---
 ### Share everything as one GeoPackage
