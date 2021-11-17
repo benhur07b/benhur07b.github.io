@@ -7,6 +7,11 @@ pinned: true
 comments: true
 og_type: article
 ---
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="mb-4 embed-responsive-item" src="https://www.youtube.com/embed/4xbVJTEHcIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Setting of expectations
 - Time vs Objectives
   - **Really short-term (< 1 day)** events are best for **awareness-raising and community building**.
