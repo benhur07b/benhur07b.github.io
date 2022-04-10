@@ -1,19 +1,19 @@
 ---
 layout: post
 title: "Should we be worried about the UP Men's Basketball Team? #UAAPSeason84"
-description: The UP Fighting Maroons Men's Basketball Team is currently 6-1 and ranks second only to Ateneo in the standings. We've seen this before. Should we be worried?
+description: The UP Fighting Maroons Men's Basketball Team is currently 6-1 and ranks second only to Ateneo in the standings. We've seen this before. Should we be worried? 
 tags: [uaap, up, fighting-maroons, upmbt, basketball, data, sports, uaapseason84]
 pinned: false
 comments: true
 og_type: article
 image:
-    facebook: /img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
-    twitter: /img/posts/2019-09-26-should-we-be-worried-about-the-up-mbt-uaapseason82/kalma.png
+    facebook: /img/posts/2022-04-09-worried-up-fighting-maroons-basketball-uaap-season84/kalma-2.png
+    twitter: /img/posts/2022-04-09-worried-up-fighting-maroons-basketball-uaap-season84/kalma-2.png
 ---
 
 <div style="position:relative;padding-bottom:56.250%;"><iframe src="//gifs.com/embed/lucero-up-steal-and-dunk-vs-adu-lR0X37" frameborder="0" scrolling="no" width="640" height="360" style="backface-visibility: hidden; transform: scale(1); position: absolute; height: 100%; width: 100%;"></iframe></div>
 
-<small><i>original video from https://www.youtube.com/watch?v=lBrcMG1onYM<i></small>
+<small><i>original video from https://www.youtube.com/watch?v=lBrcMG1onYM</i></small>
 <br>
 
 [Two seasons ago]({{ site.baseurl }}/2019/09/26/should-we-be-worried-about-the-up-mbt-uaapseason82.html), towards the end of the 1st round of the UAAP Men's Basketball Tournament Season 82, I asked whether we should be worried about the UP Fighting Maroons. They were 5-1 at the time—trailing only Ateneo in the standings—but my worry came not from their Win-Loss record but in their **poor Pythagorean Win % (PW%)**. 
