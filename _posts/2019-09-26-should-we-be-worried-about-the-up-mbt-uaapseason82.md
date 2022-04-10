@@ -38,6 +38,8 @@ To answer this question, I decided to take a look at *just* two things: **the Wi
 
 Now, you might be asking: "**Okay, I get the win/loss record but what in the world is Pythagorean record?**"
 
+## Pythagorean Record
+
 As with most sports analytics concepts, the Pythagorean record originated in baseball and the Father of Sabermetrics Bill James. **It's an estimation of a team's winning percentage based only on the points (runs) that they scored and the points (runs) scored against them**. It's a simple metric that's probably better at **showing how good a team is (or should be)** than just plain wins and losses. The Pythagorean record can also show if a team has been lucky or unlucky. A team that's outperforming its Pythagorean record can be considered lucky *(e.g. wins close games, loses not-so-close games)* while a team that's under-performing its Pythagorean record can be considered unlucky *(e.g. loses close games, wins not-so-close games)*.
 
 The formula for Pythagorean Win % is simple:
@@ -49,6 +51,9 @@ The formula for Pythagorean Win % is simple:
 
 With that, I went ahead and scraped data on the final scores of the UAAP games for the past 11 years then computed for the Pythagorean win percentage of the teams for each year. You can get the data I used [here](https://docs.google.com/spreadsheets/d/1grFfOW5dPm6dmnWn1rUo7D-Grq_aMnQACAOtvp7GKnk/edit?usp=sharing).
 
+
+## Pythagorean Win % and success in the UAAP
+
 Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for the past 11 years grouped per season and sorted from highest to lowest Pythagorean Win % for that season.
 
 <!-- <iframe class="airtable-embed" src="https://airtable.com/embed/shrM8fHD7lH0hDyjP?backgroundColor=gray' frameborder="0' onmousewheel="' style="background: transparent; border: 1px solid #ccc;' width="100%' height="500"></iframe> -->
@@ -56,6 +61,7 @@ Below is a table of the Win-Loss and Pythagorean records of the UAAP teams for t
 <iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" height="424px"></iframe>
 
 <br>
+
 Here are a few observations:
 
 Of the **22 teams that reached the UAAP Finals since 2008**:
@@ -84,7 +90,9 @@ Other stuff:
 
 By the way, here's the current Win-Loss and Pythagorean Records for **#UAAPSeason82**:
 
-| **TEAM** | **Rec.** | **Win %**  | **P. Rec.** | **P. %**  |
+<iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsw77l5JCZCJMaX3i3Tf6Mg8Jq0-sUReK-7scURYN39_EUrxObGPZ27M-rAOYG_Vl2HzhKDuJdBLQI/pubhtml?gid=693933502&amp;single=true&amp;widget=true&amp;headers=false" height="320px"></iframe>
+
+<!-- | **TEAM** | **Rec.** | **Win %**  | **P. Rec.** | **P. %**  |
 |------|--------|--------|-----------|-------|
 | AdU  | 3-3    | 50.00  | 3-3       | 43.64 |
 | ADMU | 6-0    | 100.00 | 6-0       | 97.29 |
@@ -93,11 +101,14 @@ By the way, here's the current Win-Loss and Pythagorean Records for **#UAAPSeaso
 | NU   | 1-5    | 16.67  | 2-4       | 36.19 |
 | UE   | 1-5    | 16.67  | 1-5       | 10.2  |
 | **UP**   | **5-1**    | **83.33**  | **3-3**       | **49.04** |
-| UST  | 4-2    | 66.67  | 5-1       | 81.44 |
+| UST  | 4-2    | 66.67  | 5-1       | 81.44 | -->
 
 <br>
-**So what does this all mean?**
+
+## So what does this all mean?
 
 It could mean that UP has been lucky (*duh!*) this early season but if they want to reach (and win) the Finals, history says they have to play a bit better. Their level of play needs to match the talent that they have. It could also mean that ADMU is on track to win its third straight Championship and UST is positioning itself as the dark horse this season.
 
 **OR it could mean nothing at all and we can forget about everything I wrote here if we manage to beat Ateneo this Sunday. HAHAHA. #UPFight! #BattleOfKatipunan**
+
+
