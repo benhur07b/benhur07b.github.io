@@ -28,7 +28,7 @@ After years of observing and analysing UAAP basketball, I noticed that Pythagore
  - 9 out of the 11 champions led the league in PW%.
  - All 11 champions were in the Top 2 in PW%.
 
-At that time in Season 82 when I wrote the post, UP (5-1, 2nd) had a PW% of 49% (3rd). In contrast, Ateneo (6-0, 1st) had a PW% of 97% (1st) and UST (4-2, 3rd) had PW% of 81% (2nd). Based on these, I said that **UP needed to play better if they wanted to make it to the Finals**, that **Ateneo was on track to win its third straight chip**, and that **UST was positioning itself as the dark horse of the season**. 
+[At that time in Season 82 when I wrote the post]({{ site.baseurl }}/2019/09/26/should-we-be-worried-about-the-up-mbt-uaapseason82.html), UP (5-1, 2nd) had a PW% of 49% (3rd). In contrast, Ateneo (6-0, 1st) had a PW% of 97% (1st) and UST (4-2, 3rd) had PW% of 81% (2nd). Based on these, I said that **UP needed to play better if they wanted to make it to the Finals**, that **Ateneo was on track to win its third straight chip**, and that **UST was positioning itself as the dark horse of the season**. 
 
 ## What happened in Season 82
 
