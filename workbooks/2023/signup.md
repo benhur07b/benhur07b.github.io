@@ -13,7 +13,7 @@ The 2023 version includes a total of 11 workbooks—one for each course—coveri
 
 The workbooks are currently only available in digital format to participants of our training courses. However, releasing digital and printed copies for sale are also in consideration. 
 
-**Please let us know if you are interested by filling up the form below. With enough demand, we'll make it happen!**
+**Please let us know if you are interested in buying a copy of the workbooks by filling up the form below. With enough demand, we'll make it happen!**
 
 # QGIS Workbooks (2023) Interest Check
 
