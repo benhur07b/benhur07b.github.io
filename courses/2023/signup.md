@@ -7,7 +7,7 @@ og_type: page
 
 # BNHR.XYZ Training Courses (2023)
 
-Sign-up and reserve your slots to the training courses.
+Sign-up and reserve your slots to the training courses. Learn about the training courses [here]({{site.baseurl}}/courses/2023/).
 
 If the sign-up for below isn't showing, you can try [this link](https://airtable.com/shrPFSSgDPJY1VAgM).
 
