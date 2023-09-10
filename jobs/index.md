@@ -10,8 +10,8 @@ og_type: page
 ## Current open positions
 We are currently looking for the following roles to join our team!
 
-**1. Open Geospatial Learning Associate (project based)** 
-**2. Associate Open Geospatial Developer (project based)**
+1. Open Geospatial Learning Associate (project based)
+2. Associate Open Geospatial Developer (project based)
 
 ## How to apply
 <div class="d-flex justify-content-start py-2"><a
@@ -20,7 +20,7 @@ We are currently looking for the following roles to join our team!
     aria-disabled="true"><strong class="text-white">Apply here</strong></a>
 </div> 
 
-You may also fill out the form below.
+You may also fill out the form below to apply.
 <iframe class="airtable-embed" src="https://airtable.com/embed/appRRlqo6YvUCsfqs/shrzM1psZ2UDE5IKt?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 ## About the roles
@@ -56,3 +56,5 @@ As an Associate Open Geospatial Developer, your role involves supporting the tea
   - Knowledge of cloud computing services such as AWS and Azure 
   - Experience with version control systems and contributing to open source geospatial projects 
 - Willingness to learn is required
+
+**BNHR is an equal opportunity employer.**
