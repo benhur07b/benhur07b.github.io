@@ -23,6 +23,7 @@ We are currently looking for the following roles to join our team!
 You may also fill out the form below to apply.
 <iframe class="airtable-embed" src="https://airtable.com/embed/appRRlqo6YvUCsfqs/shrzM1psZ2UDE5IKt?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
+<hr>
 ## About the roles
 ### Open Geospatial Learning Associate (project based)
 
