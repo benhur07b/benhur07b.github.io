@@ -5,6 +5,7 @@ description: Work with us!
 og_type: page
 ---
 # BNHR.XYZ Jobs and Career Opportunities
+<hr>
 
 ## Current open positions
 We are currently looking for the following roles to join our team!
