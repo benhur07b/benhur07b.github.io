@@ -65,4 +65,4 @@ As an Associate Open Geospatial Developer, your role involves supporting the tea
 
 <hr>
 
-**BNHR is an equal opportunity employer and does not discriminate on the basis of age, gender identity and expression, national origin, race and ethnicity, physical ability, religious or belief systems, political convictions, or sexual orientation**
+**BNHR is an equal opportunity employer and does not discriminate on the basis of age, gender identity and expression, national origin, race and ethnicity, physical ability, religious or belief systems, political convictions, or sexual orientation.**
