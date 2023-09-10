@@ -18,7 +18,7 @@ We are currently looking for the following roles to join our team!
 <div class="d-flex justify-content-start py-2"><a
     href="https://airtable.com/appRRlqo6YvUCsfqs/shrzM1psZ2UDE5IKt"
     target="_blank" class="btn btn-lg bg-success col-sm-12 col-md-6" role="button"
-    aria-disabled="true"><strong class="text-white">Apply here</strong></a>
+    aria-disabled="true"><strong class="text-white">Click here to apply</strong></a>
 </div> 
 
 You may also fill out the form below to apply.
