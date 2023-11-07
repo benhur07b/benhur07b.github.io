@@ -9,7 +9,7 @@ og_type: page
 
 Sign-up and reserve your slots to the training courses. Learn about the training courses [here]({{site.baseurl}}/courses/2023/).
 
-If the sign-up for below isn't showing, you can try [this link](https://airtable.com/shrPFSSgDPJY1VAgM).
+If the sign-up for below isn't showing, you can try [this link](https://airtable.com/appRRlqo6YvUCsfqs/shrlw0dCY0iFWitxA).
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/appRRlqo6YvUCsfqs/shrlw0dCY0iFWitxA?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
