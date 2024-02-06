@@ -20,32 +20,32 @@ BNHR’s training courses are carefully designed to build upon each other, provi
 - Geospatial Data Management: GeoNode
 - Using QGIS, PostGIS, and GeoServer in multi-user and enterprise environments
 
-# Learning Paths
+## Join our upcoming training courses!
+Click on a training course below to learn more:
+<iframe class="airtable-embed" src="https://airtable.com/embed/appYdMRAHH2BCShei/shrZmEAe1BMV5XyvY?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+## Learning Paths
 
 Embark on a personalized learning experience with our carefully curated Learning Paths. These Learning Pahts are thoughtfully designed sequences and combinations of training courses, strategically aligned to guide you from foundational concepts to advanced skills. By enrolling in a sequence of courses that progressively build on each other, you ensure a well-rounded education, covering all essential aspects of a particular skill set. This tailored approach not only saves you time but also maximizes the effectiveness of your learning experience.
 
-## Introductory QGIS learning path
+### Introductory QGIS learning path
 - QGIS: Essentials
 - QGIS: Layers and Expressions
 
-## Geospatial visualization learning path
+### Geospatial visualization learning path
 - QGIS: Advanced Styling and Symbology
 - QGIS: Maps and Layouts
 
-## Geospatial analysis learning path
+### Geospatial analysis learning path
 - QGIS: Advanced and Automated Processing
 - QGIS: Using Python in QGIS
 - Geospatial Python
 
-## Geospatial data management learning path
+### Geospatial data management learning path
 - Geospatial Data Management: Spatial SQL and PostGIS 
 - Geospatial Data Management: GeoServer
 - Geospatial Data Management: GeoNode
 - Using QGIS, PostGIS, and GeoServer in multi-user and enterprise environments
-
-
-Click on a training course below to learn more:
-<iframe class="airtable-embed" src="https://airtable.com/embed/appYdMRAHH2BCShei/shrZmEAe1BMV5XyvY?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 <hr><br>
 ## Interested in a custom course for your organization?
