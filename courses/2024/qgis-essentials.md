@@ -5,7 +5,7 @@ description: Your journey towards learning about data literacy, geospatial, and 
 og_type: page
 ---
 
-# QGIS Essentials Training Course (2024)
+# QGIS: Essentials Training Course (2024)
 
 Sign-up and reserve your slot to QGIS Essentials course. Learn more about the training courses [here]({{site.baseurl}}/courses/2024/).
 
