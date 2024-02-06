@@ -7,6 +7,10 @@ og_type: page
 
 # QGIS: Essentials Training Course (2024)
 
+Introductory course covering fundamental and basic tools and concepts of QGIS that includes spatial data types, coordinate reference systems, where to find data, how to load and style data, how to create a map, and how to perform basic geospatial processing.
+
+Part of the Introductory QGIS Learning Path with QGIS: Layers and Expressions.
+
 Sign-up and reserve your slot to QGIS Essentials course. Learn more about the training courses [here]({{site.baseurl}}/courses/2024/).
 
 If the sign-up for below isn't showing, you can try [this link](https://airtable.com/appYdMRAHH2BCShei/shrWfEVrAsdcWeSa3).

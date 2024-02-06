@@ -7,6 +7,10 @@ og_type: page
 
 # QGIS: Layers and Expressions Course (2024)
 
+Introductory course that dives into working with layer attributes, geometries, and QGIS expressions.
+
+A great addition to the QGIS: Essentials course that completes the Introductory QGIS Learning Path.
+
 Sign-up and reserve your slot to QGIS Essentials course. Learn more about the training courses [here]({{site.baseurl}}/courses/2024/).
 
 If the sign-up for below isn't showing, you can try [this link](https://airtable.com/appYdMRAHH2BCShei/shrQZsqUaPfYVF4kM).
