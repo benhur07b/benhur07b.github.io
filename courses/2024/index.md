@@ -6,7 +6,7 @@ og_type: page
 ---
 # BNHR.XYZ Training Courses (2024)
 
-BNHR’s training courses are carefully designed to build upon each other, providing learners with a strong foundation and a clear pathway for continued growth. Each course focuses on a particular topic or theme and provides a comprehensive understanding of the subject matter. The 2023 version includes a total of 11 courses covering a diverse range of topics from introductory lessons to advanced visualization and processing:
+BNHR’s training courses are carefully designed to build upon each other, providing learners with a strong foundation and a clear pathway for continued growth. Each course focuses on a particular topic or theme and provides a comprehensive understanding of the subject matter. The 2024 version includes a total of 11 courses covering a diverse range of topics from introductory lessons to advanced visualization and processing to geospatial data management:
 
 - QGIS: Essentials
 - QGIS: Layers and Expressions
@@ -24,6 +24,7 @@ BNHR’s training courses are carefully designed to build upon each other, provi
 Click on a training course below to learn more:
 <iframe class="airtable-embed" src="https://airtable.com/embed/appYdMRAHH2BCShei/shrZmEAe1BMV5XyvY?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
+<br>
 ## Learning Paths
 
 Embark on a personalized learning experience with our carefully curated Learning Paths. These Learning Pahts are thoughtfully designed sequences and combinations of training courses, strategically aligned to guide you from foundational concepts to advanced skills. By enrolling in a sequence of courses that progressively build on each other, you ensure a well-rounded education, covering all essential aspects of a particular skill set. This tailored approach not only saves you time but also maximizes the effectiveness of your learning experience.
