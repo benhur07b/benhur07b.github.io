@@ -8,6 +8,10 @@ og_type: page
 
 Need help with your project, thesis, or with data and geospatial in general? Book a free 1-hour consultation and get practical advice on how to make the most of data and geospatial tools.
 
+Please note that due to high demand, we may not be able to accommodate all requests for free consultation. Our team will review all requests and prioritize them based on several factors including: (1) when the free consultation was booked and (2) the quality and relevance of the topic/s they wish to discuss.
+
+Selected individuals will be contacted to confirm their consultation appointment. We appreciate your understanding and look forward to the opportunity to assist you.
+
 ## Book a free consultation
 If the form below isn't showing, you can try [this link](https://airtable.com/appYdMRAHH2BCShei/pagRiWHozkEJTviNR/form).
 
