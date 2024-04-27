@@ -9,9 +9,9 @@ og_type: page
 Need help with your project, thesis, or with data and geospatial in general? Book a free 1-hour consultation and get practical advice on how to make the most of data and geospatial tools.
 
 ## Book a free consultation
-<iframe class="airtable-embed" src="https://airtable.com/embed/appYdMRAHH2BCShei/pagRiWHozkEJTviNR/form" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
+If the form below isn't showing, you can try [this link](https://airtable.com/appYdMRAHH2BCShei/pagRiWHozkEJTviNR/form).
 
-If the sign-up above isn't showing, you can try [this link](https://airtable.com/appYdMRAHH2BCShei/pagRiWHozkEJTviNR/form).
+<iframe class="airtable-embed" src="https://airtable.com/embed/appYdMRAHH2BCShei/pagRiWHozkEJTviNR/form" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 <hr><br>
 ## Can't find a time that fits your schedule? Don't worry. You can still reach out to us for a tailored, premium consultation experience.
