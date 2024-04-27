@@ -9,7 +9,9 @@ og_type: page
 Welcome to the 2024 cohort selection of BNHR's internship program. Our internship offers a unique opportunity for university students, fresh graduates, or career shifters to gain hands-on experience and work on real-world projects in the open data and open geospatial field. Whether you're passionate about harnessing the power of data for social good, exploring cutting-edge geospatial technologies, fostering vibrant communities, or crafting compelling documentation, we have a role for you.
 
 **Duration:** 10 weeks
+
 **Modality:** Flexible (fully remote, fully in-person, or hybrid)
+
 **Paid:** Yes
 
 Don't miss this chance to make a meaningful impact, expand your network, and harness your potential. Apply now and embark on a rewarding learning experience with us.
