@@ -14,7 +14,9 @@ If the form below isn't showing, you can try [this link](https://airtable.com/ap
 <iframe class="airtable-embed" src="https://airtable.com/embed/appYdMRAHH2BCShei/pagRiWHozkEJTviNR/form" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 <hr><br>
-## Can't find a time that fits your schedule? Don't worry. You can still reach out to us for a tailored, premium consultation experience.
+## Can't find a time that fits your schedule? 
+
+Don't worry. You can still reach out to us for a tailored, premium consultation experience.
 
 <div class="d-flex justify-content-start py-2"><a
     href="{{site.baseurl}}/#contact"
