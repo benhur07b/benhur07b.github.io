@@ -22,7 +22,9 @@ BNHR’s training courses are carefully designed to build upon each other, provi
 - Introduction to Remote Sensing using Google Earth Engine
 
 ## Join our upcoming training courses!
-Click on a training course below to learn more:
+*Please try this [link](https://airtable.com/appzhDQUZX6UARmum/shrS6PqO8j22tDPh4) if the courses below do not appear.*
+
+Click on a training course below to learn more.
 <iframe class="airtable-embed" src="https://airtable.com/embed/appzhDQUZX6UARmum/shrS6PqO8j22tDPh4?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 <br>
