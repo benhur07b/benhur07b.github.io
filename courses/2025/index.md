@@ -8,9 +8,9 @@ og_type: page
 
 BNHR’s training courses are carefully designed to build upon each other, providing learners with a strong foundation and a clear pathway for continued growth. Each course focuses on a particular topic or theme and provides a comprehensive understanding of the subject matter. The 2025 version includes a total of 12 courses covering a diverse range of topics from introductory lessons to advanced visualization and processing to geospatial data management:
 
-- [QGIS: Express]({{site.baseurl}}/courses/2025/qgis-express)
-- [QGIS: Essentials]({{site.baseurl}}/courses/2025/qgis-essentials)
-- [QGIS: Layers and Expressions]({{site.baseurl}}/courses/2025/qgis-layers-and-expressions)
+- [QGIS: Express]({{site.baseurl}}/courses/2025/qgis-express) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/paghZ9pjDe4dCrWHs/form)**
+- [QGIS: Essentials]({{site.baseurl}}/courses/2025/qgis-essentials) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/pagldvUhiQgGXwdFP/form)**
+- [QGIS: Layers and Expressions]({{site.baseurl}}/courses/2025/qgis-layers-and-expressions) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/paghYBtsnAIh2NxGq/form)**
 - QGIS: Advanced Styling and Symbology
 - QGIS: Maps and Layouts
 - QGIS: Advanced and Automated Processing
