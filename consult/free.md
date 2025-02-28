@@ -6,7 +6,7 @@ og_type: page
 ---
 # BNHR Free Consultation
 
-Need help with your project, thesis, or with data and geospatial in general? Book a free consultation (30-60 minutes) and get practical advice on how to make the most of data and geospatial tools.
+Need help with your project, thesis, or with data and geospatial in general? Book a free consultation (20-30 minutes) and get practical advice on how to make the most of data and geospatial tools.
 
 Please note that due to high demand, we may not be able to accommodate all requests for free consultation. Our team will review all requests and prioritize them based on several factors including: (1) when the free consultation was booked and (2) the quality and relevance of the topic/s they wish to discuss.
 
