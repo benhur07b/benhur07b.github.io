@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BNHR Free Consultation
-description: Need help with your project, thesis, or with data and geospatial in general? Book a free 1-hour consultation with us.
+description: Need help with your project, thesis, or with data and geospatial in general? Book a free 30-minute consultation with us.
 og_type: page
 ---
 # BNHR Free Consultation
@@ -23,9 +23,9 @@ If the form below isn't showing, you can try [this link](https://airtable.com/ap
 Don't worry. You can still reach out to us for a tailored, premium consultation experience.
 
 <div class="d-flex justify-content-start py-2"><a
-    href="{{site.baseurl}}/#contact"
+    href="{{site.baseurl}}/consult/book"
     target="_blank" class="btn btn-lg bg-success col-sm-12 col-md-6" role="button"
-    aria-disabled="true"><strong class="text-white">Contact us</strong></a>
+    aria-disabled="true"><strong class="text-white">Book a consultation</strong></a>
 </div> 
 
 <!-- [Contact me for a quote]({{site.baseurl}}/#contact) -->
