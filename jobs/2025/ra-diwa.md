@@ -9,13 +9,13 @@ og_type: page
 
 ## How to apply
 <div class="d-flex justify-content-start py-2"><a
-    href="https://airtable.com/appRRlqo6YvUCsfqs/shrzM1psZ2UDE5IKt"
+    href="https://forms.gle/TpbaXZEJcwVTtdjU9"
     target="_blank" class="btn btn-lg bg-success col-sm-12 col-md-6" role="button"
     aria-disabled="true"><strong class="text-white">Click here to apply</strong></a>
 </div> 
 
 You may also fill out the form below to apply.
-<iframe class="airtable-embed" src="https://airtable.com/embed/appRRlqo6YvUCsfqs/shrzM1psZ2UDE5IKt?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe class="airtable-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSceS7jXx4np1W_eneqB_O91GPkgXnMJS2JVQAgDvDzDys2RwA/viewform?embedded=true" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 <hr>
 
@@ -44,4 +44,4 @@ As a Research Associate on our team, your role involves assisting in conducting 
 - Familiarity with SDGs is an asset
 - Familiarity with Python, OpenRefine, or other tools to facilitate data cleaning and visualization is an advantage
 
-<hr>FF
+<hr>
