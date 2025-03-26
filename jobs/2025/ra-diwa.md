@@ -32,6 +32,7 @@ As a Research Associate on our team, your role involves assisting in conducting 
 #### Working arrangements
 - This role is **remote-first**: you can work from your own location (e.g. home office, co-working space, etc.) with some on-site requirements (e.g. on-site meetings).
 - The role is **output-based**: we prioritize the quality and timeliness of your outputs rather than require your physical or digital presence at specifict times/places.
+- The role will be on an **individual contractor** basis.
 
 #### Qualifications
 - Bachelor’s degree or currently enroled in a relevant field or equivalent experience
@@ -43,5 +44,8 @@ As a Research Associate on our team, your role involves assisting in conducting 
 - Interest in gender and ICT issues and willingness to learn more about the topic
 - Familiarity with SDGs is an asset
 - Familiarity with Python, OpenRefine, or other tools to facilitate data cleaning and visualization is an advantage
+
+#### Compensation
+- A range between PhP15,000.00 to PhP20,000.00 per month depending on experience and qualifications
 
 <hr>
