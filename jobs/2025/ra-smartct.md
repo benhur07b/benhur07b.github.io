@@ -4,7 +4,7 @@ title: BNHR.XYZ Jobs and Career Opportunities
 description: Work with us!
 og_type: page
 ---
-# Research Associate [DIWA Project] (project based)
+# Research Associate [SmartCT] (project based)
 <hr>
 
 ## How to apply

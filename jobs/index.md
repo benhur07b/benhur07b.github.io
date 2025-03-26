@@ -11,6 +11,7 @@ og_type: page
 
 We are currently looking for the following roles to join our team!
 
-[**1. Research Associate [DIWA Project] (project based)**](2025/ra-diwa)
+[**1. Research Associate [SmartCT] (project based)**](2025/ra-smartct)
 
+<hr>
 **BNHR is an equal opportunity employer and does not discriminate on the basis of age, gender identity and expression, national origin, race and ethnicity, physical ability, religious or belief systems, political convictions, or sexual orientation.**
