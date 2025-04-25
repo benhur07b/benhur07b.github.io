@@ -16,6 +16,7 @@ Layers and Expressions is an introductory course that dives into advanced techni
 Those who are looking to expand their skills for working with data layers and expressions in QGIS.
 
 **COVERAGE**
+If you'd like to know the coverage of the course, you can visit the [Learn QGIS with BNHR website](https://learn-qgis.bnhr.xyz/layers-and-expressions/00-about/)
 
 - Attribute joins, georeferencing, digitizing, and geocoding
 - Selects, filters, and the field calculator
