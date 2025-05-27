@@ -6,13 +6,31 @@ og_type: page
 ---
 # BNHR.XYZ Training Courses (2025)
 
+## Join our upcoming training courses!
+*Please try this [link](https://airtable.com/appzhDQUZX6UARmum/pagIBMMN3DX9Xg56Z/form) if the registration form below does not appear.*
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/appzhDQUZX6UARmum/pagIBMMN3DX9Xg56Z/form" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+<br>
+
+**Click on a training course below to learn more.**
+*Please try this [link](https://airtable.com/appzhDQUZX6UARmum/3) if the courses below do not appear.*
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/appzhDQUZX6UARmum/shrS6PqO8j22tDPh4?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<br>
+
+
+## About the courses
+
 BNHR’s training courses are carefully designed to build upon each other, providing learners with a strong foundation and a clear pathway for continued growth. Each course focuses on a particular topic or theme and provides a comprehensive understanding of the subject matter. The 2025 version includes a total of 12 courses covering a diverse range of topics from introductory lessons to advanced visualization and processing to geospatial data management:
 
 - [QGIS: Express]({{site.baseurl}}/courses/2025/qgis-express) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/paghZ9pjDe4dCrWHs/form)**
-- [QGIS: Essentials]({{site.baseurl}}/courses/2025/qgis-essentials) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/pagldvUhiQgGXwdFP/form)**
-- [QGIS: Layers and Expressions]({{site.baseurl}}/courses/2025/qgis-layers-and-expressions) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/paghYBtsnAIh2NxGq/form)**
-- QGIS: Advanced Styling and Symbology
-- QGIS: Maps and Layouts
+- [QGIS: Essentials](https://learn-qgis.bnhr.xyz/essentials/00-about/) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/pagldvUhiQgGXwdFP/form)**
+- [QGIS: Layers and Expressions](https://learn-qgis.bnhr.xyz/layers-and-expressions/00-about/) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/paghYBtsnAIh2NxGq/form)**
+- [QGIS: Advanced Styling and Symbology](https://learn-qgis.bnhr.xyz/advanced-styling-and-symbology/00-about/) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/pagIBMMN3DX9Xg56Z/form)**
+- [QGIS: Maps and Layouts](https://learn-qgis.bnhr.xyz/maps-and-layouts/00-about/) - **[SIGN-UP](https://airtable.com/appzhDQUZX6UARmum/pagIBMMN3DX9Xg56Z/form)**
 - QGIS: Advanced and Automated Processing
 - Geospatial Python
 - Geospatial Data Management: Spatial SQL and PostGIS 
@@ -21,22 +39,16 @@ BNHR’s training courses are carefully designed to build upon each other, provi
 - Using QGIS, PostGIS, and GeoServer in multi-user and enterprise environments
 - Introduction to Remote Sensing using Google Earth Engine
 
-## Join our upcoming training courses!
-*Please try this [link](https://airtable.com/appzhDQUZX6UARmum/shrS6PqO8j22tDPh4) if the courses below do not appear.*
 
-Click on a training course below to learn more.
-<iframe class="airtable-embed" src="https://airtable.com/embed/appzhDQUZX6UARmum/shrS6PqO8j22tDPh4?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
-
-<br>
 ## Learning Paths
 
 Embark on a personalized learning experience with our carefully curated Learning Paths. These Learning Pahts are thoughtfully designed sequences and combinations of training courses, strategically aligned to guide you from foundational concepts to advanced skills. By enrolling in a sequence of courses that progressively build on each other, you ensure a well-rounded education, covering all essential aspects of a particular skill set. This tailored approach not only saves you time but also maximizes the effectiveness of your learning experience.
 
-### Introductory QGIS learning path
+### There And Back Again
 - QGIS: Essentials
 - QGIS: Layers and Expressions
 
-### Geospatial visualization learning path
+### The Cartographer's Companion
 - QGIS: Advanced Styling and Symbology
 - QGIS: Maps and Layouts
 
@@ -53,6 +65,7 @@ Embark on a personalized learning experience with our carefully curated Learning
 - Using QGIS, PostGIS, and GeoServer in multi-user and enterprise environments
 
 <hr><br>
+
 ## Interested in a custom course for your organization?
 
 I offer custom training courses for organizations and clients.  It is similar to the publicly-available courses but with the following advantages:

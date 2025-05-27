@@ -8,4 +8,4 @@ og_type: page
 # Training courses
 
 ## 2025
-[Sign-up]({{site.baseurl}}/courses/2025/)
+**[Sign-up for our 2025 publicly-available courses]({{site.baseurl}}/courses/2025/)**
