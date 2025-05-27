@@ -7,6 +7,7 @@ og_type: page
 # BNHR.XYZ Training Courses (2025)
 
 ## Join our upcoming training courses!
+
 *Please try this [link](https://airtable.com/appzhDQUZX6UARmum/pagIBMMN3DX9Xg56Z/form) if the registration form below does not appear.*
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/appzhDQUZX6UARmum/pagIBMMN3DX9Xg56Z/form" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
@@ -15,6 +16,7 @@ og_type: page
 <br>
 
 **Click on a training course below to learn more.**
+
 *Please try this [link](https://airtable.com/appzhDQUZX6UARmum/3) if the courses below do not appear.*
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/appzhDQUZX6UARmum/shrS6PqO8j22tDPh4?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="720" style="background: transparent; border: 1px solid #ccc;"></iframe>
