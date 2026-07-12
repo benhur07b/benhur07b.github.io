@@ -11,7 +11,7 @@ og_type: page
 
 We are currently looking for the following roles to join our team!
 
-1. [**AI-Ready Associate (Student Internship)**](2025/intern-ai-ready-bnhr)
+1. [**AI-Ready Associate (Student Internship)**](2026/intern-ai-ready-bnhr)
 
 <hr>
 
