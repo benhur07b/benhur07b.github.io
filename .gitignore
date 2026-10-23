@@ -5,3 +5,6 @@ assets/img/*
 Gemfile
 Gemfile.lock
 .htmlhintrc
+
+.claude*
+.claude/*
