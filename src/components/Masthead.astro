@@ -1,15 +1,15 @@
 ---
 import logoDark from '../assets/brand/logo-horizontal-core-dark.svg';
 import logoLight from '../assets/brand/logo-horizontal-core-light.svg';
-import { insets, sections, type SectionId } from '../data/site';
+import { insetHref, insets, sections } from '../data/site';
 
 // The sheet's top margin. On the home page the hero's legend is the navigation, so the masthead carries the sheet's
-// margin note; on every other page it carries the sections. On phones both give way to the Legend menu.
+// margin note; on any other page (the 404) it carries the sections, which link to the home page's insets. On phones
+// both give way to the Legend menu.
 interface Props {
-	current?: SectionId;
 	home?: boolean;
 }
-const { current, home = false } = Astro.props;
+const { home = false } = Astro.props;
 ---
 
 <header class="masthead">
@@ -27,7 +27,7 @@ const { current, home = false } = Astro.props;
 				<ul>
 					{sections.map((s) => (
 						<li>
-							<a href={s.href} aria-current={s.id === current ? 'page' : undefined}>
+							<a href={s.href}>
 								<svg class="sym" aria-hidden="true">
 									<use href={`#s-${s.id}`} />
 								</svg>
@@ -44,7 +44,7 @@ const { current, home = false } = Astro.props;
 		<button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor"></path></svg>
 		</button>
-		<a class="btn btn-primary consult" href="#contact">Book a consult</a>
+		<a class="btn btn-primary consult" href={insetHref('contact')}>Book a consult</a>
 		<button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobile-legend">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"></path></svg>Legend
 		</button>
@@ -54,7 +54,7 @@ const { current, home = false } = Astro.props;
 <nav id="mobile-legend" class="mobile-legend" aria-label="Main" hidden>
 	{
 		sections.map((s) => (
-			<a href={s.href} aria-current={s.id === current ? 'page' : undefined}>
+			<a href={s.href}>
 				<svg class="sym" aria-hidden="true">
 					<use href={`#s-${s.id}`} />
 				</svg>
@@ -63,7 +63,7 @@ const { current, home = false } = Astro.props;
 			</a>
 		))
 	}
-	<a class="btn btn-primary" href="#contact">Book a consult</a>
+	<a class="btn btn-primary" href={insetHref('contact')}>Book a consult</a>
 </nav>
 
 <script>
@@ -117,7 +117,6 @@ const { current, home = false } = Astro.props;
 	}
 	.mast-nav .sym { width: 13px; height: 13px; }
 	.mast-nav a:hover .sym { color: var(--block); }
-	.mast-nav a[aria-current='page'] { box-shadow: inset 0 -3px 0 var(--block); border-radius: 0; }
 	.masthead .spacer { flex: 1; }
 	.mast-actions { display: flex; align-items: center; gap: 10px; flex: none; }
 	.mast-actions .btn { min-height: 40px; padding: 0 16px; font-size: 15px; }
@@ -140,7 +139,6 @@ const { current, home = false } = Astro.props;
 			border-bottom: 2px solid var(--ink); padding: 8px var(--gutter) 16px;
 		}
 		.mobile-legend a:not(.btn) { display: grid; grid-template-columns: 22px 1fr auto; gap: 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font: 700 20px/1 var(--display); }
-		.mobile-legend a[aria-current='page'] { color: var(--block); }
 		.mobile-legend .ref { font: 500 11px/1 var(--mono); color: var(--muted); }
 		.mobile-legend .btn { margin-top: 16px; width: 100%; justify-content: center; }
 	}

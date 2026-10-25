@@ -1,0 +1,13 @@
+---
+import { archive } from '../data/site';
+
+// A button to the archived site. The archive always opens in a new tab, so a visitor keeps their place on this one;
+// the arrow marks the link as leaving the site, and screen readers hear that it opens a new tab.
+interface Props {
+	// A path on the archive, without the leading slash (e.g. "blog/"); the archive's home page when left out
+	path?: string;
+}
+const { path = '' } = Astro.props;
+---
+
+<a class="btn" href={`${archive.href}${path}`} target="_blank" rel="noopener"><slot /> <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>

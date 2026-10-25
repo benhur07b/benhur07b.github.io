@@ -16,8 +16,8 @@ npm run check    # types and Astro diagnostics
 
 ## Where things are
 
-- `src/pages/`: the home page and one page per section (Learn, Services, Work, Writing, About), plus 404.
-- `src/data/`: what the pages print, typed: the sections and insets (`site.ts`), themes, Learn sites, services, projects and clients, and the terrain's georeference.
+- `src/pages/`: the home page and the 404. Each section (Learn, Services, Work, Writing, About) is an inset on the home page, and the navigation links there; a section gets its own page only once it holds more than its inset can.
+- `src/data/`: what the pages print, typed: the sections, insets and links to them (`site.ts`), themes, Learn sites, services, projects and clients, and the terrain's georeference.
 - `src/components/`: the sheet's parts. `HeroMap.astro` draws the home page's map and its height readout.
 - `src/styles/site.css`: the hub's mapping of the brand tokens and the styles every page shares.
 - `src/styles/brand/`, `src/assets/brand/`, `src/assets/terrain/`, `public/favicon*`: copied or drawn from the BNHR brand kit and the Mayon elevation model by a local tool (`scripts/sync_brand.py`, not in the repo, because the kit lives outside it). Never edit these copies by hand.

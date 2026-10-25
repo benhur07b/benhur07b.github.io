@@ -1,24 +1,11 @@
 ---
 // Who's behind BNHR, in the first person. The designs never show the full name, only "I'm Ben"
-interface Props {
-	// On the home page the inset stands in for the About page: it introduces me by name and links on. On the About
-	// page the heading ("Hi, I'm Ben") does the introducing, so the paragraph starts at what I do.
-	teaser?: boolean;
-}
-const { teaser = false } = Astro.props;
 ---
 
-<p class="about-text">{teaser ? "I'm Ben: a technologist" : 'A technologist'}, educator, and free software advocate who helps people solve problems with open technologies—from building technical solutions to growing communities of practice—because I believe you should own the technology you depend on.</p>
+<p class="about-text">I'm Ben: a technologist, educator, and free software advocate who helps people solve problems with open technologies—from building technical solutions to growing communities of practice—because I believe you should own the technology you depend on.</p>
 <p class="about-text">BNHR has been a QGIS sustaining member since 2020, helping fund the software I teach. I also co-founded SmartCT, a tech non-profit, and the Civic Literacy Initiative.</p>
 <div class="compiler mono">
 	<span>Compiled by BNHR</span>
-	{
-		teaser && (
-			<a class="arrow-link" href="/about/">
-				About me <span aria-hidden="true">→</span>
-			</a>
-		)
-	}
 </div>
 
 <style is:global>

@@ -1,13 +1,12 @@
 ---
 import logoDark from '../assets/brand/logo-square-core-dark.svg';
 import logoLight from '../assets/brand/logo-square-core-light.svg';
-import { sections, sheets, socials, tagline } from '../data/site';
+import { sections, socials, tagline } from '../data/site';
 import { latOf, lonOf, terrain } from '../data/terrain';
 
 // The flat footer, printed as the sheet's imprint. Its brandline is Learn QGIS's: the square logo beside the address
 // and the tagline. The logo repeats the address's link for the pointer only, so keyboards and screen readers meet one
 // link home, not two
-const sheet = sheets.indexOf(Astro.url.pathname) + 1;
 const { contours, heights, subject } = terrain;
 const dm = (deg: number, hemi: string) => `${Math.floor(deg)}°${String(Math.floor((deg % 1) * 60)).padStart(2, '0')}′${hemi}`;
 ---
@@ -30,7 +29,7 @@ const dm = (deg: number, hemi: string) => `${Math.floor(deg)}°${String(Math.flo
 			<p>{`Relief: ${terrain.source} elevation of ${subject.name} Volcano and Albay Gulf, Albay. Contour interval ${contours.interval} metres, index contours every ${contours.index} metres. The height readout uses the same elevation sampled every ${heights.step} arc-seconds and interpolated between samples.`}</p>
 		</div>
 		<nav aria-label="Footer">
-			<h2>Sheets</h2>
+			<h2>On this sheet</h2>
 			<ul>
 				{sections.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
 			</ul>
@@ -44,7 +43,7 @@ const dm = (deg: number, hemi: string) => `${Math.floor(deg)}°${String(Math.flo
 	</div>
 	<div class="colophon-base mono">
 		<span>© {new Date().getFullYear()} BNHR</span>
-		<span>{dm(latOf(subject.y), 'N')} {dm(lonOf(subject.x), 'E')}{sheet > 0 && ` · Sheet ${sheet} of ${sheets.length}`}</span>
+		<span>{dm(latOf(subject.y), 'N')} {dm(lonOf(subject.x), 'E')}</span>
 	</div>
 </footer>
 

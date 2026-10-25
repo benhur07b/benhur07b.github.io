@@ -3,7 +3,7 @@ import heights from '../assets/terrain/mayon-heights.webp';
 import hillshade from '../assets/terrain/mayon-hillshade.webp';
 import coastSvg from '../assets/terrain/mayon-coast.svg?raw';
 import reliefSvg from '../assets/terrain/mayon-relief.svg?raw';
-import { insets, sections, tagline } from '../data/site';
+import { insetHref, insets, sections, tagline } from '../data/site';
 import { THEMES, themeInfo } from '../data/themes';
 import { latOf, lonOf, terrain } from '../data/terrain';
 
@@ -130,8 +130,8 @@ const [lastWord] = tagline.more.slice(-1);
 				</div>
 				<p class="lede">I help teams and organisations do geospatial, data and AI work with open tools they can own — through <strong>training, consulting and custom builds</strong>.</p>
 				<div class="ctas">
-					<a class="btn btn-primary" href="#contact">Contact</a>
-					<a class="btn" href="#learn">Explore the Learn sites</a>
+					<a class="btn btn-primary" href={insetHref('contact')}>Contact</a>
+					<a class="btn" href={insetHref('learn')}>Explore the Learn sites</a>
 				</div>
 			</div>
 		</div>

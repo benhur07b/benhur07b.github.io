@@ -5,18 +5,16 @@ import '../styles/site.css';
 import Colophon from '../components/Colophon.astro';
 import Masthead from '../components/Masthead.astro';
 import Sprite from '../components/Sprite.astro';
-import type { SectionId } from '../data/site';
 
 // Every page is a sheet: the masthead, the page's own content, and the imprint footer. The home page passes no title
 // and gets the tagline as its tab title; other pages read "Page · BNHR".
 interface Props {
 	title?: string;
 	description: string;
-	current?: SectionId;
-	// Pages that print the relief small (locators, Learn sheets) need the light relief in the sprite
+	// Pages that print the relief small (the Learn sheets) need the light relief in the sprite
 	lite?: boolean;
 }
-const { title, description, current, lite = false } = Astro.props;
+const { title, description, lite = false } = Astro.props;
 const home = Astro.url.pathname === '/';
 const tabTitle = title ? `${title} · BNHR` : 'BNHR · Less lock-in. More know-how.';
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -53,7 +51,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 	<body>
 		<a class="skip" href="#main">Skip to content</a>
 		<Sprite lite={lite} />
-		<Masthead current={current} home={home} />
+		<Masthead home={home} />
 		<main id="main">
 			<slot />
 		</main>

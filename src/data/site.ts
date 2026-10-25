@@ -16,29 +16,32 @@ export const insets = {
 } as const;
 export type InsetId = keyof typeof insets;
 
+// A link to one of the home page's insets, from any page. Built from the inset's id, so a link to an inset that
+// doesn't exist fails the build.
+export type InsetHref = `/#${InsetId}`;
+export const insetHref = (id: InsetId): InsetHref => `/#${id}`;
+
 export type SectionId = 'learn' | 'services' | 'work' | 'writing' | 'about';
-export interface Section {
+interface SectionEntry {
 	id: SectionId;
 	label: string;
-	href: `/${string}/`;
-	// The home inset the section's legend entry is keyed to
+	// The home inset the section is: the legend's entry links to it and prints its reference
 	inset: InsetId;
-	// The view of the survey behind the page's title: always centred on the summit's latitude, `width` cells wide and
-	// half as tall, with the summit `at` this fraction across (right of the title block on wide screens)
-	view: { width: number; at: number };
+}
+export interface Section extends SectionEntry {
+	href: InsetHref;
 }
 
-// The main navigation, in the legend's order. Each section has its own page and its own map symbol (#s-<id>)
-export const sections: readonly Section[] = [
-	{ id: 'learn', label: 'Learn', href: '/learn/', inset: 'learn', view: { width: 600, at: 0.72 } },
-	{ id: 'services', label: 'Services', href: '/services/', inset: 'services', view: { width: 520, at: 0.76 } },
-	{ id: 'work', label: 'Work', href: '/work/', inset: 'work', view: { width: 560, at: 0.8 } },
-	{ id: 'writing', label: 'Writing', href: '/writing/', inset: 'writing', view: { width: 640, at: 0.7 } },
-	{ id: 'about', label: 'About', href: '/about/', inset: 'about', view: { width: 480, at: 0.74 } },
+// The main navigation, in the legend's order, each with its own map symbol (#s-<id>). Every section is an inset on the
+// home page and links there; a section gets a page of its own only once it holds more than its inset can.
+const entries: readonly SectionEntry[] = [
+	{ id: 'learn', label: 'Learn', inset: 'learn' },
+	{ id: 'services', label: 'Services', inset: 'services' },
+	{ id: 'work', label: 'Work', inset: 'work' },
+	{ id: 'writing', label: 'Writing', inset: 'writing' },
+	{ id: 'about', label: 'About', inset: 'about' },
 ];
-
-// Pages count as sheets: the home page is sheet 1 and each section page follows in the legend's order
-export const sheets: readonly string[] = ['/', ...sections.map((s) => s.href)];
+export const sections: readonly Section[] = entries.map((s) => ({ ...s, href: insetHref(s.inset) }));
 
 export const email = 'hi@bnhr.xyz';
 // The free first 30 minutes are booked on Google Calendar's appointment page

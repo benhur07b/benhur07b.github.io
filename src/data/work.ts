@@ -40,15 +40,18 @@ export const projects: readonly Project[] = [
 	},
 ];
 
-export const clients = [
-	'Open Knowledge Foundation',
-	'Philippine Statistics Authority',
-	'Asian Development Bank',
-	'Hivos',
-	'Thinking Machines',
-	'Thibi',
-	'Webcast Technologies',
-	'Aero 360 International',
-	'ASEAN Foundation',
-	'CIVICUS',
-] as const;
+// Printed in alphabetical order, sorted here so a name added anywhere in the list lands in its place
+export const clients = (
+	[
+		'ASEAN Foundation',
+		'Asian Development Bank',
+		'CIVICUS',
+		'DENR-NRDC',
+		'Extractive Industries Transparency Initiative',
+		'Forest Foundation Philippines',
+		'Hivos',
+		'Open Knowledge Foundation',
+		'Philippine Statistics Authority',
+		'Thibi',
+	] as const
+).toSorted((a, b) => a.localeCompare(b, 'en'));
