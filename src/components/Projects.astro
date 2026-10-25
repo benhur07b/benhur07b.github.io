@@ -1,0 +1,45 @@
+---
+import { projects } from '../data/work';
+import ThemeTags from './ThemeTags.astro';
+
+// The projects as surveyed sites: number, themes, title (linking to the live site), what it is and what it runs on
+---
+
+<ul class="sites">
+	{
+		projects.map((p, i) => (
+			<li class="site">
+				<span class="no">
+					<svg aria-hidden="true">
+						<use href="#s-work" />
+					</svg>
+					{String(i + 1).padStart(2, '0')}
+				</span>
+				<ThemeTags themes={p.themes} />
+				<h3>
+					<a href={p.url}>{p.title}</a>
+				</h3>
+				<p>{p.blurb}</p>
+				<p class="stack">{p.stack.join(' · ')}</p>
+			</li>
+		))
+	}
+</ul>
+
+<style is:global>
+	.sites { display: grid; grid-template-columns: 1fr 1fr; border-top: 2px solid var(--ink); }
+	.site { padding: 28px 28px 30px 0; border-bottom: 1px solid var(--rule); display: grid; align-content: start; grid-template-columns: 54px 1fr; gap: 6px 18px; }
+	.site:nth-child(even) { padding-left: 28px; padding-right: 0; border-left: 1px solid var(--rule); }
+	.site .no { grid-row: span 5; font: 700 13px/1 var(--mono); letter-spacing: 0.04em; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+	.site .no svg { width: 26px; height: 24px; color: var(--block); }
+	.site .themes { margin-bottom: 6px; }
+	.site h3 { font-size: clamp(26px, 2.4vw, 34px); }
+	.site h3 a { text-decoration: none; }
+	.site h3 a:hover { text-decoration: underline; text-decoration-color: var(--block); }
+	.site p { color: var(--muted); margin-top: 6px; }
+	.site .stack { margin-top: 12px; font: 500 12px/1.5 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+	@media (max-width: 900px) {
+		.sites { grid-template-columns: 1fr; }
+		.site, .site:nth-child(even) { padding: 22px 0 24px; border-left: 0; grid-template-columns: 40px 1fr; gap: 6px 12px; }
+	}
+</style>

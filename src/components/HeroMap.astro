@@ -1,0 +1,538 @@
+---
+import heights from '../assets/terrain/mayon-heights.webp';
+import hillshade from '../assets/terrain/mayon-hillshade.webp';
+import coastSvg from '../assets/terrain/mayon-coast.svg?raw';
+import reliefSvg from '../assets/terrain/mayon-relief.svg?raw';
+import { insetHref, insets, sections, tagline } from '../data/site';
+import { THEMES, themeInfo } from '../data/themes';
+import { latOf, lonOf, terrain } from '../data/terrain';
+
+// The home page's hero, a printed topographic sheet of Mayon: hillshade, contours and coast in a neatline, the legend
+// (the site's navigation and the themes key), the title block, and a scale box that reads the height under the
+// pointer. The script crops the relief to the frame and lays the graticule's ticks, the spot height and the gulf's
+// name over it in screen units, so they stay sharp at any size.
+const { width: W, height: H, subject, water, contours } = terrain;
+const paths = (svg: string) => [...svg.matchAll(/<path class="(\w+)"(?: data-z="(\d+)")? d="([^"]+)"\/>/g)].map(([, cls, z, d]) => ({ cls, z: Number(z ?? 0), d }));
+const top = Math.max(...paths(reliefSvg).map((p) => p.z));
+// The contours draw from the summit down, so the volcano rises out of the plain
+const relief = paths(reliefSvg).map((p) => ({ ...p, delay: (0.25 + ((top - p.z) / top) * 0.85).toFixed(2) }));
+const coast = paths(coastSvg);
+
+// The graticule, every 5 minutes of arc inside the window
+const FIVE = 5 / 60;
+const range = (from: number, to: number) => Array.from({ length: Math.floor(to / FIVE) - Math.ceil(from / FIVE) + 1 }, (_, i) => (Math.ceil(from / FIVE) + i) * FIVE);
+const meridians = range(lonOf(0), lonOf(W)).map((lon) => (lon - terrain.west) / terrain.cell);
+const parallels = range(latOf(H), latOf(0)).map((lat) => (terrain.north - lat) / terrain.cell);
+
+const map = { W, H, west: terrain.west, north: terrain.north, cell: terrain.cell, subject, water, heights: { src: heights.src, ...terrain.heights } };
+const [lastWord] = tagline.more.slice(-1);
+---
+
+<section class="hero" aria-labelledby="hero-title">
+	<div class="sheet">
+		<div class="marginalia" aria-hidden="true" data-marginalia></div>
+		<div class="frame">
+			<div class="map" data-map={JSON.stringify(map)} tabindex="0" role="group" aria-label={`Map of ${subject.name} Volcano. Use the arrow keys to read the coordinates and height at a point.`}>
+				<svg class="terrain" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid slice" fill="none" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label={`Shaded relief and ${contours.interval}-metre contours of ${subject.name} Volcano and Albay Gulf, Albay, Philippines`}>
+					<defs>
+						{/* The hillshade is greyscale; these recolour it into the colourway's ink and turn its brightness into
+						    opacity, so it prints as ink on the ground rather than as a grey photo */}
+						<filter id="hs-dark" color-interpolation-filters="sRGB">
+							<feColorMatrix type="matrix" values="0 0 0 0 0.961  0 0 0 0 0.961  0 0 0 0 0.961  0.17 0.33 0.06 0 -0.22" />
+							<feComposite in2="SourceAlpha" operator="in" />
+						</filter>
+						<filter id="hs-light" color-interpolation-filters="sRGB">
+							<feColorMatrix type="matrix" values="0 0 0 0 0.047  0 0 0 0 0.137  0 0 0 0 0.251  -0.27 -0.53 -0.1 0 0.78" />
+							<feComposite in2="SourceAlpha" operator="in" />
+						</filter>
+					</defs>
+					<image class="hs" href={hillshade.src} x="0" y="0" width={W} height={H} />
+					<g class="graticule">
+						{meridians.map((x) => <path d={`M${x.toFixed(0)},0V${H}`} />)}
+						{parallels.map((y) => <path d={`M0,${y.toFixed(0)}H${W}`} />)}
+					</g>
+					<g class="relief" id="relief" stroke="currentColor">
+						{relief.map((p) => <path class={p.cls} pathLength="1" style={`--d: ${p.delay}s`} d={p.d} />)}
+					</g>
+					<g class="coast">
+						{coast.map((p) => <path pathLength="1" style="--d: 0.15s" d={p.d} />)}
+					</g>
+				</svg>
+				<div class="overlay" aria-hidden="true" data-overlay></div>
+				<span class="probe-mark" aria-hidden="true" data-probe-mark></span>
+				<p class="sr-only" aria-live="polite" data-probe-live></p>
+				<div class="scale" aria-hidden="true">
+					<svg class="north" viewBox="0 0 26 44">
+						<path d="M13 2 22 30 13 24 4 30Z" fill="currentColor"></path>
+						<path d="M13 2 13 24 4 30Z" style="fill: var(--bg)" stroke="currentColor" stroke-width="1.2"></path>
+						<text x="13" y="42" text-anchor="middle" font-family="var(--mono)" font-size="10" font-weight="700" fill="currentColor">N</text>
+					</svg>
+					<div class="scale-in">
+						<div class="bar" data-bar><i></i><i></i><i></i><i></i><i></i></div>
+						<div class="bar-labels" data-bar-labels></div>
+						<div class="fine">SRTM 1″ · Contours {contours.interval} m</div>
+						<div class="probe"><span data-probe-xy>Point at the map</span><b data-probe-z>to read its height</b></div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="legend" aria-label="Main">
+				<h2>Legend <span>Sheet v-05</span></h2>
+				<ul>
+					{
+						sections.map((s) => (
+							<li>
+								<a href={s.href}>
+									<svg class="sym" aria-hidden="true">
+										<use href={`#s-${s.id}`} />
+									</svg>
+									<span class="label">{s.label}</span>
+									<span class="ref">{insets[s.inset].ref}</span>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+				<div class="theme-key">
+					<p class="key-head">Themes</p>
+					<ul>
+						{
+							THEMES.map((t) => (
+								<li>
+									<svg class="tsym" aria-hidden="true">
+										<use href={`#t-${t}`} />
+									</svg>
+									{themeInfo[t].label}
+								</li>
+							))
+						}
+					</ul>
+				</div>
+				<div class="relief-key" aria-hidden="true">
+					<div><svg viewBox="0 0 36 12"><path d="M1 8C9 2 18 10 35 4" stroke="currentColor" stroke-width="2" fill="none"></path></svg>Index contour, {contours.index} m</div>
+					<div><svg viewBox="0 0 36 12"><path d="M1 8C9 2 18 10 35 4" stroke="currentColor" stroke-width="1" fill="none" opacity=".55"></path></svg>Contour, {contours.interval} m</div>
+					<div><svg viewBox="0 0 36 12"><path d="M18 1.5 24 11H12Z" fill="var(--block)"></path></svg>Spot height</div>
+				</div>
+			</nav>
+
+			<div class="title-block">
+				<div class="tb-row mono"><span>BNHR · Edition 2026</span><span>Geospatial · Data · AI · Open tech</span></div>
+				{/* Always three lines, the "more" words on the last one; the pause button follows the heading in the same line
+				   box, so it sits after the words without becoming part of the heading's name */}
+				<div class="headline">
+					<h1 id="hero-title">
+						<span class="sr-only">Less {tagline.less}. More {lastWord}.</span>
+						<span aria-hidden="true">Less {tagline.less}.<br />More<br /><span class="more" data-more>{tagline.more.map((w) => <span class:list={{ on: w === lastWord }}><em>{w}</em>.</span>)}</span></span>
+					</h1><button type="button" class="tagline-pause" aria-pressed="false" aria-label="Pause the tagline" hidden data-tagline-pause>
+						<svg class="when-playing" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 3h3v10H4zM9 3h3v10H9z" fill="currentColor"></path></svg>
+						<svg class="when-paused" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3l8 5-8 5z" fill="currentColor"></path></svg>
+					</button>
+				</div>
+				<p class="lede">I help teams and organisations do geospatial, data and AI work with open tools they can own — through <strong>training, consulting and custom builds</strong>.</p>
+				<div class="ctas">
+					<a class="btn btn-primary" href={insetHref('contact')}>Contact</a>
+					<a class="btn" href={insetHref('learn')}>Explore the Learn sites</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	interface MapConfig {
+		W: number;
+		H: number;
+		west: number;
+		north: number;
+		cell: number;
+		subject: { name: string; x: number; y: number; height: number };
+		water: { name: string; x: number; y: number; narrow: { x: number; y: number } };
+		heights: { src: string; step: number; x0: number; y0: number };
+	}
+	const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+
+	/* The "more" words take turns on the heading's last line. Motion that runs past 5 seconds needs a way to stop it
+	   (WCAG 2.2.2), so the small button after the words pauses it; with reduced motion the brand's own word stays and
+	   the button stays hidden. The heading's accessible name stays fixed in the sr-only copy. */
+	const words = [...document.querySelectorAll<HTMLElement>('[data-more] > span')];
+	const pause = document.querySelector<HTMLButtonElement>('[data-tagline-pause]')!;
+	if (!reduce.matches && words.length > 1) {
+		let current = words.findIndex((w) => w.classList.contains('on'));
+		let timer = 0;
+		const turn = () => {
+			if (document.hidden) return;
+			words[current].classList.remove('on');
+			current = (current + 1) % words.length;
+			words[current].classList.add('on');
+		};
+		const play = () => (timer = window.setInterval(turn, 2800));
+		pause.hidden = false;
+		play();
+		pause.addEventListener('click', () => {
+			const paused = pause.getAttribute('aria-pressed') !== 'true';
+			pause.setAttribute('aria-pressed', String(paused));
+			pause.setAttribute('aria-label', paused ? 'Play the tagline' : 'Pause the tagline');
+			clearInterval(timer);
+			if (!paused) play();
+		});
+	}
+
+	/* Map: crop the relief around the summit for the frame's shape, then lay the graticule ticks, the spot height and
+	   the scale bar over it in screen space */
+	const mapEl = document.querySelector<HTMLElement>('[data-map]')!;
+	const cfg: MapConfig = JSON.parse(mapEl.dataset.map!);
+	const { W, H, subject } = cfg;
+	const svg = mapEl.querySelector('svg.terrain')!;
+	const sheet = document.querySelector('.hero .sheet')!;
+	const frame = document.querySelector('.hero .frame')!;
+	const marg = document.querySelector<HTMLElement>('[data-marginalia]')!;
+	const over = document.querySelector<HTMLElement>('[data-overlay]')!;
+	const titleBlock = document.querySelector('.hero .title-block')!;
+	const bar = mapEl.querySelector<HTMLElement>('[data-bar]')!;
+	const barLabels = mapEl.querySelector<HTMLElement>('[data-bar-labels]')!;
+	const lonOf = (x: number) => cfg.west + x * cfg.cell;
+	const latOf = (y: number) => cfg.north - y * cfg.cell;
+	const xOfLon = (lon: number) => (lon - cfg.west) / cfg.cell;
+	const yOfLat = (lat: number) => (cfg.north - lat) / cfg.cell;
+	// Metres per cell east–west at the summit's latitude, for the scale bar
+	const mPerUnit = 6371008.8 * (Math.PI / 180) * cfg.cell * Math.cos((latOf(subject.y) * Math.PI) / 180);
+	const vb = { x: 0, y: 0, w: W, h: H };
+	let scale = 1;
+	// Whole minutes of arc as 123°40′E
+	const dm = (minutes: number, hemi: string) => `${Math.floor(minutes / 60)}°${String(minutes % 60).padStart(2, '0')}′${hemi}`;
+
+	function layout() {
+		const r = mapEl.getBoundingClientRect();
+		const cw = r.width, ch = r.height;
+		if (!cw || !ch) return;
+		const a = cw / ch, narrow = innerWidth <= 900;
+		if (a < W / H) {
+			vb.h = H; vb.w = H * a; vb.y = 0;
+			// On wide screens the summit sits left of centre so the title block lands on Albay Gulf
+			const fx = narrow ? 0.5 : 0.36;
+			vb.x = Math.min(Math.max(subject.x - vb.w * fx, 0), W - vb.w);
+		} else {
+			vb.w = W; vb.h = W / a; vb.x = 0;
+			vb.y = Math.min(Math.max(subject.y - vb.h * 0.5, 0), H - vb.h);
+		}
+		svg.setAttribute('viewBox', [vb.x, vb.y, vb.w, vb.h].map((v) => v.toFixed(1)).join(' '));
+		const s = (scale = cw / vb.w);
+		const sx = (x: number) => (x - vb.x) * s;
+		const sy = (y: number) => (y - vb.y) * s;
+
+		// Graticule labels sit in the sheet margin, outside the neatline, as on a printed sheet; minute ticks run along
+		// the inside of the neatline on the map face
+		const sr = sheet.getBoundingClientRect(), fr = frame.getBoundingClientRect();
+		const ox = r.left - sr.left, oy = r.top - sr.top;
+		const outer = fr.left - sr.left, outerTop = fr.top - sr.top, outerR = fr.right - sr.left, outerB = fr.bottom - sr.top;
+		const reachesBottom = Math.abs(r.bottom - fr.bottom) < 4;
+		let m1 = '', m2 = '';
+		for (let m = Math.ceil(lonOf(0) * 60); m <= Math.floor(lonOf(W) * 60); m++) {
+			const x = sx(xOfLon(m / 60));
+			if (x < 6 || x > cw - 6) continue;
+			const major = m % 5 === 0, cls = 'tick x' + (major ? ' major' : '');
+			m2 += `<i class="${cls}" style="left:${x.toFixed(1)}px;top:0"></i>`;
+			if (reachesBottom) m2 += `<i class="${cls}" style="left:${x.toFixed(1)}px;bottom:0"></i>`;
+			if (!major || x < 34 || x > cw - 34) continue;
+			const gx = (ox + x).toFixed(1);
+			m1 += `<i class="tick x" style="left:${gx}px;top:${outerTop - 8}px;height:8px"></i><span class="tick-label x" style="left:${gx}px;top:${outerTop - 22}px">${dm(m, 'E')}</span>`;
+			if (reachesBottom) m1 += `<i class="tick x" style="left:${gx}px;top:${outerB}px;height:8px"></i><span class="tick-label x" style="left:${gx}px;top:${outerB + 12}px">${dm(m, 'E')}</span>`;
+		}
+		for (let n = Math.ceil(latOf(H) * 60); n <= Math.floor(latOf(0) * 60); n++) {
+			const y = sy(yOfLat(n / 60));
+			if (y < 6 || y > ch - 6) continue;
+			const major = n % 5 === 0, cls = 'tick y' + (major ? ' major' : '');
+			m2 += `<i class="${cls}" style="top:${y.toFixed(1)}px;left:0"></i><i class="${cls}" style="top:${y.toFixed(1)}px;right:0"></i>`;
+			if (!major || y < 40 || y > ch - 40) continue;
+			const gy = (oy + y).toFixed(1);
+			m1 += `<i class="tick y" style="top:${gy}px;left:${outer - 8}px;width:8px"></i><i class="tick y" style="top:${gy}px;left:${outerR}px;width:8px"></i>`;
+			m1 += `<span class="tick-label y" style="top:${gy}px;left:${outer - 22}px">${dm(n, 'N')}</span><span class="tick-label y" style="top:${gy}px;left:${outerR + 11}px">${dm(n, 'N')}</span>`;
+		}
+		marg.innerHTML = m1;
+
+		// Spot height, and the gulf's name wherever the sea is open on screen
+		m2 += `<div class="peak" style="left:${sx(subject.x).toFixed(1)}px;top:${sy(subject.y).toFixed(1)}px"><svg viewBox="0 0 14 13"><path d="M7 1 13 12H1Z"/></svg><span><b>${subject.name}</b><i>${subject.height.toLocaleString('en')} m</i></span></div>`;
+		const at = narrow ? cfg.water.narrow : cfg.water;
+		const wx = sx(at.x), wy = sy(at.y);
+		const tb = titleBlock.getBoundingClientRect();
+		const covered = !narrow && r.left + wx + 220 > tb.left && r.top + wy > tb.top - 20;
+		if (!covered && wx < cw - 60 && wy < ch - 20) m2 += `<span class="water" style="left:${wx.toFixed(1)}px;top:${wy.toFixed(1)}px">${cfg.water.name}</span>`;
+		over.innerHTML = m2;
+
+		// Scale bar: the longest of 1, 2, 5 or 10 km that fits in about a fifth of the map
+		const pxPerKm = (1000 / mPerUnit) * s, target = Math.min(cw * 0.22, 220);
+		const km = [1, 2, 5, 10].filter((k) => k * pxPerKm <= target).at(-1) ?? 1;
+		const len = `${(km * pxPerKm).toFixed(1)}px`;
+		bar.style.width = barLabels.style.width = len;
+		barLabels.innerHTML = `<span style="left:0">0</span><span style="left:100%">${km}&nbsp;km</span>`;
+		placeMark();
+	}
+
+	/* Readout. Heights come from scripts/sync_brand.py's grid: whole metres in the red and green bytes, 0 for sea,
+	   sampled every `step` cells on a lattice anchored on the summit, so the summit reads exactly its spot height */
+	const probeXY = mapEl.querySelector<HTMLElement>('[data-probe-xy]')!;
+	const probeZ = mapEl.querySelector<HTMLElement>('[data-probe-z]')!;
+	const live = mapEl.querySelector<HTMLElement>('[data-probe-live]')!;
+	const mark = mapEl.querySelector<HTMLElement>('[data-probe-mark]')!;
+	const hint = matchMedia('(hover: none)').matches ? 'Tap the map' : 'Point at the map';
+	probeXY.textContent = hint;
+	let pt: { x: number; y: number } | null = null, viaMouse = false;
+	let grid: Uint16Array | null = null, gw = 0, gh = 0;
+	const gridImg = new Image();
+	gridImg.onload = () => {
+		const c = document.createElement('canvas');
+		c.width = gw = gridImg.naturalWidth;
+		c.height = gh = gridImg.naturalHeight;
+		const g = c.getContext('2d', { willReadFrequently: true })!;
+		g.drawImage(gridImg, 0, 0);
+		const px = g.getImageData(0, 0, gw, gh).data;
+		grid = new Uint16Array(gw * gh);
+		for (let i = 0; i < grid.length; i++) grid[i] = (px[i * 4] << 8) | px[i * 4 + 1];
+	};
+	gridImg.src = cfg.heights.src;
+	// Height in metres at a point in map units, or null over the sea. Bilinear on land; next to the coast, where a
+	// neighbour is sea, the nearest sample decides
+	function heightAt(g: Uint16Array, x: number, y: number) {
+		const { step, x0: ax, y0: ay } = cfg.heights;
+		const gx = Math.min(Math.max((x - ax) / step, 0), gw - 1), gy = Math.min(Math.max((y - ay) / step, 0), gh - 1);
+		const x0 = Math.floor(gx), y0 = Math.floor(gy), x1 = Math.min(x0 + 1, gw - 1), y1 = Math.min(y0 + 1, gh - 1);
+		const a = g[y0 * gw + x0], b = g[y0 * gw + x1], c = g[y1 * gw + x0], d = g[y1 * gw + x1];
+		if (!a || !b || !c || !d) return g[Math.round(gy) * gw + Math.round(gx)] || null;
+		const fx = gx - x0, fy = gy - y0;
+		return Math.round(a * (1 - fx) * (1 - fy) + b * fx * (1 - fy) + c * (1 - fx) * fy + d * fx * fy);
+	}
+	// Minutes of arc to one decimal, as 13°15.4′N
+	const minutes = (deg: number, hemi: string) => {
+		const d = Math.floor(deg), m = (deg - d) * 60;
+		return `${d}°${m < 10 ? '0' : ''}${m.toFixed(1)}′${hemi}`;
+	};
+	function placeMark() {
+		mark.classList.toggle('on', !!pt && !viaMouse);
+		if (pt) {
+			mark.style.left = `${((pt.x - vb.x) * scale).toFixed(1)}px`;
+			mark.style.top = `${((pt.y - vb.y) * scale).toFixed(1)}px`;
+		}
+	}
+	// Read at a point in map units; returns the spoken form for the keyboard's live region
+	function read(x: number, y: number) {
+		if (!grid) return '';
+		pt = { x, y };
+		const z = heightAt(grid, x, y);
+		const xy = `${minutes(latOf(y), 'N')} ${minutes(lonOf(x), 'E')}`;
+		probeXY.textContent = xy;
+		probeZ.textContent = z === null ? 'Sea' : `${z.toLocaleString('en')} m`;
+		placeMark();
+		return `${xy}, ${z === null ? 'sea' : `${z.toLocaleString('en')} metres`}`;
+	}
+	function clear() {
+		pt = null;
+		probeXY.textContent = hint;
+		probeZ.textContent = 'to read its height';
+		placeMark();
+	}
+	function atEvent(e: PointerEvent | MouseEvent) {
+		const r = mapEl.getBoundingClientRect();
+		read(vb.x + (e.clientX - r.left) / scale, vb.y + (e.clientY - r.top) / scale);
+	}
+	// Mouse and pen read on hover; a touch reads on tap, so a swipe still scrolls the page
+	mapEl.addEventListener('pointermove', (e) => {
+		if (e.pointerType === 'touch') return;
+		if ((e.target as Element).closest('.scale')) return clear();
+		viaMouse = true;
+		atEvent(e);
+	});
+	mapEl.addEventListener('pointerleave', (e) => {
+		if (e.pointerType !== 'touch') clear();
+	});
+	mapEl.addEventListener('click', (e) => {
+		if ((e.target as Element).closest('.scale')) return;
+		viaMouse = (e as PointerEvent).pointerType === 'mouse';
+		atEvent(e);
+	});
+	// Arrow keys walk the point from the summit, about 450 m a step (Shift: about 1.8 km)
+	const steps: Record<string, [number, number]> = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
+	mapEl.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape') return clear();
+		const dir = steps[e.key];
+		if (!dir) return;
+		e.preventDefault();
+		viaMouse = false;
+		const d = e.shiftKey ? 60 : 15;
+		const p = pt ?? { x: subject.x - dir[0] * d, y: subject.y - dir[1] * d };
+		const x = Math.min(Math.max(p.x + dir[0] * d, vb.x), vb.x + vb.w);
+		const y = Math.min(Math.max(p.y + dir[1] * d, vb.y), vb.y + vb.h);
+		live.textContent = read(x, y);
+	});
+
+	layout();
+	let raf = 0;
+	const relayout = () => {
+		cancelAnimationFrame(raf);
+		raf = requestAnimationFrame(layout);
+	};
+	addEventListener('resize', relayout);
+	new ResizeObserver(relayout).observe(mapEl);
+	document.fonts?.ready.then(layout);
+</script>
+
+<style is:global>
+	.hero { padding: 20px var(--gutter) 0; }
+	.hero .sheet { position: relative; max-width: var(--max); margin: 0 auto; border: 1px solid var(--rule); padding: 30px; }
+	.hero .frame {
+		position: relative; border: 2px solid var(--ink);
+		height: clamp(620px, calc(100svh - var(--masthead) - 84px), 880px);
+		overflow: hidden; background: var(--bg);
+	}
+	.hero .map { position: absolute; inset: 0; cursor: crosshair; }
+	.hero .map:focus-visible { outline: 3px solid var(--block); outline-offset: -5px; border-radius: 0; }
+	.terrain { width: 100%; height: 100%; color: var(--ink); }
+	.terrain .graticule { stroke: var(--ink); stroke-opacity: 0.16; stroke-width: 1; stroke-dasharray: 2 6; }
+	.terrain .coast path { stroke: var(--ink); stroke-width: 1.6; stroke-opacity: 0.85; }
+	.terrain .relief path.int { stroke-width: 0.9; stroke-opacity: 0.32; }
+	.terrain .relief path.idx { stroke-width: 1.8; stroke-opacity: 0.7; }
+	.terrain .hs { filter: url(#hs-dark); }
+	:root[data-theme='light'] .terrain .hs { filter: url(#hs-light); }
+	:root[data-theme='light'] .terrain .relief path.int { stroke-opacity: 0.38; }
+
+	/* Marginalia drawn over the map by script, in screen space, so the type stays at reading size whatever the crop */
+	.hero .marginalia, .hero .overlay { position: absolute; inset: 0; pointer-events: none; font-family: var(--mono); }
+	.hero .marginalia { z-index: 1; }
+	.tick { position: absolute; background: var(--ink); }
+	.tick.x { width: 1px; height: 6px; }
+	.tick.x.major { height: 12px; }
+	.tick.y { height: 1px; width: 6px; }
+	.tick.y.major { width: 12px; }
+	.tick-label { position: absolute; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: var(--ink); white-space: nowrap; line-height: 1; }
+	.tick-label.x { transform: translateX(-50%); }
+	.tick-label.y { writing-mode: vertical-rl; transform: translateY(-50%) rotate(180deg); }
+	.peak { position: absolute; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 8px; }
+	.peak svg { width: 14px; height: 13px; fill: var(--block); stroke: var(--bg); stroke-width: 1.5; transform: translateX(7px); }
+	.peak span { transform: translateX(7px); background: color-mix(in srgb, var(--bg) 78%, transparent); padding: 3px 6px; border-radius: 3px; }
+	.peak b { display: block; font: 800 15px/1.1 var(--display); letter-spacing: 0.02em; text-transform: uppercase; }
+	.peak i { font-style: normal; font-size: 11px; color: var(--muted); }
+	.water { position: absolute; font: 500 13px/1 var(--display); letter-spacing: 0.5em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+
+	/* Readout: point at the map (or tap it, or use the arrow keys) to read where you are and how high, as in a GIS
+	   status bar. The map itself stays still, so the hero's one moving accent is the headline's word; the tap and
+	   keyboard crosshair is ink for the same reason */
+	.probe-mark { position: absolute; z-index: 1; width: 28px; height: 28px; margin: -14px 0 0 -14px; pointer-events: none; display: none; color: var(--ink); }
+	.probe-mark.on { display: block; }
+	.probe-mark::before {
+		content: ''; position: absolute; inset: 0;
+		background: linear-gradient(currentColor, currentColor) center / 1.5px 100% no-repeat, linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat;
+	}
+	.probe-mark::after { content: ''; position: absolute; inset: 9px; border-radius: 50%; background: var(--ink); border: 2px solid var(--bg); }
+	.probe { display: grid; gap: 4px; margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--rule); min-width: 21ch; text-transform: uppercase; }
+	.probe b { color: var(--ink); font-weight: 700; }
+
+	/* Legend box = the site's main navigation */
+	.legend {
+		position: absolute; top: 24px; left: 24px; width: 270px; z-index: 2;
+		background: var(--bg); border: 1px solid var(--ink); padding: 18px 18px 16px;
+	}
+	.legend h2 { font: 600 12px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; padding-bottom: 12px; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; }
+	.legend h2 span { color: var(--muted); font-weight: 500; }
+	.legend > ul { padding: 6px 0 4px; }
+	.legend li a {
+		display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 10px;
+		padding: 7px 0; text-decoration: none; font: 700 19px/1.1 var(--display); letter-spacing: -0.015em;
+	}
+	.legend li a .ref { font: 500 11px/1 var(--mono); color: var(--muted); letter-spacing: 0.06em; }
+	.legend li a:hover .label, .legend li a:hover .sym { color: var(--block); }
+	.legend .theme-key { border-top: 1px solid var(--rule); padding: 12px 0; display: grid; gap: 8px; }
+	.theme-key .key-head { font: 600 11px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+	.legend .theme-key ul { display: grid; gap: 9px; padding: 0; }
+	.theme-key li { display: grid; grid-template-columns: 36px 1fr; align-items: center; gap: 10px; font: 600 12px/1.2 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; }
+	.legend .relief-key { border-top: 1px solid var(--rule); padding-top: 12px; margin-top: 4px; display: grid; gap: 7px; }
+	.relief-key div { display: grid; grid-template-columns: 36px 1fr; align-items: center; gap: 10px; font: 500 11px/1.2 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+	.relief-key svg { width: 36px; height: 12px; }
+
+	/* Title block */
+	.title-block {
+		position: absolute; right: 24px; bottom: 24px; z-index: 2; width: min(600px, 52%);
+		background: var(--bg); border: 2px solid var(--ink); padding: 26px 30px 28px;
+	}
+	.title-block .tb-row { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; margin-bottom: 22px; border-bottom: 1px solid var(--rule); font-size: 12px; }
+	.title-block .tb-row span:last-child { color: var(--muted); }
+	/* The lines break only at the <br>s, so the heading is always three lines. The size is capped where the widest line,
+	   the longest "more" word plus the button, fills the title block: --more-em is that word with its period, in em
+	   (measured for "community."; measure again when the words change) */
+	.title-block { container-type: inline-size; --pause: 24px; --pause-gap: 10px; --more-em: 5.38; --fit: calc((100cqi - var(--pause) - var(--pause-gap)) / var(--more-em)); }
+	.headline { font: 800 min(clamp(48px, 5.6vw, 84px), var(--fit)) / 0.98 var(--display); letter-spacing: -0.045em; white-space: nowrap; }
+	.headline h1 { display: inline; position: relative; z-index: 0; font: inherit; letter-spacing: inherit; }
+	/* A block, so the highlight is the line's height, not the font's taller content area */
+	.headline h1 em { display: inline-block; position: relative; z-index: -1; }
+	/* The "more" words stacked in one place, as wide as the longest, so nothing moves as they turn */
+	.more { display: inline-grid; justify-items: start; }
+	.more > span { grid-area: 1 / 1; opacity: 0; transform: translateY(0.18em); transition: opacity 220ms ease-out, transform 220ms ease-out; }
+	.more > span.on { opacity: 1; transform: none; }
+	/* Small and quiet: a hairline ring in the label colour, the minimum touch-target size */
+	.tagline-pause {
+		display: inline-grid; place-items: center; width: var(--pause); height: var(--pause); margin-left: var(--pause-gap); padding: 0;
+		border: 1px solid var(--rule); border-radius: 50%; background: transparent; color: var(--subtle);
+		vertical-align: 0.12em; cursor: pointer; transition: color 160ms, border-color 160ms;
+	}
+	.tagline-pause[hidden] { display: none; }
+	.tagline-pause:hover { border-color: var(--ink); color: var(--ink); }
+	.tagline-pause svg { width: 9px; height: 9px; }
+	.tagline-pause[aria-pressed='true'] .when-playing, .tagline-pause[aria-pressed='false'] .when-paused { display: none; }
+	.title-block .lede { margin-top: 22px; font-size: 18px; line-height: 1.5; max-width: 44ch; color: var(--muted); }
+	.title-block .lede strong { color: var(--ink); font-weight: 700; }
+
+	.scale {
+		position: absolute; left: 24px; bottom: 24px; z-index: 2; display: flex; align-items: flex-end; gap: 18px;
+		background: color-mix(in srgb, var(--bg) 84%, transparent); padding: 12px 14px 10px; border: 1px solid var(--rule);
+		font: 500 11px/1 var(--mono); letter-spacing: 0.04em; color: var(--muted);
+	}
+	.north { width: 26px; height: 44px; color: var(--ink); }
+	.bar { display: flex; height: 8px; border: 1px solid var(--ink); margin: 6px 0; }
+	.bar i { flex: 1; }
+	.bar i:nth-child(odd) { background: var(--ink); }
+	.bar-labels { position: relative; height: 12px; color: var(--ink); }
+	.bar-labels span { position: absolute; transform: translateX(-50%); }
+	.bar-labels span:first-child { transform: none; }
+	.scale .fine { margin-top: 6px; text-transform: uppercase; }
+
+	/* Load sequence: frame, relief, then the furniture */
+	@media (prefers-reduced-motion: no-preference) {
+		.hero .frame { animation: frame-in 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+		.terrain .hs { animation: fade 1200ms 350ms ease-out both; }
+		.terrain .graticule { animation: fade 900ms 200ms ease-out both; }
+		.terrain .relief path, .terrain .coast path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 900ms var(--d) cubic-bezier(0.3, 0.6, 0.2, 1) forwards; }
+		.legend { animation: rise 600ms 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+		.title-block { animation: rise 700ms 1050ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+		.scale, .hero .marginalia { animation: fade 600ms 1350ms ease-out both; }
+	}
+	@keyframes frame-in { from { clip-path: inset(0 100% 100% 0); } to { clip-path: inset(0 0 0 0); } }
+	@keyframes draw { to { stroke-dashoffset: 0; } }
+	@keyframes fade { from { opacity: 0; } }
+	@keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+
+	@media (max-width: 900px) {
+		.hero { padding-top: 12px; }
+		.hero .sheet { padding: 22px; }
+		.hero .frame { height: auto; display: flex; flex-direction: column; }
+		.hero .map { position: relative; inset: auto; height: min(42svh, 380px); min-height: 280px; border-bottom: 2px solid var(--ink); }
+		.title-block { order: 1; position: relative; right: auto; bottom: auto; width: auto; border: 0; padding: 22px 18px 26px; }
+		.legend { order: 2; position: relative; top: auto; left: auto; width: auto; border: 0; border-top: 2px solid var(--ink); padding: 18px 18px 20px; }
+		.title-block .tb-row span:last-child { display: none; }
+		.tick-label { font-size: 10px; }
+		.headline { font-size: min(clamp(44px, 12.5vw, 72px), var(--fit)); }
+		.title-block .tb-row { margin-bottom: 18px; }
+		.title-block .lede { font-size: 17px; }
+		.legend > ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; }
+		.legend .relief-key { grid-template-columns: 1fr 1fr; }
+		/* On phones the readout sits beside the scale bar, so the box stays one line tall on a short map */
+		.scale { left: 10px; right: 10px; bottom: 10px; padding: 7px 9px; gap: 10px; }
+		.scale .fine { display: none; }
+		.scale-in { flex: 1; display: grid; grid-template-columns: auto 1fr; column-gap: 12px; align-items: center; }
+		.scale-in .bar, .scale-in .bar-labels { grid-column: 1; }
+		.probe { grid-column: 2; grid-row: 1 / span 2; justify-self: end; text-align: right; min-width: 0; margin: 0; padding: 0 0 0 12px; border-top: 0; border-left: 1px solid var(--rule); }
+		.north { height: 34px; width: 20px; }
+		.water { font-size: 11px; letter-spacing: 0.35em; }
+	}
+	@media (max-width: 420px) {
+		.legend > ul { grid-template-columns: 1fr; }
+		.legend .relief-key { grid-template-columns: 1fr; }
+	}
+</style>

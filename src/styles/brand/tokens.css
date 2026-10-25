@@ -1,0 +1,49 @@
+/* BNHR 2026 web tokens: the brand's colours and type for every BNHR website, in no framework's terms.
+
+   Each site copies this folder into its own source with its sync script and commits the copy, so a build never
+   reaches outside the site's repo; never edit a copy, change this file and sync. A site maps these tokens onto its
+   framework in its own adapter (Learn QGIS: src/styles/brand.css, for Starlight), and keeps tokens only it uses
+   (QGIS green, its terrain) in that adapter. Two colourways from the logo (open_frame.py PALETTES): core-dark, the
+   navy page, and core-light, the paper page. A site's adapter picks one for each of its themes.
+
+   The tones per colourway are given as colours, not mixes, so a contrast check can measure them as written:
+   `ink` is text and headings; `muted` is secondary text (the ink 86% over the page); `subtle` is labels and
+   captions; `rule` and `hair` are the lines that frame panels and divide rows (decorative, never text).
+   `block` and `mark` are the highlight pair: the mark colour on the orange block (8.6:1), the same in both. */
+
+:root {
+	--bnhr-navy: #0c2340;
+	--bnhr-paper: #f5f5f5;
+	--bnhr-orange: #ffa500;
+	--bnhr-white: #ffffff;
+	/* Hazard yellow, for cautions only */
+	--bnhr-hazard: #ffd400;
+
+	--bnhr-block: var(--bnhr-orange);
+	--bnhr-mark: var(--bnhr-navy);
+
+	--core-dark-bg: #0c2340;
+	--core-dark-surface: #10294a;
+	--core-dark-ink: #f5f5f5;
+	--core-dark-muted: #d3dbe6;
+	--core-dark-subtle: #a3b3c9;
+	--core-dark-rule: #3f5168;
+	--core-dark-hair: #283c56;
+
+	--core-light-bg: #f5f5f5;
+	--core-light-surface: #ffffff;
+	--core-light-ink: #0c2340;
+	--core-light-muted: #23324a;
+	--core-light-subtle: #4a5a70;
+	--core-light-rule: #c2c7cd;
+	--core-light-hair: #d9dcdf;
+
+	/* Albert Sans for display (700–800, tight negative tracking), Atkinson Hyperlegible Next for reading,
+	   Atkinson Hyperlegible Mono for kickers, labels and data. The faces are in fonts.css. */
+	--bnhr-font-display: 'Albert Sans', sans-serif;
+	--bnhr-font-text: 'Atkinson Hyperlegible Next', sans-serif;
+	--bnhr-font-mono: 'Atkinson Hyperlegible Mono', monospace;
+
+	/* The logo's corner ratio, (R + SW/2) / frame size, for blocks and cards that echo it */
+	--bnhr-radius-ratio: 0.134;
+}

@@ -1,0 +1,75 @@
+---
+import { consultHref, email, socials } from '../data/site';
+
+// The contact inset that closes every sheet, so "Book a consult" in the masthead and "Contact" in the hero always have
+// somewhere to land: what to write about on the left, the email and the booking calendar on the right (as on Learn
+// QGIS), and the social accounts as a marginal note along the foot
+interface Props {
+	ref: string;
+}
+const { ref } = Astro.props;
+---
+
+<section class="inset" id="contact" data-ref={ref} aria-labelledby="h-contact">
+	<div class="inset-head solo">
+		<span class="ref-box" aria-hidden="true">{ref}</span>
+		<div><p class="kicker">Inset {ref} · Contact</p></div>
+	</div>
+	<div class="contact">
+		<div>
+			<h2 id="h-contact">Tell me what you're <em>working on</em>.</h2>
+			<p class="contact-note">Training for your team, help with a geospatial, data or AI project, or a second opinion on where open tools fit. Write to me, or book a free 30-minute consultation and talk it through.</p>
+		</div>
+		<div class="reach">
+			<p class="kicker">Email</p>
+			<a class="mail" href={`mailto:${email}`}>{email}</a>
+			<div class="ctas">
+				<a class="btn btn-primary" href={consultHref}>Book a free consultation <span class="note">30 minutes</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="elsewhere">
+		<p class="kicker" id={`h-elsewhere-${ref}`}>Elsewhere</p>
+		<ul aria-labelledby={`h-elsewhere-${ref}`}>
+			{
+				socials.map((s) => (
+					<li>
+						<a href={s.href}>
+							{s.name} <span>{s.handle}</span>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</section>
+
+<style is:global>
+	.contact { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(28px, 4vw, 64px); align-items: end; }
+	.contact h2 { position: relative; z-index: 0; font-size: clamp(40px, 5.4vw, 80px); letter-spacing: -0.045em; line-height: 1; }
+	.contact h2 em { position: relative; z-index: -1; white-space: nowrap; }
+	.contact-note { max-width: 52ch; margin-top: 22px; font-size: 18px; line-height: 1.5; color: var(--muted); }
+	.reach { padding-top: 20px; border-top: 2px solid var(--ink); }
+	.mail {
+		display: inline-block; margin-top: 10px; font: 800 clamp(26px, 3vw, 40px)/1.1 var(--display); letter-spacing: -0.03em;
+		color: var(--ink); text-decoration: underline; text-decoration-color: var(--block); text-decoration-thickness: 3px;
+		text-underline-offset: 6px; overflow-wrap: anywhere;
+	}
+	.reach .ctas { margin-top: 26px; }
+	/* The marginal note: the accounts in the sheet's mono, in a line along the inset's foot */
+	.elsewhere { display: flex; align-items: baseline; gap: 10px 24px; margin-top: clamp(28px, 4vw, 48px); padding-top: 14px; border-top: 1px solid var(--rule); }
+	.elsewhere .kicker { flex: none; font-size: 11px; color: var(--subtle); }
+	.elsewhere ul { display: flex; flex-wrap: wrap; gap: 8px 0; font: 500 12px/1.4 var(--mono); letter-spacing: 0.04em; }
+	.elsewhere li + li::before { content: '·'; margin: 0 12px; color: var(--subtle); }
+	.elsewhere a { color: var(--ink); text-decoration: none; font-weight: 600; }
+	.elsewhere a span { font-weight: 500; color: var(--muted); }
+	.elsewhere a:hover, .elsewhere a:hover span { color: var(--block); }
+	@media (max-width: 900px) {
+		.contact { grid-template-columns: 1fr; }
+		.contact-note { font-size: 17px; }
+		.elsewhere { flex-direction: column; }
+		.elsewhere ul { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; width: 100%; }
+		.elsewhere li + li::before { content: none; }
+		.elsewhere a { display: flex; flex-direction: column; gap: 2px; }
+	}
+</style>

@@ -1,0 +1,23 @@
+---
+// A numbered inset on the sheet: its reference box, kicker and title, an optional aside, then the content
+interface Props {
+	id: string;
+	ref: string;
+	kicker: string;
+	title: string;
+	aside?: string;
+}
+const { id, ref, kicker, title, aside } = Astro.props;
+---
+
+<section class="inset" id={id} data-ref={ref} aria-labelledby={`h-${id}`}>
+	<div class="inset-head">
+		<span class="ref-box" aria-hidden="true">{ref}</span>
+		<div>
+			<p class="kicker">Inset {ref} · {kicker}</p>
+			<h2 id={`h-${id}`}>{title}</h2>
+		</div>
+		{aside && <p class="aside">{aside}</p>}
+	</div>
+	<slot />
+</section>

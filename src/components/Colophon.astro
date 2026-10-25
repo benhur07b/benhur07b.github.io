@@ -1,0 +1,79 @@
+---
+import logoDark from '../assets/brand/logo-square-core-dark.svg';
+import logoLight from '../assets/brand/logo-square-core-light.svg';
+import { sections, socials, tagline } from '../data/site';
+import { latOf, lonOf, terrain } from '../data/terrain';
+
+// The flat footer, printed as the sheet's imprint. Its brandline is Learn QGIS's: the square logo beside the address
+// and the tagline. The logo repeats the address's link for the pointer only, so keyboards and screen readers meet one
+// link home, not two
+const { contours, heights, subject } = terrain;
+const dm = (deg: number, hemi: string) => `${Math.floor(deg)}°${String(Math.floor((deg % 1) * 60)).padStart(2, '0')}′${hemi}`;
+---
+
+<footer class="colophon">
+	<div class="colophon-in">
+		<div class="brandline">
+			<a class="logo" href="/" tabindex="-1" aria-hidden="true">
+				<img class="on-dark" src={logoDark.src} alt="" width={logoDark.width} height={logoDark.height} />
+				<img class="on-light" src={logoLight.src} alt="" width={logoLight.width} height={logoLight.height} />
+			</a>
+			<div>
+				<p class="url"><a href="/">bnhr.xyz</a></p>
+				<p class="tagline">Less {tagline.less}. More <span class="hl">{tagline.more.at(-1)}</span>.</p>
+			</div>
+		</div>
+		<div class="imprint">
+			<h2>Imprint</h2>
+			<p>Compiled and published by BNHR · Edition v-05 · 2026.</p>
+			<p>{`Relief: ${terrain.source} elevation of ${subject.name} Volcano and Albay Gulf, Albay. Contour interval ${contours.interval} metres, index contours every ${contours.index} metres. The height readout uses the same elevation sampled every ${heights.step} arc-seconds and interpolated between samples.`}</p>
+		</div>
+		<nav aria-label="Footer">
+			<h2>On this sheet</h2>
+			<ul>
+				{sections.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+			</ul>
+		</nav>
+		<div>
+			<h2>Elsewhere</h2>
+			<ul>
+				{socials.map((s) => <li><a href={s.href}>{s.name}</a></li>)}
+			</ul>
+		</div>
+	</div>
+	<div class="colophon-base">
+		<span class="mono">© {new Date().getFullYear()} BNHR</span>
+		<span class="mono">{dm(latOf(subject.y), 'N')} {dm(lonOf(subject.x), 'E')}</span>
+		<p class="license">
+			Except where stated otherwise, the content of this site by BNHR is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Software, source code and other works referenced here are under their own licenses. The BNHR name and logo are not covered.
+		</p>
+	</div>
+</footer>
+
+<style is:global>
+	.colophon { margin-top: clamp(72px, 10vw, 128px); border-top: 2px solid var(--ink); }
+	.colophon-in { max-width: var(--max); margin: 0 auto; padding: 40px var(--gutter) 28px; box-sizing: content-box; display: grid; grid-template-columns: 1.2fr 1.4fr 0.8fr 0.8fr; gap: 36px; }
+	.colophon .brandline { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; align-self: start; }
+	.colophon .logo img { height: 72px; width: auto; vertical-align: middle; }
+	.colophon .url { font: 800 22px/1 var(--display); letter-spacing: -0.02em; }
+	.colophon .url a { color: var(--ink); text-decoration: none; }
+	.colophon .url a:hover { text-decoration: underline; text-decoration-color: var(--block); }
+	.colophon .tagline { margin-top: 8px; font: 700 18px/1.2 var(--display); letter-spacing: -0.02em; }
+	.colophon .tagline .hl { white-space: nowrap; }
+	.colophon h2 { font: 600 11px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+	.colophon .imprint p { font-size: 15px; color: var(--muted); }
+	.colophon .imprint p + p { margin-top: 10px; }
+	.colophon li + li { margin-top: 8px; }
+	.colophon li a { text-decoration: none; font-weight: 700; }
+	.colophon li a:hover { text-decoration: underline; text-decoration-color: var(--block); }
+	.colophon-base { max-width: var(--max); margin: 0 auto; padding: 16px var(--gutter) 28px; box-sizing: content-box; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; gap: 10px 16px; font-size: 12px; color: var(--muted); }
+	/* The license in the text face: a sentence in the mono caps of the row above would be hard to read */
+	.colophon-base .license { grid-column: 1 / -1; max-width: 88ch; font-size: 13px; line-height: 1.5; }
+	.colophon-base .license a { color: var(--ink); text-decoration-color: var(--block); }
+	@media (max-width: 1180px) {
+		.colophon-in { grid-template-columns: 1fr 1fr; }
+	}
+	@media (max-width: 900px) {
+		.colophon-in { grid-template-columns: 1fr; gap: 28px; }
+	}
+</style>

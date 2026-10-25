@@ -1,0 +1,97 @@
+---
+import { classCode, services } from '../data/services';
+
+// The services as a legend's feature classes: each one's swatch is drawn in its geometry
+---
+
+<ul class="classes">
+	{
+		services.map((service) => (
+			<li class="class">
+				<div class="swatch" aria-hidden="true">
+					{service.geometry === 'area' && (
+						<svg viewBox="0 0 52 52">
+							<defs>
+								<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+									<path d="M0 0V6" stroke="currentColor" stroke-width="1.6" />
+								</pattern>
+							</defs>
+							<path d="M6 14 30 5 47 20 42 45 12 44Z" fill="url(#hatch)" stroke="currentColor" stroke-width="2.2" />
+						</svg>
+					)}
+					{service.geometry === 'point' && (
+						<svg viewBox="0 0 52 52">
+							<circle cx="26" cy="26" r="17" fill="none" stroke="currentColor" stroke-width="2.2" />
+							<circle cx="26" cy="26" r="7" fill="var(--block)" />
+						</svg>
+					)}
+					{service.geometry === 'line' && (
+						<svg viewBox="0 0 52 52">
+							<path d="M5 40 18 22 31 30 46 9" fill="none" stroke="currentColor" stroke-width="2.6" />
+							<g fill="var(--bg)" stroke="currentColor" stroke-width="2">
+								<circle cx="5" cy="40" r="3.4" />
+								<circle cx="18" cy="22" r="3.4" />
+								<circle cx="31" cy="30" r="3.4" />
+							</g>
+							<circle cx="46" cy="9" r="4.4" fill="var(--block)" />
+						</svg>
+					)}
+					{service.geometry === 'raster' && (
+						<svg viewBox="0 0 52 52">
+							<g fill="currentColor">
+								{[
+									[0.2, 0.45, 0.7, 1],
+									[0.45, 0.7, 1, 0.7],
+									[0.7, 1, 0, 0.45],
+									[1, 0.7, 0.45, 0.2],
+								].map((row, r) => row.map((o, c) => o > 0 && <rect x={4 + c * 11} y={4 + r * 11} width="10" height="10" opacity={o < 1 ? o : undefined} />))}
+							</g>
+							<rect x="26" y="26" width="10" height="10" fill="var(--block)" />
+						</svg>
+					)}
+				</div>
+				<p class="code mono">{classCode(service)}</p>
+				<h3>{service.title}</h3>
+				<p>
+					{service.text}
+					{service.highlight && (
+						<>
+							{' '}
+							<span class="hl">{service.highlight}</span>
+						</>
+					)}
+				</p>
+				<a class="arrow-link" href={service.link.href}>
+					{service.link.label} <span aria-hidden="true">→</span>
+				</a>
+			</li>
+		))
+	}
+</ul>
+
+<style is:global>
+	.classes { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule); }
+	.class { padding: 26px 24px 4px 0; display: flex; flex-direction: column; gap: 14px; }
+	.class + .class { padding-left: 24px; border-left: 1px solid var(--rule); }
+	.swatch { width: 72px; height: 72px; border: 1px solid var(--rule); display: grid; place-items: center; }
+	.swatch svg { width: 52px; height: 52px; color: var(--ink); }
+	.class .code { font-size: 11px; color: var(--muted); }
+	.class h3 { font-size: 28px; letter-spacing: -0.03em; }
+	.class p { color: var(--muted); font-size: 16px; }
+	.class .arrow-link { margin-top: auto; align-self: flex-start; font-size: 15px; }
+	@media (max-width: 1180px) {
+		.classes { grid-template-columns: 1fr 1fr; }
+		.class:nth-child(3) { padding-left: 0; border-left: 0; }
+		.class:nth-child(n + 3) { border-top: 1px solid var(--rule); margin-top: 18px; }
+	}
+	@media (max-width: 900px) {
+		.classes { grid-template-columns: 1fr; }
+		.class, .class + .class { padding: 20px 0 18px; border-left: 0; display: grid; grid-template-columns: 56px 1fr; gap: 6px 16px; align-items: start; }
+		.class + .class { border-top: 1px solid var(--rule); margin-top: 0; }
+		.class:nth-child(n + 3) { margin-top: 0; }
+		.class .swatch { grid-row: span 4; width: 56px; height: 56px; }
+		.class .swatch svg { width: 40px; height: 40px; }
+		.class h3 { font-size: 25px; }
+		.class .arrow-link { margin-top: 8px; justify-self: start; }
+	}
+</style>

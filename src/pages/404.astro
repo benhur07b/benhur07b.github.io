@@ -1,0 +1,46 @@
+---
+import ArchiveLink from '../components/ArchiveLink.astro';
+import { archive, sections } from '../data/site';
+import Sheet from '../layouts/Sheet.astro';
+---
+
+<Sheet title="Off the sheet" description="This page isn't on bnhr.xyz.">
+	<div class="insets">
+		<section class="inset" aria-labelledby="h-missing">
+			<div class="inset-head solo">
+				<span class="ref-box" aria-hidden="true">—</span>
+				<div>
+					<p class="kicker">404 · Off the sheet</p>
+					<h2 id="h-missing">This page isn't on the sheet.</h2>
+				</div>
+			</div>
+			<div class="linkout">
+				<p><strong>The site was rebuilt in 2026.</strong> Older pages and posts are kept on the archived site at {archive.host}.</p>
+				<div class="ctas">
+					<a class="btn btn-primary" href="/">Go to the home page</a>
+					<ArchiveLink>Open the archive</ArchiveLink>
+				</div>
+			</div>
+			<ul class="missing-sections">
+				{
+					sections.map((s) => (
+						<li>
+							<a href={s.href}>
+								<svg class="sym" aria-hidden="true">
+									<use href={`#s-${s.id}`} />
+								</svg>
+								{s.label}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</section>
+	</div>
+</Sheet>
+
+<style>
+	.missing-sections { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule); }
+	.missing-sections a { display: inline-flex; align-items: center; gap: 10px; font: 700 19px/1.2 var(--display); text-decoration: none; }
+	.missing-sections a:hover .sym { color: var(--block); }
+</style>

@@ -1,0 +1,145 @@
+---
+import logoDark from '../assets/brand/logo-horizontal-core-dark.svg';
+import logoLight from '../assets/brand/logo-horizontal-core-light.svg';
+import { insetHref, insets, sections } from '../data/site';
+
+// The sheet's top margin. On the home page the hero's legend is the navigation, so the masthead carries the sheet's
+// margin note; on any other page (the 404) it carries the sections, which link to the home page's insets. On phones
+// both give way to the Legend menu.
+interface Props {
+	home?: boolean;
+}
+const { home = false } = Astro.props;
+---
+
+<header class="masthead">
+	<a class="brand" href="/" aria-label="BNHR, home">
+		<img class="on-dark" src={logoDark.src} alt="BNHR" width="85" height="34" />
+		<img class="on-light" src={logoLight.src} alt="BNHR" width="85" height="34" />
+	</a>
+	{
+		home ? (
+			<p class="margin-note mono">
+				<b>Sheet v-05</b> · Open geospatial, data and AI · Training, consulting and builds · Philippines · Edition 2026
+			</p>
+		) : (
+			<nav class="mast-nav" aria-label="Main">
+				<ul>
+					{sections.map((s) => (
+						<li>
+							<a href={s.href}>
+								<svg class="sym" aria-hidden="true">
+									<use href={`#s-${s.id}`} />
+								</svg>
+								{s.label}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+		)
+	}
+	<span class="spacer"></span>
+	<div class="mast-actions">
+		<button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor"></path></svg>
+		</button>
+		<a class="btn btn-primary consult" href={insetHref('contact')}>Book a consult</a>
+		<button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobile-legend">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"></path></svg>Legend
+		</button>
+	</div>
+</header>
+
+<nav id="mobile-legend" class="mobile-legend" aria-label="Main" hidden>
+	{
+		sections.map((s) => (
+			<a href={s.href}>
+				<svg class="sym" aria-hidden="true">
+					<use href={`#s-${s.id}`} />
+				</svg>
+				{s.label}
+				<span class="ref">{insets[s.inset].ref}</span>
+			</a>
+		))
+	}
+	<a class="btn btn-primary" href={insetHref('contact')}>Book a consult</a>
+</nav>
+
+<script>
+	const root = document.documentElement;
+	const toggle = document.querySelector<HTMLButtonElement>('.theme-toggle')!;
+	const label = () => toggle.setAttribute('aria-label', root.dataset.theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+	label();
+	toggle.addEventListener('click', () => {
+		root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+		try {
+			localStorage.setItem('bnhr-theme', root.dataset.theme);
+		} catch {}
+		label();
+	});
+
+	const menuBtn = document.querySelector<HTMLButtonElement>('.menu-btn')!;
+	const menu = document.getElementById('mobile-legend')!;
+	const setOpen = (open: boolean) => {
+		menuBtn.setAttribute('aria-expanded', String(open));
+		menu.hidden = !open;
+	};
+	menuBtn.addEventListener('click', () => setOpen(menuBtn.getAttribute('aria-expanded') !== 'true'));
+	menu.addEventListener('click', (e) => {
+		if ((e.target as Element).closest('a')) setOpen(false);
+	});
+	addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && !menu.hidden) {
+			setOpen(false);
+			menuBtn.focus();
+		}
+	});
+</script>
+
+<style is:global>
+	.masthead {
+		position: sticky; top: 0; z-index: 40;
+		display: flex; align-items: center; gap: 24px;
+		height: var(--masthead); padding: 0 var(--gutter);
+		background: color-mix(in srgb, var(--bg) 92%, transparent);
+		backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+		border-bottom: 1px solid var(--hair);
+	}
+	.brand { display: block; flex: none; }
+	.brand img { height: 34px; width: auto; }
+	.margin-note { flex: 1; font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.margin-note b { color: var(--ink); font-weight: 700; }
+	.mast-nav ul { display: flex; gap: 4px; }
+	.mast-nav a {
+		display: inline-flex; align-items: center; gap: 9px; min-height: 40px; padding: 0 12px;
+		font: 700 16px/1 var(--display); letter-spacing: -0.01em; text-decoration: none; border-radius: var(--radius);
+	}
+	.mast-nav .sym { width: 13px; height: 13px; }
+	.mast-nav a:hover .sym { color: var(--block); }
+	.masthead .spacer { flex: 1; }
+	.mast-actions { display: flex; align-items: center; gap: 10px; flex: none; }
+	.mast-actions .btn { min-height: 40px; padding: 0 16px; font-size: 15px; }
+	.menu-btn { display: none; gap: 8px; width: auto; padding: 0 12px; font: 600 13px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+	.mobile-legend { display: none; }
+	/* The margin note and the spacer share the free width; the note goes first when it gets tight */
+	.masthead:has(.margin-note) .spacer { display: none; }
+
+	@media (max-width: 1180px) {
+		.margin-note { display: none; }
+		.masthead:has(.margin-note) .spacer { display: block; }
+	}
+	@media (max-width: 900px) {
+		.masthead { gap: 12px; }
+		.brand img { height: 30px; }
+		.mast-nav, .mast-actions .consult { display: none; }
+		.menu-btn { display: inline-flex; }
+		.mobile-legend:not([hidden]) {
+			display: block; position: sticky; top: var(--masthead); z-index: 39; background: var(--bg);
+			border-bottom: 2px solid var(--ink); padding: 8px var(--gutter) 16px;
+		}
+		.mobile-legend a:not(.btn) { display: grid; grid-template-columns: 22px 1fr auto; gap: 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font: 700 20px/1 var(--display); }
+		.mobile-legend .ref { font: 500 11px/1 var(--mono); color: var(--muted); }
+		.mobile-legend .btn { margin-top: 16px; width: 100%; justify-content: center; }
+	}
+</style>
