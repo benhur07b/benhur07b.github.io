@@ -22,6 +22,10 @@ npm run check    # types and Astro diagnostics
 - `src/styles/site.css`: the hub's mapping of the brand tokens and the styles every page shares.
 - `src/styles/brand/`, `src/assets/brand/`, `src/assets/terrain/`, `public/favicon*`: copied or drawn from the BNHR brand kit and the Mayon elevation model by a local tool (`scripts/sync_brand.py`, not in the repo, because the kit lives outside it). Never edit these copies by hand.
 
+## Old URLs
+
+Every URL the old Jekyll site published (`src/data/legacy.ts`, frozen with the archive) gets a redirect file at its exact path, written by `src/pages/[...legacy].ts`: to the home inset that took its content where there is one, otherwise to the same path on old.bnhr.xyz. To move an old page or post here, give its new page the old URL; the redirect follows with nothing else to change. GitHub Pages can't send a 301, so each redirect forwards at once and names the new address as canonical.
+
 ## Publish
 
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and deploys it to GitHub Pages. In the repo's settings, Pages → Source is "GitHub Actions" and the custom domain is `bnhr.xyz`.
@@ -30,4 +34,4 @@ Other repos publish their own GitHub Pages sites under this domain at `bnhr.xyz/
 
 ## License
 
-Except where stated otherwise, the content of this site by BNHR is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (`LICENSE.txt`). Software and other works referenced on the site are under their own licenses. The brand fonts are under the SIL Open Font License (licenses in `src/styles/brand/fonts/`).
+Except where stated otherwise, this site and its source by BNHR are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (`LICENSE.txt`). Astro and the other software, fonts and works the site uses or references are under their own licenses; the brand fonts are under the SIL Open Font License (licenses in `src/styles/brand/fonts/`). The BNHR name and logo are not covered.

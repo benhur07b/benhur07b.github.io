@@ -41,9 +41,12 @@ const dm = (deg: number, hemi: string) => `${Math.floor(deg)}°${String(Math.flo
 			</ul>
 		</div>
 	</div>
-	<div class="colophon-base mono">
-		<span>© {new Date().getFullYear()} BNHR</span>
-		<span>{dm(latOf(subject.y), 'N')} {dm(lonOf(subject.x), 'E')}</span>
+	<div class="colophon-base">
+		<span class="mono">© {new Date().getFullYear()} BNHR</span>
+		<span class="mono">{dm(latOf(subject.y), 'N')} {dm(lonOf(subject.x), 'E')}</span>
+		<p class="license">
+			Except where stated otherwise, the content of this site by BNHR is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Software, source code and other works referenced here are under their own licenses. The BNHR name and logo are not covered.
+		</p>
 	</div>
 </footer>
 
@@ -63,7 +66,10 @@ const dm = (deg: number, hemi: string) => `${Math.floor(deg)}°${String(Math.flo
 	.colophon li + li { margin-top: 8px; }
 	.colophon li a { text-decoration: none; font-weight: 700; }
 	.colophon li a:hover { text-decoration: underline; text-decoration-color: var(--block); }
-	.colophon-base { max-width: var(--max); margin: 0 auto; padding: 16px var(--gutter) 28px; box-sizing: content-box; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+	.colophon-base { max-width: var(--max); margin: 0 auto; padding: 16px var(--gutter) 28px; box-sizing: content-box; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; gap: 10px 16px; font-size: 12px; color: var(--muted); }
+	/* The license in the text face: a sentence in the mono caps of the row above would be hard to read */
+	.colophon-base .license { grid-column: 1 / -1; max-width: 88ch; font-size: 13px; line-height: 1.5; }
+	.colophon-base .license a { color: var(--ink); text-decoration-color: var(--block); }
 	@media (max-width: 1180px) {
 		.colophon-in { grid-template-columns: 1fr 1fr; }
 	}
