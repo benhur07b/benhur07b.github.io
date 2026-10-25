@@ -1,0 +1,32 @@
+{
+	"width": 1600,
+	"height": 702,
+	"west": 123.56027777777778,
+	"north": 13.351111111111111,
+	"cell": 0.0002777777777777778,
+	"subject": {
+		"name": "Mayon",
+		"x": 449,
+		"y": 340,
+		"height": 2455
+	},
+	"water": {
+		"name": "Albay Gulf",
+		"x": 700,
+		"y": 660,
+		"narrow": {
+			"x": 760,
+			"y": 640
+		}
+	},
+	"contours": {
+		"interval": 100,
+		"index": 500
+	},
+	"heights": {
+		"step": 3,
+		"x0": 2,
+		"y0": 1
+	},
+	"source": "SRTM 1 arc-second"
+}

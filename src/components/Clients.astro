@@ -1,0 +1,29 @@
+---
+import { clients } from '../data/work';
+
+// Clients and partners, set as the place names on a sheet: alternate names in a lighter, wider-spaced cut
+---
+
+<ol class="names">
+	{
+		clients.map((name, i) => (
+			<li>
+				<span class="n">{String(i + 1).padStart(2, '0')}</span>
+				<b>{name}</b>
+			</li>
+		))
+	}
+</ol>
+
+<style is:global>
+	.names { display: grid; grid-template-columns: 1fr 1fr; border-top: 2px solid var(--ink); }
+	.names li { padding: 18px 14px 18px 0; border-bottom: 1px solid var(--rule); display: flex; align-items: baseline; gap: 12px; }
+	.names li:nth-child(even) { padding-left: 18px; border-left: 1px solid var(--rule); }
+	.names .n { font: 500 11px/1 var(--mono); color: var(--muted); letter-spacing: 0.04em; }
+	.names b { font: 700 17px/1.2 var(--display); letter-spacing: 0.06em; text-transform: uppercase; }
+	.names li:nth-child(4n + 2) b, .names li:nth-child(4n + 3) b { font-weight: 600; letter-spacing: 0.1em; }
+	@media (max-width: 900px) {
+		.names { grid-template-columns: 1fr; }
+		.names li:nth-child(even) { padding-left: 0; border-left: 0; }
+	}
+</style>

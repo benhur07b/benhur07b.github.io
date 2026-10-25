@@ -1,10 +1,26 @@
-_drafts
-_site
-_backup
-assets/img/*
-Gemfile
-Gemfile.lock
-.htmlhintrc
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
 
 .claude*
 .claude/*
+
+# the root's local tools (brand sync, which reads ../branding), not src/scripts
+/scripts/
+
+# the design mockups, kept locally beside the site
+/design/

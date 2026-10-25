@@ -1,0 +1,17 @@
+---
+import Contact from '../components/Contact.astro';
+import Inset from '../components/Inset.astro';
+import PageHead from '../components/PageHead.astro';
+import WritingNote from '../components/WritingNote.astro';
+import Sheet from '../layouts/Sheet.astro';
+---
+
+<Sheet title="Writing" description="Writing from BNHR on geospatial, data, AI and open tech." current="writing" lite>
+	<PageHead section="writing" title="Writing" lede="Notes and analysis on geospatial, data, AI and open tech." />
+	<div class="insets">
+		<Inset id="posts" ref="A1" kicker="Gazetteer" title="Posts">
+			<WritingNote />
+		</Inset>
+		<Contact ref="A2" />
+	</div>
+</Sheet>

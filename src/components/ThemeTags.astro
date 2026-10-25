@@ -1,0 +1,22 @@
+---
+import { ordered, themeInfo, type Theme } from '../data/themes';
+
+// An item's themes, each glyph with its label, in the Themes key's order
+interface Props {
+	themes: readonly Theme[];
+}
+const { themes } = Astro.props;
+---
+
+<ul class="themes mono" aria-label="Themes">
+	{
+		ordered(themes).map((t) => (
+			<li>
+				<svg class="tsym" aria-hidden="true">
+					<use href={`#t-${t}`} />
+				</svg>
+				{themeInfo[t].short}
+			</li>
+		))
+	}
+</ul>

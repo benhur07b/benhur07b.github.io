@@ -1,0 +1,107 @@
+---
+import coastDark from '../assets/brand/symbol-coast-dark.svg';
+import coastLight from '../assets/brand/symbol-coast-light.svg';
+import coreDark from '../assets/brand/symbol-core-dark.svg';
+import coreLight from '../assets/brand/symbol-core-light.svg';
+import fieldDark from '../assets/brand/symbol-field.svg';
+import fieldLight from '../assets/brand/symbol-field-light.svg';
+import { hostOf, learnSites, type Colourway } from '../data/learn-sites';
+
+// The Learn sites as adjoining sheets, tiled edge to edge with shared neatlines, each in its colourway, plus a sheet
+// for the ones still in preparation. On a navy page the sheets print light, on paper they print dark, so each
+// carries the symbol for both. Behind each sheet is the light relief, so the layout using this sets `lite`.
+const symbols: Record<Colourway, { onDark: ImageMetadata; onLight: ImageMetadata }> = {
+	core: { onDark: coreLight, onLight: coreDark },
+	coast: { onDark: coastLight, onLight: coastDark },
+	field: { onDark: fieldLight, onLight: fieldDark },
+};
+// The pending sheet closes the grid: one cell after an odd number of sites, a full row after an even number
+const pendingWide = learnSites.length % 2 === 0;
+---
+
+<ul class="adjoining">
+	{
+		learnSites.map((site) => (
+			<li class={`adj cw-${site.colourway}`}>
+				<svg class="preview" viewBox={site.crop.join(' ')} preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+					<use href="#relief-lite" />
+				</svg>
+				<div class="adj-top mono">
+					<span class="sheet-no">
+						<img class="on-dark" src={symbols[site.colourway].onDark.src} alt="" width="34" height="34" />
+						<img class="on-light" src={symbols[site.colourway].onLight.src} alt="" width="34" height="34" />
+						Sheet {site.code}
+					</span>
+					<span>{hostOf(site)}</span>
+				</div>
+				<h3>{site.name}</h3>
+				<p>{site.blurb}</p>
+				{site.stats && (
+					<div class="stats">
+						{site.stats.map((stat) => (
+							<div>
+								<b>{stat.value}</b>
+								{stat.label}
+							</div>
+						))}
+					</div>
+				)}
+				<a class="visit" href={site.url}>
+					{site.visit} <span aria-hidden="true">↗</span>
+				</a>
+			</li>
+		))
+	}
+	<li class:list={['adj pending', { wide: pendingWide }]}>
+		<div class="adj-top mono"><span class="sheet-no">Sheet —</span><span>In preparation</span></div>
+		<div class="pending-card">
+			<p class="kicker">Survey in progress</p>
+			<h3>More Learn sites are on the way</h3>
+			<p>New sheets join this index as they're published.</p>
+		</div>
+	</li>
+</ul>
+
+<style is:global>
+	.adjoining { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--ink); }
+	.adj { position: relative; min-height: 360px; padding: 26px 28px 28px; display: flex; flex-direction: column; overflow: hidden; background: var(--sbg); color: var(--sink); }
+	/* Shared neatlines: every sheet draws its right and bottom edge; the outer frame covers the last row and column */
+	.adj { border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); margin: 0 -2px -2px 0; }
+	.adj.wide { grid-column: 1 / -1; min-height: 0; }
+	.adj .preview { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--sink); opacity: 0.22; pointer-events: none; }
+	.adj .preview { --rl-idx-w: 2px; --rl-coast-w: 1.4px; }
+	.adj > *:not(.preview) { position: relative; }
+	.adj-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 12px; }
+	.adj-top .sheet-no { display: flex; align-items: center; gap: 10px; }
+	.adj-top img { width: 34px; height: 34px; }
+	.adj h3 { font-size: clamp(28px, 2.8vw, 40px); margin-top: auto; padding-top: 48px; max-width: 16ch; }
+	.adj p { margin-top: 12px; max-width: 46ch; font-size: 16px; color: color-mix(in srgb, var(--sink) 86%, var(--sbg)); }
+	.adj .stats { display: flex; gap: 28px; margin-top: 18px; }
+	.adj .stats div { font: 500 11px/1.2 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+	.adj .stats b { display: block; font: 800 34px/1 var(--display); letter-spacing: -0.03em; margin-bottom: 4px; }
+	.adj .visit { margin-top: 20px; align-self: flex-start; display: inline-flex; gap: 10px; align-items: center; min-height: 44px; padding: 0 16px; border: 2px solid var(--sink); border-radius: var(--radius); text-decoration: none; font: 700 15px/1 var(--display); color: var(--sink); }
+	.adj .visit:hover { background: var(--sink); color: var(--sbg); }
+	/* The Learn sites' colourways (brand-2026's .p-core, .p-coast, .p-field), the hub's own tokens: on a navy page the
+	   sheets print light, on paper they print dark */
+	.cw-core { --sbg: #f5f5f5; --sink: #0c2340; }
+	.cw-coast { --sbg: #e4f1ef; --sink: #0b3a3e; }
+	.cw-field { --sbg: #f2eee3; --sink: #1e3b2f; }
+	:root[data-theme='light'] .cw-core { --sbg: #0c2340; --sink: #f5f5f5; }
+	:root[data-theme='light'] .cw-coast { --sbg: #0b3a3e; --sink: #e4f1ef; }
+	:root[data-theme='light'] .cw-field { --sbg: #1e3b2f; --sink: #f2eee3; }
+	.adj.pending {
+		--sbg: var(--bg); --sink: var(--ink);
+		background: repeating-linear-gradient(-45deg, transparent 0 9px, var(--hair) 9px 10px), var(--bg);
+	}
+	.adj.pending .pending-card { margin-top: auto; background: var(--bg); border: 1px dashed var(--rule); padding: 20px 22px; max-width: 420px; }
+	.adj.wide .pending-card { margin-top: 28px; }
+	.adj.pending h3 { padding-top: 0; font-size: 26px; margin-top: 10px; }
+	.adj.pending p { color: var(--muted); }
+	@media (max-width: 900px) {
+		.adjoining { grid-template-columns: 1fr; }
+		.adj { min-height: 0; padding: 22px 18px 24px; }
+		.adj h3 { padding-top: 36px; }
+		.adj-top { flex-direction: column; align-items: flex-start; gap: 10px; }
+		.adj-top > span:last-child { font-size: 11px; overflow-wrap: anywhere; }
+	}
+</style>

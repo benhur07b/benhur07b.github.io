@@ -1,0 +1,63 @@
+---
+import '../styles/brand/fonts.css';
+import '../styles/brand/tokens.css';
+import '../styles/site.css';
+import Colophon from '../components/Colophon.astro';
+import Masthead from '../components/Masthead.astro';
+import Sprite from '../components/Sprite.astro';
+import type { SectionId } from '../data/site';
+
+// Every page is a sheet: the masthead, the page's own content, and the imprint footer. The home page passes no title
+// and gets the tagline as its tab title; other pages read "Page · BNHR".
+interface Props {
+	title?: string;
+	description: string;
+	current?: SectionId;
+	// Pages that print the relief small (locators, Learn sheets) need the light relief in the sprite
+	lite?: boolean;
+}
+const { title, description, current, lite = false } = Astro.props;
+const home = Astro.url.pathname === '/';
+const tabTitle = title ? `${title} · BNHR` : 'BNHR · Less lock-in. More know-how.';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{tabTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="theme-color" content="#0c2340" media="(prefers-color-scheme: dark)" />
+		<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)" />
+		<meta property="og:site_name" content="BNHR" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title ?? 'Less lock-in. More know-how.'} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<script is:inline>
+			// Resolve the theme before first paint, so the page never flashes the other colourway
+			(function () {
+				var stored = null;
+				try { stored = localStorage.getItem('bnhr-theme'); } catch (e) {}
+				var light = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches;
+				document.documentElement.dataset.theme = stored || (light ? 'light' : 'dark');
+			})();
+		</script>
+	</head>
+	<body>
+		<a class="skip" href="#main">Skip to content</a>
+		<Sprite lite={lite} />
+		<Masthead current={current} home={home} />
+		<main id="main">
+			<slot />
+		</main>
+		<slot name="after-main" />
+		<Colophon />
+	</body>
+</html>

@@ -1,0 +1,21 @@
+---
+import Contact from '../components/Contact.astro';
+import Inset from '../components/Inset.astro';
+import LearnSheets from '../components/LearnSheets.astro';
+import PageHead from '../components/PageHead.astro';
+import TrainingNote from '../components/TrainingNote.astro';
+import Sheet from '../layouts/Sheet.astro';
+---
+
+<Sheet title="Learn" description="Free courses and workbooks from BNHR, each on its own site: Learn QGIS, Learn Geospatial Data Management & Engineering, and Learn Python." current="learn" lite>
+	<PageHead section="learn" title="Learn with BNHR" lede="Free courses and workbooks, each on its own site. Learn at your own pace, or join an instructor-led training." />
+	<div class="insets">
+		<Inset id="sites" ref="A1" kicker="Adjoining sheets" title="The Learn sites" aside="Every course and workbook is free to use.">
+			<LearnSheets />
+		</Inset>
+		<Inset id="training" ref="A2" kicker="Survey schedule" title="Instructor-led training" aside="Booked on Learn QGIS, so the dates are never out of date here.">
+			<TrainingNote />
+		</Inset>
+		<Contact ref="A3" />
+	</div>
+</Sheet>
