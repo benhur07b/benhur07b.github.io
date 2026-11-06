@@ -1,0 +1,67 @@
+---
+import { inline, isCurrent, paras, type CvEntry, type CvPart } from '../../data/cv';
+import CvBullets from './CvBullets.astro';
+
+// One entry, as the PDF prints it: its title (and organization), its dates (a current one with the orange dot), a
+// note, its description, its tags, then a body of work's engagements: all of them as parts, or, rolled up under its
+// newest, the others named only, as "Also with" and "Previously with" the organization
+interface Props {
+	entry: CvEntry | CvPart;
+	// The heading level: one below the section's or subsection's heading, and a part's one below its whole's
+	level: 3 | 4 | 5;
+	part?: boolean;
+}
+const { entry: e, level, part = false } = Astro.props;
+const Title = `h${level}` as const;
+const org = 'org' in e ? e.org : undefined;
+const tags = 'tags' in e ? e.tags : undefined;
+const parts = 'parts' in e ? e.parts : undefined;
+const others = 'others' in e ? e.others : undefined;
+const rollups = others
+	? (
+			[
+				['Also with', others.also, others.also_more],
+				['Previously with', others.previously, others.previously_more],
+			] as const
+		).filter(([, shown, more]) => shown.length || more)
+	: [];
+---
+
+<article class:list={['cv-entry', { 'cv-part': part }]}>
+	<div class="cv-head">
+		<Title class="cv-title" set:html={inline(e.title)} />
+		{org && <p class="cv-org" set:html={inline(org)} />}
+		{e.when && <p class:list={['cv-when', { now: isCurrent(e.when) }]} set:html={inline(e.when)} />}
+	</div>
+	{e.note && <p class="cv-note" set:html={inline(e.note)} />}
+	{e.text && <div class="cv-text">{paras(e.text).map((t) => <p set:html={inline(t)} />)}</div>}
+	{e.bullets && <CvBullets items={e.bullets} />}
+	{tags && <p class="cv-tags">{tags.join(' · ')}</p>}
+	{
+		rollups.map(([label, shown, more]) => (
+			<div class="cv-others">
+				<p class="cv-of">
+					<span class="kicker">{label}</span> <span set:html={inline(others!.with)} />
+				</p>
+				<ul>
+					{shown.map((x) => (
+						<li>
+							<span set:html={inline(x.title)} />
+							<span class:list={['cv-when', { now: isCurrent(x.when) }]} set:html={inline(x.when)} />
+						</li>
+					))}
+				</ul>
+				{more && <p class="cv-more">and {more} more</p>}
+			</div>
+		))
+	}
+	{
+		parts && (
+			<div class="cv-parts">
+				{parts.map((p) => (
+					<Astro.self entry={p} level={Math.min(level + 1, 5) as 4 | 5} part />
+				))}
+			</div>
+		)
+	}
+</article>

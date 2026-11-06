@@ -1,0 +1,43 @@
+---
+import Contact from '../components/Contact.astro';
+import CvSection from '../components/cv/CvSection.astro';
+import Inset from '../components/Inset.astro';
+import PageHead from '../components/PageHead.astro';
+import SheetIndex from '../components/SheetIndex.astro';
+import { cv, cvDate, cvPdf, inline } from '../data/cv';
+import Sheet from '../layouts/Sheet.astro';
+
+// About, with the CV: the CV tool's sections in its version's order, each an inset referenced by the section's code
+// (its box in the PDF), then the contact inset. The page prints the CV as data; its text is changed in bnhr-tools/cv
+// and copied here by scripts/sync_cv.py, never edited here. The designs never show the full name, only "I'm Ben":
+// the PDF carries it.
+const slug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const insets = cv.sections.map((s) => ({ id: slug(s.title), ref: s.code, title: s.title, section: s }));
+const contactRef = 'CT';
+const updated = cvDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+const plain = (t: string) => inline(t).replace(/<[^>]+>/g, '');
+---
+
+<Sheet title="About" description="About BNHR and Ben: training, consulting and builds in open geospatial, data and AI tools since 2014, with the full CV." lite>
+	<PageHead page="about" title="Hi, I'm Ben" lede={cv.line ? plain(cv.line) : ''} note={`CV · ${updated}`}>
+		<div class="ctas">
+			<a class="btn btn-primary" href={cvPdf} download="BNHR-CV.pdf">Download the CV <span class="note">PDF</span></a>
+			<a class="btn" href="#contact">Get in touch</a>
+		</div>
+	</PageHead>
+	<div class="insets">
+		{
+			insets.map((x, i) => (
+				<Inset id={x.id} ref={x.ref} kicker={`${i + 1} of ${insets.length}`} title={x.title}>
+					<CvSection section={x.section} />
+				</Inset>
+			))
+		}
+		<Contact ref={contactRef} />
+	</div>
+	<SheetIndex slot="after-main" entries={[...insets.map(({ id, ref, title }) => ({ id, ref, title })), { id: 'contact', ref: contactRef, title: 'Contact' }]} />
+</Sheet>
+
+<style>
+	:global(.ph-block .lede) { font: 500 15px/1.5 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+</style>

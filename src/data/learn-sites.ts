@@ -50,6 +50,11 @@ export const learnSites: readonly LearnSite[] = [
 		visit: 'Visit Learn Python',
 		colourway: 'field',
 		crop: [0, 0, 760, 420],
+		stats: [
+			{ value: 2, label: 'Free courses' },
+			{ value: 13, label: 'Modules' },
+			{ value: 104, label: 'Exercises' },
+		],
 	},
 ];
 

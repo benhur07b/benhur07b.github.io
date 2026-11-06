@@ -1,0 +1,813 @@
+{
+	"name": "Ben Hur Pintor",
+	"line": "technologist. educator. free software advocate",
+	"contact": [
+		{
+			"text": "hi@bnhr.xyz",
+			"href": "mailto:hi@bnhr.xyz"
+		},
+		{
+			"text": "bnhr.xyz",
+			"href": "https://bnhr.xyz/"
+		},
+		{
+			"text": "facebook.com/bnhr.xyz",
+			"href": "https://www.facebook.com/bnhr.xyz/"
+		},
+		{
+			"text": "github.com/benhur07b",
+			"href": "https://github.com/benhur07b"
+		},
+		{
+			"text": "linkedin.com/in/benhur07b",
+			"href": "https://linkedin.com/in/benhur07b"
+		}
+	],
+	"ground": {
+		"series": "up-diliman",
+		"fade": 0.08
+	},
+	"locator": {
+		"place": "maginhawa",
+		"label": "BNHR",
+		"at": [
+			14.64517,
+			121.06067
+		],
+		"place_name": "114 Maginhawa Street, Quezon City"
+	},
+	"style": {
+		"subsection_mark": "square"
+	},
+	"sections": [
+		{
+			"code": "AB",
+			"title": "About",
+			"intro": [
+				"I'm a technologist, educator, and free software advocate who helps people solve problems with open technologies—from building technical solutions to growing communities of practice—because I believe we should all own the technology we depend on.",
+				"I train teams in open geospatial, programming, open data, and AI; move organizations to open tools and fix their data workflows; and build maps, applications, data platforms, and data pipelines on open software.",
+				"Above all, I help people and organizations stay current and literate in data, technology, and AI, so they make their own informed decisions rather than let the myths, hype, and upsells decide for them."
+			],
+			"stats": [
+				{
+					"value": "500+",
+					"label": "**people empowered** to own the tools they use"
+				},
+				{
+					"value": "50+",
+					"label": [
+						"**training courses**",
+						"designed and delivered"
+					]
+				},
+				{
+					"value": "40+",
+					"label": [
+						"**organizations** served",
+						"here and abroad"
+					]
+				},
+				{
+					"value": "5+",
+					"label": [
+						"**free learning sites**",
+						"open to all"
+					]
+				}
+			],
+			"tools": {
+				"label": "Focus",
+				"items": [
+					"QGIS",
+					"PostGIS",
+					"GeoNode",
+					"Python",
+					"DuckDB",
+					"Open geospatial",
+					"Cloud-native geospatial",
+					"AI Literacy"
+				]
+			}
+		},
+		{
+			"code": "ED",
+			"title": "Education",
+			"entries": [
+				{
+					"title": "MS Geomatics Engineering (Geoinformatics)",
+					"org": "University of the Philippines",
+					"when": "2022",
+					"text": "Thesis: [Towards the Spatial Analysis of Shooting in Philippine Basketball](https://github.com/benhur07b/ms-thesis-spatial-analysis-shooting-philippine-basketball), applied to the UAAP Men's Basketball Tournament (Season 81), with its data, code, and manuscript released openly."
+				},
+				{
+					"title": "BS Geodetic Engineering",
+					"org": "University of the Philippines",
+					"when": "2014",
+					"text": "Undergraduate research: CourtVisionPH, extracting shot locations from broadcast basketball video."
+				}
+			]
+		},
+		{
+			"code": "SE",
+			"title": "Selected engagements",
+			"intro": "Since 2014, I've worked on technology and data-related projects in the Philippines and internationally, through independent consulting and the two organizations I co-founded, SmartCT and the Civic Literacy Initiative.",
+			"subsections": [
+				{
+					"title": "BNHR",
+					"when": "2014 – present",
+					"intro": "My independent consultancy, which **provides expert training, support, and consulting services** around open technology. Notable engagements:",
+					"entries": [
+						{
+							"id": "2025-rol-adb-gis-server",
+							"title": "Lead Server Administrator and Developer (GIS)",
+							"when": "Jan 2025 – present",
+							"kind": "rol",
+							"bullets": [
+								"**Manage the day-to-day operations, administration, development, and deployment** of the Asian Development Bank's Enterprise GIS (hybrid open source + proprietary) services, applications, and infrastructure."
+							],
+							"org": "Asian Development Bank",
+							"others": {
+								"with": "Asian Development Bank",
+								"also": [],
+								"previously": [
+									{
+										"id": "2023-rol-adb-web-gis",
+										"title": "Web GIS Specialist",
+										"when": "Mar 2023 – Dec 2024",
+										"kind": "rol"
+									},
+									{
+										"id": "2019-rol-adb-national-gis",
+										"title": "National GIS Specialist",
+										"when": "Sep 2021 – Feb 2022 · Sep 2019 – Aug 2020",
+										"kind": "rol"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"title": "SmartCT",
+					"new_page": true,
+					"when": "2019 – present",
+					"intro": "A tech non-profit I co-founded that specializes in private-by-default, open-by-design, and citizen-centric digital transformation initiatives. Notable projects and engagements:",
+					"entries": [
+						{
+							"id": "2026-prj-scam-ready-asean",
+							"title": "SCAM Ready ASEAN",
+							"when": "Sep 2026 – present",
+							"kind": "prj",
+							"bullets": [
+								"**Local Implementing Partner** in the Philippines for SCAM Ready ASEAN, which prepares individuals and communities against online scams, especially those AI makes easier to run."
+							],
+							"org": "ASEAN Foundation",
+							"others": {
+								"with": "ASEAN Foundation",
+								"also": [
+									{
+										"id": "2026-prj-asean-ahead",
+										"title": "ASEAN AHEAD (ASEAN AI for Youth Empowerment and Development)",
+										"when": "Jun 2026 – present",
+										"kind": "prj"
+									},
+									{
+										"id": "2025-prj-asean-ai-ready",
+										"title": "AI Ready ASEAN",
+										"when": "Aug 2025 – present",
+										"kind": "prj"
+									}
+								],
+								"previously": []
+							}
+						}
+					]
+				},
+				{
+					"title": "Civic Literacy Initiative (CLi)",
+					"when": "2023 – present",
+					"intro": "An international organization I co-founded that develops standards, processes, and toolkits for technology literacy, capacity building, and AI readiness. Notable projects:",
+					"entries": [
+						{
+							"id": "2026-prj-eiti-data-dashboards",
+							"title": "EITI Data Dashboards",
+							"when": "Sep 2026 – present",
+							"kind": "prj",
+							"text": "**Building** public dashboards on EITI's companies database, with USGS, World Bank, and UN Comtrade data: domestic revenue mobilization, transition minerals, and production and exports, including the [EITI Dashboard](https://eiti-dashboard.eiti.org).",
+							"org": "Extractive Industries Transparency Initiative (EITI)",
+							"others": {
+								"with": "Extractive Industries Transparency Initiative (EITI)",
+								"also": [],
+								"previously": [
+									{
+										"id": "2024-prj-eiti-database",
+										"title": "EITI Database",
+										"when": "Dec 2024 – Mar 2026",
+										"kind": "prj"
+									},
+									{
+										"id": "2023-prj-eiti-soe-database",
+										"title": "State-owned Enterprise (SOE) Database",
+										"when": "Nov 2023 – Jun 2024",
+										"kind": "prj"
+									},
+									{
+										"id": "2023-prj-eiti-options-paper",
+										"title": "EITI Data Infrastructure Options Paper",
+										"when": "May – Jun 2023",
+										"kind": "prj"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "PF",
+			"title": "Portfolio",
+			"subsections": [
+				{
+					"title": "Platforms and tools",
+					"columns": 2,
+					"entries": [
+						{
+							"title": "[NbS Map Platform](https://demo-pcp4nbs.bnhr.xyz/)",
+							"note": "demo-pcp4nbs.bnhr.xyz",
+							"text": "A national platform for Nature-based Solutions in the Philippines: hazard and ecosystem data, screening for pilot cities, and an NbS catalog.",
+							"tags": [
+								"MapLibre",
+								"Python"
+							]
+						},
+						{
+							"title": "[EITI Database](https://eiti-database.eiti.org/)",
+							"note": "eiti-database.eiti.org",
+							"text": "An open data platform for extractive-industries transparency: EITI data across countries, companies, and sectors to filter, preview, and download.",
+							"tags": [
+								"Datasette",
+								"SQLite",
+								"Google Cloud"
+							]
+						},
+						{
+							"title": "[EITI Dashboard](https://eiti-dashboard.eiti.org/)",
+							"note": "eiti-dashboard.eiti.org",
+							"text": "A public dashboard of EITI data on domestic resource mobilization, reserves, and production and exports, built as a static site from the EITI database.",
+							"tags": [
+								"Python",
+								"TypeScript",
+								"D3"
+							]
+						},
+						{
+							"title": "[ASEAN AHEAD Guide](https://aseanahead.smartct.org/)",
+							"note": "aseanahead.smartct.org",
+							"text": "The guide to joining, organizing, or delivering the ASEAN AHEAD AI Career Readiness Course in the Philippines, with SmartCT.",
+							"tags": [
+								"HTML",
+								"CSS"
+							]
+						}
+					]
+				},
+				{
+					"title": "Free learning resources",
+					"columns": 2,
+					"entries": [
+						{
+							"title": "[Learn QGIS with BNHR](https://learn-qgis.bnhr.xyz/)",
+							"note": "learn-qgis.bnhr.xyz",
+							"text": "Free, hands-on QGIS workbooks, from your first map to atlases, reports, and forestry tenure maps: 6 courses, 30 modules, and 71 exercises."
+						},
+						{
+							"title": "[Learn Geospatial Data Management & Engineering](https://learn-geodata-management.bnhr.xyz/)",
+							"note": "learn-geodata-management.bnhr.xyz",
+							"text": "Spatial databases, GeoServer, spatial data infrastructure and GeoNode, web maps, and cloud-native geospatial—from desktop to web to cloud."
+						},
+						{
+							"title": "[Learn Python with BNHR](https://learn-python.bnhr.xyz/)",
+							"note": "learn-python.bnhr.xyz",
+							"text": "Python essentials, arrays and dataframes, an introduction to AI and ML, and geospatial Python: 2 courses, 13 modules, and 104 exercises."
+						},
+						{
+							"title": "[Data Literacy 101](https://bnhr.xyz/data-literacy-101)",
+							"note": "bnhr.xyz/data-literacy-101",
+							"text": "An approachable introduction to the fundamentals of data literacy."
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "CR",
+			"title": "Credentials",
+			"new_page": true,
+			"subsections": [
+				{
+					"title": "Fellowships",
+					"entries": [
+						{
+							"title": "Open Climate Fellow",
+							"when": "Feb – May 2023",
+							"bullets": [
+								"[Selected as 1 of 7](https://www.openenvironmentaldata.org/pilots/open-climate-fellowship) Open Climate Fellows worldwide, working on projects that explore the intersections of the open movement and climate action."
+							]
+						},
+						{
+							"title": "Data Fellow & Data Expert Programme",
+							"org": "School of Data",
+							"when": "Jun 2018 – Jun 2020",
+							"bullets": [
+								"**Worked** with School of Data and its local partners in the Philippines on projects in data literacy, public procurement, open contracting, and government transparency, openness, and accountability, as part of its [2018 class of fellows](https://blog.okfn.org/2018/06/27/introducing-the-2018-class-of-school-of-data-fellows/)."
+							]
+						}
+					]
+				},
+				{
+					"title": "License and membership",
+					"rows": [
+						{
+							"label": "License",
+							"text": "Geodetic Engineer, August 2014 licensure examination: rating 85.00, top 7."
+						},
+						{
+							"label": "Membership",
+							"text": "QGIS sustaining member (BNHR) since 2020, helping fund the software I teach."
+						}
+					]
+				},
+				{
+					"title": "Community",
+					"rows": [
+						{
+							"label": "QGIS",
+							"text": "QGIS certifying organization (BNHR)."
+						},
+						{
+							"label": "OSGeo",
+							"text": "Charter Member of the Open Source Geospatial Foundation."
+						},
+						{
+							"label": "Conferences",
+							"text": "Organizer of [Pista ng Mapa](https://pistangmapa.org/), the Philippines' open mapping conference, and of other local and international conferences, including [State of the Map 2025](https://2025.stateofthemap.org/) in Manila."
+						}
+					]
+				}
+			]
+		},
+		{
+			"code": "TR",
+			"title": "Track record",
+			"subsections": [
+				{
+					"title": "Roles",
+					"entries": [
+						{
+							"id": "2019-rol-adb",
+							"title": "Asian Development Bank",
+							"when": "Sep 2019 – present",
+							"kind": "rol",
+							"text": "Consecutive consultancies on the Asian Development Bank's spatial data platform, from supporting ADB SPADE to running its Enterprise GIS.",
+							"parts": [
+								{
+									"id": "2025-rol-adb-gis-server",
+									"title": "Lead Server Administrator and Developer (GIS)",
+									"when": "Jan 2025 – present",
+									"kind": "rol",
+									"bullets": [
+										"**Manage the day-to-day operations, administration, development, and deployment** of the Asian Development Bank's Enterprise GIS (hybrid open source + proprietary) services, applications, and infrastructure."
+									]
+								},
+								{
+									"id": "2023-rol-adb-web-gis",
+									"title": "Web GIS Specialist",
+									"when": "Mar 2023 – Dec 2024",
+									"kind": "rol",
+									"bullets": [
+										"**Designed, developed, implemented, and managed** the SPADE (GeoNode) application and infrastructure, together with its associated applications."
+									]
+								},
+								{
+									"id": "2019-rol-adb-national-gis",
+									"title": "National GIS Specialist",
+									"when": "Sep 2021 – Feb 2022 · Sep 2019 – Aug 2020",
+									"kind": "rol",
+									"bullets": [
+										"**Provided technical, maintenance, monitoring, and development support** for the ADB Spatial Data Analysis Explorer (ADB SPADE), built on GeoNode and Leaflet on AWS."
+									]
+								}
+							]
+						},
+						{
+							"id": "2025-rol-civicus-ddi-hackathon",
+							"title": "Mentor, Digital Democracy Initiative Hackathon",
+							"org": "CIVICUS",
+							"when": "Sep 2025 – Feb 2026",
+							"kind": "rol",
+							"bullets": [
+								"**Provided expert guidance and support** for the DDI Hackathon (EECA region), which supports civil society in strengthening civic space and promoting inclusive democracy.",
+								"**Mentored the selected teams** from problem definition to final delivery."
+							]
+						},
+						{
+							"id": "2024-rol-yjp-qgis-automation",
+							"title": "GIS Consultant",
+							"org": "YJP Surveyors Pte Ltd",
+							"when": "May – Sep 2024",
+							"kind": "rol",
+							"bullets": [
+								"**Developed models and scripts in QGIS** that automate the attribution of 50+ geospatial layers."
+							]
+						},
+						{
+							"id": "2021-rol-okf",
+							"title": "Open Knowledge Foundation",
+							"when": "Feb 2021 – Feb 2023",
+							"kind": "rol",
+							"parts": [
+								{
+									"id": "2021-rol-okf-data-training",
+									"title": "Data Training Lead (Senior Consultant)",
+									"when": "Feb 2021 – Feb 2023",
+									"kind": "rol",
+									"bullets": [
+										"**Designed, developed, delivered, and managed** dozens of open data, data literacy, and [open geospatial trainings](https://school-of-data.github.io/open-geodata-curriculum/) for Open Knowledge Foundation's projects and partners.",
+										"**Innovated and refined** the organization's capacity building and training methodologies."
+									]
+								},
+								{
+									"id": "2021-trn-okf-open-geodata-programme",
+									"title": "[Open Geodata Training Programme](https://school-of-data.github.io/okf-events-a/series/open-geodata-programme/)",
+									"when": "May 2021 – Nov 2022",
+									"note": "With Meta",
+									"kind": "trn",
+									"training": "client",
+									"text": "Led the design, coordination, and delivery of a training program for **300+ participants from 30+ organizations in 30+ countries**, on using open geospatial data, especially Meta's high-resolution population layer in QGIS, for public health and disaster response."
+								}
+							]
+						},
+						{
+							"id": "2020-rol-thibi-gis-web",
+							"title": "Full Stack GIS & Web Developer",
+							"org": "Thibi",
+							"when": "Jan 2020 – Jun 2021",
+							"kind": "rol",
+							"bullets": [
+								"**Provided technical services** for Thibi projects, including data portals with CKAN and web mapping applications using Python, GeoServer, and GeoNode."
+							]
+						},
+						{
+							"id": "2019-rol-hivos",
+							"title": "Hivos",
+							"when": "May 2019 – Sep 2020",
+							"kind": "rol",
+							"parts": [
+								{
+									"id": "2020-rol-hivos-open-data",
+									"title": "Open Data Expert",
+									"when": "Jul – Sep 2020",
+									"kind": "rol",
+									"bullets": [
+										"**Led the design, co-creation, and delivery** of data literacy and open contracting training and workshops for key stakeholders in the Philippines."
+									]
+								},
+								{
+									"id": "2019-rol-hivos-open-contracting",
+									"title": "Open Contracting Consultant",
+									"when": "May – Dec 2019",
+									"note": "Local Government Technical Support – Open Contracting",
+									"kind": "rol",
+									"bullets": [
+										"**Mapped, obtained, and converted** public procurement documents and data for the province of South Cotabato.",
+										"**Built a dashboard** for sharing, visualizing, and analyzing its machine-readable procurement data, and ran capacity-building workshops on data portals and web applications."
+									]
+								}
+							]
+						},
+						{
+							"id": "2018-rol-cerebro-gis",
+							"title": "GIS Specialist",
+							"org": "Cerebro Innovators and Accelerators, Inc.",
+							"when": "Nov 2018 – May 2020",
+							"kind": "rol",
+							"bullets": [
+								"**Provided geospatial services, support, and solutions** using remote sensing and GIS, together with Simularity's Automated Image Anomaly Detection System."
+							]
+						},
+						{
+							"id": "2018-rol-haskoning-adb-spade",
+							"title": "Consultant",
+							"org": "Royal HaskoningDHV",
+							"when": "Oct 2018 – Jul 2019",
+							"kind": "rol",
+							"bullets": [
+								"**Provided maintenance and support** for ADB SPADE, the GeoNode application built for the Asian Development Bank: GeoServer, PostgreSQL/PostGIS, Django, Leaflet, and AWS."
+							]
+						},
+						{
+							"id": "2016-rol-pgs",
+							"title": "Philippine Geographical Society",
+							"when": "Dec 2016 – Apr 2019",
+							"kind": "rol",
+							"parts": [
+								{
+									"id": "2018-rol-pgs-counter-mapping",
+									"title": "GIS Specialist",
+									"when": "Dec 2018 – Apr 2019",
+									"note": "Counter-mapping for peri-urban social justice",
+									"kind": "rol",
+									"bullets": [
+										"**Prepared, designed, and facilitated** community-based participatory mapping and UAV mapping.",
+										"**Created** the project's spatial database and website."
+									]
+								},
+								{
+									"id": "2016-rol-pgs-mhcvam-plugin",
+									"title": "Computer Programmer",
+									"when": "Dec 2016 – Jun 2017",
+									"kind": "rol",
+									"bullets": [
+										"**Developed a [QGIS plugin](https://github.com/benhur07b/mhcvam)** for Multi-Hazard Child Vulnerability Analysis and Mapping, using indicators of exposure, vulnerability, and capacity."
+									]
+								}
+							]
+						},
+						{
+							"id": "2018-rol-thinking-machines-geospatial",
+							"title": "Geospatial Analysis Consultant",
+							"org": "Thinking Machines Data Science",
+							"when": "Aug 2018 – Mar 2019",
+							"kind": "rol",
+							"bullets": [
+								"**Provided needs-based training and consulting** on PostGIS, QGIS, GDAL/OGR, and Mapbox."
+							]
+						},
+						{
+							"id": "2018-rol-caritas-pdra",
+							"title": "Technical Service Provider",
+							"org": "Caritas Filipinas Foundation, Inc.",
+							"when": "Jan – Apr 2018",
+							"note": "#DigitalPH: digitized community disaster risk mapping",
+							"kind": "rol",
+							"bullets": [
+								"**Trained and supported** Caritas in digitizing its PDRA data with Open Data Kit and QGIS.",
+								"**Developed** a [QGIS plugin](https://github.com/benhur07b/caritaspdra) and [web map](https://bnhr.xyz/caritas-pdra-webmap/) for the results."
+							]
+						},
+						{
+							"id": "2017-rol-iamblue-bluewebmaps",
+							"title": "Senior Science Research Specialist",
+							"org": "IAMBlueCECAM: BlueWebMaps",
+							"when": "Oct – Dec 2017",
+							"kind": "rol",
+							"bullets": [
+								"**Conducted research and development** of web GIS and visualization applications and methods for managing and conserving blue carbon ecosystems in the Philippines."
+							]
+						},
+						{
+							"id": "2017-rol-icma-surge-zamboanga",
+							"title": "GIS Developer",
+							"org": "ICMA",
+							"when": "Aug – Sep 2017",
+							"note": "SURGE: Strengthening Urban Resilience through Growth and Equity",
+							"kind": "rol",
+							"bullets": [
+								"**Helped Zamboanga City build** a Centralized Geographic Information Management System on GeoNode, for its agencies to share geospatial data and run geospatial applications."
+							]
+						},
+						{
+							"id": "2014-rol-phil-lidar-2-remap",
+							"title": "Phil-LiDAR 2: REMap",
+							"when": "Jun 2014 – Sep 2017",
+							"kind": "rol",
+							"parts": [
+								{
+									"id": "2017-rol-remap-web-gis",
+									"title": "Senior Science Research Specialist",
+									"when": "Jul – Sep 2017",
+									"kind": "rol",
+									"bullets": [
+										"**Led the development** of the project's web GIS application (Django, PostGIS, Leaflet) for assessing an area's energy resource and site suitability."
+									]
+								},
+								{
+									"id": "2014-rol-remap-solar",
+									"title": "Science Research Specialist II",
+									"when": "Jun 2014 – Jun 2017",
+									"kind": "rol",
+									"bullets": [
+										"**Developed RS and GIS methods** for nationwide solar resource assessment and PV site selection.",
+										"**Wrote a GRASS add-on** that cut processing time by 33%."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Projects",
+					"entries": [
+						{
+							"id": "2025-prj-asean-foundation",
+							"title": "ASEAN Foundation",
+							"when": "2025 – present",
+							"kind": "prj",
+							"parts": [
+								{
+									"id": "2026-prj-scam-ready-asean",
+									"title": "SCAM Ready ASEAN",
+									"when": "Sep 2026 – present",
+									"kind": "prj",
+									"bullets": [
+										"**Local Implementing Partner** in the Philippines for SCAM Ready ASEAN, which prepares individuals and communities against online scams, especially those AI makes easier to run."
+									]
+								},
+								{
+									"id": "2026-prj-asean-ahead",
+									"title": "ASEAN AHEAD (ASEAN AI for Youth Empowerment and Development)",
+									"when": "Jun 2026 – present",
+									"kind": "prj",
+									"bullets": [
+										"**Local Implementing Partner** in the Philippines for ASEAN AHEAD, supported by LinkedIn's Future of Work Fund: AI career readiness training, peer mentorship, and virtual job fairs for youth not in employment, education, or training, TVET, and final-year students, toward a target of 4,500.",
+										"**Built** the [ASEAN AHEAD Guide](https://aseanahead.smartct.org/) for participants, champions, and partners."
+									]
+								},
+								{
+									"id": "2025-prj-asean-ai-ready",
+									"title": "AI Ready ASEAN",
+									"when": "Aug 2025 – present",
+									"kind": "prj",
+									"bullets": [
+										"**Local Implementing Partner** of the [AI Ready ASEAN](https://www.aiclassasean.org/) initiative, which aims to equip individuals from all ten ASEAN Member States with essential AI skills and prepare them to thrive in the digital era and embrace AI responsibly and ethically."
+									]
+								},
+								{
+									"id": "2025-prj-asean-diwa",
+									"title": "ASEAN-DIWA (Digital Innovation for Women Advancement)",
+									"when": "2025",
+									"kind": "prj",
+									"bullets": [
+										"**Researched data and indicators** around mainstreaming gender and ICT across ASEAN.",
+										"[Created policy recommendations, reports, and a website](https://aseandiwa.org/) for communicating the results."
+									]
+								}
+							]
+						},
+						{
+							"id": "2023-prj-eiti",
+							"title": "Extractive Industries Transparency Initiative (EITI)",
+							"when": "May 2023 – present",
+							"kind": "prj",
+							"text": "Several contracts with one aim: turning EITI's summary data files and companies data into open data that is checked once and reused everywhere.",
+							"parts": [
+								{
+									"id": "2026-prj-eiti-data-dashboards",
+									"title": "EITI Data Dashboards",
+									"when": "Sep 2026 – present",
+									"kind": "prj",
+									"text": "**Building** public dashboards on EITI's companies database, with USGS, World Bank, and UN Comtrade data: domestic revenue mobilization, transition minerals, and production and exports, including the [EITI Dashboard](https://eiti-dashboard.eiti.org)."
+								},
+								{
+									"id": "2023-prj-eiti-systems-support",
+									"title": "EITI Systems Maintenance and Support",
+									"when": "Nov 2023 – present",
+									"kind": "prj",
+									"text": "**Maintain and support** EITI's data systems on Google Cloud, across staging and production: deployments, monitoring, outage response, and defense against scraper traffic for the database, its API, and the importer."
+								},
+								{
+									"id": "2024-prj-eiti-database",
+									"title": "EITI Database",
+									"when": "Dec 2024 – Mar 2026",
+									"kind": "prj",
+									"text": "**Built** the [EITI Database](https://eiti-database.eiti.org), EITI's companies database and API on Datasette, its [data portal](https://eiti.portaljs.com) on PortalJS, and the importer the EITI Secretariat uses to validate, correct, and enrich new data before it is loaded."
+								},
+								{
+									"id": "2023-prj-eiti-soe-database",
+									"title": "State-owned Enterprise (SOE) Database",
+									"when": "Nov 2023 – Jun 2024",
+									"kind": "prj",
+									"text": "**Built** the scripts that extract, transform, and load EITI's summary data sheets into a relational database, and **deployed** its website and API on Datasette, which later became the [EITI Database](https://eiti-database.eiti.org)."
+								},
+								{
+									"id": "2023-prj-eiti-options-paper",
+									"title": "EITI Data Infrastructure Options Paper",
+									"when": "May – Jun 2023",
+									"kind": "prj",
+									"text": "**Wrote** an options paper on EITI's data infrastructure."
+								}
+							]
+						},
+						{
+							"id": "2021-prj-fnf-smart-lgus",
+							"title": "Getting Started with Smart & Data-Driven Local Government Units",
+							"org": "FNF",
+							"when": "2021",
+							"kind": "prj",
+							"bullets": [
+								"**Designed, developed, and released open source [materials](https://smartctph.github.io/getting-started-with-smart-and-data-driven-lgus/index.html)** that give busy local government leaders and other stakeholders easy-to-use, easy-to-understand, easy-to-share, and easy-to-adapt learning tools for understanding smart cities and data."
+							]
+						}
+					]
+				},
+				{
+					"title": "Custom trainings delivered",
+					"new_page": true,
+					"entries": [
+						{
+							"id": "2026-trn-psa-python-for-data-management",
+							"title": "[Python for Data Management](https://www.facebook.com/bnhr.xyz/posts/pfbid02co5LYFqZWNbqQerM9oxSZiWTtG5VCYDQYwo9gP1tfpqZaSLmb2kh1bvcHCQmmpEzl)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Oct 2026",
+							"kind": "trn",
+							"training": "client",
+							"text": "A three-day hands-on training on turning survey data from many sources and formats into a release people can trust: a pipeline that gets each round, checks it with pydantic and pandera, stores it in a database built from those checks, and shares it through Datasette. Taught in marimo, so **participants ran it on an unseen survey with one command**."
+						},
+						{
+							"id": "2026-trn-psa-geodata-engineering",
+							"title": "[Geospatial Data Management and Engineering](https://www.facebook.com/bnhr.xyz/posts/pfbid0o1j9RV4yPq6MuxYm7HVnzeK3pBbehZWmMhbJz5JrPVj7WbwjLwyXUvKhZoNjxLYjl)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Mar 2026",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day hands-on training with the PSA Agriculture and Fisheries Census Division and other divisions, one stage a day: **store it** (PostGIS, DuckDB, data lakes), **share it** (GeoServer, pygeoapi, OGC services), **catalog it** (GeoNode, metadata, SDI), **use it** (web maps and dashboards), and **scale it** (GeoParquet, PMTiles, COG, STAC)."
+						},
+						{
+							"id": "2026-trn-psa-geopython-ml",
+							"title": "[Geospatial Python, Machine Learning, and AI](https://www.facebook.com/bnhr.xyz/posts/pfbid02ch35REiJe4kNhaFtAe2JXtZUTPcuaQV2r3oHd7xWrCGPucfX824RWTvVZA47EF9Ul)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Mar 2026",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day hands-on training covering **the full machine learning pipeline** and common geospatial Python and ML stacks: Google Earth Engine in Python via geemap, raster and vector data with rasterio and geopandas, comparing classification models in scikit-learn, and running AI and deep-learning models with geoai."
+						},
+						{
+							"id": "2026-trn-psa-python-essentials",
+							"title": "[Python Essentials, Arrays, and DataFrames](https://www.facebook.com/bnhr.xyz/posts/pfbid0d1bwxuv9twcGKTUsrbPzPjrvBGmAivkxhJT16BjgQ1XSgY71Wy7duyAXaE7q2Fj7l)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Jan 2026",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day training that **laid the groundwork for using Python effectively**—package and environment management, notebooks, syntax, and data structures—and introduced arrays and dataframes for future data, AI, and ML work. Alongside staples such as Jupyter, conda, and pandas, we explored modern tools such as uv, marimo, DuckDB, and polars."
+						},
+						{
+							"id": "2024-trn-puerto-princesa-earth-engine",
+							"title": "[Introduction to Remote Sensing with Google Earth Engine](https://www.facebook.com/bnhr.xyz/posts/pfbid0rffH3uBy7ob68whsHEHZZxjpM4m9C7nt3cJNkD4LJmBGDCcL1wvkkg4Z8VG1tGHvl)",
+							"org": "City Government of Puerto Princesa, Palawan",
+							"when": "Oct 2024",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day virtual course, in BNHR's data-driven approach to capacity building, that introduced remote sensing with Google Earth Engine and its use in **disaster risk reduction, urban planning, and environmental management**."
+						},
+						{
+							"id": "2024-trn-psa-python-qgis",
+							"title": "[Introduction to Python for Geospatial and QGIS](https://www.facebook.com/bnhr.xyz/posts/pfbid02n8EcgLwRncUcoL5GmJduqNEDfzs6pbgm6QeuwwWRDi48kMJffgrAkmcritSz1T8Xl)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Jan 2024",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day course—hands-on, exercise-driven, and focused on tangible outcomes—that **culminated in participants showcasing Python and QGIS projects** such as processing automations, models, and interactive maps."
+						},
+						{
+							"id": "2023-trn-psa-geodata-management",
+							"title": "[Geospatial Data Management with QGIS, PostGIS, GeoServer, and GeoNode](https://www.facebook.com/bnhr.xyz/posts/pfbid0iEcGi6CK3h5dUi9jRcM4tzhsWr14wgTP6LnBdFUq18nA6gdeHApyD4EK33AXMCQDl)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Oct 2023",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day course on **the components of geospatial data management**: field data collection and custom attribute forms in QGIS, PostGIS, GeoServer, GeoNode, and QGIS in multi-user and enterprise environments."
+						},
+						{
+							"id": "2023-trn-filminera-qgis",
+							"title": "[Introductory QGIS for Mineral and Mining Exploration](https://www.facebook.com/bnhr.xyz/posts/pfbid0WXydxiGnA8xwyRnSxNLN12iPTLXMiYGButiu7mddZX4LF6YGh8LKznVraaXd4hmzl) and [Advanced Visualization and Map-Making with QGIS](https://www.facebook.com/bnhr.xyz/posts/pfbid0xWK4z7LDA7WsmEHS9ePqgTAAgnhndPHuLPjSaSf2GNtQ6Z34QstemSg4WYLFUT9Dl)",
+							"org": "Filminera Resources Corporation",
+							"when": "Jul & Sep 2023",
+							"kind": "trn",
+							"training": "client",
+							"text": "Two three-day courses for geologists, engineers, technicians, data analysts, and specialists on fundamental geographic and QGIS skills and **the advanced symbology their day-to-day work needs**."
+						},
+						{
+							"id": "2022-trn-doh-cvec-qgis",
+							"title": "[Introduction to QGIS and Its Applications in Field Epidemiology](https://www.facebook.com/bnhr.xyz/posts/pfbid02BcCLYGn4kioYEPVDVmNwQNpb78gVyBG4WnmT1Goyv6FZy4tkp57mZ13Xtk6HJ4GJl)",
+							"org": "Department of Health – Cagayan Valley Epidemiology Center",
+							"when": "Dec 2022",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day course on the geospatial concepts and QGIS functions useful in **disease mapping and surveillance**: data from CSVs and spreadsheets, open geospatial data sources, joining and styling layers, map-making, and data gathering with Kobo."
+						},
+						{
+							"id": "2022-trn-psa-master-sample-frame",
+							"title": "[Open Geospatial for a Geo-enabled Master Sample Frame](https://www.facebook.com/bnhr.xyz/posts/pfbid0LQePEmJqPPJ3qnsmwKa2PwmDG8CcpWoKbbjK43MkVHBFjTC5adsfxsmX5f6eCR7hl)",
+							"org": "Philippine Statistics Authority (PSA)",
+							"when": "Mar 2022",
+							"kind": "trn",
+							"training": "client",
+							"text": "A five-day training-workshop on using QGIS, Python, spatial SQL, R, and other tools to **develop and automate a geo-enabled master sample frame** for the next national census."
+						}
+					]
+				}
+			]
+		}
+	]
+}

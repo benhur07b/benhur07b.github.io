@@ -1,16 +1,18 @@
 ---
-import { insets } from '../data/site';
-
-// The home page's fixed locator: the persistent navigation once the map face has scrolled away, marking the inset in
-// view. Only where the gutter can hold it without covering an inset.
-const entries = Object.entries(insets);
+// A page's fixed locator: the persistent navigation once the page's head (the home page's map face, a page's title
+// sheet: whichever carries data-sheet-start) has scrolled away, marking the inset in view. Only where the gutter can
+// hold it without covering an inset.
+interface Props {
+	entries: readonly { id: string; ref: string; title: string }[];
+}
+const { entries } = Astro.props;
 ---
 
 <nav class="sheet-index" aria-label="Sheet index">
 	<p aria-hidden="true">Index</p>
 	<ol>
 		{
-			entries.map(([id, { ref, title }]) => (
+			entries.map(({ id, ref, title }) => (
 				<li>
 					<a href={`#${id}`} data-for={id} aria-label={`${ref}, ${title}`} title={`${ref} · ${title}`}>
 						{ref}
@@ -24,12 +26,12 @@ const entries = Object.entries(insets);
 <script>
 	const index = document.querySelector<HTMLElement>('.sheet-index')!;
 	const links = new Map([...index.querySelectorAll<HTMLAnchorElement>('a')].map((a) => [a.dataset.for!, a]));
-	// Shown between the map face and the imprint: the footer carries its own links, and the locator would cover its
-	// bottom line
+	// Shown between the page's head and the imprint: the footer carries its own links, and the locator would cover
+	// its bottom line
 	let heroShown = true;
 	let footerShown = false;
 	const show = () => index.classList.toggle('on', !heroShown && !footerShown);
-	new IntersectionObserver(([e]) => ((heroShown = e.intersectionRatio >= 0.12), show()), { threshold: [0, 0.12] }).observe(document.querySelector('.hero')!);
+	new IntersectionObserver(([e]) => ((heroShown = e.intersectionRatio >= 0.12), show()), { threshold: [0, 0.12] }).observe(document.querySelector('[data-sheet-start]')!);
 	new IntersectionObserver(([e]) => ((footerShown = e.intersectionRatio > 0), show()), { threshold: [0, 0.01] }).observe(document.querySelector('.colophon')!);
 	const spy = new IntersectionObserver(
 		(es) => {

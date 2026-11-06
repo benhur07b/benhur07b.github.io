@@ -1,0 +1,20 @@
+---
+import { inline, type CvRow } from '../../data/cv';
+
+// Rows: a short label and its line
+interface Props {
+	rows: readonly CvRow[];
+}
+const { rows } = Astro.props;
+---
+
+<dl class="cv-rows">
+	{
+		rows.map((r) => (
+			<>
+				<dt set:html={inline(r.label)} />
+				<dd set:html={inline(r.text)} />
+			</>
+		))
+	}
+</dl>

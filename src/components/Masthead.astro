@@ -1,15 +1,16 @@
 ---
 import logoDark from '../assets/brand/logo-horizontal-core-dark.svg';
 import logoLight from '../assets/brand/logo-horizontal-core-light.svg';
-import { insetHref, insets, sections } from '../data/site';
+import { insetHref, sections } from '../data/site';
 
 // The sheet's top margin. On the home page the hero's legend is the navigation, so the masthead carries the sheet's
-// margin note; on any other page (the 404) it carries the sections, which link to the home page's insets. On phones
-// both give way to the Legend menu.
+// margin note; on any other page (About, the 404) it carries the sections, each linking to its home inset or its own
+// page, and marks the page it is on. On phones both give way to the Legend menu.
 interface Props {
 	home?: boolean;
 }
 const { home = false } = Astro.props;
+const current = (href: string) => (Astro.url.pathname === href ? 'page' : undefined);
 ---
 
 <header class="masthead">
@@ -27,7 +28,7 @@ const { home = false } = Astro.props;
 				<ul>
 					{sections.map((s) => (
 						<li>
-							<a href={s.href}>
+							<a href={s.href} aria-current={current(s.href)}>
 								<svg class="sym" aria-hidden="true">
 									<use href={`#s-${s.id}`} />
 								</svg>
@@ -54,12 +55,12 @@ const { home = false } = Astro.props;
 <nav id="mobile-legend" class="mobile-legend" aria-label="Main" hidden>
 	{
 		sections.map((s) => (
-			<a href={s.href}>
+			<a href={s.href} aria-current={current(s.href)}>
 				<svg class="sym" aria-hidden="true">
 					<use href={`#s-${s.id}`} />
 				</svg>
 				{s.label}
-				<span class="ref">{insets[s.inset].ref}</span>
+				<span class="ref">{s.ref}</span>
 			</a>
 		))
 	}
@@ -116,7 +117,8 @@ const { home = false } = Astro.props;
 		font: 700 16px/1 var(--display); letter-spacing: -0.01em; text-decoration: none; border-radius: var(--radius);
 	}
 	.mast-nav .sym { width: 13px; height: 13px; }
-	.mast-nav a:hover .sym { color: var(--block); }
+	.mast-nav a:hover .sym, .mast-nav a[aria-current='page'] .sym { color: var(--block); }
+	.mast-nav a[aria-current='page'] { box-shadow: inset 0 -2px 0 var(--block); border-radius: 0; }
 	.masthead .spacer { flex: 1; }
 	.mast-actions { display: flex; align-items: center; gap: 10px; flex: none; }
 	.mast-actions .btn { min-height: 40px; padding: 0 16px; font-size: 15px; }
