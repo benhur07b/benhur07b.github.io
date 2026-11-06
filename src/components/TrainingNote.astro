@@ -1,13 +1,14 @@
 ---
 import { insetHref } from '../data/site';
 
-// Public trainings are scheduled and booked on Learn QGIS, so the hub points there rather than copying the schedule
+// Public trainings are scheduled in the trainings record (benhur07b/trainings), and Learn QGIS and Learn Python both
+// list every one of them, whatever its subject, so the hub points to one of those lists rather than copying it
 ---
 
 <div class="linkout">
-	<p><strong>Public trainings are listed on Learn QGIS</strong>, with their dates and registration. For a course just for your team, online or in person, get in touch.</p>
+	<p><strong>Public trainings are listed on Learn QGIS and Learn Python</strong>, in QGIS and open geospatial, Python and data, with their dates and registration, along with the <a href="https://learn-qgis.bnhr.xyz/past-training/">trainings we have delivered</a>. For a course just for your team, online or in person, get in touch.</p>
 	<div class="ctas">
-		<a class="btn btn-primary" href="https://learn-qgis.bnhr.xyz/training/">See trainings on Learn QGIS <span aria-hidden="true">↗</span></a>
+		<a class="btn btn-primary" href="https://learn-qgis.bnhr.xyz/training/">See upcoming trainings <span aria-hidden="true">↗</span></a>
 		<a class="btn" href={insetHref('contact')}>Training for your team</a>
 	</div>
 </div>
