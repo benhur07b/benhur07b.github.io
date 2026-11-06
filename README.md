@@ -16,15 +16,16 @@ npm run check    # types and Astro diagnostics
 
 ## Where things are
 
-- `src/pages/`: the home page and the 404. Each section (Learn, Services, Work, Writing, About) is an inset on the home page, and the navigation links there; a section gets its own page only once it holds more than its inset can.
-- `src/data/`: what the pages print, typed: the sections, insets and links to them (`site.ts`), themes, Learn sites, services, projects and clients, and the terrain's georeference.
+- `src/pages/`: the home page, About and the 404. Each section (Learn, Services, Work, Writing, About) is an inset on the home page, and the navigation links there; a section gets its own page only once it holds more than its inset can, and then the navigation links to that page instead (`pages` in `site.ts`). About has one, for the CV.
+- `src/data/`: what the pages print, typed: the sections, insets, pages and links to them (`site.ts`), themes, Learn sites, services, projects and clients, the terrain's georeference, and the CV (`cv.ts`, which parses `cv/cv.json` at build time, so a change in its shape fails the build).
 - `src/components/`: the sheet's parts. `HeroMap.astro` draws the home page's map and its height readout.
 - `src/styles/site.css`: the hub's mapping of the brand tokens and the styles every page shares.
 - `src/styles/brand/`, `src/assets/brand/`, `src/assets/terrain/`, `public/favicon*`: copied or drawn from the BNHR brand kit and the Mayon elevation model by a local tool (`scripts/sync_brand.py`, not in the repo, because the kit lives outside it). Never edit these copies by hand.
+- `src/data/cv/`, `public/about/bnhr-cv.pdf`: the CV, as the CV tool (`bnhr-tools/cv`) builds it, copied in by a local tool (`scripts/sync_cv.py`, not in the repo). The About page prints its JSON and offers its PDF. Change the CV in `bnhr-tools/cv/data/`, then run `uv run scripts/sync_cv.py`, which builds the CV and copies both; `--check` reports a copy edited here or a CV that has moved on. Never edit these copies by hand.
 
 ## Old URLs
 
-Every URL the old Jekyll site published (`src/data/legacy.ts`, frozen with the archive) gets a redirect file at its exact path, written by `src/pages/[...legacy].ts`: to the home inset that took its content where there is one, otherwise to the same path on old.bnhr.xyz. To move an old page or post here, give its new page the old URL; the redirect follows with nothing else to change. GitHub Pages can't send a 301, so each redirect forwards at once and names the new address as canonical.
+Every URL the old Jekyll site published (`src/data/legacy.ts`, frozen with the archive) gets a redirect file at its exact path, written by `src/pages/[...legacy].ts`: to the home inset or page that took its content where there is one (`moved` in `legacy.ts`: the old CV, `/portfolio/cv.html`, goes to `/about/`), otherwise to the same path on old.bnhr.xyz. To move an old page or post here, give its new page the old URL; the redirect follows with nothing else to change. GitHub Pages can't send a 301, so each redirect forwards at once and names the new address as canonical.
 
 ## Publish
 

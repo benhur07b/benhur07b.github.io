@@ -1,0 +1,8 @@
+{
+	"version": "cv",
+	"synced": "2026-11-06",
+	"copies": {
+		"src/data/cv/cv.json": "0d2cf9bb973e382b75921a95e88de188f97fe954754f6ef5ed8abfd166e25b0c",
+		"public/about/bnhr-cv.pdf": "e82dcc574cf12f80d685e024553ec7364c543e2fb49e17c49c1cfbb339e193b6"
+	}
+}

@@ -3,7 +3,7 @@ import heights from '../assets/terrain/mayon-heights.webp';
 import hillshade from '../assets/terrain/mayon-hillshade.webp';
 import coastSvg from '../assets/terrain/mayon-coast.svg?raw';
 import reliefSvg from '../assets/terrain/mayon-relief.svg?raw';
-import { insetHref, insets, sections, tagline } from '../data/site';
+import { insetHref, sections, tagline } from '../data/site';
 import { THEMES, themeInfo } from '../data/themes';
 import { latOf, lonOf, terrain } from '../data/terrain';
 
@@ -28,7 +28,7 @@ const map = { W, H, west: terrain.west, north: terrain.north, cell: terrain.cell
 const [lastWord] = tagline.more.slice(-1);
 ---
 
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title" data-sheet-start>
 	<div class="sheet">
 		<div class="marginalia" aria-hidden="true" data-marginalia></div>
 		<div class="frame">
@@ -87,7 +87,7 @@ const [lastWord] = tagline.more.slice(-1);
 										<use href={`#s-${s.id}`} />
 									</svg>
 									<span class="label">{s.label}</span>
-									<span class="ref">{insets[s.inset].ref}</span>
+									<span class="ref">{s.ref}</span>
 								</a>
 							</li>
 						))

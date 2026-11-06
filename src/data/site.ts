@@ -1,4 +1,4 @@
-// The sheet's structure: the home page's insets, the sections that make up the main navigation, and the ways to reach
+// The sheet's structure: the home page's insets, the pages of their own, the sections that make up the main navigation, and the ways to reach
 // BNHR. Components read these instead of repeating them, so a reference or a link cannot disagree between the
 // legend, the sheet index, the mobile menu and the footer.
 
@@ -21,27 +21,46 @@ export type InsetId = keyof typeof insets;
 export type InsetHref = `/#${InsetId}`;
 export const insetHref = (id: InsetId): InsetHref => `/#${id}`;
 
+// The sections that have outgrown their inset, each with a page of its own: its address, and the view of the survey
+// behind its title (always centred on the summit's latitude, `width` cells wide and half as tall, with the summit `at`
+// this fraction across). Pages count as sheets: the home page is sheet 1 and these follow in this order.
+export const pages = {
+	about: { href: '/about/', view: { width: 480, at: 0.74 } },
+} as const;
+export type PageId = keyof typeof pages;
+export type PageHref = (typeof pages)[PageId]['href'];
+export const sheetOf = (id: PageId) => Object.keys(pages).indexOf(id) + 2;
+// Anywhere on the site a section can link to: an inset of the home page or a page of its own
+export type Href = InsetHref | PageHref;
+
 export type SectionId = 'learn' | 'services' | 'work' | 'writing' | 'about';
 interface SectionEntry {
 	id: SectionId;
 	label: string;
-	// The home inset the section is: the legend's entry links to it and prints its reference
+	// The home inset the section is, or began as: the legend's entry links to it and prints its reference
 	inset: InsetId;
+	// Its own page, once it has one: the legend's entry links there instead, and points off the sheet
+	page?: PageId;
 }
 export interface Section extends SectionEntry {
-	href: InsetHref;
+	href: Href;
+	// What the legend prints beside it: the inset's reference, or an arrow to the adjoining sheet
+	ref: string;
 }
 
 // The main navigation, in the legend's order, each with its own map symbol (#s-<id>). Every section is an inset on the
-// home page and links there; a section gets a page of its own only once it holds more than its inset can.
+// home page and links there; a section gets a page of its own only once it holds more than its inset can (About, with
+// the CV).
 const entries: readonly SectionEntry[] = [
 	{ id: 'learn', label: 'Learn', inset: 'learn' },
 	{ id: 'services', label: 'Services', inset: 'services' },
 	{ id: 'work', label: 'Work', inset: 'work' },
 	{ id: 'writing', label: 'Writing', inset: 'writing' },
-	{ id: 'about', label: 'About', inset: 'about' },
+	{ id: 'about', label: 'About', inset: 'about', page: 'about' },
 ];
-export const sections: readonly Section[] = entries.map((s) => ({ ...s, href: insetHref(s.inset) }));
+export const sections: readonly Section[] = entries.map((s) =>
+	s.page ? { ...s, href: pages[s.page].href, ref: '→' } : { ...s, href: insetHref(s.inset), ref: insets[s.inset].ref },
+);
 
 export const email = 'hi@bnhr.xyz';
 // The free first 30 minutes are booked on Google Calendar's appointment page

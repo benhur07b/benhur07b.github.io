@@ -55,5 +55,5 @@ const inset = <K extends keyof typeof insets>(id: K) => ({ id, ...insets[id] });
 
 		<Contact ref={insets.contact.ref} />
 	</div>
-	<SheetIndex slot="after-main" />
+	<SheetIndex slot="after-main" entries={Object.entries(insets).map(([id, { ref, title }]) => ({ id, ref, title }))} />
 </Sheet>

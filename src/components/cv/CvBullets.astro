@@ -1,0 +1,24 @@
+---
+import { inline, type Bullet } from '../../data/cv';
+
+// A description's bullets, each with its own bullets under it if it has them
+interface Props {
+	items: readonly Bullet[];
+}
+const { items } = Astro.props;
+---
+
+<ul class="cv-bullets">
+	{
+		items.map((b) =>
+			typeof b === 'string' ? (
+				<li set:html={inline(b)} />
+			) : (
+				<li>
+					<Fragment set:html={inline(b.text)} />
+					{b.bullets && <Astro.self items={b.bullets} />}
+				</li>
+			),
+		)
+	}
+</ul>

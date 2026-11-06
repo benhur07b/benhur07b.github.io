@@ -1,4 +1,4 @@
-import { archive, type InsetHref } from './site';
+import { archive, pages, type Href } from './site';
 
 // Every URL the old Jekyll site published, from the archive's sitemap (old.bnhr.xyz/sitemap.xml, read 2026-10-26).
 // The archive is frozen, so this list is too. Left out: the home page, which this site's home replaces, and the paths
@@ -115,9 +115,9 @@ export const legacyUrls = [
 ] as const;
 export type LegacyUrl = (typeof legacyUrls)[number];
 
-// Old pages whose content is now an inset on the home page. Anything not listed here (or, once posts move, claimed by
-// a post's `legacyUrls`) goes to the same path on the archive.
-const toInsets: Partial<Record<LegacyUrl, InsetHref>> = {
+// Old pages whose content is now an inset on the home page or a page of its own. Anything not listed here (or, once
+// posts move, claimed by a post's `legacyUrls`) goes to the same path on the archive.
+const moved: Partial<Record<LegacyUrl, Href>> = {
 	'/services/': '/#services',
 	'/services/training/': '/#services',
 	'/services/training/spatial.html': '/#services',
@@ -126,9 +126,10 @@ const toInsets: Partial<Record<LegacyUrl, InsetHref>> = {
 	'/consult/free.html': '/#contact',
 	'/portfolio/': '/#work',
 	'/portfolio/works.html': '/#work',
+	'/portfolio/cv.html': pages.about.href,
 	'/training/': '/#services',
 	'/training/events/': '/#training',
 };
 
 // Where each old URL goes now
-export const legacyRedirects = legacyUrls.map((url) => ({ url, to: toInsets[url] ?? `${archive.href}${url.slice(1)}` }));
+export const legacyRedirects = legacyUrls.map((url) => ({ url, to: moved[url] ?? `${archive.href}${url.slice(1)}` }));

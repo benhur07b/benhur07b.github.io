@@ -1,0 +1,16 @@
+---
+import type { CvEntry } from '../../data/cv';
+import Entry from './CvEntry.astro';
+
+// A list of entries, one under another, or short ones side by side (`columns: 2`)
+interface Props {
+	entries: readonly CvEntry[];
+	columns?: number;
+	level: 3 | 4;
+}
+const { entries, columns = 1, level } = Astro.props;
+---
+
+<div class={`cv-entries cols-${columns}`}>
+	{entries.map((e) => <Entry entry={e} level={level} />)}
+</div>
