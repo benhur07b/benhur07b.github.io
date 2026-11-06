@@ -1,6 +1,6 @@
 {
-	"checked": "2026-10-25",
-	"source": "GitHub repos of benhur07b with Pages enabled",
+	"checked": "2026-10-26",
+	"source": "GitHub repos of benhur07b with Pages enabled, plus repos not public yet that will publish Pages",
 	"paths": [
 		"albay-with-mapbox-gl",
 		"asean-ahead-guide",
@@ -23,6 +23,7 @@
 		"hypothesis-test",
 		"learn-geospatial-data-management-and-engineering",
 		"learn-python",
+		"learn-python-essentials",
 		"ms-thesis-spatial-analysis-shooting-philippine-basketball",
 		"okf-events-a",
 		"open-contracting-south-cotabato",
@@ -34,6 +35,7 @@
 		"presentations",
 		"project-explorer-demo",
 		"puerto-princesa-hazards",
+		"quizzes",
 		"spade-pe-demo",
 		"terrain-with-three-js",
 		"trainer-guide-open-geodata-training",
