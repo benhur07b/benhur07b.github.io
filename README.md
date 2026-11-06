@@ -31,7 +31,7 @@ Every URL the old Jekyll site published (`src/data/legacy.ts`, frozen with the a
 
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and deploys it to GitHub Pages. In the repo's settings, Pages → Source is "GitHub Actions" and the custom domain is `bnhr.xyz`.
 
-Other repos publish their own GitHub Pages sites under this domain at `bnhr.xyz/<repo>/`, and GitHub serves those first. `reserved-paths.json` lists them, and the build fails if a page here would sit at one of those paths. Refresh the list when a repo turns Pages on.
+Other repos publish their own GitHub Pages sites under this domain at `bnhr.xyz/<repo>/`, and GitHub serves those first. `reserved-paths.json` lists them, and the build fails if a page here would sit at one of those paths. Refresh the list when a repo turns Pages on, and add a repo that will publish Pages before it goes public.
 
 ## License
 
