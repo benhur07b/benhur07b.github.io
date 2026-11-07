@@ -21,7 +21,7 @@ const plain = (t: string) => inline(t).replace(/<[^>]+>/g, '');
 <Sheet title="About" description="About BNHR and Ben: training, consulting and builds in open geospatial, data and AI tools since 2014, with the full CV." lite>
 	<PageHead page="about" title="Hi, I'm Ben" lede={cv.line ? plain(cv.line) : ''} note={`CV · ${updated}`}>
 		<div class="ctas">
-			<a class="btn btn-primary" href={cvPdf} download="BNHR-CV.pdf">Download the CV <span class="note">PDF</span></a>
+			<a class="btn btn-primary" href={cvPdf} target="_blank" rel="noopener">View the CV <span class="note">PDF</span><span class="sr-only"> (opens in a new tab)</span></a>
 			<a class="btn" href="#contact">Get in touch</a>
 		</div>
 	</PageHead>
